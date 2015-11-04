@@ -74,31 +74,5 @@ eVote's home page is:
 
 eVote's development is collaborated at:
 
-   http://sourceforge.net/projects/evote
-
-Email lists for eVote are:
-
-   eVote-users@deliberate.com
-
-and
-
-   eVote-workers@deliberate.com
-
-To subscribe:
-
-   1.  Write to:
-
-       majordomo@deliberate.com
-
-   2.  The subject doesn't matter.
-
-   3.  The message should say:
-
-       subscribe eVote-users
-      
-       and/or:
-
-       subscribe eVote-workers
-
-Please use Sourceforge to report bugs and submit patches.
+https://github.com/marilyndavis/evote/
 
