@@ -1,8 +1,6 @@
 /* $Id: outq.cc,v 1.4 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // Implements an outgoing message queue to the user interface
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"outq.h"
 #include<sys/msg.h>

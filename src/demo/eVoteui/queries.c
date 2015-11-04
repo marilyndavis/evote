@@ -4,8 +4,6 @@
  *      Menu and processing for how-voted and who-voted
  *      commands.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <pwd.h>
 #include <stdio.h>

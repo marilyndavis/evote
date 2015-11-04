@@ -1,8 +1,6 @@
 /* $Id: trans.h,v 1.4 2003/01/15 18:54:13 marilyndavis Exp $ */ 
 /* trans.h -- header file for the trans program
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<stdlib.h>

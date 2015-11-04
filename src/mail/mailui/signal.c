@@ -1,8 +1,6 @@
 /* $Id: signal.c,v 1.3 2003/01/15 18:54:09 marilyndavis Exp $ */ 
 /* signal.c -- functions to react to a caught signal.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #define EMERGENCY_FILE "/tmp/em.tmp"
 #define EMERGENCY_TO "root owner-majordomo"

@@ -1,8 +1,6 @@
 /* $Id: evotedef.h,v 1.4 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // evotedef.h -- Clerk's #defines and global variables
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef EVOTEDEFS
 #define EVOTEDEFS

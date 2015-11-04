@@ -2,8 +2,6 @@
 // itemgrou.h -- header for the ItemGroup class needed to manage
 //               a group of vote items.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef ITEMGROUHPP
 #define ITEMGROUHPP

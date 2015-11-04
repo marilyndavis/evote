@@ -2,8 +2,6 @@
 // itemlist.h -- defines ItemList and related classes to keep 
 //  the list of items for a conference
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef ITEMLISTHPP
 #define ITEMLISTHPP

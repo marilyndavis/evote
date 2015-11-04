@@ -2,8 +2,6 @@
 /***********************************************************
  *  ../eVoteui/explain.c  - eVote explanations for the demo.
  ************************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "../eVote.h"
 static YESorNO do_teacher = NO;

@@ -2,8 +2,6 @@
  /**********************************************************
  *   report.c  Functions that control the report for a petition.   
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #define FTP_COMMAND "ftp -i"
 #define FTP_ERROR   "/tmp/ftp.err"

@@ -3,8 +3,6 @@
  *  ../eVote/src/mail/mailui/pet_out.c
  *         has code that needs translating
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  ***********************************************************
  *     pet_out.c  default petition output functions.
  *       To provide a Spanish translation, for example,

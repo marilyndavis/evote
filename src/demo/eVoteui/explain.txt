@@ -4,9 +4,6 @@
 /***********************************************************
 *      eVotexpl.txt  - eVote explanation data for the demo.
 ************************************************************
-*  Copyright (c) 1993...2003, 
-*  Patent Pending.
-**********************************************************/
 struct explanation_def
 {
 	YESorNO more;

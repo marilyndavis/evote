@@ -2,8 +2,6 @@
 // outq.h -- defines the OutQ class which keeps the message queue
 //           for the user.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef OUTQH
 #define OUTQH

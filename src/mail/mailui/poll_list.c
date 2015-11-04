@@ -3,8 +3,6 @@
  *  poll_list.c  Functions that deal with the whole list
  *               of polls.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include"mailui.h"

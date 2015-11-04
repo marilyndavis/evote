@@ -2,8 +2,6 @@
 /************************************************************
  *    applist.cc  -- Functions that manage the shared memory
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <iostream.h>
 #include <fstream.h>

@@ -2,8 +2,6 @@
 /**********************************************************
  *  eVote_insert.h  -  header for eVote_insert.c
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "mailui/maildef.h"
 /* These are the only things needed in this directory */

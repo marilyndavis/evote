@@ -3,8 +3,6 @@
  *    table.h -- #included into table.cc only  -- for the
  *               translation table for petitions.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<string.h>

@@ -13,8 +13,6 @@
  *                is impossible for those.
  *       Contributed by John Jacq with help from Marilyn Davis. (ver 990323)
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #include <errno.h>

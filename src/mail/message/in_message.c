@@ -3,8 +3,6 @@
  *  in_message.c  -- Functions to deal with the incoming
  *                   message.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include "../mailui/mailui.h"

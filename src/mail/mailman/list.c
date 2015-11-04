@@ -5,8 +5,6 @@
  *      are listserver-dependent: find_default() and
  *      eVote_cf_path().
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #define MAILMAN_BIN "/home/mailman/bin"  /* handy for testing */
 #define RELATIVE_MAILMAN_BIN "../bin"

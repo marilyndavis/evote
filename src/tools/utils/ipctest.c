@@ -4,8 +4,6 @@
  *    gcc -o ipctest ipctest.c
  *    Run this test to find the parameters of your ipc setup.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #include<sys/types.h>

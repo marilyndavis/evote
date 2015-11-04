@@ -2,8 +2,6 @@
 // qlist.h -- Defines QList class for maintaining the active outgoing
 //            message queues
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef QLISTH
 #define QLISTH

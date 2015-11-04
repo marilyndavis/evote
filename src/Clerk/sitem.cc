@@ -2,8 +2,6 @@
 // sitem.cpp - member functions for the TimeStampItem class which
 //             are used for petitions.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <iostream.h>
 #include <fstream.h>

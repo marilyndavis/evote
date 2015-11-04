@@ -7,8 +7,6 @@
  *            Also,  exists(..), to test for the existence
  *            of a file.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<sys/types.h>

@@ -1,7 +1,5 @@
 /* $Id: command.c,v 1.5 2003/01/23 19:54:27 marilyndavis Exp $ */ 
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"../eVote.h"
 #include"../../Clerklib/Clerk.h"

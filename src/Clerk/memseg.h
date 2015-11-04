@@ -2,8 +2,6 @@
 // memseg.h defines MemSeg class for maintaining a shared memory
 //          segment for a Conference
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef _MEMSEG_H
 #define _MEMSEG_H

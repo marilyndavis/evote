@@ -2,8 +2,6 @@
 // grouplis.cc Functions for the GroupList class which manages
 //     the list of grouped items for the conference.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <iostream.h>
 #include <fstream.h>

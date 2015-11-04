@@ -2,8 +2,6 @@
 /**********************************************************
  *   ../eVote/src/eVoteui/eVoteui.h 
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<string.h>
 #include<stdlib.h>

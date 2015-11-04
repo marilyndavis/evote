@@ -1,8 +1,6 @@
 /* $Id: noq.cc,v 1.3 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // noq.cc - Implements instructions that don't need a reply
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"evotedef.h"
 #include"instruct.h"

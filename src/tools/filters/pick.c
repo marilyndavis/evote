@@ -15,7 +15,6 @@
  *   Put the resulting executable in with your majordomo
  *   scripts and you're ready.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
  *    by Marilyn Davis and John J. Jacq
  **********************************************************/
 #include "filter.h"

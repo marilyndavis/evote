@@ -2,8 +2,6 @@
 // memlist.cc -- manages the one list of memory segments for
 // the entire application.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdlib.h>
 #include <iostream.h>

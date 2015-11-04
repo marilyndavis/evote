@@ -2,8 +2,6 @@
 /******************************************************
  *      eVote/src/demo/eVoteui/blurbs.c  - eVote blurbs for the demo.
  ************************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "../eVote.h"
 #define NO_BLURBS  (41)

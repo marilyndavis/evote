@@ -2,8 +2,6 @@
 // voterlis.h  defines the VoterList class which maintains the
 //             list of voters for the conf.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef VOTRLISTHPP
 #define VOTRLISTHPP

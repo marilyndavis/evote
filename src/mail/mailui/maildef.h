@@ -3,8 +3,6 @@
  *  ../eVote/src/mail/mailui/maildef.h
  *   #defines and typedefs for eVote's email interface.
  ***********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef maildef_h
 #define maildef_h

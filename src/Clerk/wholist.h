@@ -2,8 +2,6 @@
 // wholist.h -- defines WhoList class which is responsible for the
 //              email address <=> voter id translation
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef WHOLISTHPP
 #define WHOLISTHPP

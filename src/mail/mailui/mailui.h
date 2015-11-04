@@ -3,8 +3,6 @@
  *    Declarations and global variables for the
  *    mail interface for eVote.
  ***********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef mailui_h
 #define mailui_h

@@ -2,8 +2,6 @@
 // hasq.cc processes all incoming instructions for clients
 // that already have an outgoing queue.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"evotedef.h"
 #include"instruct.h"

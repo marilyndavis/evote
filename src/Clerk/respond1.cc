@@ -2,8 +2,6 @@
 // respond1.cc -- Implements instructions that only get one reponse
 //                and then the queue goes away.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"evotedef.h"
 #include"instruct.h"

@@ -3,8 +3,6 @@
  *  spread.c Functions that produce the spreadsheet for
  *           public groups.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<sys/types.h>

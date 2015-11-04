@@ -2,8 +2,6 @@
 /**********************************************************
  * send.c   Functions to fork and exec a new process.
  **********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include "../mailui/mailui.h"

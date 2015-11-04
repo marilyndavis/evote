@@ -3,8 +3,6 @@
  *    ballotbo.cc  -- Functions that manage the ballots
 ************************************************************/
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "evotedef.h"
 #include <stdio.h>

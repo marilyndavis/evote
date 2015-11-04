@@ -2,8 +2,6 @@
 /*  pick.h -- header for pick.c -- program to sort messages
  *            by language.    
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #define MAX_LANGS 10

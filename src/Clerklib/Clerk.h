@@ -5,8 +5,6 @@
  *   ../eVote/src/Clerk/Clerk.h  -
  *          Declarations for the interface to the Clerk.
  ***********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"Clerkdef.h"
 #include"msgdef.h"

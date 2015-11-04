@@ -1,7 +1,5 @@
 /* $Id: confirm.c,v 1.3 2003/01/15 18:54:08 marilyndavis Exp $ */ 
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include <sys/types.h>

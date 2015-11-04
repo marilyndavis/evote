@@ -4,8 +4,6 @@
  *           header and initializing ballots.  Does not deal
  *           with votes.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "evotedef.h"
 extern "C" {

@@ -2,8 +2,6 @@
 /**********************************************************
  *   eVote.h   header file for application side
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #define MAX_ITEMS_IN_GROUP  (100)  /* suit your taste on this */

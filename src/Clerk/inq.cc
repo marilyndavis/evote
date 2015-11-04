@@ -2,8 +2,6 @@
 // inq.cc -- Controlls the incoming message queue.
 // instantiates the instructions
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdlib.h>
 #include <stdio.h>

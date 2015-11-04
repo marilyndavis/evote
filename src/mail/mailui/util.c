@@ -4,8 +4,6 @@
  *            And  atoul -- ascii to unsigned long.
  *            And ratio_string to format ratios
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<sys/types.h>

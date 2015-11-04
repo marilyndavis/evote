@@ -11,11 +11,7 @@ $Author: marilyndavis $
  *            For command line arguments the program to pipe into is next, 
  *            followed by its command line arguments.
  *                unequal [command line arguments]
- *    Copyright 1998 - Deliberate.com
- *    Contributed by John Jacq with help from Marilyn Davis.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #include <errno.h>

@@ -3,8 +3,6 @@
  *    applist.h  -- Header for functions that manage the shared memory
  ************************************************************/
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef _APPLIST_H
 #define _APPLIST_H

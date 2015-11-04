@@ -2,8 +2,6 @@
 // needsq.cc -- Implementation of Instructions that need an 
 //              outgoing queue and don't have one.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"evotedef.h"
 #include"instruct.h"

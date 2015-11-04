@@ -2,8 +2,6 @@
 /**********************************************************
  *  subject.c  Functions that deal with the subject line.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<string.h>

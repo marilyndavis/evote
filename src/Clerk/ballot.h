@@ -4,8 +4,6 @@
  *           header and initialize ballots.  Does not deal
  *           with votes.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef BALLOTDEF
 #define BALLOTDEF

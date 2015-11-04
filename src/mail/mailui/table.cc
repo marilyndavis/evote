@@ -2,8 +2,6 @@
 /************************************************************
  *   table.cc  -- Keeps the translation table for petitions.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  *************************************************************
  *   To add a language, add an entry in the table of TONGUEs
  *   Keep your TONGUE table in the same order as your   |

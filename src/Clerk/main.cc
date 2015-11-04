@@ -3,8 +3,6 @@
  *   main.cc  -- main function and other startup and maintenance
  *               functions.
  ************************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 extern "C" {
 #include <stdlib.h>
@@ -236,7 +234,7 @@ start_up(int argc, char *argv[])
       exit(1);
     }
   clerklog << "Started opening log.";
-  /*  cout << "\nStarting eVote_Clerk, Copyright 1994-2003 by Deliberate.Com.\n";
+  /*  cout << "\nStarting eVote_Clerk, Copyright 1994-2015 by Deliberate.Com.\n";
   cout << "\n                                                           Patented.\n";
   cout.flush(); */
   conferences.start();

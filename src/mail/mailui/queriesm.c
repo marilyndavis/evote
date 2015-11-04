@@ -4,8 +4,6 @@
  *      Info and processing for how-voted and who-voted
  *      commands.
  **********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************
  *    Translations notes:
  *     The Upper case VOTED, !VOTED, ACC, etc are for

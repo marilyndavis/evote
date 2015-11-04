@@ -1,8 +1,6 @@
 /* $Id: voterlis.cc,v 1.4 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // voterlis.cc -- maintains the list of voters for a conference
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdlib.h>
 #include <iostream.h>

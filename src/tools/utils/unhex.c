@@ -2,7 +2,7 @@
 #define TRACE "/tmp/unhex.debug"
 #define PATH "/usr/local/majordomo/"
 /****************************************************************
- *  unhex.c     Copyright 2015 by Deliberate.Com
+ *  unhex.c
  *   This program reads stdin and looks for hex code that comes
  *   from a mailto.  It replaces the hex code with ascii characters
  *   and puts the result on stdout.

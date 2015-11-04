@@ -1,8 +1,6 @@
 /* $Id: voter.h,v 1.3 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // voter.h defines the Voter
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef VOTRDEF
 #define VOTRDEF

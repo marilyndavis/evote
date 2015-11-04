@@ -6,8 +6,6 @@
  *                heavily on the filter facility:
  *                EVOTE_HOME_DIR/eVote/src/tools/filters
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifdef TRACE
 extern FILE* fptrace;  /* in eVote_petition.c */

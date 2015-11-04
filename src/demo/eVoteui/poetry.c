@@ -2,8 +2,6 @@
 /******************************************************
  *      poetry.c  - poems for the demo.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "../eVote.h"
 #include<unistd.h>

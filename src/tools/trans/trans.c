@@ -1,22 +1,6 @@
 /* $Id: trans.c,v 1.4 2003/01/15 18:54:13 marilyndavis Exp $ */ 
 /* trans.c -- for translating code strings to another language
 *********************************************************
-*    Copyright (c) 1994...2015 Deliberate.com Patented.
-*    by Marilyn Davis
-*  This program is free software; you can redistribute it and/or
-*  modify it under the terms of the eVote(R)/Clerk License as
-*  published by Deliberate.Com.
-*
-*  This program is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  eVote(R)/Clerk License for more details.
-*
-*  You should have received a copy of the eVote(R)/Clerk License
-*  along with this program in EVOTE_HOME_DIR/eVote/doc/eVote.doc. 
-*  If not, write to Deliberate.Com 2555 W. Middlefield Rd. #150,
-*  Mountain View, CA 94043 USA or office@deliberate.com.
-************************************************************
 *             gcc -o trans trans.c -g -Wall
 *    trans.c  This translates c code.
 *             Call like:

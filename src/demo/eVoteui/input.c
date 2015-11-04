@@ -2,8 +2,6 @@
 /**********************************************************
  *	../eVote/src/eVote/eVoteui/input.c
  **********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include "../eVote.h"
 /* List of questions that eVote asks.  The first field in each

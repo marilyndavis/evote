@@ -5,8 +5,6 @@
  *      are listserver-dependent: find_default() and
  *      eVote_cf_path().
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include <dirent.h>

@@ -1,7 +1,5 @@
 # $Id: README,v 1.2 2003/01/15 18:54:13 marilyndavis Exp $ 
 
-Copyright 2003 by Deliberate.com
-
 This package has 3 security tools for email: shelter, angel and fence.
 These were developed in response to attacks on Zapatista's mailing
 lists and personal addresses.

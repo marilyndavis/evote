@@ -2,8 +2,6 @@
 // dropord.cc - manages the user-friendly ordering of the list
 //              of items in the conference
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <fstream.h>
 #include "evotedef.h"

@@ -1,8 +1,6 @@
 /* $Id: util.cc,v 1.3 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // util.cc -- file backup utilities and string utilities
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 extern "C" {
 #include <stdlib.h>

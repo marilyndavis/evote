@@ -1,8 +1,6 @@
 /* $Id: ballotbo.h,v 1.3 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // header for ballotbox functions 
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef BALLOTBOXDEF
 #define BALLOTBOXDEF

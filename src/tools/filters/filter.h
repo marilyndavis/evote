@@ -3,8 +3,6 @@
  *     filter.h
  *     Accompanies filter.c
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef _filter_h
 #define _filter_h

@@ -4,8 +4,6 @@
  *    This file contains startup functions for the Demo
  *    that are not used by the eVote command executable.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"../eVote.h"
 #include"../../Clerklib/Clerk.h"

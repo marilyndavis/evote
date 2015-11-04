@@ -4,8 +4,6 @@
  *        Some functions for forms are in pet_out_xx.c files
  *        because they need translation.
  **********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<errno.h>
 #include"mailui.h"

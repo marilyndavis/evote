@@ -2,8 +2,6 @@
 // qlist.cc Maintains the list of all outgoing queues in the system
 //          Sends messages to the queues.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<sys/types.h>

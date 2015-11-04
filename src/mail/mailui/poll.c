@@ -2,8 +2,6 @@
 /**********************************************************
  *  poll.c  Functions that deal with an established poll.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include"mailui.h"

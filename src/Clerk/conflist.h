@@ -2,8 +2,6 @@
 // conflist.h -- header file for the ConfList class which has 
 // responsibility for the one list of conferences.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef CONFLISTHPP
 #define CONFLISTHPP

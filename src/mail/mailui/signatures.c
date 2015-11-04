@@ -3,8 +3,6 @@
  *   signatures.c Functions that manipulate the signature 
  *                text for a petition.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include<errno.h>

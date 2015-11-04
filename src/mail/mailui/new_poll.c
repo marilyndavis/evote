@@ -2,8 +2,6 @@
 /**********************************************************
  *  new_poll.c  Functions that accept and check a new poll.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include"mailui.h"

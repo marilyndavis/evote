@@ -2,8 +2,6 @@
 // inq.h -- header for the InQ class which manages the input
 //          message queue
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef INQUEUEHPP
 #define INQUEUEHPP

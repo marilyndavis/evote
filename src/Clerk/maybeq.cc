@@ -2,8 +2,6 @@
 // maybeq.cc  -- instructions for users that may or may not already
 //               have a return queue.  Just WhoNum and WhoIs
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include"evotedef.h"
 #include"instruct.h"

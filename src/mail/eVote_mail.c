@@ -64,8 +64,6 @@
  *     to be sure no one is online and say:
  *     eVote_mail sync_who
  *****************************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include<stdio.h>
 #include "mailui/mailui.h"

@@ -18,8 +18,6 @@
  *      The sendmail command will be executed with its arguments.
  *      Probably:  "sendmail -ba -t"
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 char * sendmail_path = "/usr/lib/sendmail";
 char * trace_file = "/tmp/sorter.trace";

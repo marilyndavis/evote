@@ -5,8 +5,6 @@
     at the top of atd_new.cc
 */
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifdef EDEBUG
 #include <fstream.h>

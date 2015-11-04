@@ -3,8 +3,6 @@
  *  conflist.cc  -- functions for maintaining the single list of
  *                  conferences in the whole system.
  *********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 extern "C" {
 #include <string.h>

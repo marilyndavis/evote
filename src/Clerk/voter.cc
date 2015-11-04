@@ -1,8 +1,6 @@
 /* $Id: voter.cc,v 1.3 2003/01/15 18:54:07 marilyndavis Exp $ */ 
 // voter.cc -- Implements things on the voter's behalf
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifdef linux
 #define _POSIX_SOURCE

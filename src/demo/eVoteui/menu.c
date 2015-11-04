@@ -3,8 +3,6 @@
  *	../eVote/src/demo/menu.c  -
  *    User interface for the eVote menu.
  **********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #include <pwd.h>

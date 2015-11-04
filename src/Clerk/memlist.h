@@ -2,8 +2,6 @@
 // memlist.h -- definition of the MemList class for keeping the
 //              one list of memory segments.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #ifndef _MEMLIST_H
 #define _MEMLIST_H

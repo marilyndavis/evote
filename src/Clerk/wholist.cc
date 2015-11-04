@@ -2,8 +2,6 @@
 // wholist.cc Maintains the WhoList, the list of email addresses
 // and associated voter id's.
 /*********************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdlib.h>
 #include <iostream.h>

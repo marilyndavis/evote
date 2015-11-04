@@ -3,8 +3,6 @@
  *      ../eVoteui/conf.c  
  *   User-interface calls that relate to whole conferences.
  ************************************************************
- *    Copyright (c) 1994...2015 Deliberate.com Patented.
- *    by Marilyn Davis
  **********************************************************/
 #include <stdio.h>
 #include <dirent.h>
