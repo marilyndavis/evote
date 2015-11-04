@@ -1,0 +1,96 @@
+# $Id: backup,v 1.2 2003/01/15 18:54:13 marilyndavis Exp $ 
+ #########################################################
+ #    Copyright (c) 1994...2015 Deliberate.com Patented.
+ #    by Marilyn Davis
+ #  This program is free software; you can redistribute it and/or
+ #  modify it under the terms of the eVote(R)/Clerk License as
+ #  published by Deliberate.Com.
+ #
+ #  This program is distributed in the hope that it will be useful,
+ #  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ #  eVote(R)/Clerk License for more details.
+ #
+ #  You should have received a copy of the eVote(R)/Clerk License
+ #  along with this program in EVOTE_HOME_DIR/eVote/doc/eVote.doc. 
+ #  If not, write to Deliberate.Com 2555 W. Middlefield Rd. #150,
+ #  Mountain View, CA 94043 USA or office@deliberate.com.
+ ##########################################################/
+
+# This script backs up everything at deliberate.com and sends an email
+# message to verify that it worked, or two email messages if it didn't.
+#
+
+rm /u1/tmp/*
+cd /u1/tmp
+cp /var/log/messages /u1/tmp/messages
+tar cv -z -f /u1/tmp/archive.ztar /u1/majordomo/archives > /root/xoko_tar.log
+
+echo "output from /root/back_to_xoko, tar.log at /root/xoko_tar.log" > /u1/tmp/tomail
+
+if [ $? -ne 0 ] 
+ then
+   echo "FAILED AT TAR OF ARCHIVE" >> /u1/tmp/tomail
+   ls -l /u1/tmp/* >> /u1/tmp/tomail
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+diff /var/log/messages /u1/tmp/messages | grep kernel > /u1/tmp/kernel.errs
+if [ -s /u1/tmp/kernel.errs ]
+  then
+   echo "FAILED AT TAR OF ARCHIVE" >> /u1/tmp/tomail
+   ls -l /u1/tmp/* >> /u1/tmp/tomail
+   cat /u1/tmp/kernel.errs >> /u1/tmp/tomail	
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+
+echo "The tar of the archives worked:" >> /u1/tmp/tomail
+ls -l /u1/tmp/* >> /u1/tmp/tomail
+ftp -i xoko < /root/put_archive >& /u1/tmp/ftp.error
+if [ $? -ne 0 ] 
+ then
+   echo "FAILED AT FTP TO XOKO OF ARCHIVES" >> /u1/tmp/tomail
+   cat /u1/tmp/ftp.error >> /u1/tmp/tomail	
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+echo "The ftp of the archive zip to Xoko worked." >> /u1/tmp/tomail
+rm /u1/tmp/archive.ztar	
+tar cv -z  -f /u1/tmp/rest.ztar /root/.netrc /u1/exim /usr/exim /u1/move/tape /u1/majordomo/lists /usr/marilyn /u1/majordomo/polls /u1/eVote/data /u1/eVote/src /u1/eVote/doc /usr/local/majordomo /root/timeset /root/back* /root/put* /root/killem  /etc/aliases /etc/passwd /usr/local/canned_reply > /root/xoko_tar.log
+
+if [ $? -ne 0 ] 
+ then
+   echo "FAILED AT TAR OF REST" >> /u1/tmp/tomail
+   ls -l /u1/tmp/* >> /u1/tmp/tomail
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+diff /var/log/messages /u1/tmp/messages | grep kernel > /u1/tmp/kernel.errs
+if [ -s /u1/tmp/kernel.errs ]
+  then
+   echo "FAILED AT TAR OF REST" >> /u1/tmp/tomail
+   ls -l /u1/tmp/* >> /u1/tmp/tomail
+   cat /u1/tmp/kernel.errs >> /u1/tmp/tomail	
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+
+echo "The tar of the rest worked:" >> /u1/tmp/tomail
+ls -l /u1/tmp/* >> /u1/tmp/tomail
+ftp -i xoko < /root/put_rest >& /u1/tmp/ftp.error
+if [ $? -ne 0 ] 
+ then
+   echo "FAILED AT FTP TO XOKO OF REST" >> /u1/tmp/tomail
+   cat /u1/tmp/ftp.error >> /u1/tmp/tomail	
+   mail marilyn -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   mail clint.davis@hds.com -s "Backup to Xoko Failed" < /u1/tmp/tomail
+   exit
+fi
+echo "The ftp of the rest worked." >> /u1/tmp/tomail
+mail -s "Backup to Xoko Worked" marilyn < /u1/tmp/tomail

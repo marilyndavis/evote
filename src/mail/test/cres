@@ -1,0 +1,24 @@
+# $Id: cres,v 1.4 2003/04/07 18:31:31 marilyndavis Exp $ 
+# cres -- clerk's reset program
+# To use this, you should have already run csetup when the environment
+# was right ready to produce a bug.  This program will set things up
+# to produce that bug again.
+#
+# This should be run under the clerk login.  mres should be run under
+# majordom's login.
+#
+# By default, it thinks that "home" is EVOTE_HOME_DIR.  Give
+# the path as an argument if that's not right for you.
+#
+if [ $# -lt 1 ]
+  then
+    EVOTE_HOME_DIR="/home"
+  else
+    EVOTE_HOME_DIR=$1
+fi
+eVote quit
+eVote stop_ipc
+rm $EVOTE_HOME_DIR/eVote/data/*
+cp $EVOTE_HOME_DIR/eVote/data/bugdata/* $EVOTE_HOME_DIR/eVote/data
+eVote
+

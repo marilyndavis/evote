@@ -1,0 +1,189 @@
+# $Id: trans.skips,v 1.3 2003/01/15 18:54:13 marilyndavis Exp $ 
+#
+#  This is a list of strings/phrases that should not be translated.
+#  Add or subtract from this list as your application requires.
+#
+#  Be careful that you don't add any white space at the end of
+#  the lines.
+#
+#  To be excluded from the phrases, the phrase must match one of
+#  these exactly -- case sensitive.
+#
+#  If your code has #ifdef XYZ and you want the code to be ignored
+#  that is between such #ifdef's and their matching #endif's
+#  Put ifdef-XYZ in the list.  You can have multiple ignored #ifdef's.
+
+0 from pull after push in store_signature
+0 stamp in store_signature
+ACC
+a
+anahuak-de
+anahuak-en
+anahuak-es
+anahuak-fr
+Ann@maclane.org
+argv[0] = <%s:argv[0]>
+argv[<%d:k>] = <%s:argv[k]>
+argv[<%d:k>] = <%s:argv[k]>
+bounces
+cat <%s:cat_file> >> <%s:EMERGENCY_FILE>
+Cc
+config
+Content-Length
+Content-Transfer-Encoding: 8bit
+Content-Type
+Content-Type: text/plain; charset=ISO-8859-1
+cp <%s:tmp_file_name> <%s:var_name>
+cp <%s:tmp_file_name> <%s:fname>
+cp <%s:file_name> <%s:file_name>.back
+cp <%s:fname> <%s:fname>.backup_from_eVote
+cp <%s:tmp_file_name> <%s:listdir>/<%s:list_name>
+Charlie@deliberate.com
+Date
+Date: <%s:date_str(&now)>
+Encoding
+en
+end
+es
+e-vote
+eVote
+eVote@deliberate.com
+eVote@<%s:whereami>
+for major
+fr
+From
+From <%s:from_str>
+From: <%s:from_str>
+ftp -i
+How can a petition signer be on vacation?
+id
+ifdef-MARCH
+k= <%d:k>, <%s:argv[k]>
+Kopilli Ketzalli
+kopilli-de
+kopilli-en
+kopilli-es
+kopilli-fr
+listdir
+listdir = <%s:listdir>
+localhost
+mailer = <%s:mailer>
+mailer_eV
+majordomo@deliberate.com
+majordomo@<%s:whereami>
+majordomo-owner
+MAJORDOMO_PL
+Message-Id
+Message-ID: <<%d:tm->tm_year+1900><%02d:tm->tm_mon+1><%02d:tm->tm_mday><%02d:tm->tm_hour><%02d:tm->tm_min><%02d:tm->tm_sec>.eVote.<%s:(version[i] == ' '? &version[++i] : "0")>.<%05ld:(int)((65534.*rand()/(RAND_MAX+1.0)) + .5)>@<%s:whereami>>
+MIME-Version: 1.0
+owner-<%s:list_name>
+owner-<%s:list>
+owner-<%s:list><%s:at_where>
+owner-majordomo
+passwd
+path = <%s:path>
+petitionxyz
+Precedence
+pres@whitehouse.gov
+r
+Re
+Received
+Reply-To
+Reply-To: <%s:from_str>
+Reply-To: <%s:list><%s:at_where>
+Return-Path
+rm <%s:EMERGENCY_FILE>
+rm <%s:failed_tmp_file_name>
+rm <%s:tmp_file_name>
+root owner-majordomo
+rw
+Sender
+Sender: <%s:from_str>
+Sender: <%s:list>-eVote<%s:at_where>
+Sender: <%s:list>-eVote@<%s:whereami>
+SIGABRT
+SIGALARM
+SIGBUS
+SIGEMT
+SIGFPE
+SIGHUP
+SIGILL
+SIGINT
+SIGPOLL
+SIGPWR
+SIGQUIT
+SIGSEGV
+SIGSYS
+SIGTERM
+SIGTRAP
+Subject
+subject_prefix
+Subject: <%s:new_subject>
+subscribe
+SUBSCRIBE
+To
+To: <%s:from>
+To: <%s:list><%s:at_where>
+To: majordomo<%s:at_where>
+To: owner-<%s:list>
+To: owner-majordomo
+UNSUBSCRIBE
+VOTE
+VOTED
+w
+WEXITSTATUS = <%d:WEXITSTATUS(status)>
+whereami
+whereami = <%s:whereami>
+WIFEXITED = <%d:cc3 = WIFEXITED(status)>
+WIFSIGNALED = <%d:cc3 = WIFSIGNALED(status)>
+WTERMSIG = <%d:WTERMSIG(status)>
+wr
+x
+X-Mail-Server
+X-Mailer
+-
+-approval
+!ACC
+$DATE
+<%d:len>d s
+<<%s:target>><%c:(cc == EOF? '\n' : cc)>
+-De
+-En
+-Es
+/etc/majordomo.cf
+/eVote
+/eVote.help
+-f
+-f<%s:list>-eVote
+-feVote
+-Fr
+(fwd)
+_insert
+-l
+/lists
+$LIST
+/majordomo.cf
+-Na
+/polls/<%s:lclist>
+/polls/<%s:lclist>/<%s:buf>
+/polls/<%s:lclist>/reports/<%s:report->file_name>
+/polls/<%s:lclist>/signatures
+/polls/<%s:lclist>/signatures/<%s:file_key(p_item)>
+/polls/<%s:lclist>/signatures/P<%lu:p_item->static_id.local_id>
+/polls/<%s:lclist>/P<%lu:p_item->static_id.local_id>
+[R]
+-r
+<%s:full_name>.var
+<%s:fname>T
+<%s:list>-eVote<%s:at_where>
+text
+/tmp/em.tmp
+/tmp/ftp.debug
+/tmp/ftp.err
+/trace.out
+/usr/lib/sendmail -f <%s:list>-eVote@<%s:whereami> -t
+/usr/local/eVote/src/mail
+!VOTE
+!VOTED
+
+

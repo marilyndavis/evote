@@ -1,0 +1,106 @@
+# $Id: README,v 1.3 2003/01/15 18:54:12 marilyndavis Exp $ 
+
+Tools associated with eVote:
+
+In the "utils" directory
+
+eVote_script - Takes control of where errors land.  Call this in the 
+               alias file.
+
+unhex.c    - Reads stdin and looks for hex code that comes from a mailto.
+             It replaces the hex code with ascii characters and puts the
+             result on stdout and executes its command line.  Useful
+             in the alias file.
+
+unhtml.c   - This feature is courtesy of Zapatistas.  If you make an 
+             alias entry:
+
+unhtml: "|/usr/local/majordomo/wrapper unequal unhtml deaccent sorter\
+    -er return -en return -es return -it return -o return sendmail -t"
+       
+             people can send html files to the address:
+
+             unhtml@your_site.net
+
+             and a copy of the html will be sent back, but with much
+             of the html code removed.
+
+             unequal.c  converts an email with quoted printables to 8
+                        bit text.
+
+             deaccent.c converts email with accented letters to 7 bit.
+
+             sorter.c   sorts mail by language and mails it to the 
+                        address indicated for the language.  It is in
+                        this chain of programs because it sends the
+                        results to the "return" address.
+
+tryagain.c - Sample crash_command for the Clerk.  When called from
+             the dying Clerk, it restarts the Clerk unless it's been
+             less than TOO_SOON seconds since the last time the Clerk
+             died, in which case, it turns off the modem.  It sends
+             mail in any case.
+
+embed   --   Utility to help get started when embedding The Clerk into
+             another program.
+
+ipctest --   Run this to learn your systems values for MSGMNI, MSGTQL,
+             MSGMAX, and SHMMNI.
+---
+
+In the "filters" directory
+
+angel.c  -  For creating an angel@yourdomain.com address where people
+            can .forward their mail.  The angel program will detect mail
+            from majordomo-run lists and send an unsubscribe.  This is
+            for cleaning up after mail attacks.
+
+fence.c   - For putting into an alias to block junk on from your email
+            lists and to unsubscribe your lists from list-subscribe
+            attacks.
+
+forward.c - Forwards mail from one address to another but also changes
+            specified strings in the subject line.
+
+pick.c    - Incoming mail that's in English goes to one address, Spanish
+            to another, etc.  Allows the elimination of specified strings.
+            The From: address can be specified on the command line.
+
+puppet.c  - Allows a user on the local machine to send mail from a trusted
+            external address that will be sent out looking like it came
+            from the local address.  That way, it appears that you are
+            at your desk when you are really at your boyfriend's house.
+
+shelter.c - For creating a someone@yourdomain.com fake address that
+            that hides their real address off-site.
+
+
+
+---
+
+In the "trans" directory
+
+trans.c   -  Aid for translating C code to other human languages.
+
+---
+
+embed    -  Utility for starting the process of embedding eVote functions
+            into another groupware program.
+
+
+---
+
+In the "errors" directory
+
+printips.c-  Part of the output from the eVote_errors program, in
+             $EVOTE_HOME_DIR/eVote/src/mail, is a set of files, one
+             for each ip address in the list of bad_guys.
+
+             This little program puts all those reports into one file:
+             stdout.  You can redirect:  printips > ipreport
+
+strings.c -  Uses the output of printips and looks for repetitive
+             strings in the attack data.
+
+           
+

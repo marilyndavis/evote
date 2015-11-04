@@ -1,0 +1,1172 @@
+#   con -- Special Test for La Consulta, tests petitions with votes.
+#   con UI_BIN 
+#   UI_BIN = /home/majordomo by default -- where is eVote_insert?
+#
+
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/home/majordomo"
+  else
+    UI_BIN=$1
+fi
+./mscratch
+touch con.out
+mv con.out con.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> con.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> con.out
+ echo " " >> con.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> con.out
+ echo " " >> con.out
+ cat  tmp$$ >> con.out
+ cat  tmp$$ > x
+ echo " " >> con.out
+ echo "***** To stderr comes: *****" >> con.out
+ echo " " >> con.out
+
+ $CALL < tmp$$ 2>> con.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f tmp/r.out ]   
+   then
+     echo "                    LIST " >> con.out
+     echo "***** r.out sent to LIST, says *****" >> con.out
+     echo " " >> con.out
+     cat tmp/r.out >> con.out
+     echo " " >> con.out
+     rm tmp/r.out
+ fi
+                    
+ if [  -f tmp/t.out ]
+    then
+      echo "                     MAILER" >> con.out
+      echo "***** t.out, sent to MAILER, says *****" >> con.out
+      echo " " >> con.out
+      cat tmp/t.out >> con.out
+      echo " " >> con.out
+      rm tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it kall " >> con.out
+
+fi
+
+#############  START  ####################
+
+echo " " > con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "    STARTING  STARTING  STARTING " >> con.out
+echo " " >> con.out
+
+TO="petitiona-approval@xoko"
+FROM="pollstera@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+
+try_that
+try_that
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   THE VOTE THE VOTE THE VOTE " >> con.out
+echo " " >> con.out
+
+TO="petitiona@xoko"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+SUBJECT="The Consultation -eVote"
+
+cat << EOF > MESS
+eVote poll group private visible
+1. uno [-1,1]
+2. dos [-1,1]
+3. tres [-1,1]
+4. cuatro [-1,1]
+5. cinco [-1,1]
+message:
+This poll accompanies the petition on the consulta.
+EOF
+try_that
+
+SUBJECT="Solidarity"
+cat << EOF > MESS
+eVote petition public confirm
+form:
+email: -fr email: -es email: 
+message:
+I register my support for the Zapatista Army of National Liberation in
+its initiative of dialogue and peace.
+-es Solidaridad
+Registro en apoyo del Ejercito Zapatista del Liberacion Nacional en
+sus consulta de dia'logo y paz.
+-fr Solidarite
+J'enregistre mon appui pour l'Arme'e Zapatistane de Libe'ration
+Nationale (EZLN) pour son initiative de dialogue et de paix.
+EOF
+
+try_that
+
+SUBJECT="The Consultation"
+cat << EOF > MESS
+eVote petition public confirm
+form:
+*country: -es pais: -fr pays: 
+name: -fr nom: -es nombre:
+email: -fr email: -es email:
+message:
+QUESTION 1: -Do you agree that indigenous peoples should be included,
+with all of their strength and wealth, in the national project and
+should take an active part in the construction of a new Mexico?
+
+QUESTION 2: -Do you agree that indigenous rights should be recognized
+in the Mexican Constitution in conformance with the San Andres Accords
+and the corresponding proposition put forth by the Commission of
+Concordance and Pacification of the Congress of the Union?
+
+QUESTION 3: -Do you agree that we should reach true peace through the
+path of dialogue, demilitarizing the country and returning soldiers to
+their barracks, as the Constitution and the law establish?
+
+QUESTION 4: -Do you agree that the people should organize themselves
+and demand that the government "command by obeying" in all aspects of
+the national life?
+
+QUESTION 5: -Do you agree that Mexicans who live abroad should be an
+active part in the construction of a new Mexico and have the right to
+vote in the elections?
+-es La Consulta
+Pregunta 1. - ?Esta's de acuerdo en que los pueblos indi'genas deben
+ser incluidos con toda su fuerza y riqueza en el proyecto nacional y
+tomar parte activa en la construccio'n de un Me'xico nuevo?
+
+Pregunta 2. - ?Esta's de acuerdo en que los derechos indi'genas deben
+ser reconocidos en la constitucio'n Mexicana conforme a los acuerdos
+de San Andre's y la propuesta correspondiente de la comisio'n de
+concordia y pacificacio'n del congreso de la unio'n?
+
+Pregunta 3. - ?Esta's de acuerdo en que debemos alcanzar la paz
+verdadera por la vi'a del dia'logo, desmilitarizando el pai's con el
+regreso de los soldados a sus cuarteles como lo establecen la
+constitucio'n y las leyes?
+
+Pregunta 4. - ?Esta's de acuerdo en que el pueblo debe organizarse y
+exigir al gobierno que "Mande obedeciendo" en todos los aspectos de la
+vida nacional?
+
+Pregunta 5. - ?Esta's de acuerdo en que los mexicanos y mexicanas que
+radican en el extranjero deben ser parte activa en la construccio'n de
+un Me'xico nuevo y tener derecho al voto en las elecciones?
+-fr La Consultation
+QUESTION 1: -Etes-vous d'accord avec la proposition que les peuples
+indige\`nes devraient e^tre inclus, avec tous leurs points forts et
+richesses, dans le projet national et devraient prendre une part
+active dans la construction d'un nouveau Mexique?
+
+QUESTION 2: -Etes-vous d'accord que les droits des indige\`nes
+devraient e^tre reconnus par la Constitution Mexicaine comme
+spe'cifie's par les Accords de San Andre's et la proposition
+correspondante pre'sente'e par la Commission d'Accord et de
+Pacification du Congre's de l'Union?
+
+QUESTION 3: -Etes-vous d'accord que nous devrions achever une paix
+ve'ritable par le dialogue, la de'militarisation du pays, et en
+renvoyant les soldats a\` leurs casernes, comme la constitution et la
+loi l'e'tablissent?
+
+QUESTION 4: -Etes-vous d'accord que les gens devraient s'organiser eux
+me^mes et demander que le gouvernement "dirige en obe'issant" envers
+chaque aspect de la vie nationale?
+
+QUESTION 5: -Etes-vous d'accord que tous les mexicains vivant a\`
+l'e'tranger devraient prendre une part active dans la reconstruction
+d'un nouveau Mexique, et devraient avoir le droit de vote aux
+e'lections?
+EOF
+try_that
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   FIRST TEST FIRST TEST FIRST TEST " >> con.out
+echo " " >> con.out
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+FROM="maria@somewhere.com"
+SUBJECT="Solidarity"
+cat << EOF > MESS
+info
+EOF
+try_that
+
+SUBJECT="Solidarity -es"
+try_that
+SUBJECT="Solidarity -fr"
+try_that
+SUBJECT="Solidarity -it"
+try_that
+
+SUBJECT="La Consulta -en"
+cat << EOF > MESS
+info
+EOF
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+country: USA
+And a comment
+EOF
+try_that
+
+
+SUBJECT="Confirm: 111112 La Consulta -en"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+
+SUBJECT="La Consulta -en"
+
+try_that
+
+cat << EOF > MESS
+remove
+EOF
+try_that
+SUBJECT="Confirm: 111112 La Consulta -en"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+SUBJECT="La Consulta -en"
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+name: Me
+email: 
+And a comment
+EOF
+try_that
+SUBJECT="La Consulta -en"
+
+cat << EOF > MESS
+pais: Me'xico
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+And a comment
+EOF
+try_that
+
+SUBJECT="La Consulta -en"
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+pais: USA
+nombre: marilyn
+email: some@at.com
+And a comment
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+SUBJECT="La Consulta -en"
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   ESPANOL ESPANOL ESPANOL " >> con.out
+echo " " >> con.out
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+FROM="mariaelena@somewhere.com"
+SUBJECT="La Consulta"
+cat << EOF > MESS
+ayuda
+EOF
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+country: USA
+And a comment
+EOF
+try_that
+
+SUBJECT="Confirm: 211111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+
+try_that
+
+cat << EOF > MESS
+borrar
+EOF
+try_that
+SUBJECT="Confirm: 211111 La Consulta -es"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+name: Me
+email: 
+And a comment
+EOF
+try_that
+SUBJECT="Confirma: 111111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+
+cat << EOF > MESS
+pais: Me'xico
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+And a comment
+EOF
+try_that
+
+SUBJECT="La Consulta -es"
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+pais: USA
+nombre: marilyn
+email: some@at.com
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+SUBJECT="La Consulta -es"
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   FRANCAIS FRANCAIS FRANCAIS " >> con.out
+echo " " >> con.out
+
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+FROM="gigi@somewhere.com"
+SUBJECT="La Consultation"
+cat << EOF > MESS
+aide
+EOF
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+country: USA
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 211111 La Consultation"
+
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="La Consultation"
+
+cat << EOF > MESS
+retirer
+EOF
+try_that
+SUBJECT="Confirm: 211111 La Consultation"
+
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="La Consultation"
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+name: Me
+email: 
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="La Consultation"
+
+cat << EOF > MESS
+pais: Me'xico
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="La Consultation"
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+pays: USA
+nom: marilyn
+email: some@at.com
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+
+try_that
+SUBJECT="La Consultation"
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   ITALIANO ITALIANO ITALIANO " >> con.out
+echo " " >> con.out
+
+
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+FROM="mariaitti@somewhere.com"
+SUBJECT="La Consulta -it"
+cat << EOF > MESS
+aiuto
+EOF
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+country: USA
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 211111 La Consulta -it"
+
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="La Consulta -it"
+
+cat << EOF > MESS
+cancellare
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="La Consulta -it"
+try_that 
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+name: Me
+email: 
+And a comment
+fine
+More that ought not show up.
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="La Consulta -it"
+
+cat << EOF > MESS
+paese: Me'xico
+nome: Spaghetti
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="La Consulta -it"
+
+cat << EOF > MESS
+1. Y
+2. Y
+3. Y
+4. Y
+5. Y
+pais: USA
+nombre: marilyn
+email: some@at.com
+And a comment
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+SUBJECT="La Consulta -it"
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   AND ON AND ON AND ON " >> con.out
+echo " " >> con.out
+
+FROM="pollstera@somewhere.com"
+
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+
+try_that
+
+SUBJECT="La Consulta"
+try_that
+SUBJECT="La Consulta -it"
+try_that
+SUBJECT="La Consultation"
+try_that
+SUBJECT="The Consultation -Fr"
+try_that
+
+cat << EOF > MESS
+whoops no vote
+EOF
+try_that
+
+# good to here
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   GOOD VOTE GOOD VOTE GOOD VOTE " >> con.out
+echo " " >> con.out
+
+cat << EOF > MESS
+1. Yes
+2. "Yes"
+3. 1
+4. Si
+5. "Si'"
+pais: Me'xico
+email: yes
+Aqui' esta' me comentario.
+Soy Mariaitti Uno
+EOF
+try_that
+
+# ok to here
+
+
+SUBJECT="Confirm: 211111 The Consultation -Fr"
+try_that
+SUBJECT="Confirm: 111111 The Consultation -Fr"
+try_that
+SUBJECT="Confirm: 111111 The Consultation -Fr"
+try_that
+SUBJECT="The Consultation -Fr"
+try_that
+
+FROM="maria1@somewhere.com"
+try_that
+
+
+
+FROM="maria1@somewhere.com"
+cat << EOF > MESS
+1. No
+2. N
+3. "N"
+4. -1
+5. "Si'"
+country: Here
+Soy Maria Uno
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+SUBJECT="La Consultation"
+FROM="maria2@somewhere.com"
+cat << EOF > MESS
+1. Non
+2. Non
+3. Je ne sais pas
+4. "Je ne sais pas"
+5. "OUI"
+Y yo soy Maria2
+EOF
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+SUBJECT="La Consultation"
+SUBJECT="The Consultation -Fr"
+FROM="maria3@somewhere.com"
+cat << EOF > MESS
+1. "N"
+2. 'N'
+3. -1
+4. 0
+5. "Si'"
+country: Me'xico
+Maria mas aqui'.
+EOF
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+SUBJECT="La Consulta"
+FROM="maria4@somewhere.com"
+SUBJECT="Confirm: 21111 La Consulta"
+try_that
+
+
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+SUBJECT="Confirm: 211111 La Consulta"
+try_that
+SUBJECT="La Consulta"
+try_that
+SUBJECT="La Consulta -it"
+try_that
+SUBJECT="Confirm: 211111 La Consulta -it"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+try_that
+SUBJECT="Confirm: 211111 La Consulta -it"
+try_that
+SUBJECT="La Consulta"
+try_that
+
+FROM="maria5@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+SUBJECT="La Consulta"
+
+
+FROM="pollstera@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+
+FROM="pollstera@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="The Consultation"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote names
+end
+EOF
+try_that
+
+SUBJECT="The Consultation -eVote"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who
+end
+EOF
+try_that
+
+cat /usr/local/majordomo/lists/petitiona >> con.out
+
+
+echo " " >> con.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> con.out
+echo "   REMOVE REMOVE REMOVE " >> con.out
+echo " " >> con.out
+
+SUBJECT="The Consultation"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+cat << EOF > MESS
+remove
+end
+EOF
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+SUBJECT="The Consultation"
+
+SUBJECT="The Consultation -eVote"
+FROM="pollstera@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+FROM="pollstera@somewhere.com"
+TO="petitiona@xoko"
+cat << EOF > MESS
+eVote stats
+EOF
+try_that
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="The Consultation -es"
+cat << EOF > MESS
+remove
+EOF
+try_that
+SUBJECT="Confirm: 111111 The Consultation -es"
+try_that
+
+SUBJECT="La Consultation"
+FROM="maria1@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 La Consultation"
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="The Consultation -eVote"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="La Consulta"
+cat << EOF > MESS
+remove
+EOF
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+SUBJECT="La Consulta"
+
+FROM="maria1@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+SUBJECT="La Consulta"
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="The Consultation -eVote"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+SUBJECT="The Consultation"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="The Consultation"
+cat << EOF > MESS
+remove
+EOF
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+SUBJECT="The Consultation"
+try_that
+
+
+FROM="maria2@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+
+SUBJECT="La Consultation"
+FROM="maria3@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+SUBJECT="The Consultation -eVote"
+TO="petitiona@xoko"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+SUBJECT="The Consultation"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+cat << EOF > MESS
+quitar
+EOF
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+SUBJECT="The Consultation"
+FROM="maria4@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+SUBJECT="La Consulta -it"
+FROM="maria5@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 The Consultation"
+try_that
+
+FROM="pollstera@somewhere.com"
+SUBJECT="The Consultation -eVote"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote names
+end
+EOF
+try_that
+
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who
+end
+EOF
+try_that
+
+cat /usr/local/majordomo/lists/petitiona >> con.out
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="La Consulta -en"
+cat << EOF > MESS
+ayuda
+EOF
+try_that
+
+SUBJECT="The Consulta -it"
+cat << EOF > MESS
+help
+EOF
+try_that
+SUBJECT="The Consultation -es"
+try_that
+
+SUBJECT="Not THere -fr"
+try_that
+
+FROM="maria1@somewhere.com"
+cat << EOF > MESS
+Here is my address 
+pollster1
+EOF
+try_that 
+# good to here
+SUBJECT="The Consultation -es"
+try_that
+SUBJECT="The Consultation -en"
+try_that
+SUBJECT="The Consultation -it"
+try_that
+SUBJECT="The Consultation -xx"
+try_that
+SUBJECT="La Consulta"
+try_that
+SUBJECT="La Consulta"
+try_that
+SUBJECT="La Consulta -en"
+try_that
+SUBJECT="La Consulta -es"
+try_that
+SUBJECT="La Consulta -fr"
+try_that
+SUBJECT="La Consulta -it"
+try_that
+
+cat << EOF > MESS
+1. Y
+2. Frix
+3. N
+4. Maybe
+5. 0
+country: Me'xico
+email: Si
+here is a comment
+EOF
+try_that
+
+SUBJECT="The Consultation -es"
+try_that
+SUBJECT="The Consultation -en"
+try_that
+SUBJECT="The Consultation -xx"
+try_that
+SUBJECT="La Consulta"
+try_that
+SUBJECT="La Consulta -en"
+try_that
+SUBJECT="La Consulta -it"
+try_that
+SUBJECT="La Consulta -fr"
+try_that
+
+
+cat << EOF > MESS
+1. "Y"
+2. Si.
+3. N,
+4. Maybe!
+5. ?
+country: Me'xico
+here is a comment
+EOF
+try_that
+
+FROM="maria2@somewhere.com"
+SUBJECT="The Consultation"
+try_that
+FROM="maria3@somewhere.com"
+SUBJECT="The Consultation -es"
+try_that
+FROM="maria4@somewhere.com"
+SUBJECT="The Consultation -xx"
+try_that
+SUBJECT="La Consulta -it"
+try_that
+FROM="maria5@somewhere.com"
+SUBJECT="La Consulta"
+try_that
+FROM="maria5@somewhere.com"
+SUBJECT="La Consulta"
+try_that
+FROM="maria6@somewhere.com"
+SUBJECT="La Consulta -es"
+try_that
+FROM="maria7@somewhere.com"
+SUBJECT="La Consulta -en"
+try_that
+FROM="maria8@somewhere.com"
+SUBJECT="La Consulta -xx"
+try_that
+FROM="maria9@somewhere.com"
+SUBJECT="La Consulta -eVote"
+try_that
+
+FROM="pollstera@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="The Consultation"
+
+cat << EOF > MESS
+eVote names
+EOF
+try_that 
+#good to here
+SUBJECT="The Consultation -eVote"
+
+cat << EOF > MESS
+eVote stats
+EOF
+try_that
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+FROM="maria2@somewhere.com"
+SUBJECT="La Consulta -it"
+cat << EOF > MESS
+remove
+EOF
+try_that
+SUBJECT="Confirm: 111111 La Consulta -it"
+try_that
+
+SUBJECT="La Consulta -it"
+try_that
+FROM="maria3@somewhere.com"
+SUBJECT="The Consultation -es"
+try_that
+SUBJECT="Confirm: 111111 The Consultation -es"
+try_that
+
+
+FROM="maria4@somewhere.com"
+SUBJECT="The Consultation -xx"
+try_that
+SUBJECT="Confirm: 111111 The Consultation -xx"
+try_that
+FROM="maria5@somewhere.com"
+SUBJECT="La Consulta"
+try_that
+SUBJECT="Confirm: 111111 La Consulta"
+try_that
+FROM="maria6@somewhere.com"
+SUBJECT="La Consulta -es"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -es"
+try_that
+#good to here
+FROM="maria7@somewhere.com"
+SUBJECT="La Consulta -en"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -en"
+try_that
+FROM="maria8@somewhere.com"
+SUBJECT="La Consulta -xx"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -xx"
+try_that
+FROM="maria9@somewhere.com"
+SUBJECT="La Consulta -eVote"
+try_that
+SUBJECT="Confirm: 111111 La Consulta -eVote"
+try_that
+
+FROM="pollstera@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="The Consultation"
+
+cat << EOF > MESS
+eVote names
+EOF
+try_that 
+
+#good to here
+
+SUBJECT="The Consultation -eVote"
+cat << EOF > MESS
+eVote stats
+EOF 
+try_that
+
+

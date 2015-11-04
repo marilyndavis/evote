@@ -1,0 +1,1417 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+"<%s:name>" is not part of the form for:
+
+	"<%s:original_subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+"<%s:name>" no es parte de la forma para:
+
+	"<%s:original_subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+- - - - end of signature - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+- - - - fin de la firma - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+- - - - start of signature - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+- - - - principio de la firma - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+---  cut here ---
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+---  corta aqui ---
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+----- YOUR MESSAGE AWAITING CONFIRMATION -----
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+----- SU MENSAJE ESPERANDO PARA CONFIRMACIO'N -----
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+1.  Send a message to
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+1.  Envie un mensaje a
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+2.  The subject line doesn't matter
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+2.  No importa lo que contenga la li'nea de "Subject"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+2.  Your subject line should match the petition title
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+2.  Lo que ud. escribe en la li'nea de "Subject" debe ser igual 
+    al ti'tulo de la peticio'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+2.  Your subject must be
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+2.  En "Subject" tiene que escribir
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+3.  In your message, please paste in the following form and
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+3.  En su mensaje, favor de pegar la siguiente forma y
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+3.  Please make your message look like
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+3.  Favor de arreglar su mensaje para que se parezca asi
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+3.  Your message should say
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+3.  Su mensaje debe decir
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:file_error>
+	<%s:fname> 
+
+to read this petition's text
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:file_error>
+	<%s:fname>
+
+para leer el texto de esta peticio'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:(notes > 1 ? "NOTES" : "NOTE")>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:(notes > 1 ? "NOTAS" : "NOTA")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%lu:voters> <%s:(no_pet_votes ? "vote" : "signature")><%s:(voters == 1L ? " has" : "s have")> been collected so far
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%lu:voters> <%s:(no_pet_votes ? "voto" : "firma")><%s:(voters == 1L ? " ha" : "s han")> sido recopilado<%s:(voters == 1L ? "" : "s")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%lu:voters> <%s:(no_pet_votes ? "vote" : "signature")><%s:(voters == 1L ? " was" : "s were")> collected
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%lu:voters> <%s:(no_pet_votes ? "voto" : "firma")><%s:(voters == 1L ? " fue" : "s fueron")> recopilada<%s:(voters == 1L ? "" : "s")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:name> has been unsigned.
+The text removed was
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:name> ha sido borrado
+El texto que fue borrado es
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:name> has not <%s:(no_pet_votes ? "voted in" : "signed" )> "<%s:subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:name> no <%s:(no_pet_votes ? "ha votado" : "firme" )> "<%s:subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:whereami> is out of resources right now.  Please try your message later
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:whereami> no tiene recursos disponibles ahorita. Favor de intentar ma's tarde
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%lu:voters> voter<%s:(voters == 1L? "" : "s")> participated in this poll
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%lu:voters> votante<%s:(voters == 1L? " ha" : "s han")> participado en esta urna
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:(no_of_fields - required == 1?"An answer is":"Answers are")> optional for
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:(no_of_fields - required == 1?"Respuesta es opcional":"Respuestas son opcionales")> para
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%d:i+1>. <%s:(pet_vote[i] == 0 ? "Don't know" : 
+			       (pet_vote[i] == 1
+				? "Yes" : "No"))>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%d:i+1>. <%s:(pet_vote[i] == 0 ? "No Se'" : 
+			       (pet_vote[i] == 1
+				? "Si'" : "No"))>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%d:i>. Your vote
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%d:i>. Su voto
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:er><%s:fname><%s:er2>Please forward this to <%s:responsible_party>@<%s:whereami>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:er><%s:fname><%s:er2>Favor de enviar e'sto a
+<%s:responsible_party>@<%s:whereami>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:instruction>where you replace all 9's with the correct numbers
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:instruction>donde Ud. escribe los nu'meros correctos en el lugar de
+todos los 9s
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:instruction>where you replace all 9's with the correct numbers and all X's 
+with the correct letters
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:instruction>donde Ud. escribe los nu'meros correctos en el lugar de
+todos los 9s y las letras correctas en el lugar de todas las Xs
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+<%s:instruction>where you replace all X's with the correct letters
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:instruction>donde Ud. escribe las letras correctas en el lugar de
+todas las Xs
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+================    START OF MESSAGE RECEIVED ===================
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+===============    INICIO DEL MENSAJE RECIBIDO ==================
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+=====================    END OF MESSAGE   =======================
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+===================     FIN DEL MENSAJE   =======================
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+A petition titled
+
+	 "<%s:get_trans(subject, which, YES)>"
+
+is offered to non-Mexicans in support of
+
+	<%s:consulta>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Una peticio'n llamada
+
+	 "<%s:get_trans(subject, which, YES)>"
+
+se ofrece a quienes no son mexicanos para apoyar
+
+	<%s:consulta>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+After you reply-to this message, the following will be recorded
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Despues de usa "reply-to" para este mensaje, lo siguente grabara'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+and
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+y
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+BILINGUAL?
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+BILINGUE?
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Can't read this poll/petition's text
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No se puede leer el texto de esta urna/peticio'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+comment
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+comentario
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Confirm: <%s:confirm_this.key>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Confirme: <%s:confirm_this.key>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+doesn't recognize your response for question <%d:no>.
+You responded "<%s:answer>".  You must answer
+"Yes", "No", or "Don't Know."
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+no reconose su respuesta para la pregunta <%d:no>.
+Usted respondi'o "<%s:answer>". Usted debe de contestar 
+"Si'", "No" o "No Se'."
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+doesn't recognize your response for question <%d:no>.
+You responded "<%s:answer>".  You must answer a number between <%d:(p_first_vote_item+no)->eVote.min> and <%d:(p_first_vote_item+no)->eVote.max>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+no reconose su respuesta para la pregunta <%d:no>.
+Usted respondi'o "<%s:answer>". Usted debe de contestar entre <%d:(p_first_vote_item+no)->eVote.min> y <%d:(p_first_vote_item+no)->eVote.max>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Don't know
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No se'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+email
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+email
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Error
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Error
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+ERROR! <%s:fname> 
+
+Can't open temporary file lock to store 
+your signature for "<%s:subject>".
+Please try later
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+ERROR! <%s:fname>
+No se puede abrir el seguro del archivo temporal para guardar 
+su firma para "<%s:subject>".
+Favor de intentar ma's tarde
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+ERROR! Empty file
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+ERROR! Archivo vaci'o
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+ERROR! Unable to remove tmp file: <%s:fname>T
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+ERROR! No se puede borrar el archivo temporal: <%s:fname>T
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+expects a vote response like "1. Yes" at this point
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+a este punto espera un respuesta en el voto como la siguiente "1. Si'"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+expects an answer to the questions of the Consulta as follows:
+
+1. Yes
+2. Yes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+espera una respuesta a las preguntas de la Consulta como la siguiente:
+
+1. Si'
+2. Si'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+expects an answer to the questions of the Consulta as follows:
+1. Yes
+2. Yes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+espera una respuesta a las preguntas de la Consulta como la siguiente:
+1. Si'
+2. Si'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+fill in the fields
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+llene los espacios
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+For information about a particular petition
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para recibir informacio'n sobre alguna peticio'n en especial
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+GATHERING
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+ENCUENTRO
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+However, you do have a confirmation key "<%s:file_key>" pending
+on "<%s:subject>".
+
+Note that eVote only keeps your most recent attempt.  The following
+is the message that awaits confirmation.  To confirm it, reply to 
+this message.
+
+If you wish to send in a new message for <%s:subject>,
+try again, but don't put "Confirm: <%s:confirm_this.key>" in your subject
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Sin embargo, Vd. tiene un llave de confirmacio'n "<%s:file_key>" 
+que esta esperando para <%s:subject>.
+
+Nota que eVote guarda solo su intencio'n mas rece'n.  Lo siguente es
+el mensaje que esta esperando para confirmacio'n.  Para confirmar lo,
+manda Ud. un mensaje usando "reply-to" con este mensaje.
+
+Si Ud. quiere mandar un mensaje nuevo para <%s:subject>,
+trata de nuevo, sino no escribe "Confirma: <%s:confirm_this.key>" en la li'nea
+de "Subject"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+If you feel that you <%s:(no_pet_votes ? "voted" : "signed")> in error, please remove your <%s:(no_pet_votes ? "vote" : "signature")>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Si Ud. piensa que ha <%s:(no_pet_votes ? "votado" : "firmado")> equivocadamente favor de borrar su <%s:(no_pet_votes ? "voto" : "firma")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Si Ud. quiere borrar su firma, favor de hacerlo pronto.  Despue's de 
+una semana, su firma puede ser enviada a Viena para ser contada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Si Ud. sabe escribir en alema'n, espa~ol o france's tanto como en 
+ingle's, y si quiere ayudar con traducciones para los Yankuikanahuak
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+In response to your message
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+En respuesta a su mensaje
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+In response to your message which starts
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+En respuesta a su mensjae que empieza
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+In the list below:
+
+PUBLIC  petitions allow anyone on the <%s:list>@<%s:whereami>
+        list to retrieve the signatures, but not the email addresses,  
+        attached to the petition.  Also, anyone who signs the petition
+        can retrieve the signatures.  There are no controls on the use
+        of your signature.  Your email address is used to ensure that there
+        is only one signature per address and for no other purpose.
+
+PRIVATE petitions allow only the petition's initiator and the system
+        administrator at <%s:whereami> to retrieve the signatures.
+        The email addresses are available to both people as well
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+En la lista que viene abajo:
+
+PUBLICAS Las peticio'nes PUBLICAS permiten a cualquier persona en 
+         la lista <%s:list>@<%s:whereami> recuperar las firmas, sino
+         no las direccio'nes de correo electro'nico,  que vienen
+         adjuntas a la peticio'n.  Adema's, cualquier persona 
+         que firma la peticio'n puede recuperar las firmas.  No hay 
+         controles en el uso de su firma. Utilizamos su direccio'n 
+         de correo electro'nico para asegurar que so'lo haya una 
+         firma por cada direccio'n, y para ningun otro propo'sito.
+
+PRIVADAS Las peticio'nes PRIVADAS solamente permiten a quien inicia 
+         la peticio'n y el administrador del sistema en <%s:whereami> 
+         a recuperar las firmas.  Tambie'n las dos personas pueden 
+         conocer a las direccio'nes de correo electro'nico
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+info
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+info
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+INSTRUCTIONS FOR <%s:raise(uppers, tongue[which_language].name)>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+INSTRUCCIONES PARA <%s:raise(uppers, tongue[which_language].name)>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+is unable to store your <%s:(no_pet_votes? "vote" : "signature")> for <%s:original_subject> now.
+
+Please try later
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+no puede guardar su <%s:(no_pet_votes? "voto" : "firma")> para <%s:original_subject> ahora.
+
+Favor de intentar ma's tarde
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+is unable to store your signaturefor <%s:subject> now.
+
+Please try later
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+no puede guardar su firma para <%s:subject> ahora.
+
+Favor de intentar ma's tarde
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+name
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+nombre
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+NEWSLETTER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+BOLETIN
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+No
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Non
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Non
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+On <%s:date_str(p_item->eVote.open)><%s:author_name> attached a <%s:(no_pet_votes? "poll" : "petition")> to this subject:
+
+	 "<%s:get_trans(subject, which, YES)>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+El <%s:date_str(p_item->eVote.open)><%s:author_name> adjunto una <%s:(no_pet_votes? "urna" : "peticio'n")> a este "Subject":
+
+          "<%s:get_trans(subject, which, YES)>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Perhaps the instructions for "<%s:original_subject>" will help
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Quizás las instrucciones para "<%s:original_subject>" ayudara'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PETITION TEXT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+TEXTO DE LA PETICIO'N
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Please give your <%s:force_name(i)> only once when signing the petition for 
+"<%s:original_subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Favor de dar su <%s:force_name(i)> una vez solamente cuando esta'
+firmando la peticio'n para "<%s:original_subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Please limit your response for "<%s:field[i].name[the_language]>:" to <%d:FIELD_LEN> characters
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Por favor, limite su respuesta para "<%s:field[i].name[the_language]>:" a <%d:FIELD_LEN> letras
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Please replace the 9's with the correct numbers
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Favor de escribir los nu'meros correctos en el lugar de los 9s
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Please replace the X's with the correct letters
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Favor de escribir las letras correctas en el lugar de las Xs
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+POLL TEXT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+TEXTO DE LA URNA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Privacy
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Privacia
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PRIVATE PETITION
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+PETICIO'N PRIVADA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PRIVATE petitions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Peticio'Nes PRIVADAS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Programmer error!
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Error de programador!
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Programming error on pet_out.c:change
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Error de programador en pet_out.c:change
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Programming error on pet_out.c:check
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Error de programa en pet_out.c:check
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PUBLIC PETITION
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+PETICIO'N PUBLICA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PUBLIC petitions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Peticio'Nes PUBLICAS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+PUBLIC POLL
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+URNA PUBLICA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Rcpt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Recibo
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+remove
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+borrar
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+REMOVING YOUR SIGNATURE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+QUITANDO SU FIRMA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+REMOVING YOUR VOTE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+QUITANDO SU VOTO
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+RESULTS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+RESULTADOS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Solidarity
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Solidarity
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+System troubles at <%s:whereami>: Your <%s:(no_pet_votes ? "vote" : "signature")> was not recorded
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Problemas con el sistema en <%s:whereami>: Su <%s:(no_pet_votes ? "voto" : "firma")> no fue grabada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+System troubles at <%s:whereami>: Your <%s:(no_pet_votes ? "vote" : "signature")> was not removed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Problemas con el sistema en <%s:whereami>: Su <%s:(no_pet_votes ? "voto" : "firma")> no fue borrado
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Terrible trouble, can't reenter to update report after unsign
+ on <%s:original_subject>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Problemas graves, no se puede volver a entrar para actualizar el reporte
+despue's de borrar la firma en <%s:original_subject>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Thank you for participating in The Consultation for the Recognition
+of the Rights of the Indigenous and for the End of the War of Extermination
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Gracias por su participacio'n en la Consulta por el Reconocimiento de 
+los Derechos de los Pueblos Indios y por el Fin de la Guerra de Exterminio
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Thank you for participating in The International Consultation for the
+Recognition of the Rights of the Indigenous Peoples and for the End
+to the War of Extermination
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Gracias por su participacio'n en la Consulta por el Reconocimiento de
+los Derechos de los Pueblos Indios y por el Fin de la Guerra de
+Exterminio
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Thank you for your "remove" message on 
+
+	<%s:original_subject>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Gracias por su mensaje de "borrar" sobre
+
+	<%s:original_subject>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Thank you for your <%s:(no_pet_votes == 0 ? "signature" : (no_pet_votes == 1 ?
+						     "vote" : "votes"))> on
+
+	<%s:original_subject>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Gracias por <%s:(no_pet_votes == 0 ? "su firma" : (no_pet_votes == 1 ?
+						 "so voto" : "sus votos"))> on
+
+	<%s:original_subject>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Thank you.  You already <%s:(no_pet_votes ? "voted" : "signed the petition")> on 
+
+	<%s:original_subject>
+
+You can't <%s:(no_pet_votes ? "vote": "sign")> twice
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Gracias.  Ud. ya <%s:(no_pet_votes ? "voto'" : "firmo' la peticio'n")> sobre
+
+	<%s:original_subject>
+
+No se puede <%s:(no_pet_votes ? "votar" : "firmar")> dos veces
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The comment that was removed is
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+El comentario que fue borrado es
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The Consultation
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+The Consultation
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The Consultation for the Recognition of the Rights of the
+	Indigenous and for the End of the War of Extermination
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+La Consulta por el Reconocimiento de los Derechos de los Pueblos
+	Indios y por el Fin de la Guerra de Exterminio
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The EZLN has opened a poll on:
+
+	 "<%s:get_trans(subject, which, YES)>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+El EZLN ha abierto una urna en:
+
+	 "<%s:get_trans(subject, which, YES)>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The International Consultation for the Recognition of the Rights
+	of the Indigenous Peoples and for the End to the War of Extermination
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+La Consulta por el Reconocimiento de los Derechos de los Pueblos
+	Indios y por el Fin de la Guerra de Exterminio";
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The petition is closed on <%s:original_subject>.  You can't unsign
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+La peticio'n sobre <%s:original_subject> ya esta' cerrada.  Ud. no puede
+borrar su firma
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The petitions currently available at <%s:whereami> are listed below
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Las peticio'nes actualmente disponibles en <%s:whereami> esta'n indicadas
+abajo
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The poll is closed on <%s:original_subject>.  You can't remove your vote
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+La urna sobre <%s:original_subject> ya esta' cerrada.  Ud. no puede
+borrar su voto
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The signatures for this petition, and the email addresses, can only be
+retrieved by <%s:author_name> and by the system administrator of
+this site. They alone are responsible for how the information is used
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Las firmas para esta peticio'n, y las direccio'nes correos electro'nicos,
+solamente se pueden recuperar por <%s:author_name> 
+y por el administrador de este sitio.  Ellos unicamente son responsables 
+por el uso de la informacio'n
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The text that was removed is
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+El texto que se quito' es
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+The votes that were removed are
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Este es el voto que ha sido borrado
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Tambie'n hay encuentros en espa~ol, "kopilli-es", alema'n, "kopilli-de",
+y france's, "kopilli-fr" a los cuales Ud. es bienvenido subscribir
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Tambie'n hay boletines en espa~ol, "anahuak-es", alema'n, "anahuak-de",
+y france's, "anahuak-fr" a los cuales Ud. es bienvenido subscribir
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are no PRIVATE petitions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No hay peticio'nes PRIVADAS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are no PUBLIC petitions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No hay peticio'nes PUBLICAS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are no resources available at this time to process your <%s:(no_pet_votes? "vote" : "signature")>
+on "<%s:original_subject>".  Please try later
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No hay recursos disponibles ahorita para procesar su <%s:(no_pet_votes? "voto" : "firma")> 
+en "<%s:original_subject>".  Favor de intentar ma's tarde
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There are only <%d:no_pet_votes> questions in this poll
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Hay solemente <%d:no_pet_votes> preguntas en esta urna
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There is no petition attached to the subject, "<%s:original_subject>".
+
+Please check the spelling on the subject line of your message
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+No hay peticio'n adjunta al sujeto, "<%s:original_subject>".
+
+Favor de revisar la ortografi'a en la li'nea de "Subject" de su mensaje
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There is one PRIVATE petition
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Hay una peticio'n PRIVADA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+There is one PUBLIC petition
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Hay una peticio'n PUBLICA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This <%s:(no_pet_votes ? "poll" : "petition")> was initiated on <%s:date_str(p_item->eVote.open)>but has been closed since <%s:date_str(p_item->eVote.close)>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta <%s:(no_pet_votes ? "urna" : "peticio'n")> fue iniciada en <%s:date_str(p_item->eVote.open)> pero ha sido cerrado desde el <%s:date_str(p_item->eVote.close)>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta es una peticio'n *pu'blica*.  Publicaremos su nombre, pai's y
+comentarios, pero no su direccio'n de correo electro'nico, en la pa'gina
+del web. En el futuro, sus amigos podra'n preguntar este sistema (si ya
+saben su direccio'n de correo electro'nico) para ver su mensaje de
+peticio'n.
+
+Reservamos el derecho de borrar cualquier contribucio'n que
+consideramos inapropiada.  Ud. mismo puede borrar su propia
+contribucion en cualquier momento.  Sin embargo, si su firma se queda
+por una semana lo puede borrar de los datos en el cyberespacio pero ya
+puede haber sido contado en Austria.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar que so'lo
+haya una firma por cada direccio'n, y para ningun otro propo'sito
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This is a *public poll*.  Your public comments will be made available
+to the EZLN.  Your vote will not.  Only the tallied results of the
+voting will be available, not the individual votes.  If you fill in
+the "email:" field, we will give your email address to the EZLN.
+Otherwise, we use your email address to ensure that there is only
+one vote for each email address and for no other purposes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta es una *urna pública*.  Sus comentarios estarán a la
+disposición del EZLN. Su voto será secreto. Solo los resultados
+en su totalidad sera'n dados a conocer, no los votos individuales.  Si
+llena Ud. el campo "email:" entonces enviaremos su correo electro'nico
+al EZLN.  Si no, usaremos su direccio'n de correo electro'nico para
+asegurar que solo haya un voto por cada correo electro'nico y no para
+otros propositos.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the <%s:list>@<%s:whereami> email list
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista <%s:list>@<%s:whereami> de
+correo electro'nico
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the <%s:list>@<%s:whereami> email list.  If you fill in the "email:" field, 
+we will give your email address to the EZLN.  Otherwise, we use
+your email address to ensure that there is only one signature
+for each email address and for no other purposes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y
+por cualquier persona subscrita en la lista <%s:list>@<%s:whereami> de
+correo electro'nico.  Si llena Ud. el campo "email:" entonces
+enviaremos su correo electro'nico al EZLN.  Si no, usaremos su
+direccio'n de correo electro'nico para asegurar que solo haya una firma
+por cada correo electro'nico y no para otros propositos.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This is a *public* petition.  The information you contribute can be
+retrieved by anyone who signs the petition and by anyone on the
+petitiona@deliberate.com email list.  If you fill in the "email:"
+field, we will give your email address to the EZLN.  Otherwise, we use
+your email address to ensure that there is only one signature for each
+email address and for no other purposes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y
+por cualquier persona subscrita en la lista <%s:list>@<%s:whereami> de
+correo electro'nico.  Si llena Ud. el campo "email:" entonces
+enviaremos su correo electro'nico al EZLN.  Si no, usaremos su
+direccio'n de correo electro'nico para asegurar que solo haya una firma
+por cada correo electro'nico y no para otros propositos.
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This means that the information is quite public and that there
+are no controls on its use
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This message is also being sent to <%s:EVOTE_ERRORS>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Este mensaje tambie'n se envia a <%s:EVOTE_ERRORS>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This message is also being sent to owner-<%s:list>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Este mensaje tambie'n se envia al owner-<%s:list>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This message is also being sent to owner-majordomo
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Este mensaje tambien se envia al owner-majordomo
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+This petition collected <%lu:voters> signature<%s:(voters == 1L? "" : "s")>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Esta peticio'n recopilo <%lu:voters> firma<%s:(voters == 1L? "" : "s")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To <%s:(no_pet_votes ? "vote" : "sign the petition")> on 
+
+	"<%s:original_subject>"
+
+you must include your "<%s:force_name(i)>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para <%s:(no_pet_votes ? "votar" : "firmar la peticio'n")> sobre
+
+ 	"<%s:original_subject>"
+
+hay que incluir su "<%s:force_name(i)>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To date, <%lu:voters> <%s:(voters == 1? "person has" : "people have")> <%s:(no_pet_votes ? "voted" : "signed this petition")>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Hasta la fecha, <%lu:voters> <%s:(voters ==1? "persona ha" : "personas han")> <%s:(no_pet_votes ? "votado" : "firmado esta peticio'n")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para juntarse con el encuentro de correo electro'nico para discutir 
+temas tocante el Kopillo Ketzalli y su regreso a Me'xico
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+para juntarse con inte'rpretes que hablan espa~ol.  Tambie'n hay
+reuniones para inte'repretes en alema'n, "de", y france's, "fr" a 
+las cuales Ud. es bienvenida juntarse
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+to read this petition's text.
+
+Please forward this to <%s:responsible_party>@<%s:whereami>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+para leer el texto de esta peticio'n.
+
+Favor de envirar e'ste a <%s:responsible_party>@<%s:whereami>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To receive the email Newsletter for the Yanakuikanahuak please
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para recibir el boleti'n de correo electro'nico para el Yanakuikanahuak
+favor de
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+to receive the text of the petition and instructions for signing
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+para recibir el texto de la peticio'n y las instrucciones para firmar
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+TO SIGN THIS PETITION
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+PARA FIRMAR ESTA PETICIO'N
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To use eVote commands you must be a member of the 
+
+	<%s:list>@<%s:whereami> 
+
+list and the eVote commands must be sent directly to the list
+address
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para utilizar mandatos de eVote Ud. tiene que ser 
+miembro de la lista
+
+ 	<%s:list>@<%s:whereami>
+
+y los mandatos de eVote tienen que ser enviados
+directamente a la direccio'n de la lista
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Para confirmar que este mensaje en realidad se mando de Ud., por favor
+confirma este mensaje por usando "Reply-To".  No cambia nada de la
+linea de sujeto.  No necesita escribir nada de nuevo en su mensaje de
+confirmacio'n.  Esto asegura que todos los peticio'nes de eVote son
+exactos
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+TO VOTE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+PARA VOTAR
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+When supplying your "<%s:field[i].name[the_language]>," please make your 
+response look like:
+
+	<%s:field[i].name[the_language]>: <%s:field[i].format>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Cuando Ud. entrega su "<%s:field[i].name[the_language]>," favor de
+arreglar su respuesta para que se parezca asi:
+
+	<%s:field[i].name[the_language]>: <%s:field[i].format>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+where each "1.", "2.", etc., represents a question number.  Instead
+    of "Your vote", you can answer "Yes", "No", or "Don't Know."
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Los números "1.", "2.", hasta 5 se refieren a las preguntas de la
+    Consulta.  Usted puede contestar "Si'", "No", o "No Se'"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+will subscribe you to five lists
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+le subscribira' a cinco listas
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Yes
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Si'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You are too late to <%s:(no_pet_votes 
+	       ? (confirm_this.status == VERIFIED ? "confirm your vote" : "vote")
+	       : (confirm_this.status == VERIFIED ? "confirm your signature" :"sign the petition"))> on:
+
+	<%s:original_subject>
+
+The <%s:(no_pet_votes ? "poll" : "petition")> is closed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. es demasiado tarde para <%s:(no_pet_votes 
+	       ? (confirm_this.status == VERIFIED ? "confirmar su voto" : "votar")
+	       : (confirm_this.status == VERIFIED ? "confirmar su firma" :"firmar la peticio'n"))> sobre:
+
+	<%s:original_subject>
+
+La <%s:(no_pet_votes ? "urna" : "peticio'n")> esta' cerrada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You are too late to <%s:(no_pet_votes ? "vote" : "sign the petition")> on:
+
+	<%s:original_subject>
+
+The <%s:(no_pet_votes ? "poll" : "petition")> is closed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. es demasiado tarde para <%s:(no_pet_votes ? "votar" : "firmar la peticio'n")> sobre:
+
+	<%s:original_subject>
+
+La <%s:(no_pet_votes ? "urna" : "peticio'n")> esta' cerrada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You are too late to remove your <%s:(no_pet_votes ? "votes" : "signature")> on:
+
+	<%s:original_subject>
+
+The <%s:(no_pet_votes ? "poll" : "petition")> is closed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. es demasiado tarde para borrar su<%s:(no_pet_votes ? "s votos" : " firma") > de:
+
+ 	<%s:original_subject>
+
+La <%s:(no_pet_votes ? "urna" : "peticio'n")> esta' cerrada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You can not participate in eVoting.  
+You are a read_only member of <%s:list>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. no puede participar en eVotando.
+Ud. es un miembro de leer-solamente de la lista <%s:list>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You can only vote once on question <%d:no>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Solo puede votar una vez en la pregunta nu'mero <%d:no>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You can send many commands to majordomo@deliberate.com in one message
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. puede enviar muchos mandatos a la majordomo@deliberate.com en un
+solo mensaje
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You have not participated in eVoting at <%s:whereami>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Usted no ha participado en eVotacio'n por <%s:whereami>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You may add a "<%s:tongue[do_this].comment>:" at the end
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. puede agregar un "<%s:tongue[do_this].comment>:" al fin
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You may add a <%s:tongue[do_this].comment> here
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Usted puede a~adir un comentario aqui'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You may add your name and/or a <%s:tongue[do_this].comment> here.  This software will not 
+divulge your email address
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Usted puede a~adir su nombre y/o comentarios aqui'.  Este programa no 
+va a revelar su correo electro'nico
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You may give your name and/or a <%s:tongue[do_this].comment> here
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. puede dar su nombre y/o un <%s:tongue[do_this].comment> aqui'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You may give your name here
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. puede dar su nombre aqui'
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You must give <%s:(required == 1?"an answer":"answers")> for
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. tiene que dar <%s:(required == 1?"una respuesta":"respuestas")> para
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You must give your "<%s:force_name(i)>:"
+before you can give a comment when signing the petition for
+
+	"<%s:original_subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. tiene que dar su "<%s:force_name(i)>:"
+antes de poder dar un comentario cuando esta' firmando la peticio'n para
+
+	"<%s:original_subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You must send in your reply-to before the petition is closed or
+it won't be counted
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Vd. debe que mandar su confirmacio'n "Reply-To" antes de la peticio'n se 
+cierra o no sera contada
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You must send in your reply-to before the petition is closed or
+your <%s:(no_pet_votes ? "votes" : "signature")> won't be removed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Vd. debe que mandar su confirmacio'n "Reply-To" antes de la peticio'n se 
+cierra o no se <%s:(no_pet_votes ? "borrara'n sus votos" : "borrara' su firma")>
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+You must specify a petition title as the subject of your message
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Ud. tiene que especificar un ti'tulo de peticio'n como el "Subject" 
+de su mensaje
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your <%s:(no_pet_votes == 0 ? "signature" : (no_pet_votes == 1 ?
+						 "vote" : "votes"))> on "<%s:original_subject>" has NOT been
+registered yet
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+<%s:(no_pet_votes == 0 ? "Su firma no ha sido registrado" : (no_pet_votes == 1 ?
+						 "Su vota no ha sido registrado" : "Sus votas no han sido registrados"))> en 
+"<%s:original_subject>" ya
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your <%s:(no_pet_votes ? "comments are" :
+					    "signature is")> recorded as
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su <%s:(no_pet_votes ? "commentario" :
+					    "firma")> queda grabado como
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your <%s:(no_pet_votes ? "comments will be" :
+					    "signature will be")> recorded as
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su <%s:(no_pet_votes ? "comentario" :
+					    "firma")> sera grabado como
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your <%s:(no_pet_votes? "votes have" : "signature has")> been removed on "<%s:original_subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su <%s:(no_pet_votes ? "voto" : "firma")> ha sido borrado de "<%s:original_subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+YOUR COMMENTS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+SUS COMENTARIOS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your email address, however, can only be seen by the site
+administrator at <%s:whereami>.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Sin embargo, solamente el adminstrador del sistema en 
+<%s:whereami> puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your entire message follows
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su mensaje entero sigue
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your message about:
+
+	<%s:original_subject>
+
+looks like a confirmation reply for "<%s:subject>" 
+with the confirmation key "<%s:confirm_this.key>".  However, we have
+no record of this confirmation key for you for
+"<%s:subject>"
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su mensaje sobre:
+
+	<%s:original_subject>
+
+perece como un respuesta de confirmacio'n para "<%s:subject>" 
+con el llave de comfirmacio'n "<%s:confirm_this.key>".  Sin embargo, no hay registro 
+de este llave de confirmacio'n para Vd. para "<%s:subject>"
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+YOUR SIGNATURE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+SU FIRMA
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your signature is recorded as
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Su firma esta' grabada como
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+YOUR VOTE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+SU VOTO
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+YOUR VOTES
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+SUS VOTOS
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your votes <%s:(confirm_this.status == STARTING ? "will be" : "are")> recorded as
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Sus votos se <%s:(confirm_this.status == STARTING ? "quedara'n" : "queda")> grabada como
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+en:
+Your votes are recorded as
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+es:
+Sus votos esta'n grabadan como
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+

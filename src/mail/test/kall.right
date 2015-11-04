@@ -1,0 +1,6384 @@
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    STARTING  STARTING  STARTING 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: owner-petitiona
+Subject: Error: SUBSCRIBE petitiona
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083214.eVote.1.35614@xoko>
+
+--
+
+
+In response to your message which starts:
+pollster1@somewhere.com has been added to petitiona.
+
+----
+
+pollster1@somewhere.com's subscription to petitiona is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster2@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster3@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+Make this work
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083232.eVote.1.41839@xoko>
+
+--
+
+
+On Mon,  1 Jul 2003 08:32:35 -0700
+pollster1@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollster1@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+Make this work
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SIGNATURES  SIGNATURES  SIGNATURES 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+This is a multi-part message in MIME format.
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+info
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/x-vcard; charset=us-ascii; name="vcard.vcf"
+Content-Transfer-Encoding: 7bit
+Content-Description: Card for Jauretche, Osvaldo 
+Content-Disposition: attachment; filename="vcard.vcf"
+
+begin:          vcard
+fn:             Osvaldo  Jauretche
+n:              Jauretche;Osvaldo 
+email;internet: jau@earthling.net
+note;quoted-printable:P.O. Box 20501=0D=0A=
+	Bakersfield CA 93390-0501=0D=0A=
+	(805) 588-1143
+x-mozilla-cpt:  ;0
+x-mozilla-html: TRUE
+version:        2.1
+end:            vcard
+
+--------------8E6397687A4E7D502003E75C--
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollster2@somewhere.com
+Subject: Re: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083236.eVote.1.37336@xoko>
+
+--
+
+
+On Mon,  1 Jul 2003 08:32:35 -0700
+pollster1@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+This is a multi-part message in MIME format.
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+info
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/x-vcard; charset=us-ascii; name="vcard.vcf"
+Content-Transfer-Encoding: 7bit
+Content-Description: Card for Jauretche, Osvaldo 
+Content-Disposition: attachment; filename="vcard.vcf"
+
+begin:          vcard
+fn:             Osvaldo  Jauretche
+n:              Jauretche;Osvaldo 
+email;internet: jau@earthling.net
+note;quoted-printable:P.O. Box 20501=0D=0A=
+	Bakersfield CA 93390-0501=0D=0A=
+	(805) 588-1143
+x-mozilla-cpt:  ;0
+x-mozilla-html: TRUE
+version:        2.1
+end:            vcard
+
+--------------8E6397687A4E7D502003E75C--
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+pollster2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollster2@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083240.eVote.1.32875@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:32:43 -0700 - - - 
+
+Here is my address 
+pollster2
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+pollster2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+pollster1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollster1@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083244.eVote.1.29014@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:32:47 -0700 - - - 
+
+Here is my address 
+pollster1
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+pollster1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollster1@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083248.eVote.1.57315@xoko>
+
+--
+
+pollster1@somewhere.com's last eVote participation: 
+	Mon Jul  1 08:32:47 2003
+
+Your signature has been removed on "Kopilli Ketzalli".
+
+The comment that was removed is:
+
+- - - Mon,  1 Jul 2003 08:32:47 -0700 - - - 
+
+Here is my address 
+pollster1
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: owner-petitiona
+Subject: Error: SUBSCRIBE petitiona
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083252.eVote.1.10824@xoko>
+
+--
+
+
+In response to your message which starts:
+pollster1@somewhere.com has been added to petitiona.
+
+----
+
+pollster1@somewhere.com's subscription to petitiona is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+eVote list
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster1@somewhere.com
+Subject: Re: SUBSCRIBE petitiona
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083257.eVote.1.39201@xoko>
+
+--
+
+pollster1@somewhere.com's last eVote participation: 
+	Mon Jul  1 08:32:56 2003
+
+In response to your command:
+
+eVote list
+
+The petitiona list has 3 participants.  It has 1 subject 
+with a poll attached.
+
+The one subject with an open poll attached is:
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   1                       Kopilli Ketzalli  Public      Petition     1 signers
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to petitiona@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+eVote list
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: fred@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083301.eVote.1.39625@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:33:07 -0700 - - - 
+
+Here is my address 
+fred
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: fred@somewhere.com
+Subject: Error: Kopilli Ketzalli
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083309.eVote.1.58739@xoko>
+
+--
+
+
+In response to your message which starts:
+
+Here
+
+Thank you.  You already signed the petition on 
+
+	Kopilli Ketzalli
+
+You can't sign twice.
+
+Perhaps the instructions for "Kopilli Ketzalli" will help.
+
+On Mon,  1 Jul 2003 08:32:35 -0700
+pollster1@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+2 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote approve squash drop
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083313.eVote.1.54334@xoko>
+
+--
+
+
+pollster1@somewhere.com has forced the deletion of the petition on
+
+	Kopilli Ketzalli
+
+This petition was initiated by pollster1@somewhere.com.
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+Make this work 2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083317.eVote.1.50049@xoko>
+
+--
+
+
+On Mon,  1 Jul 2003 08:33:20 -0700
+pollster1@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollster1@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+Make this work 2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster1@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083321.eVote.1.13029@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 0 people have signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+Here is my address again
+pollster1
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster1@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083325.eVote.1.41506@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:33:28 -0700 - - - 
+
+Here is my address again
+pollster1
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083329.eVote.1.04287@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+Here is my address again
+pollster2
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083333.eVote.1.32425@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:33:36 -0700 - - - 
+
+Here is my address again
+pollster2
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083337.eVote.1.23814@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+Here is my address 
+fred
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083345.eVote.1.19587@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 3 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:33:48 -0700 - - - 
+
+Here is my address 
+fred
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Make this work 2
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address 
+fred
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote approve squash drop
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083349.eVote.1.15375@xoko>
+
+--
+
+
+pollster2@somewhere.com has forced the deletion of the petition on
+
+	Kopilli Ketzalli
+
+This petition was initiated by pollster1@somewhere.com.
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FORMS  FORMS  FORMS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote petition public
+form:
+*comment:
+message:
+One time with forms.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083353.eVote.1.10882@xoko>
+
+--
+
+
+On Mon,  1 Jul 2003 08:33:56 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+comment: 
+You may give your name here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote petition public
+form:
+*comment:
+message:
+One time with forms.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster1@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083357.eVote.1.39025@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 0 people have signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+Here is my address again
+pollster1
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster1@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083401.eVote.1.02201@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:34:04 -0700 - - - 
+
+Here is my address again
+pollster1
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster1@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+Here is my address again
+pollster1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Error: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083405.eVote.1.30490@xoko>
+
+--
+
+
+In response to your message which starts:
+
+
+
+
+To sign the petition on 
+
+	"Kopilli Ketzalli"
+
+you must include your "comment".
+
+Perhaps the instructions for "Kopilli Ketzalli" will help.
+
+On Mon,  1 Jul 2003 08:33:56 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+1 signature has been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+comment: 
+You may give your name here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Error: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083409.eVote.1.26102@xoko>
+
+--
+
+
+In response to your message which starts:
+
+
+
+
+Your message about:
+
+	Kopilli Ketzalli
+
+looks like a confirmation reply for "Kopilli Ketzalli" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Kopilli Ketzalli".
+
+Perhaps the instructions for "Kopilli Ketzalli" will help.
+
+On Mon,  1 Jul 2003 08:33:56 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+1 signature has been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+comment: 
+You may give your name here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+bad field: Here is my address again
+fred 
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083413.eVote.1.26797@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+bad field: Here is my address again
+fred 
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+bad field: Here is my address again
+fred 
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+bad field: Here is my address again
+fred 
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083421.eVote.1.13075@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:34:24 -0700 - - - 
+
+bad field: Here is my address again
+fred 
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+One time with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+bad field: Here is my address again
+fred 
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote approve squash drop
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083425.eVote.1.08865@xoko>
+
+--
+
+
+pollster2@somewhere.com has forced the deletion of the petition on
+
+	Kopilli Ketzalli
+
+This petition was initiated by pollster2@somewhere.com.
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FORM2  FORM2  FORM2 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote petition public
+form:
+*name:
+*country:
+message:
+Two times with forms.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083429.eVote.1.04590@xoko>
+
+--
+
+
+On Mon,  1 Jul 2003 08:34:32 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+country: 
+You may add a comment here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give answers for "name:", and "country:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+eVote petition public
+form:
+*name:
+*country:
+message:
+Two times with forms.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: pollster1
+country: USA
+Here is my address again
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083433.eVote.1.00274@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 0 people have signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+name: pollster1
+country: USA
+Here is my address again
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: pollster1
+country: USA
+Here is my address again
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+name: pollster1
+country: USA
+Here is my address again
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083437.eVote.1.61576@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:34:40 -0700 - - - 
+
+name: pollster1
+country: USA
+Here is my address again
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: pollster1
+country: USA
+Here is my address again
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: pollster2
+Here is my address again
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Error: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083441.eVote.1.56948@xoko>
+
+--
+
+
+In response to your message which starts:
+
+name: pollster2
+Here
+
+You must give your "country:"
+before you can give a comment when signing the petition for
+
+	"Kopilli Ketzalli"
+
+Perhaps the instructions for "Kopilli Ketzalli" will help.
+
+On Mon,  1 Jul 2003 08:34:32 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+1 signature has been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+country: 
+You may add a comment here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give answers for "name:", and "country:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: pollster2
+Here is my address again
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+name: pollster2
+Here is my address again
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollster2@somewhere.com
+Subject: Error: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083445.eVote.1.52485@xoko>
+
+--
+
+
+In response to your message which starts:
+
+name: pollster2
+
+Your message about:
+
+	Kopilli Ketzalli
+
+looks like a confirmation reply for "Kopilli Ketzalli" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Kopilli Ketzalli".
+
+Perhaps the instructions for "Kopilli Ketzalli" will help.
+
+On Mon,  1 Jul 2003 08:34:32 -0700
+pollster2@somewhere.com attached a petition to this subject:
+
+	 "Kopilli Ketzalli"
+
+1 signature has been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+country: 
+You may add a comment here.
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give answers for "name:", and "country:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+
+== =======================
+TO pollster2@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollster2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollster2@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+name: pollster2
+Here is my address again
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083449.eVote.1.43964@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 1 person has signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: fred@somewhere.com
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083457.eVote.1.39412@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:35:00 -0700 - - - 
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  fred@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  fred@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  jjjacq@ozemail.com.au
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  jjjacq@ozemail.com.au
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: jjjacq@ozemail.com.au
+Subject: Confirm: 111111 Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083501.eVote.1.07244@xoko>
+
+--
+
+
+Your signature on "Kopilli Ketzalli" has NOT been
+registered yet.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.  This ensures the integrity of all
+eVote petitions.
+
+You must send in your reply-to before the petition is closed or
+it won't be counted.
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 2 people have signed this petition.
+
+After you reply-to this message, the following will be recorded:
+
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature will be recorded as:
+
+ - - - - start of signature - - - - 
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+
+ - - - - end of signature - - - - 
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  jjjacq@ozemail.com.au
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  jjjacq@ozemail.com.au
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  jjjacq@ozemail.com.au
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  jjjacq@ozemail.com.au
+Received: by whatever
+To: petitiona@xoko
+Subject: Confirm: 111111 Kopilli Ketzalli
+Status: RO
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: jjjacq@ozemail.com.au
+Subject: eVote Rcpt: Kopilli Ketzalli
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030701083508.eVote.1.35765@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Kopilli Ketzalli
+
+To date, 3 people have signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Mon,  1 Jul 2003 08:35:11 -0700 - - - 
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public petition*.  We will publish your name, country, and
+comments (but not your email address) on the web page.  In the
+future, your friends will be able to query this system (if they know
+your email address) to see your petition message.
+
+We reserve the right to remove any contributions we consider in-
+appropriate.  You can remove your own contribution at any time.
+However, if your signature remains for one week you can remove it
+from the data in cyberspace but it may already have been counted
+in Austria.
+
+We use your email address to ensure that there is only one signature
+for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Kopilli Ketzalli
+
+3.  Your message should say:
+
+	remove
+
+If you wish to remove your signature, please do so promptly.  After 
+one week, your signature may be forwarded to Vienna to be counted.
+
+
+==========
+NEWSLETTER
+==========
+
+To receive the email Newsletter for the Yanakuikanahuak please:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe anahuak-en
+	end
+
+There are also newsletters in Spanish, "anahuak-es", German, "anahuak-de",
+and French, "anahuak-fr" which you are welcome to subscribe to as well.
+
+
+=========
+GATHERING
+=========
+
+To join the email gathering for discussing issues surrounding 
+Kopilli Ketzalli and its return to Mexico:
+
+1.  Send a message to:
+
+	majordomo@deliberate.com
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe kopilli-en
+	end
+
+There are also gatherings in Spanish, "kopilli-es", German, "kopilli-de",
+and French, "kopilli-fr" which you are welcome to subscribe to as well.
+
+
+==========
+BILINGUAL?
+==========
+
+If you write in German, Spanish or French as well as English and
+if you would like to help with translating for the Yankuikanahuak:
+
+1.  Send a message to:
+
+	majordomo@xoko
+
+2.  The subject line doesn't matter.
+
+3.  Your message should say:
+
+	subscribe es
+	end
+
+to meet with Spanish language translators.  There are also
+translator meetings for German, "de", and French, "fr" 
+which you are welcome to join as well.
+
+You can send many commands to majordomo@deliberate.com in one message:
+
+	subscribe anahuak-en
+	subscribe kopilli-en
+	subscribe anahuak-es
+	subscribe kopilli-es
+	subscribe es
+	end
+
+will subscribe you to five lists.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Two times with forms.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  jjjacq@ozemail.com.au
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  jjjacq@ozemail.com.au
+Received: by whatever
+To: petitiona@xoko
+Subject: Kopilli Ketzalli
+Status: RO
+
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 

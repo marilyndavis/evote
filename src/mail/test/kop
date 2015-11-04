@@ -1,0 +1,426 @@
+# $Id: kop,v 1.3 2003/01/15 18:54:12 marilyndavis Exp $ 
+
+#   kop -- Special Test for Rosa and the Kopilli Ketzalli petition
+#   kop UI_BIN 
+#   UI_BIN = /usr/local/majordomo by default -- where is eVote_insert?
+#
+./mscratch
+
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/usr/local/majordomo"
+  else
+    UI_BIN=$1
+fi
+./mscratch
+touch kop.out
+mv kop.out kop.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> kall.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> kall.out
+ echo " " >> kall.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> kall.out
+ echo " " >> kall.out
+ cat  tmp$$ >> kall.out
+ cat  tmp$$ > x
+ echo " " >> kall.out
+ echo "***** To stderr comes: *****" >> kall.out
+ echo " " >> kall.out
+
+ $CALL < tmp$$ 2>> kall.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> kall.out
+     echo "***** r.out sent to LIST, says *****" >> kall.out
+     echo " " >> kall.out
+     cat ./tmp/r.out >> kall.out
+     echo " " >> kall.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> kall.out
+      echo "***** t.out, sent to MAILER, says *****" >> kall.out
+      echo " " >> kall.out
+      cat ./tmp/t.out >> kall.out
+      echo " " >> kall.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+TO="petitiona-approval@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it kall " >> kall.out
+
+fi
+
+#############  START  ####################
+
+echo " " > kall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall.out
+echo "    STARTING  STARTING  STARTING " >> kall.out
+echo " " >> kall.out
+
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that
+
+try_that
+cat << EOF > MESS
+
+--
+
+pollster2@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+pollster3@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="Kopilli Ketzalli"
+cat << EOF > MESS
+eVote poll [y/n] public visible 
+message:
+Make this work
+EOF
+try_that 
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="pollster2@somewhere.com"
+
+echo " " >> kall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall.out
+echo "    SIGNATURES  SIGNATURES  SIGNATURES " >> kall.out
+echo " " >> kall.out
+
+cat << EOF > MESS
+This is a multi-part message in MIME format.
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+info
+--------------8E6397687A4E7D502003E75C
+Content-Type: text/x-vcard; charset=us-ascii; name="vcard.vcf"
+Content-Transfer-Encoding: 7bit
+Content-Description: Card for Jauretche, Osvaldo 
+Content-Disposition: attachment; filename="vcard.vcf"
+
+begin:          vcard
+fn:             Osvaldo  Jauretche
+n:              Jauretche;Osvaldo 
+email;internet: jau@earthling.net
+note;quoted-printable:P.O. Box 20501=0D=0A=
+	Bakersfield CA 93390-0501=0D=0A=
+	(805) 588-1143
+x-mozilla-cpt:  ;0
+x-mozilla-html: TRUE
+version:        2.1
+end:            vcard
+
+--------------8E6397687A4E7D502003E75C--
+EOF
+try_that
+
+cat << EOF > MESS
+Here is my address 
+pollster2
+EOF
+try_that 
+
+FROM="pollster1@somewhere.com"
+cat << EOF > MESS
+Here is my address 
+pollster1
+EOF
+try_that 
+
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+cat << EOF > MESS
+remove
+EOF
+try_that
+
+SUBJECT="SUBSCRIBE petitiona"
+CALL="$UI_BIN/eVote_insert"
+TO="petitiona@xoko"
+cat << EOF > MESS
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+SUBJECT="Kopilli Ketzalli"
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+FROM="fred@somewhere.com"
+cat << EOF > MESS
+Here is my address 
+fred
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster1@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+
+cat << EOF > MESS
+eVote approve squash drop
+EOF
+try_that 
+
+
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="Kopilli Ketzalli"
+cat << EOF > MESS
+eVote poll [y/n] public visible 
+message:
+Make this work 2
+EOF
+try_that 
+
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+To="eVote@eVte.com"
+cat << EOF > MESS
+Here is my address again
+pollster1
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster2@somewhere.com"
+cat << EOF > MESS
+Here is my address again
+pollster2
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="fred@somewhere.com"
+cat << EOF > MESS
+Here is my address 
+fred
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster2@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+
+cat << EOF > MESS
+eVote approve squash drop
+EOF
+try_that 
+
+
+
+echo " " >> kall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall.out
+echo "    FORMS  FORMS  FORMS " >> kall.out
+echo " " >> kall.out
+
+
+cat << EOF > MESS
+eVote petition public
+form:
+*comment:
+message:
+One time with forms.
+EOF
+
+try_that
+
+FROM="pollster1@somewhere.com"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+cat << EOF > MESS
+Here is my address again
+pollster1
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster2@somewhere.com"
+cat << EOF > MESS
+
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="fred@somewhere.com"
+cat << EOF > MESS
+bad field: Here is my address again
+fred 
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster2@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+
+cat << EOF > MESS
+eVote approve squash drop
+EOF
+try_that 
+
+
+
+echo " " >> kall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall.out
+echo "    FORM2  FORM2  FORM2 " >> kall.out
+echo " " >> kall.out
+
+
+cat << EOF > MESS
+eVote petition public
+form:
+*name:
+*country:
+message:
+Two times with forms.
+EOF
+
+try_that
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+cat << EOF > MESS
+name: pollster1
+country: USA
+Here is my address again
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="pollster2@somewhere.com"
+cat << EOF > MESS
+name: pollster2
+Here is my address again
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+
+FROM="fred@somewhere.com"
+cat << EOF > MESS
+name: fred
+country: Austria
+bad field: Here is my address again
+fred 
+EOF
+try_that 
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="jjjacq@ozemail.com.au"
+cat << EOF > MESS
+name: John Jacq
+country: Australia
+I feel the Kopilli Ketzalli is getting rather bored of its enforced exile in Austria. It wants to go back to Anahuak, the high plateau region of Mexico. So I am not signing this petition on behalf of the Aztecs, nor in opposition to the Austrians, but on behalf of the Quetzal bird who wants its feathers back.
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli"
+try_that
+SUBJECT="Kopilli Ketzalli"

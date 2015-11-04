@@ -1,0 +1,2934 @@
+# $Id: big,v 1.5 2003/04/07 18:31:28 marilyndavis Exp $ 
+# big UI_BIN
+#
+# big - big mail interface test.
+# This runs a lot of email into eVote_insert and places the results in
+# all.out, which should be checked against all.right.
+# By default UI_BIN, where eVote_insert is, is /home/majordomo
+# Give the argument as a path if it is different.
+#
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/home/majordomo"
+  else
+    UI_BIN=$1
+fi
+./mscratch
+mv all.out all.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+odd_vote ()  {
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+
+FROM="mary5@somewhere.com"
+try_that
+
+FROM="mary7@somewhere.com"
+try_that
+
+FROM="mary9@somewhere.com"
+try_that
+
+FROM="mary11@somewhere.com"
+try_that
+
+FROM="joe@blow.com"
+try_that
+}
+even_vote ()  {
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+
+FROM="mary2@somewhere.com"
+try_that
+
+FROM="mary4@somewhere.com"
+try_that
+
+FROM="mary6@somewhere.com"
+try_that
+
+FROM="mary8@somewhere.com"
+try_that
+
+FROM="mary10@somewhere.com"
+try_that
+
+FROM="mary12@somewhere.com"
+try_that
+}
+
+vote_two ()  {
+
+cat << EOF > MESS
+eVote y
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote 4
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote
+1. n
+2. y
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote
+1. 3
+2. 5
+3. 2
+EOF
+do_gnumeric
+
+}
+
+do_all ()  {
+
+do_yn
+do_numeric
+do_gyn
+do_gnumeric
+
+SUBJECT="big [y/n] poll"
+try_that
+
+SUBJECT="big 1,99 poll"
+try_that
+}
+
+do_yn ()  {
+
+SUBJECT="poll [y/n] public visible"
+try_that
+
+SUBJECT="poll [y/n] public hidden"
+try_that
+
+SUBJECT="poll [y/n] private visible"
+try_that
+
+SUBJECT="poll [y/n] private hidden"
+try_that 
+
+SUBJECT="poll [y/n] if-voted visible"
+try_that 
+
+SUBJECT="poll [y/n] if-voted hidden"
+try_that 
+
+}
+
+do_numeric ()  {
+
+SUBJECT="poll numeric public visible"
+try_that 
+
+SUBJECT="poll numeric public hidden"
+try_that 
+
+SUBJECT="poll numeric private visible"
+try_that 
+
+SUBJECT="poll numeric private hidden"
+try_that 
+
+SUBJECT="poll numeric if-voted visible"
+try_that 
+
+SUBJECT="poll numeric if-voted hidden"
+try_that 
+
+}
+
+do_gyn () {
+
+SUBJECT="poll grouped [y/n] public visible"
+try_that
+
+SUBJECT="poll grouped [y/n] public hidden"
+try_that 
+
+SUBJECT="poll grouped [y/n] private visible"
+try_that 
+
+SUBJECT="poll grouped [y/n] private hidden"
+try_that 
+
+SUBJECT="poll grouped [y/n] if-voted visible"
+try_that 
+
+SUBJECT="poll grouped [y/n] if-voted hidden"
+try_that 
+
+}
+
+do_gnumeric ()  {
+
+SUBJECT="poll grouped numeric public visible"
+try_that 
+
+SUBJECT="poll grouped numeric public hidden"
+try_that 
+
+SUBJECT="poll grouped numeric private visible"
+try_that 
+
+SUBJECT="poll grouped numeric private hidden"
+try_that 
+
+SUBJECT="poll grouped numeric if-voted visible"
+try_that 
+
+SUBJECT="poll grouped numeric if-voted hidden"
+try_that 
+
+}
+
+do_confirm_all ()  {
+
+do_confirm_yn
+do_confirm_numeric
+do_confirm_gyn
+do_confirm_gnumeric
+
+SUBJECT="big [y/n] poll"
+try_that
+SUBJECT="Confirm: 111111 big [y/n] poll"
+try_that
+
+SUBJECT="big 1,99 poll"
+try_that
+SUBJECT="Confirm: 111111 big 1,99 poll"
+try_that
+}
+
+do_confirm_yn ()  {
+
+SUBJECT="poll [y/n] public visible"
+try_that
+SUBJECT="Confirm:111111 poll [y/n] public visible"
+try_that
+
+SUBJECT="poll [y/n] public hidden"
+try_that
+SUBJECT="Confirm: 111111 poll [y/n] public hidden"
+try_that
+
+SUBJECT="poll [y/n] private visible"
+try_that
+SUBJECT="Confirm: 111111 poll [y/n] private visible"
+try_that
+
+SUBJECT="poll [y/n] private hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll [y/n] private hidden"
+try_that 
+
+SUBJECT="poll [y/n] if-voted visible"
+try_that 
+SUBJECT="Confirm: 111111 poll [y/n] if-voted visible"
+try_that 
+
+SUBJECT="poll [y/n] if-voted hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll [y/n] if-voted hidden"
+try_that 
+
+}
+
+do_confirm_numeric ()  {
+
+SUBJECT="poll numeric public visible"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric public visible"
+try_that 
+
+SUBJECT="poll numeric public hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric public hidden"
+try_that 
+
+SUBJECT="poll numeric private visible"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric private visible"
+try_that 
+
+SUBJECT="poll numeric private hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric private hidden"
+try_that 
+
+SUBJECT="poll numeric if-voted visible"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric if-voted visible"
+try_that 
+
+SUBJECT="poll numeric if-voted hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll numeric if-voted hidden"
+try_that 
+
+}
+
+do_confirm_gyn () {
+
+SUBJECT="poll grouped [y/n] public visible"
+try_that
+SUBJECT="Confirm: 111111 poll grouped [y/n] public visible"
+try_that
+
+SUBJECT="poll grouped [y/n] public hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped [y/n] public hidden"
+try_that 
+
+SUBJECT="poll grouped [y/n] private visible"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped [y/n] private visible"
+try_that 
+
+SUBJECT="poll grouped [y/n] private hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped [y/n] private hidden"
+try_that 
+
+SUBJECT="poll grouped [y/n] if-voted visible"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped [y/n] if-voted visible"
+try_that 
+
+SUBJECT="poll grouped [y/n] if-voted hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped [y/n] if-voted hidden"
+try_that 
+
+}
+
+do_confirm_gnumeric ()  {
+
+SUBJECT="poll grouped numeric public visible"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric public visible"
+try_that 
+
+SUBJECT="poll grouped numeric public hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric public hidden"
+try_that 
+
+SUBJECT="poll grouped numeric private visible"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric private visible"
+try_that 
+
+SUBJECT="poll grouped numeric private hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric private hidden"
+try_that 
+
+SUBJECT="poll grouped numeric if-voted visible"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric if-voted visible"
+try_that 
+
+SUBJECT="poll grouped numeric if-voted hidden"
+try_that 
+SUBJECT="Confirm: 111111 poll grouped numeric if-voted hidden"
+try_that 
+
+}
+
+vote_one ()  {
+
+cat << EOF > MESS
+eVote y
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote 2
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote -2
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote
+1. y
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote
+1. 2
+3. 4
+EOF
+do_gnumeric
+
+}
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> all.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> all.out
+ echo " " >> all.out
+ echo "***** Calling eVote_insert $ARGS - Incoming message: *****" >> all.out
+ echo " " >> all.out
+ cat  tmp$$ >> all.out
+ cat  tmp$$ > x
+ echo " " >> all.out
+ echo "***** To stderr comes: *****" >> all.out
+ echo " " >> all.out
+
+# cat << EOF > .gdbinit
+# directory /home/eVote/src/mail /home/eVote/src/mail/mailui /home/eVote/src/Clerklib
+# file ../eVote_insert
+# r $ARGS < x 
+# q
+# EOF
+
+# gdb
+
+ $UI_BIN/eVote_insert $ARGS < tmp$$ 2>> all.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f tmp/r.out ]   
+   then
+     echo "                    LIST " >> all.out
+     echo "***** r.out sent to LIST, says *****" >> all.out
+     echo " " >> all.out
+     cat tmp/r.out >> all.out
+     echo " " >> all.out
+     rm tmp/r.out
+ fi
+                    
+ if [  -f tmp/t.out ]
+    then
+      echo "                     MAILER" >> all.out
+      echo "***** t.out, sent to MAILER, says *****" >> all.out
+      echo " " >> all.out
+      cat tmp/t.out >> all.out
+      echo " " >> all.out
+      rm tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it all " >> all.out
+
+fi
+
+#############  START  ####################
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    ERRORS  ERRORS  ERRORS " >> all.out
+echo " " >> all.out
+
+
+TO="abc@xoko"
+FROM="joe@blow.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+ARGS="bad args"
+cat << EOF > MESS
+eVote help
+EOF
+try_that
+
+
+ARGS="resend_test -l abc"
+try_that
+
+
+ARGS="resend_test -l abc"
+FROM=""
+SUBJECT="No from address given"
+cat << EOF > MESS
+eVote no address
+EOF
+
+try_that 
+
+FROM="joe@blow.com"
+ARGS=""
+SUBJECT="No arguments but pass to list"
+try_that
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    PASS  PASS  PASS " >> all.out
+echo " " >> all.out
+
+EXTRA="Received:  something"
+FROM="joe@blow.com"
+SUBJECT="Pass this along bad args"
+cat << EOF > MESS
+Pass this along
+please
+line3
+EOF
+
+try_that
+
+
+SUBJECT="From abc > Pass this"
+ARGS="resend_test -l abc"
+try_that
+
+EXTRA="Received:  something"
+FROM="joe@blow.com"
+SUBJECT=""
+cat << EOF > MESS
+Pass this along
+please
+line3
+EOF
+
+try_that
+
+
+SUBJECT="eVote Rcvd: List with no list"
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> all.out
+echo " " >> all.out
+
+
+TO="abc-approval@xoko"
+FROM="joe@blow.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+ARGS="bad args"
+
+
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+joe@blow.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+try_that
+
+SUBJECT="List "
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+TO="abc@xoko"
+ARGS="resend_test -l abc"
+try_that
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    ERRORS  ERRORS  ERRORS " >> all.out
+echo " " >> all.out
+
+SUBJECT="eVote and no more - good args "
+ARGS="resend_test -l abc a b c"
+try_that
+
+FROM="joe@blow.com"
+SUBJECT="No message"
+cat << EOF > MESS
+EOF
+try_that
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    SUBS  SUBS  SUBS " >> all.out
+echo " " >> all.out
+
+ARGS=""
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+fred@fifo.com has unsubscribed from ed.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="UNSUBSCRIBE ted"
+try_that
+
+SUBJECT="SUBSCRIBE ted"
+cat << EOF > MESS
+
+--
+
+joe@blow.com has been added to ted.
+No action is required on your part.
+EOF
+try_that 
+
+FROM="joe@blow.com"
+TO="abc-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+try_that
+
+cat << EOF > MESS
+
+--
+
+mary1@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary2@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary3@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary4@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary5@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary6@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary7@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary8@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary9@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary10@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary11@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary12@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+joe@blow.com has unsubscribed from ed.
+No action is required on your part.
+EOF
+
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+joe@blow.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    ERRORS  ERRORS  ERRORS " >> all.out
+echo " " >> all.out
+
+
+try_that
+
+ARGS="resend_test -l yyy"
+SUBJECT="No list"
+TO="yyy@xoko"
+cat << EOF > MESS
+Will you pass this somewhere?
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll [y/n] public visible
+message:
+No such list.
+EOF
+
+FROM="noone@nowhere.com"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="Not subscribed"
+try_that
+
+FROM="mary@somewhere.com"
+SUBJECT="Nothing past eVote poll"
+cat << EOF > MESS
+eVote poll
+EOF
+try_that 
+
+SUBJECT="poll garbage"
+cat << EOF > MESS
+eVote poll  3 gobbledegook
+EOF
+try_that 
+
+SUBJECT="poll missing something"
+cat << EOF > MESS
+eVote poll public hidden
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll [y/n] hidden
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll [y/n] public
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll abc [y/n] public visible
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    HELPS  HELPS  HELPS " >> all.out
+echo " " >> all.out
+
+
+FROM="mary@somewhere.com"
+SUBJECT="help me "
+cat << EOF > MESS
+eVote help
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    POLL ERRORS  POLL ERRORS  POLL ERRORS " >> all.out
+echo " " >> all.out
+
+
+SUBJECT="checks   "
+cat << EOF > MESS
+eVote poll [-10, 10] public visible check
+EOF
+try_that 
+
+
+SUBJECT="checks"
+cat << EOF > MESS
+eVote poll public visible check
+EOF
+try_that 
+
+SUBJECT="checks empty message"
+cat << EOF > MESS
+eVote poll [y/n] public visible check
+message:
+EOF
+try_that 
+
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+SUBJECT="checks"
+cat << EOF > MESS
+eVote poll group public visible  1 check
+1. one choice
+2. or another choice
+message:
+nothing to say
+EOF
+try_that 
+
+SUBJECT="checks empty message"
+cat << EOF > MESS
+eVote poll [y/n] public visible check
+message:
+EOF
+try_that 
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    SINGLE POLLS  SINGLE POLLS  SINGLE POLLS " >> all.out
+echo " " >> all.out
+
+EXTRA="Received:  something"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+SUBJECT="xpoll [y/n] public visible"
+cat << EOF > MESS
+> eVote poll [y/n] public visible 
+message:
+bla
+EOF
+try_that 
+
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+SUBJECT="poll [y/n] public visible"
+cat << EOF > MESS
+eVote poll [y/n] public visible 
+message:
+bla
+EOF
+try_that 
+
+EXTRA="Received:  something"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+SUBJECT="poll [y/n] public hidden"
+cat << EOF > MESS
+eVote poll [y/n] public hidden 
+message:
+Here is the message
+that goes on
+for a few lines
+EOF
+try_that 
+
+SUBJECT="poll [y/n] private visible"
+cat << EOF > MESS
+eVote poll [y/n] private visible
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll [y/n] private hidden"
+cat << EOF > MESS
+eVote poll [y/n] private hidden
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll [y/n] if-voted visible"
+cat << EOF > MESS
+eVote poll [y/n] if-voted visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll [y/n] if-voted hidden"
+cat << EOF > MESS
+eVote poll [y/n] if-voted hidden
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="order scrambled"
+cat << EOF > MESS
+eVote poll visible [y/n] public visible 
+message:
+bla
+EOF
+try_that 
+
+
+SUBJECT="poll numeric public visible"
+cat << EOF > MESS
+eVote poll [-10,10] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll numeric public hidden"
+cat << EOF > MESS
+eVote poll [-10,10] public hidden 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll numeric private visible"
+cat << EOF > MESS
+eVote poll [-33,115] private visible
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll numeric private hidden"
+cat << EOF > MESS
+eVote poll [0,100] private hidden
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll numeric if-voted visible"
+cat << EOF > MESS
+eVote poll [1,88] if-voted visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll numeric if-voted hidden"
+cat << EOF > MESS
+eVote poll [2,3] if-voted hidden
+message:
+bla
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    POLL ERRORS  POLL ERRORS  POLL ERRORS " >> all.out
+echo " " >> all.out
+
+try_that
+
+
+SUBJECT="poll numeric bad limits"
+cat << EOF > MESS
+eVote poll [-1,120] public visible 
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll [10] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="switched limits"
+cat << EOF > MESS
+eVote poll [-5,-1] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="negative max"
+cat << EOF > MESS
+eVote poll [1,-10] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="TINY MIN"
+cat << EOF > MESS
+eVote poll [-120,100] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll group bad choice"
+cat << EOF > MESS
+eVote poll group public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="Not enough choices"
+cat << EOF > MESS
+eVote poll group public visible 3
+1. one choice  [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+
+SUBJECT="Exactly the number of choices"
+cat << EOF > MESS
+eVote poll group public visible 2
+1. one choice  [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="Only one choice"
+cat << EOF > MESS
+eVote poll group public visible 1
+1. one choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="Must vote minimum"
+cat << EOF > MESS
+eVote poll group public visible 6
+1. one choice [1,10]
+2. another choice [5,10]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="mixed limits"
+cat << EOF > MESS
+eVote poll group public visible 1
+1. one choice [y/n]
+2. another choice [0,10]
+message:
+bla
+EOF
+try_that 
+
+
+SUBJECT="poll grouped numeric if-voted hidden with a very very very very very very very very very very very long name"
+cat << EOF > MESS
+eVote poll group if-voted hidden 
+1. one choice [-100,100]
+2. another choice [-111,111]
+3. one more choice [-3,20]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="Empty message"
+cat << EOF > MESS
+eVote poll group if-voted hidden 10
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    GROUPED POLLS  GROUPED POLLS  GROUPED POLLS " >> all.out
+echo " " >> all.out
+
+SUBJECT="poll 2 choices"
+cat << EOF > MESS
+eVote poll group public visible 100
+1. Support [0,100]
+2. Oppose  [0,100]
+message
+what the heck.
+EOF
+try_that
+
+SUBJECT="poll grouped [y/n] public visible"
+cat << EOF > MESS
+eVote poll group public visible 1
+1. one choice [y/n]
+2. another choice [y/n]
+3. third choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote who voted yes on 2.
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who voted no on 1.
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+
+EXTRA="Received:  something"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+SUBJECT="poll grouped [y/n] public visible"
+
+
+
+cat << EOF > MESS
+eVote close
+EOF
+try_that
+
+
+SUBJECT="Confirm: 111111 poll grouped [y/n] public visible"
+try_that
+SUBJECT="poll grouped [y/n] public visible"
+
+cat << EOF > MESS
+eVote list open
+end
+some junk
+EOF
+try_that
+
+
+EXTRA="Received:  something"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+SUBJECT="poll grouped [y/n] public visible"
+
+cat << EOF > MESS
+eVote list closed
+EOF
+
+try_that
+
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list 
+EOF
+try_that
+
+SUBJECT="poll grouped [y/n] public visible"
+cat << EOF > MESS
+eVote poll group public visible 
+1. one choice [y/n]
+2. another choice [y/n]
+3. third choice [y/n]
+4.  fourth [y/n]
+5.  fifth [y/n]
+message:
+EOF
+try_that 
+
+SUBJECT="poll grouped [y/n] public hidden"
+cat << EOF > MESS
+eVote poll group public hidden 1
+1. one choice [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped [y/n] private visible"
+cat << EOF > MESS
+eVote poll group private visible 1
+1. one choice [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped [y/n] private hidden"
+cat << EOF > MESS
+eVote poll group private hidden 1
+1. one choice [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+
+SUBJECT="poll grouped [y/n] if-voted visible"
+cat << EOF > MESS
+eVote poll group if-voted visible 
+1. one choice [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped [y/n] if-voted hidden"
+cat << EOF > MESS
+eVote poll group if-voted hidden 1
+1. one choice [y/n]
+2. another choice [y/n]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric public visible"
+cat << EOF > MESS
+eVote poll group public visible 
+1. one choice [-10,10]
+2. another choice [-10,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric public hidden"
+cat << EOF > MESS
+eVote poll group public hidden 10
+1. one choice [-10,10]
+2. another choice [-10,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric private visible"
+cat << EOF > MESS
+eVote poll group private visible 10
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote who voted >5 on 2.
+eVote who voted <10 on 3.
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who voted 12 on 2.
+EOF
+try_that
+
+SUBJECT="poll grouped numeric private hidden"
+cat << EOF > MESS
+eVote poll group private hidden 10
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+#  ********   does this work?
+SUBJECT="poll grouped numeric if-voted visible"
+cat << EOF > MESS
+eVote poll group if-voted visible 10
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric if-voted hidden"
+cat << EOF > MESS
+eVote poll group if-voted hidden 10
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric if-voted hidden no sum limit"
+cat << EOF > MESS
+eVote poll group if-voted hidden 
+1. one choice [1,10]
+2. another choice [1,10]
+3. one more choice [3,20]
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that 
+
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote poll group public visible 10
+1.  one [y/n]
+2.  two [y/n]
+3.  three [y/n]
+4.  four [y/n]
+5.  five [y/n]
+6.  six [y/n]
+7.  seven [y/n]
+8.  eight [y/n]
+9.  nine [y/n]
+10. ten [y/n]
+11.  eleven [y/n]
+12.  twelve [y/n]
+13.  thirteen [y/n]
+14.  fourteen [y/n]
+15.  fifteen [y/n]
+16.  sixteen [y/n]
+17.  seventeen [y/n]
+18.  eighteen [y/n]
+19.  nineteen [y/n]
+20.  twenty [y/n]
+21.  twenty one [y/n]
+22. twenty two [y/n]
+23. twenty three [y/n]
+24. twenty four [y/n]
+25. twenty five [y/n]
+26. twenty six [y/n]
+27. twenty seven [y/n]
+28. twenty eight [y/n]
+29. twenty nine [y/n]
+30. thirty [y/n]
+31. thirty one [y/n]
+32. thirty two [y/n]
+33. thirty three [y/n]
+34. thirty four [y/n]
+35. thirty five [y/n]
+36. thirty six [y/n]
+37. thirty seven [y/n]
+38. thirty eight [y/n]
+39. thirty nine [y/n]
+40. forty [y/n]
+41. forty one [y/n]
+42. forty two [y/n]
+43. forty three [y/n]
+44. forty four [y/n]
+45. forty five [y/n]
+46. forty six [y/n]
+47. forty seven [y/n]
+48. forty eight [y/n]
+49. forty nine [y/n]
+50. fifty [y/n]
+51. fifty one [y/n]
+52. fifty two [y/n]
+53. fifty three [y/n]
+54. fifty four [y/n]
+55. fifty five [y/n]
+56. fifty six [y/n]
+57. fifty seven [y/n]
+58. fifty eight [y/n]
+59. fifty nine [y/n]
+60. sixty [y/n]
+61. sixty one [y/n]
+62. sixty two [y/n]
+63. sixty three [y/n]
+44. sixty four [y/n]
+65. sixty five [y/n]
+66. sixty six [y/n]
+67. sixty seven [y/n]
+68. sixty eight [y/n]
+69. sixty nine [y/n]
+70. seventy [y/n]
+71. seventy one [y/n]
+72. seventy two [y/n]
+73. seventy three [y/n]
+74. seventy four [y/n]
+75. seventy five [y/n]
+76. seventy six [y/n]
+77. seventy seven [y/n]
+78. seventy eight [y/n]
+79. seventy nine [y/n]
+80. This is choice number eighty how does it print [y/n]
+81. eighty one [y/n]
+82. eighty two [y/n]
+83. eighty three [y/n]
+84. eighty four [y/n]
+85. eighty five [y/n]
+86. eighty six [y/n]
+87. eighty seven [y/n]
+88. eighty eight [y/n]
+89. eighty nine [y/n]
+90. ninety [y/n]
+91. ninety one [y/n]
+92. ninety two [y/n]
+93. ninety three [y/n]
+94. ninety four [y/n]
+95. ninety five [y/n]
+96. ninety six [y/n]
+97. ninety seven [y/n]
+98. ninety eight [y/n]
+99. ninety nine [y/n]
+100. one hundred [y/n]
+
+message:
+What's your favorite number?
+EOF
+try_that 
+
+EXTRA="Received:  something"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary1@somewhere.com"
+SUBJECT="big 1,99 poll"
+cat << EOF > MESS
+eVote poll group public visible 100
+1.  one [0,99]
+2.  two [0,99]
+3.  three [0,99]
+4.  four [0,99]
+5.  five [0,99]
+6.  six [0,99]
+7.  This is the seventh choice on this poll [0,99]
+8.  eight [0,99]
+9.  nine [0,99]
+10. ten [0,99]
+11.  eleven [0,99]
+12.  twelve [0,99]
+13.  thirteen [0,99]
+14.  fourteen [0,99]
+15.  fifteen [0,99]
+16.  sixteen [0,99]
+17.  seventeen [0,99]
+18.  eighteen [0,99]
+19.  nineteen [0,99]
+20.  twenty [0,99]
+21.  twenty one [0,99]
+22. twenty two [0,99]
+23. twenty three [0,99]
+24. twenty four [0,99]
+25. twenty five [0,99]
+26. twenty six [0,99]
+27. twenty seven [0,99]
+28. twenty eight [0,99]
+29. twenty nine [0,99]
+30. thirty [0,99]
+31. thirty one [0,99]
+32. thirty two [0,99]
+33. thirty three [0,99]
+34. thirty four [0,99]
+35. thirty five [0,99]
+36. thirty six [0,99]
+37. thirty seven [0,99]
+38. thirty eight [0,99]
+39. thirty nine [0,99]
+40. forty [0,99]
+41. forty one [0,99]
+42. forty two [0,99]
+43. forty three [0,99]
+44. forty four [0,99]
+45. forty five [0,99]
+46. forty six [0,99]
+47. forty seven [0,99]
+48. forty eight [0,99]
+49. forty nine [0,99]
+50. fifty [0,99]
+51. fifty one [0,99]
+52. fifty two [0,99]
+53. fifty three [0,99]
+54. fifty four [0,99]
+55. fifty five [0,99]
+56. fifty six [0,99]
+57. fifty seven [0,99]
+58. fifty eight [0,99]
+59. fifty nine [0,99]
+60. sixty [0,99]
+61. sixty one [0,99]
+62. sixty two [0,99]
+63. sixty three [0,99]
+44. sixty four [0,99]
+65. sixty five [0,99]
+66. sixty six [0,99]
+67. sixty seven [0,99]
+68. sixty eight [0,99]
+69. sixty nine [0,99]
+70. seventy [0,99]
+71. seventy one [0,99]
+72. seventy two [0,99]
+73. seventy three [0,99]
+74. seventy four [0,99]
+75. seventy five [0,99]
+76. seventy six [0,99]
+77. seventy seven [0,99]
+78. seventy eight [0,99]
+79. seventy nine [0,99]
+80. eighty [0,99]
+81. eighty one [0,99]
+82. eighty two [0,99]
+83. eighty three [0,99]
+84. eighty four [0,99]
+85. eighty five [0,99]
+86. eighty six [0,99]
+87. eighty seven [0,99]
+88. eighty eight [0,99]
+89. eighty nine [0,99]
+90. ninety [0,99]
+91. ninety one [0,99]
+92. ninety two [0,99]
+93. ninety three [0,99]
+94. ninety four [0,99]
+95. ninety five [0,99]
+96. ninety six [0,99]
+97. ninety seven [0,99]
+98. ninety eight [0,99]
+99. ninety nine [0,99]
+100. one hundred [0,99]
+
+message:
+What's your favorite number?
+EOF
+try_that 
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+FROM="mary@somewhere.com"
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    WHO? NO ONE  WHO? NO ONE  WHO? NO ONE " >> all.out
+echo " " >> all.out
+
+SUBJECT="poll grouped numeric public visible"
+cat << EOF > MESS
+eVote who
+1. >= 3
+2. 4
+3. < 8
+EOF
+try_that
+
+SUBJECT="poll grouped [y/n] public visible"
+cat << EOF > MESS
+eVote who
+1. y
+2. n
+EOF
+try_that
+
+SUBJECT="poll numeric public visible"
+cat << EOF > MESS
+eVote who 1
+eVote who >5
+eVote who = 3
+EOF
+try_that
+
+SUBJECT="poll [y/n] public hidden"
+cat << EOF > MESS
+eVote who = y
+eVote who == n
+EOF
+try_that
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    VOTING  VOTING  VOTING " >> all.out
+echo " " >> all.out
+
+
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+
+SUBJECT="poll grouped numeric public visible"
+cat << EOF > MESS
+eVote 
+1. -10
+2. 0
+3. 0
+EOF
+try_that
+
+#~~~~~~~~~~~~~~~~~~~~~~~~
+#   BIG VOTES
+
+FROM="mary@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+try_that
+
+ARGS=""
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary@somewhere.com has unsubscribed from ed.
+No action is required on your part.
+EOF
+try_that 
+
+FROM="mary2@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+ARGS="resend_test -l abc"
+SUBJECT="Confirm: 111111 UNSUBSCRIBE abc"
+
+try_that
+
+FROM="mary2@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary@somewhere.com has subscribed to abc.
+No action is required on your part.
+EOF
+try_that 
+
+FROM="mary@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+try_that
+
+ARGS=""
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary@somewhere.com has unsubscribed from ed.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. n
+EOF
+try_that
+
+FROM="mary2@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary@somewhere.com has subscribed from ed.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+
+FROM="mary@somewhere.com"
+cat << EOF > MESS
+eVote back
+EOF
+try_that
+
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. n
+EOF
+try_that
+
+ARGS="resend_test -l abc"
+SUBJECT="Confirm: 111111 back abc"
+
+try_that
+
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. n
+EOF
+try_that
+
+FROM="mary2@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+try_that
+
+cat << EOF > MESS
+eVote vacation
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+eVote back
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE abc"
+
+try_that
+
+ARGS=""
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary2@somewhere.com has unsubscribed from ed.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+eVote back
+EOF
+try_that
+
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. n
+EOF
+try_that
+
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary2@somewhere.com has subscribed to abc.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+try_that
+
+ARGS="resend_test -l abc"
+SUBJECT="Confirm: 111111 SUBSCRIBE abc"
+
+try_that
+
+SUBJECT="big [y/n] poll"
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+
+cat << EOF > MESS
+eVote 
+80. y
+EOF
+
+ARGS=""
+SUBJECT="UNSUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary2@somewhere.com has unsubscribed to abc.
+No action is required on your part.
+EOF
+try_that 
+
+FROM="mary2@somewhere.com"
+ARGS="resend_test -l abc"
+SUBJECT="Confirm: 111111 UNSUBSCRIBE abc"
+try_that
+
+SUBJECT="big [y/n] poll"
+FROM="mary@somewhere.com"
+
+cat << EOF > MESS
+eVote info
+EOF
+
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary2@somewhere.com has subscribed to abc.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+SUBJECT="big [y/n] poll"
+FROM="mary@somewhere.com"
+
+cat << EOF > MESS
+eVote info
+EOF
+
+try_that
+
+cat << EOF > MESS
+eVote
+80. y
+EOF
+try_that
+
+even_vote
+
+cat << EOF > MESS
+eVote 
+7. y
+EOF
+odd_vote
+
+
+SUBJECT="big 1,99 poll"
+cat << EOF > MESS
+eVote 
+80. 20
+20. 20
+14. 3
+2. 1
+12. 30
+100. 10
+90. 16
+EOF
+even_vote
+
+cat << EOF > MESS
+eVote 
+7. 40
+80. 1
+90. -1
+100. 1
+10. 1
+11. 1
+12. 1
+13. 1
+14. 1
+15. -10
+16. 1
+17. 2
+18. 2
+19. 2
+20. 2
+21. 2
+22. 2
+23. 2
+24. 2
+25. 2
+EOF
+odd_vote
+
+FROM="mary@somewhere.com"
+vote_one
+
+FROM="mary2@somewhere.com"
+vote_two
+
+FROM="mary4@somewhere.com"
+vote_two
+
+FROM="mary5@somewhere.com"
+vote_one
+
+FROM="mary6@somewhere.com"
+vote_two
+
+FROM="mary7@somewhere.com"
+vote_one
+
+FROM="mary8@somewhere.com"
+vote_two
+
+FROM="mary9@somewhere.com"
+vote_one
+
+FROM="mary10@somewhere.com"
+vote_two
+
+FROM="mary11@somewhere.com"
+vote_one
+
+FROM="mary12@somewhere.com"
+vote_two
+
+FROM="joe@blow.com"
+vote_one
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    CHANGE VOTES  CHANGE VOTES  CHANGE VOTES " >> all.out
+echo " " >> all.out
+
+FROM="mary@somewhere.com"
+vote_two
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    BAD VOTES  BAD VOTES  BAD VOTES " >> all.out
+echo " " >> all.out
+
+SUBJECT="poll [y/n] public visible"
+cat << EOF > MESS
+eVote 3
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote never
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote no
+EOF
+try_that 
+
+SUBJECT="poll numeric public visible"
+cat << EOF > MESS
+eVote 13
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote -13
+EOF
+try_that 
+
+SUBJECT="poll grouped [y/n] public visible"
+cat << EOF > MESS
+eVote
+1. y
+2. y
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+1. 4
+2. 
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+1. 
+2. 
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+4. y
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+0. y
+EOF
+try_that 
+
+SUBJECT="poll grouped numeric public visible"
+cat << EOF > MESS
+eVote
+4. y
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+4. 3
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+1. 0
+2. 1
+3. 6
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote
+1. 10
+2. 5
+EOF
+try_that 
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    REMOVE VOTES  REMOVE VOTES  REMOVE VOTES " >> all.out
+echo " " >> all.out
+
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+eVote y
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote remove
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote y
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote 3
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote remove
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote 2
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_numeric
+
+cat << EOF > MESS
+eVote
+1. n
+2. y
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote remove
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_gyn
+
+cat << EOF > MESS
+eVote
+1. 1
+2. 2
+3. 3
+EOF
+do_gnumeric
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_gnumeric
+
+
+cat << EOF > MESS
+eVote remove
+EOF
+do_gnumeric
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_gnumeric
+
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    INFO  INFO  INFO " >> all.out
+echo " " >> all.out
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote info
+EOF
+do_all
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    STATS  STATS  STATS " >> all.out
+echo " " >> all.out
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_all
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    HELP WHO  HELP WHO  HELP WHO " >> all.out
+echo " " >> all.out
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote help who
+EOF
+do_all
+
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "    HELP HOW  HELP HOW  HELP HOW " >> all.out
+echo " " >> all.out
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote help how
+EOF
+do_all
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "  WHO YES   WHO YES   WHO YES " >> all.out
+echo " " >> all.out
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote who yes
+EOF
+do_yn
+
+cat << EOF > MESS
+eVote who no
+EOF
+do_yn
+
+SUBJECT="poll [y/n] public hidden"
+cat << EOF > MESS
+eVote who >3
+EOF
+try_that
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="joe@blow.com"
+
+cat << EOF > MESS
+eVote who vote
+EOF
+do_all
+
+SUBJECT="poll [y/n] public hidden"
+cat << EOF > MESS
+eVote who voted 4
+EOF
+try_that
+
+SUBJECT="poll grouped numeric public visible"
+try_that
+
+SUBJECT="poll grouped [y/n] public visible"
+try_that
+
+do_numeric
+
+cat << EOF > MESS
+eVote who has voted
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who >= vote
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who has not voted
+EOF
+do_all
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="mary2@somewhere.com"
+SUBJECT="big [y/n] poll"
+cat << EOF > MESS
+eVote who w=40
+EOF
+try_that
+
+cat << EOF > MESS
+eVote spread w=40
+EOF
+try_that
+
+cat << EOF > MESS
+eVote s w=120
+EOF
+try_that
+
+SUBJECT="big 1,99 poll"
+
+cat << EOF > MESS
+eVote who w=40
+EOF
+try_that
+
+cat << EOF > MESS
+eVote spread w=40
+EOF
+try_that
+
+cat << EOF > MESS
+eVote s w=120
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who !vote
+EOF
+try_that
+
+SUBJECT="poll [y/n] private visible"
+cat << EOF > MESS
+eVote who >= vote
+EOF
+try_that
+
+SUBJECT="poll numeric public visible"
+cat << EOF > MESS
+eVote who >= vote
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who >= 2
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who >= 0
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who >= 12
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who < 5
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who <= 3
+EOF
+try_that
+
+SUBJECT="poll numeric public hidden"
+try_that
+
+SUBJECT="poll numeric private visible"
+try_that
+
+SUBJECT="poll numeric if-voted visible"
+try_that
+
+SUBJECT="poll grouped [y/n] public visible"
+cat << EOF > MESS
+eVote who 
+1. y
+2. y
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. y
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. y
+2. 8
+EOF
+try_that
+
+SUBJECT="poll grouped [y/n] private visible"
+cat << EOF > MESS
+eVote who 
+1. N
+2. Y
+EOF
+try_that
+
+SUBJECT="poll grouped [y/n] if-voted visible"
+try_that
+
+SUBJECT="poll grouped numeric public hidden"
+cat << EOF > MESS
+eVote who
+1. < -8
+2. <= -1
+3. > 6
+EOF
+try_that 
+
+
+SUBJECT="poll grouped numeric public visible"
+cat << EOF > MESS
+eVote who 
+1. >= 8
+2. >= 8
+3. >= 8
+EOF
+try_that
+
+cat << EOF > MESS
+eVote 
+1. 1
+2. 2
+3. 3
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who
+1. 1
+2. <= 2
+3. >= 3
+EOF
+try_that
+
+cat << EOF > MESS
+eVote 
+1. 3
+2. 4
+3. 5
+EOF
+try_that
+
+
+cat << EOF > MESS
+eVote who
+1. >1
+2. >2
+3. <=8
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. all
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. >= vote
+2. < 2
+3. > 10
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. = 3
+4. > 10
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+1. >= 12
+EOF
+try_that
+
+SUBJECT="poll grouped numeric private visible"
+cat << EOF > MESS
+eVote who 
+1. >= 8
+2. >= 8
+3. >= 8
+EOF
+try_that
+
+SUBJECT="poll grouped numeric if-voted hidden"
+try_that
+
+SUBJECT="poll [y/n] public visible"
+cat << EOF > MESS
+eVote y
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who 
+EOF
+do_all
+
+cat << EOF > MESS
+eVote n
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who n
+EOF
+try_that
+
+FROM="joe@blow.com"
+SUBJECT="poll [y/n] public visible"
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+SUBJECT="poll [y/n] public visible"
+FROM="mary@somewhere.com"
+try_that
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote close
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list open
+EOF
+try_that
+
+SUBJECT="poll [y/n] public visible"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="mary@somewhere.com"
+cat << EOF > MESS
+eVote list open
+EOF
+
+try_that
+
+cat << EOF > MESS
+eVote list closed
+EOF
+try_that
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote close
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+try_that
+
+SUBJECT="Confirm: 111111 poll [y/n] public visible"
+try_that
+
+SUBJECT="poll [y/n] public visible"
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+try_that
+
+SUBJECT="Confirm: 111111 poll [y/n] public visible"
+try_that
+SUBJECT="poll [y/n] public visible"
+
+cat << EOF > MESS
+eVote list all
+EOF
+try_that
+
+SUBJECT="early dropper"
+cat << EOF > MESS
+eVote poll [y/n] public visible
+message:
+Will this go away?
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list open
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list closed
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list all
+EOF
+try_that
+
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 early dropper"
+try_that
+
+SUBJECT="early dropper"
+try_that
+
+cat << EOF > MESS
+eVote poll [y/n] public visible
+message:
+Will this go away?
+EOF
+try_that
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+SUBJECT="There's no poll here"
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+cat << EOF > MESS
+eVote stats
+EOF
+try_that
+
+cat << EOF > MESS
+eVote help info
+EOF
+try_that
+
+FROM="nobody@nowhere.edu"
+cat << EOF > MESS
+eVote drop
+EOF
+try_that
+
+cat << EOF > MESS
+eVote info
+EOF
+try_that
+
+cat << EOF > MESS
+eVote stats
+EOF
+try_that
+
+cat << EOF > MESS
+eVote help info
+EOF
+try_that
+
+
+SUBJECT="poll [y/n] public visible"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="mary@somewhere.com"
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "  HOW   HOW   HOW " >> all.out
+echo " " >> all.out
+
+FROM="joe@blow.com"
+cat << EOF > MESS
+eVote how mary@somewhere.com
+mary2@somewhere.com
+eVote how mary6@somewhere.com
+fred@fifo.com
+eVote how mary1@somewhere.com
+EOF
+do_all
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "  CLOSE   CLOSE   CLOSE " >> all.out
+echo " " >> all.out
+
+SUBJECT="poll [y/n] public visible"
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="mary@somewhere.com"
+cat << EOF > MESS
+eVote who
+EOF
+do_all
+
+
+cat << EOF > MESS
+eVote close
+EOF
+try_that
+
+do_confirm_all
+
+SUBJECT="poll [y/n] public visible"
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+FROM="joe@blow.com"
+TO="abc-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+mary13@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+mary14@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l abc"
+TO="abc@xoko"
+EXTRA="Received:  by whatever"
+FROM="mary@somewhere.com"
+SUBJECT="x"
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list close
+EOF
+try_that
+
+cat << EOF > MESS
+eVote list open
+EOF
+try_that
+
+cat << EOF > MESS
+eVote stats
+EOF
+do_all
+
+cat << EOF > MESS
+eVote info
+EOF
+do_all
+
+cat << EOF > MESS
+eVote drop
+EOF
+do_confirm_all
+
+SUBJECT="poll [y/n] public visible"
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+echo " " >> all.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> all.out
+echo "  END   END   END " >> all.out
+echo " " >> all.out
+

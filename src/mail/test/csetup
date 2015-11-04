@@ -1,0 +1,31 @@
+# $Id: csetup,v 1.4 2003/04/07 18:31:31 marilyndavis Exp $ 
+# csetup - Clerk's set-up program
+# Run this as the clerk login when your environment is all set to
+# produce a bug.  Also run msetup as the majordom login.
+# After you watch the bug, run cres and mres to be ready to watch
+# the bug again.
+#
+# By default, it thinks that "home" is EVOTE_HOME_DIR.  Give
+# the path as an argument if that's not right for you.
+#
+if [ $# -lt 1 ]
+  then
+    EVOTE_HOME_DIR="/home"
+  else
+    EVOTE_HOME_DIR=$1
+fi
+
+eVote quit
+eVote stop_ipc
+if [ ! -e $EVOTE_HOME_DIR/eVote/data/bugdata ]
+then
+  mkdir $EVOTE_HOME_DIR/eVote/data/bugdata
+fi
+touch $EVOTE_HOME_DIR/eVote/data/bugdata/x
+chmod -R u+w $EVOTE_HOME_DIR/eVote/data
+rm $EVOTE_HOME_DIR/eVote/data/bugdata/*
+touch $EVOTE_HOME_DIR/eVote/data/~x
+rm $EVOTE_HOME_DIR/eVote/data/~*
+cp $EVOTE_HOME_DIR/eVote/data/* $EVOTE_HOME_DIR/eVote/data/bugdata
+eVote
+

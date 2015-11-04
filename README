@@ -1,0 +1,105 @@
+eVote/Clerk -- Electronic Democracy Tool Kit
+Copyright (C) 1993 ... 2003 by Deliberate.Com
+2555 W. Middlefield Rd. #150, Mountain View, CA 94043
+
+INTRODUCTION
+
+"The Clerk" is a specialized database server, specialized to keep
+votes for a computer-connected community.
+
+"eVote(R)" is any user interface that uses The Clerk.
+
+eVote(R)/Clerk 2.5xx is the email user interface for taking polls
+amongst the members of email lists.  It cooperates with Mailman or
+Majordomo listservers.
+
+FEATURES
+
+  *  Enables any member of an email list to generate a new poll for
+     the group.
+
+  *  Polls can be:
+
+        +  Public - where everyone can see everyone's votes, or
+        +  Private - where no one can see anyone else's vote, or
+        +  If-Voted - where everyone can see who voted, but not how
+                      they voted.
+
+        +  Numeric - where votes are from 1 to 10, or -10 to 10, etc., or
+        +  Yes/No.
+
+        +  Visible - where everyone can see the tally while the poll is
+                     open, or
+        +  Hidden -  where no one can see the results until the poll is
+                     closed.
+
+        +  Single item - or,
+        +  Grouped items - where participants vote for one of a number
+                     of choices, or for three of the choices, or they can
+                     distribute their 100 vote points over the choices.
+
+  * Supports petitions.  Petitions are generated and administered by the 
+    members of a "petition" list.  Petition features:
+
+        + Open for anyone to sign.
+        + Supported in English, Spanish and French.  
+        + Can be:
+            - Signature-only petitions
+            - Petitions with voting items
+            - Petitions with forms
+
+REQUIREMENTS
+
+You must be running Mailman or Majordomo on the Linux operating system.
+Mailman is written in Python and has a web-based interface.  Majordomo
+is written in Perl and is email-only.
+
+To install Mailman, collect version 2.0.13 from
+http://sourceforge.net/projects/mailman.
+
+To install Majordomo, collect version 2.94.5 from
+http://www.greatcircle.com/majordomo.
+
+GETTING STARTED
+
+To install, please use the directions in the "Installation" chapter
+of ./doc/eVote.doc
+
+FOR MORE INFORMATION
+
+The complete eVote(R)/Clerk manual is in ./doc/eVote.doc.
+
+eVote's home page is:
+
+   http://www.deliberate.com
+
+eVote's development is collaborated at:
+
+   http://sourceforge.net/projects/evote
+
+Email lists for eVote are:
+
+   eVote-users@deliberate.com
+
+and
+
+   eVote-workers@deliberate.com
+
+To subscribe:
+
+   1.  Write to:
+
+       majordomo@deliberate.com
+
+   2.  The subject doesn't matter.
+
+   3.  The message should say:
+
+       subscribe eVote-users
+      
+       and/or:
+
+       subscribe eVote-workers
+
+Please use Sourceforge to report bugs and submit patches.
+

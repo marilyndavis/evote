@@ -1,0 +1,601 @@
+# $Id: mex,v 1.3 2003/04/07 18:31:32 marilyndavis Exp $ 
+
+# Functions are defined beyond here
+
+mv mex.out mex.out.old
+rm /tmp/t.out
+rm /tmp/r.out
+
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> mex.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> mex.out
+ echo " " >> mex.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> mex.out
+ echo " " >> mex.out
+ cat  tmp$$ >> mex.out
+ cat  tmp$$ > x
+ echo " " >> mex.out
+ echo "***** To stderr comes: *****" >> mex.out
+ echo " " >> mex.out
+
+ $CALL < tmp$$ 2>> mex.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f /tmp/r.out ]   
+   then
+     echo "                    LIST " >> mex.out
+     echo "***** r.out sent to LIST, says *****" >> mex.out
+     echo " " >> mex.out
+     cat /tmp/r.out >> mex.out
+     echo " " >> mex.out
+     rm /tmp/r.out
+ fi
+                    
+ if [  -f /tmp/t.out ]
+    then
+      echo "                     MAILER" >> mex.out
+      echo "***** t.out, sent to MAILER, says *****" >> mex.out
+      echo " " >> mex.out
+      cat /tmp/t.out >> mex.out
+      echo " " >> mex.out
+      rm /tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it all " >> mex.out
+fi
+
+
+
+#############  START  ####################
+
+echo " " > mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "    STARTING  STARTING  STARTING " >> mex.out
+echo " " >> mex.out
+
+TO="petitiona-approval@xoko"
+FROM="pollstera@somewhere.com"
+EXTRA="Received:  by whatever"
+CALL="../eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+
+try_that
+echo " " >> mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "   THE VOTE THE VOTE THE VOTE " >> mex.out
+echo " " >> mex.out
+
+TO="petitiona@xoko"
+CALL="../eVote_insert test/resend_test -l petitiona"
+SUBJECT="Mexico March -eVote"
+
+cat << EOF > MESS
+eVote poll group public visible
+1. No of reservations [1,100]
+
+message:
+This person count accompanies the registration for Mexico March.
+EOF
+try_that
+
+FROM="pollstera@somewhere.com"
+EXTRA="Received:  by whatever"
+TO="petitiona@xoko"
+CALL="../eVote_insert test/resend_test -l petitiona"
+SUBJECT="Mexico March"
+cat << EOF > MESS
+eVote petition public confirm
+form:
+*name: 
+*street:
+*city:
+*state:
+*zip:
+*country:
+*phone:
+comment:
+message:
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send \$425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the \$425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is \$850 per person and I will
+pay the remaining \$425 on arrival in Mexico March City.
+EOF
+try_that
+
+echo " " >> mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "   FIRST TEST FIRST TEST FIRST TEST " >> mex.out
+echo " " >> mex.out
+
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+FROM="maria@somewhere.com"
+SUBJECT="Mexico March"
+cat << EOF > MESS
+info
+EOF
+try_that
+
+
+cat << EOF > MESS
+No_of_reservations: 20
+country: USA
+And a comment
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Mexico March -en"
+try_that
+SUBJECT="Mexico March"
+
+cat << EOF > MESS
+remove
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Mexico March "
+try_that
+
+echo " " >> mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "   AND ON AND ON AND ON " >> mex.out
+echo " " >> mex.out
+
+FROM="pollstera@somewhere.com"
+
+SUBJECT="Mexico March"
+
+cat << EOF > MESS
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+phone: 650
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+And a comment
+EOF
+try_that
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+EOF
+try_that
+
+echo " " >> mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "   GOOD VOTE GOOD VOTE GOOD VOTE " >> mex.out
+echo " " >> mex.out
+
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Mexico March "
+try_that
+
+FROM="maria1@somewhere.com"
+try_that
+
+SUBJECT="Mexico March"
+cat << EOF > MESS
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Soy Maria 1
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+SUBJECT="Mexico March"
+FROM="maria2@somewhere.com"
+cat << EOF > MESS
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+EOF
+try_that
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+SUBJECT="Mexico March "
+FROM="maria3@somewhere.com"
+cat << EOF > MESS
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Maria mas aqui'.
+EOF
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+FROM="pollstera@somewhere.com"
+CALL="../eVote_insert test/resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="Mexico March"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote names
+end
+EOF
+try_that
+
+SUBJECT="Mexico March -eVote"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+cat << EOF > MESS
+eVote who
+end
+EOF
+try_that
+
+cat home/majordomo/lists/petitiona >> mex.out
+
+echo " " >> mex.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> mex.out
+echo "   REMOVE REMOVE REMOVE " >> mex.out
+echo " " >> mex.out
+
+SUBJECT="Mexico March"
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+cat << EOF > MESS
+remove
+end
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+SUBJECT="Mexico March"
+
+SUBJECT="Mexico March -eVote"
+FROM="pollstera@somewhere.com"
+CALL="../eVote_insert test/resend_test -l petitiona"
+FROM="pollstera@somewhere.com"
+TO="petitiona@xoko"
+cat << EOF > MESS
+eVote stats
+EOF
+try_that
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="Mexico March"
+cat << EOF > MESS
+remove
+EOF
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+SUBJECT="Mexico March"
+FROM="maria1@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+CALL="../eVote_insert test/resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="Mexico March -eVote"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote who
+end
+EOF
+try_that
+SUBJECT="Mexico March -eVote"
+try_that
+
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="Mexico March"
+cat << EOF > MESS
+remove
+EOF
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+SUBJECT="Mexico March"
+
+FROM="maria1@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+CALL="../eVote_insert test/resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="Mexico March -eVote"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+SUBJECT="Mexico March"
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+cat << EOF > MESS
+remove
+EOF
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+SUBJECT="Mexico March"
+try_that
+
+FROM="maria2@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+SUBJECT="Mexico March"
+FROM="maria3@somewhere.com"
+try_that
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+CALL="../eVote_insert test/resend_test -l petitiona"
+SUBJECT="Mexico March -eVote"
+TO="petitiona@xoko"
+FROM="pollstera@somewhere.com"
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+SUBJECT="Mexico March"
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+cat << EOF > MESS
+remove
+EOF
+SUBJECT="Confirm: 111111 Mexico March"
+try_that
+
+FROM="pollstera@somewhere.com"
+SUBJECT="Mexico March -eVote"
+CALL="../eVote_insert test/resend_test -l petitiona"
+TO="petitiona@xoko"
+
+cat << EOF > MESS
+eVote stats
+end
+EOF
+try_that
+
+SUBJECT="Mexico March"
+
+cat << EOF > MESS
+eVote names
+end
+EOF
+try_that
+
+SUBJECT="Mexico March -eVote"
+
+cat << EOF > MESS
+eVote who
+end
+EOF
+try_that
+
+cat home/majordomo/lists/petitiona >> mex.out
+
+CALL="../eVote_petition test/resend_test -l petitiona"
+TO="eVote@xoko"
+SUBJECT="Mexico March "
+cat << EOF > MESS
+help
+EOF
+try_that
+
+FROM="pollstera@somewhere.com"
+CALL="../eVote_insert test/resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="Mexico March"
+
+cat << EOF > MESS
+eVote names
+EOF
+try_that 
+
+SUBJECT="Mexico March -eVote"
+cat << EOF > MESS
+eVote stats
+EOF 
+try_that
+
+

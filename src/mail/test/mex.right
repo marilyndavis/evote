@@ -1,0 +1,8334 @@
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    STARTING  STARTING  STARTING 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+
+eVote created subscription file /home/majordomo/lists/petitiona.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   THE VOTE THE VOTE THE VOTE 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote poll group public visible
+1. No of reservations [1,100]
+
+message:
+This person count accompanies the registration for Mexico March.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  test/resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Poll: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064345.eVote.1.17597@xoko>
+
+--
+
+
+
+On Tue, 21 Aug 2001 06:43:48 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+1 participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     -      -      1. No of reservations 
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	petitiona@xoko
+
+with the subject, "Mexico March -eVote", 
+and with a message that says: 
+
+         eVote who
+
+to receive a spreadsheet showing everyone's votes.
+
+         eVote who w=140
+
+will produce a spreadsheet 140 columns wide.  The default is 80.
+
+Of course, everyone else on the petitiona list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to petitiona@xoko.
+ |
+ | 2.  Your subject must be "Mexico March -eVote".
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire petitiona list and it won't
+       be counted!
+
+       To vote 50 on item 1, your message should say:
+
+          eVote 
+          1. 50
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your votes while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your votes on "Mexico March -eVote", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "Mexico March -eVote", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "Mexico March -eVote":
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March -eVote
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote petition public confirm
+form:
+*name: 
+*street:
+*city:
+*state:
+*zip:
+*country:
+*phone:
+comment:
+message:
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  test/resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Mexico March
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064349.eVote.1.46016@xoko>
+
+--
+
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote petition public confirm
+form:
+*name: 
+*street:
+*city:
+*state:
+*zip:
+*country:
+*phone:
+comment:
+message:
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   FIRST TEST FIRST TEST FIRST TEST 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+info
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Re: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064353.eVote.1.37217@xoko>
+
+--
+
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+info
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 20
+country: USA
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064401.eVote.1.05152@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 20
+country: USA
+And
+
+You must give your "name:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 20
+country: USA
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March -en
+Status: RO
+
+No_of_reservations: 20
+country: USA
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064408.eVote.1.38424@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 20
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March -en
+Status: RO
+
+No_of_reservations: 20
+country: USA
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064415.eVote.1.05994@xoko>
+
+--
+
+
+In response to your message which starts:
+remove
+
+----
+
+We have no reservation for maria@somewhere.com for the Mexico March.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064422.eVote.1.20274@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 2 people:
+
+
+- - - Tue, 21 Aug 2001 06:44:23 -0700 - - - 
+
+From: maria@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+And a comment
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March 
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria@somewhere.com
+Subject: Mexico March Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064427.eVote.1.16029@xoko>
+
+--
+
+Thank you for registering for the Mexico March with
+Xokonoschtletl.  You have a reservation for 2 people.
+
+To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+Your reservation for 2 people is recorded as:
+
+
+- - - Tue, 21 Aug 2001 06:44:27 -0700 - - - 
+
+From: maria@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+And a comment
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   AND ON AND ON AND ON 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064428.eVote.1.44645@xoko>
+
+--
+
+
+In response to your message which starts:
+
+name:
+
+The first line of your message should look something like:
+
+No_of_reservations:  3
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064432.eVote.1.63503@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And
+
+You must give your "name:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064437.eVote.1.59048@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And
+
+You must give your "street:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064441.eVote.1.54810@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+street: here
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And
+
+You must give your "city:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064445.eVote.1.17833@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+zip: 99999
+country: USA
+phone: 650
+And
+
+You must give your "state:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064449.eVote.1.13537@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+country: USA
+phone: 650
+And
+
+You must give your "zip:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064453.eVote.1.41763@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+phone: 650
+And
+
+You must give your "country:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064457.eVote.1.37415@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+And
+
+You must give your "phone:"
+when registering for the March in Mexico.
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064501.eVote.1.33256@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 2 people:
+
+
+- - - Tue, 21 Aug 2001 06:45:04 -0700 - - - 
+
+From: pollstera@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   GOOD VOTE GOOD VOTE GOOD VOTE 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064505.eVote.1.61566@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 2 people:
+
+
+- - - Tue, 21 Aug 2001 06:45:08 -0700 - - - 
+
+From: pollstera@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+And a comment
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March 
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Mexico March Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064513.eVote.1.14956@xoko>
+
+--
+
+Thank you for registering for the Mexico March with
+Xokonoschtletl.  You have a reservation for 2 people.
+
+To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+Your reservation for 2 people is recorded as:
+
+
+- - - Tue, 21 Aug 2001 06:45:13 -0700 - - - 
+
+From: pollstera@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+And a comment
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March 
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064514.eVote.1.15781@xoko>
+
+--
+
+
+In response to your message which starts:
+
+No_of_reservations: 2
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March 
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+And a comment
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Soy Maria 1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064521.eVote.1.48939@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $425 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 1 person:
+
+
+- - - Tue, 21 Aug 2001 06:45:27 -0700 - - - 
+
+From: maria1@somewhere.com
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Soy Maria 1
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Soy Maria 1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Soy Maria 1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Mexico March Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064531.eVote.1.11736@xoko>
+
+--
+
+Thank you for registering for the Mexico March with
+Xokonoschtletl.  You have a reservation for 1 person.
+
+To hold your reservation please send $425 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+Your reservation for 1 person is recorded as:
+
+
+- - - Tue, 21 Aug 2001 06:45:31 -0700 - - - 
+
+From: maria1@somewhere.com
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Soy Maria 1
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Soy Maria 1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria2@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064532.eVote.1.45066@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 2 people:
+
+
+- - - Tue, 21 Aug 2001 06:45:38 -0700 - - - 
+
+From: maria2@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Y yo soy Maria2
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria2@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064539.eVote.1.40729@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 2 people:
+
+
+- - - Tue, 21 Aug 2001 06:45:42 -0700 - - - 
+
+From: maria2@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Y yo soy Maria2
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria2@somewhere.com
+Subject: Mexico March Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064546.eVote.1.36473@xoko>
+
+--
+
+Thank you for registering for the Mexico March with
+Xokonoschtletl.  You have a reservation for 2 people.
+
+To hold your reservation please send $850 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+Your reservation for 2 people is recorded as:
+
+
+- - - Tue, 21 Aug 2001 06:45:46 -0700 - - - 
+
+From: maria2@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Y yo soy Maria2
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Y yo soy Maria2
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March 
+Status: RO
+
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Maria mas aqui'.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria3@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064547.eVote.1.27764@xoko>
+
+--
+
+Your reservation for the March in Mexico with Xokonoschtletl
+for Kopilli Ketzalli has not been recorded yet.  To complete your
+reservaton process, please:
+
+1.  To verify that your message really came from you, please confirm
+    this message by using "Reply-To" and do not alter the subject
+    line.  You don't need to type anything new in your reply, it's
+    just a confirmation message.
+
+2.  To hold your reservation please send $1275 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+After you reply-to this message, the following will be recorded
+with your reservation for 3 people:
+
+
+- - - Tue, 21 Aug 2001 06:45:54 -0700 - - - 
+
+From: maria3@somewhere.com
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Maria mas aqui'.
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March 
+Status: RO
+
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Maria mas aqui'.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Maria mas aqui'.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria3@somewhere.com
+Subject: Mexico March Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064558.eVote.1.56148@xoko>
+
+--
+
+Thank you for registering for the Mexico March with
+Xokonoschtletl.  You have a reservation for 3 people.
+
+To hold your reservation please send $1275 to:
+
+	Yankuikanahuak
+	2555 W. Middlefield Rd, #150
+	Mountain View, CA 94043
+
+==== ===========
+YOUR RESERVATION
+==== ===========
+
+Your reservation for 3 people is recorded as:
+
+
+- - - Tue, 21 Aug 2001 06:45:58 -0700 - - - 
+
+From: maria3@somewhere.com
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Maria mas aqui'.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March 
+Status: RO
+
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+Maria mas aqui'.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote stats
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064559.eVote.1.19230@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:45:13 2001
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote stats
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064603.eVote.1.47436@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:02 2001
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+======== ==========
+PETITION SIGNATURES
+======== ==========
+- - - Tue, 21 Aug 2001 06:44:27 -0700 - - - 
+
+   From: maria@somewhere.com
+   No_of_reservations: 2
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   And a comment
+   
+   
+- - - Tue, 21 Aug 2001 06:45:13 -0700 - - - 
+
+   From: pollstera@somewhere.com
+   No_of_reservations: 2
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   And a comment
+   
+   
+- - - Tue, 21 Aug 2001 06:45:31 -0700 - - - 
+
+   From: maria1@somewhere.com
+   No_of_reservations: 1
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   Soy Maria 1
+   
+   
+- - - Tue, 21 Aug 2001 06:45:46 -0700 - - - 
+
+   From: maria2@somewhere.com
+   No_of_reservations: 2
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   Y yo soy Maria2
+   
+   
+- - - Tue, 21 Aug 2001 06:45:58 -0700 - - - 
+
+   From: maria3@somewhere.com
+   No_of_reservations: 3
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   Maria mas aqui'.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064607.eVote.1.10356@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:06 2001
+
+
+On Tue, 21 Aug 2001 06:46:10 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     2    2.0      1. No of reservations 
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064611.eVote.1.38819@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:10 2001
+
+
+On Tue, 21 Aug 2001 06:46:14 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+5 participants  5 voters 
+
+Petition signers' addresses are suppressed.
+
+   ,-- 1 No of reservations
+   1  
+ -----
+|   2 | pollstera@somewhere.com
+|   2 | maria@somewhere.com
+|   1 | maria1@somewhere.com
+|   2 | maria2@somewhere.com
+|   3 | maria3@somewhere.com
+ -----
+|   1 |    MINIMUM VOTE
+ -----
+| 100 |    MAXIMUM VOTE
+ -----
+| 2.0 |    AVERAGE
+ -----
+|  10 |    TOTAL RESERVATIONS
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   REMOVE REMOVE REMOVE 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064615.eVote.1.34570@xoko>
+
+--
+
+Thank you for your "remove" message on your reservation for the
+Mexico March.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Registration Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064619.eVote.1.30342@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:18 2001
+
+Your reservation for 2 people for the Mexico March has
+been cancelled.
+
+If you have sent in money, please write to:
+
+	mexico-info@deliberate.com
+
+to have your money refunded.  You will be charged a $25
+processing fee.  After October 1, 2001, the fee goes up to $100.
+
+
+The information removed was:
+
+- - - Tue, 21 Aug 2001 06:45:13 -0700 - - - 
+
+From: pollstera@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+And a comment
+
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064623.eVote.1.25820@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:22 2001
+
+
+On Tue, 21 Aug 2001 06:46:26 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     -    2.0      1. No of reservations 
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064628.eVote.1.44666@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:26 2001
+
+In response to your message which starts:
+remove
+
+----
+
+We have no reservation for pollstera@somewhere.com for the Mexico March.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064632.eVote.1.40340@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064636.eVote.1.03385@xoko>
+
+--
+
+Thank you for your "remove" message on your reservation for the
+Mexico March.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Registration Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064640.eVote.1.64353@xoko>
+
+--
+
+maria1@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:39 2001
+
+Your reservation for 1 person for the Mexico March has
+been cancelled.
+
+If you have sent in money, please write to:
+
+	mexico-info@deliberate.com
+
+to have your money refunded.  You will be charged a $25
+processing fee.  After October 1, 2001, the fee goes up to $100.
+
+
+The information removed was:
+
+- - - Tue, 21 Aug 2001 06:45:31 -0700 - - - 
+
+From: maria1@somewhere.com
+No_of_reservations: 1
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Soy Maria 1
+
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064644.eVote.1.60048@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:35 2001
+
+
+On Tue, 21 Aug 2001 06:46:47 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+4 participants  3 voters 
+
+Petition signers' addresses are suppressed.
+
+   ,-- 1 No of reservations
+   1  
+ -----
+|     | pollstera@somewhere.com
+|   2 | maria@somewhere.com
+|   2 | maria2@somewhere.com
+|   3 | maria3@somewhere.com
+ -----
+|   1 |    MINIMUM VOTE
+ -----
+| 100 |    MAXIMUM VOTE
+ -----
+| 2.3 |    AVERAGE
+ -----
+|   7 |    TOTAL RESERVATIONS
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064648.eVote.1.55737@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:47 2001
+
+
+On Tue, 21 Aug 2001 06:46:51 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+4 participants  3 voters 
+
+Petition signers' addresses are suppressed.
+
+   ,-- 1 No of reservations
+   1  
+ -----
+|     | pollstera@somewhere.com
+|   2 | maria@somewhere.com
+|   2 | maria2@somewhere.com
+|   3 | maria3@somewhere.com
+ -----
+|   1 |    MINIMUM VOTE
+ -----
+| 100 |    MAXIMUM VOTE
+ -----
+| 2.3 |    AVERAGE
+ -----
+|   7 |    TOTAL RESERVATIONS
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064652.eVote.1.51260@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064656.eVote.1.19408@xoko>
+
+--
+
+
+In response to your message which starts:
+remove
+
+----
+
+We have no reservation for maria1@somewhere.com for the Mexico March.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria1@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064704.eVote.1.43321@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064711.eVote.1.06267@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:46:55 2001
+
+
+On Tue, 21 Aug 2001 06:47:14 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     -    2.3      1. No of reservations 
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064715.eVote.1.01718@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064719.eVote.1.63012@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064723.eVote.1.58603@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:22 2001
+
+In response to your message which starts:
+remove
+
+----
+
+We have no reservation for pollstera@somewhere.com for the Mexico March.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria2@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064727.eVote.1.21358@xoko>
+
+--
+
+Thank you for your "remove" message on your reservation for the
+Mexico March.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria2@somewhere.com
+Subject: Registration Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064731.eVote.1.17240@xoko>
+
+--
+
+maria2@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:30 2001
+
+Your reservation for 2 people for the Mexico March has
+been cancelled.
+
+If you have sent in money, please write to:
+
+	mexico-info@deliberate.com
+
+to have your money refunded.  You will be charged a $25
+processing fee.  After October 1, 2001, the fee goes up to $100.
+
+
+The information removed was:
+
+- - - Tue, 21 Aug 2001 06:45:46 -0700 - - - 
+
+From: maria2@somewhere.com
+No_of_reservations: 2
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Y yo soy Maria2
+
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria3@somewhere.com
+Subject: Confirm: 111111 Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064735.eVote.1.12925@xoko>
+
+--
+
+Thank you for your "remove" message on your reservation for the
+Mexico March.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To" and do not alter the subject
+line.  You don't need to type anything new in your reply, it's
+just a confirmation message.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: maria3@somewhere.com
+Subject: Registration Rcpt: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064740.eVote.1.27119@xoko>
+
+--
+
+maria3@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:38 2001
+
+Your reservation for 3 people for the Mexico March has
+been cancelled.
+
+If you have sent in money, please write to:
+
+	mexico-info@deliberate.com
+
+to have your money refunded.  You will be charged a $25
+processing fee.  After October 1, 2001, the fee goes up to $100.
+
+
+The information removed was:
+
+- - - Tue, 21 Aug 2001 06:45:58 -0700 - - - 
+
+From: maria3@somewhere.com
+No_of_reservations: 3
+name: Me
+street: here
+city: Mt V
+state: CA
+zip: 99999
+country: USA
+phone: 650
+
+Paid: $ 0.00     
+
+Maria mas aqui'.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  maria3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  maria3@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064741.eVote.1.55361@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:26 2001
+
+
+On Tue, 21 Aug 2001 06:47:44 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     -    2.0      1. No of reservations 
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064745.eVote.1.18306@xoko>
+
+--
+
+
+In response to your message which starts:
+
+remove
+
+Your message about:
+
+	Mexico March
+
+looks like a confirmation reply for "Mexico March" 
+with the confirmation key "111111".  However, we have
+no record of this confirmation key for you for
+"Mexico March".
+
+Here are the instructions for registering:
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Confirm: 111111 Mexico March
+Status: RO
+
+remove
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064749.eVote.1.13892@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:48 2001
+
+
+On Tue, 21 Aug 2001 06:47:52 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Participants are asked to vote on the following items:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    1   100     -    2.0      1. No of reservations 
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote stats
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064753.eVote.1.09779@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:52 2001
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+======== ==========
+PETITION SIGNATURES
+======== ==========
+- - - Tue, 21 Aug 2001 06:44:27 -0700 - - - 
+
+   From: maria@somewhere.com
+   No_of_reservations: 2
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   And a comment
+   
+   
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March -eVote
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064757.eVote.1.05176@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:47:56 2001
+
+
+On Tue, 21 Aug 2001 06:48:00 -0700
+pollstera@somewhere.com attached a poll to this subject:
+
+	Mexico March -eVote
+
+
+==== ====
+POLL TEXT
+==== ====
+
+This person count accompanies the registration for Mexico March.
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+2 participants  1 voter 
+
+Petition signers' addresses are suppressed.
+
+   ,-- 1 No of reservations
+   1  
+ -----
+|     | pollstera@somewhere.com
+|   2 | maria@somewhere.com
+ -----
+|   1 |    MINIMUM VOTE
+ -----
+| 100 |    MAXIMUM VOTE
+ -----
+| 2.0 |    AVERAGE
+ -----
+|   2 |    TOTAL RESERVATIONS
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March -eVote
+Status: RO
+
+eVote who
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_petition test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March 
+Status: RO
+
+help
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064801.eVote.1.34019@xoko>
+
+--
+
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+== ========
+TO REGISTER
+== ========
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+No_of_reservations:
+name: 
+street: 
+city: 
+state: 
+zip: 
+country: 
+phone: 
+comment: 
+
+---  cut here --- 
+
+      NOTE:
+
+      *  You must give an answer for each question, except
+         "comment".  "comment" is optional.
+
+========== ==== ===========
+CANCELLING YOUR RESERVATION
+========== ==== ===========
+
+If you wish to cancel your reservation:
+
+1.  Send a message to:
+
+	mexico_registration@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	remove
+
+Your deposit will be returned, minus a $25 processing fee.
+
+If you cancel your reservation after October 1, 2001, your deposit
+will be returned minus a $100 inconvenience fee.
+
+If you need to reach a person, write to:
+
+	mexico-info@deliberate.com
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this private petition, you, and
+only you can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Mexico March
+
+3.  Your message should say:
+
+	eVote names
+
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Mexico March 
+Status: RO
+
+help
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing ../eVote_insert test/resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Mexico March
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20010821064806.eVote.1.19922@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Tue Aug 21 06:48:04 2001
+
+This facility is for processing registrations for the March and tour
+in Mexico with Xokonoschtletl for the return of Kopilli Ketzalli.
+
+For information, see these web sites:
+
+	       About the March      http://www.deliberate.com/xoko
+
+	About Kopilli Ketzalli      http://www.deliberate.com/aztec
+
+
+===== ==== ==============
+MARCH WITH XOKONOSCHTLETL
+===== ==== ==============
+
+The March for Kopilli Ketzalli with Xokonoschtletl in Mexico March will be
+from November 3 - 17, 2001 and then we will relax at Xokonoschtletl's
+home from November 18 - 25, 2001.  Hotel rooms will be 3-4 per room;
+camping will be in hammocks.  All meals will be provided.
+
+I will send $425 deposit for each person to:
+
+    Yankuikanahuak
+    2555 W. Middlefield, #150
+    Mountain View, CA 94043
+
+I understand that the $425 deposit is necessary to guarantee my
+reservation.
+
+I also understand that the total cost is $850 per person and I will
+pay the remaining $425 on arrival in Mexico March City.
+
+
+======== ==========
+PETITION SIGNATURES
+======== ==========
+- - - Tue, 21 Aug 2001 06:44:27 -0700 - - - 
+
+   From: maria@somewhere.com
+   No_of_reservations: 2
+   name: Me
+   street: here
+   city: Mt V
+   state: CA
+   zip: 99999
+   country: USA
+   phone: 650
+   
+   Paid: $ 0.00     
+   
+   And a comment
+   
+   
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Mexico March
+Status: RO
+
+eVote names
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.501 Ser.No. 1
+
+ 

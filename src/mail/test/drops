@@ -1,0 +1,1054 @@
+# $Id: drops,v 1.4 2003/04/07 18:31:31 marilyndavis Exp $ 
+#  drops UI_BIN EVOTE_HOME_DIR
+#   UI_BIN = /home/majordomo by default -- where is eVote_insert?
+#   EVOTE_HOME_DIR=/home - where is eVote/data?
+#
+#  Drops - checks the dropping of polls and the dropping of voters
+#  and checks that they interact properly.
+#
+#  To run this one, change the Clerk's DATA_PERM and INFO_PERM in
+#  ../../Clerk/evotedef.h to be 0644 and change the permission on
+#  $EVOTE_HOME_DIR/eVote/data to be world writable.
+#
+#  Be sure you have changed the #define TESTING in ../mailui/util.c
+#  to be #define TESTING 1 so that the confirm keys are all 111111
+#
+#  Put it all back when you're done.
+#
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/home/majordomo"
+    EVOTE_HOME_DIR="/home"
+  else
+    UI_BIN=$1
+    if [ $# -gt 1 ]
+    then
+      EVOTE_HOME_DIR=$2
+    fi
+fi
+./mscratch
+cat $EVOTE_HOME_DIR/eVote/data/who.list > dall.out
+if [ $? != 0 ]
+then
+  echo "You need to open the permissions on $EVOTE_HOME_DIR/eVote/data"
+  echo "so that I can read $EVOTE_HOME_DIR/eVote/data/who.list."
+  exit
+fi
+touch dall.out
+mv dall.out dall.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> dall.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> dall.out
+ echo " " >> dall.out
+ echo "***** Calling eVote_insert $ARGS - Incoming message: *****" >> dall.out
+ echo " " >> dall.out
+ cat  tmp$$ >> dall.out
+ cat  tmp$$ > x
+ echo " " >> dall.out
+ echo "***** To stderr comes: *****" >> dall.out
+ echo " " >> dall.out
+
+  $UI_BIN/eVote_insert $ARGS < tmp$$ 2>> dall.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> dall.out
+     echo "***** r.out sent to LIST, says *****" >> dall.out
+     echo " " >> dall.out
+     cat ./tmp/r.out >> dall.out
+     echo " " >> dall.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> dall.out
+      echo "***** t.out, sent to MAILER, says *****" >> dall.out
+      echo " " >> dall.out
+      cat ./tmp/t.out >> dall.out
+      echo " " >> dall.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it dall " >> dall.out
+
+fi
+
+#############  START  ####################
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> dall.out
+echo " " >> dall.out
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE droppings"
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+# first time starts list and syncs to majordomo's list.  This test
+# doesn't have a majordomo list so sub again.
+
+try_that
+
+cat << EOF > MESS
+
+--
+
+"John Smith" has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+"John Smith" has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+# check that louise is dropped from who list
+
+SUBJECT="SUBSCRIBE droppings"
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="SUBSCRIBE abc"
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been added to abc.
+No action is required on your part.
+EOF
+try_that 
+
+
+try_that
+
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+# louise should still be in who list
+
+SUBJECT="SUBSCRIBE droppings"
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise2@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise3@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise4@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise5@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise6@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise7@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise8@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise9@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise10@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "     POLLS   POLLS   POLLS " >> dall.out
+echo " " >> dall.out
+
+EXTRA="Received:  something"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote poll [y/n] public visible 
+message:
+bla
+end
+some extra stuff
+EOF
+try_that 
+
+FROM="louise2@somewhere.com"
+SUBJECT="B"
+cat << EOF > MESS
+eVote poll [1,10] public visible 
+message:
+bla
+EOF
+try_that 
+
+SUBJECT="BBB"
+try_that
+SUBJECT="BBBBB"
+try_that
+
+FROM="louise3@somewhere.com"
+SUBJECT="C"
+cat << EOF > MESS
+eVote poll grouped public visible 3
+1. something [0,3]
+2. else [1,3]
+3. what [0,2]
+message:
+bla
+end
+extra stuff
+EOF
+try_that 
+
+FROM="louise4@somewhere.com"
+SUBJECT="D"
+cat << EOF > MESS
+eVote poll grouped private visible 2
+1. what [y/n]
+2. xxx [y/n]
+3. yyy [y/n]
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+# eVote check droppings good
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise@somewhere.com"
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    SOME DROPS  SOME DROPS  SOME DROPS " >> dall.out
+echo " " >> dall.out
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+# really gone, never voted -- but in who.list
+
+cat << EOF > MESS
+
+--
+
+louise7@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+
+# louise 7 should be out of who.list
+
+TO="abc@xoko"
+SUBJECT="UNSUBSCRIBE abc"
+ARGS=""
+cat << EOF > MESS
+
+--
+
+louise@somewhere.com has been removed from abc.
+No action is required on your part.
+EOF
+try_that 
+
+# eVote check droppings  -- good
+
+# louise should still be in the wholist for authoring A
+
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise2@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote y
+end
+extra stuff
+EOF
+try_that
+
+# eVote check droppings good
+
+SUBJECT="B"
+cat << EOF > MESS
+eVote 3
+EOF
+try_that
+
+FROM="louise9@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote n
+EOF
+try_that
+
+# eVote check droppings good
+
+FROM="louise8@somewhere.com"
+try_that
+
+# eVote check droppings good
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise3@somewhere.com"
+SUBJECT="C"
+cat << EOF > MESS
+eVote 
+1. 1
+2. 2
+end
+extra stuff
+EOF
+try_that
+
+eVote check droppings >> dall.out
+#bad
+
+FROM="louise5@somewhere.com"
+SUBJECT="C"
+cat << EOF > MESS
+eVote 
+1. 2
+3. 1
+EOF
+try_that
+
+eVote check droppings >> dall.out
+# bad
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise7@somewhere.com"
+SUBJECT="B"
+cat << EOF > MESS
+eVote 5
+EOF
+try_that
+
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    MORE SUBS  MORE SUBS  MORE SUBS " >> dall.out
+echo " " >> dall.out
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE droppings"
+cat << EOF > MESS
+
+--
+
+louise11@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise12@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise13@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise14@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+eVote check droppings >> dall.out 
+
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="dropping@xoko"
+FROM="louise11@somewhere.com"
+SUBJECT="B"
+cat << EOF > MESS
+eVote 3 end
+extra stuff
+EOF
+try_that
+
+TO="dropping@xoko"
+FROM="louise12@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote n
+end
+extra stuff
+EOF
+try_that
+
+FROM="louise13@somewhere.com"
+SUBJECT="B"
+cat << EOF > MESS
+eVote 3 end
+eVote 5
+end
+EOF
+try_that
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise11@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise11@somewhere.com"
+try_that
+
+
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise8@somewhere.com"
+try_that
+
+# louise 8 should be out of who.list
+
+# louise 8 and 11 should be gone from who.list
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    CLOSE A  CLOSE A  CLOSE A " >> dall.out
+echo " " >> dall.out
+
+eVote check droppings >> dall.out
+
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+EXTRA="Received:  by whatever"
+FROM="louise9@somewhere.com"
+SUBJECT="members"
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+SUBJECT="list"
+cat << EOF > MESS
+eVote list
+EOF
+try_that
+
+
+SUBJECT="A"
+cat << EOF > MESS
+eVote approve XXXX close
+end
+extra stuff
+EOF
+try_that
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise15@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+EXTRA="Received:  by whatever"
+FROM="louise15@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote y
+EOF
+try_that
+
+
+# should fail, closed
+
+SUBJECT="A"
+cat << EOF > MESS
+eVote who
+EOF
+try_that
+
+#  Voters = 2, 9, 12; non-voters = 3,4,5,6,10,13,14  out = 7,8,11 no 15
+
+eVote check droppings >> dall.out
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+FROM="louise2@somewhere.com"
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+try_that
+
+
+#louise2 is author of B and voter on A
+
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+EXTRA="Received:  by whatever"
+FROM="louise2@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that 
+
+# louise 2 should be out of who.list
+
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+EXTRA="Received:  by whatever"
+FROM="louise2@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that 
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+cat << EOF > MESS
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+# louise8 already dropped
+
+cat << EOF > MESS
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise9@somewhere.com"
+try_that
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise8@somewhere.com"
+try_that
+
+# louise 9 should be out of who.list
+
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    GREP  GREP  GREP " >> dall.out
+echo " " >> dall.out
+
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> dall.out
+# louise, 2,3,4,5,6,10,12,13,14 in who.list
+
+eVote check droppings >> dall.out
+
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+EXTRA="Received:  by whatever"
+FROM="louise5@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote who
+EOF
+try_that
+
+# louise = author, voters= 2,9,12 part = 3,4,5,6,10,13,14, not 15
+
+eVote check droppings >> dall.out
+
+cat << EOF > MESS
+eVote approve XXXX drop quiet
+end
+extra stuff
+EOF
+try_that
+
+echo "new cat 0:" >> dall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> dall.out
+
+
+SUBJECT="B"
+cat << EOF > MESS
+eVote approve XXXX close
+end 
+extra stuff
+EOF
+try_that
+
+SUBJECT="C"
+FROM="louise3@somewhere.com"
+cat << EOF > MESS
+eVote close
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 C"
+try_that
+
+SUBJECT="A"
+cat << EOF > MESS
+eVote who
+EOF
+try_that
+
+echo "new cat 1:" >> dall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> dall.out
+
+eVote check droppings >> dall.out
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    DROPS  DROPS  DROPS " >> dall.out
+echo " " >> dall.out
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise12@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise10@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise7@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise6@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise5@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise12@somewhere.com"
+try_that
+FROM="louise10@somewhere.com"
+try_that
+FROM="louise7@somewhere.com"
+try_that
+FROM="louise6@somewhere.com"
+try_that
+FROM="louise5@somewhere.com"
+try_that
+FROM="louise3@somewhere.com"
+try_that
+
+
+
+echo "new cat 2:" >> dall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> dall.out
+
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "    LATE SUB  LATE SUB  LATE SUB " >> dall.out
+echo " " >> dall.out
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="SUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise16@somewhere.com has been added to droppings.
+No action is required on your part.
+EOF
+try_that 
+
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise14@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote y
+EOF
+try_that
+
+# no such poll
+
+SUBJECT="B"
+cat << EOF > MESS
+eVote 3
+EOF
+try_that
+# closed poll
+
+SUBJECT="A"
+cat << EOF > MESS
+eVote who
+EOF
+try_that
+# no such poll
+
+
+
+SUBJECT="B"
+try_that
+
+# author= Louise2, voters 13 only, part.= 3,4,5,6,10, 15, not 16
+
+SUBJECT="C"
+try_that
+
+# author = Louise3, voters = 3, 5, part.= 4,6,10,12,13,14,15 no 16
+
+SUBJECT="D"
+try_that
+# author = louise4, part= 13, 14, 15,16
+
+
+FROM="joe@blow.com"
+TO="droppings-approval@xoko"
+EXTRA="Received:  by whatever"
+ARGS=""
+SUBJECT="UNSUBSCRIBE droppings"
+
+cat << EOF > MESS
+
+--
+
+louise14@somewhere.com has been removed from droppings.
+No action is required on your part.
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 UNSUBSCRIBE droppings"
+ARGS="resend_test -l droppings"
+FROM="louise14@somewhere.com"
+try_that
+
+
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l droppings"
+TO="droppings@xoko"
+FROM="louise4@somewhere.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+SUBJECT="C"
+cat << EOF > MESS
+eVote who
+EOF
+try_that
+
+SUBJECT="D"
+try_that
+
+eVote check droppings >> dall.out
+
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> dall.out
+
+echo ""
+echo "Drops is finished.  Please replace the permissions on"
+echo "$EVOTE_HOME_DIR/eVote/data"
+echo ""
+echo "And please reset #define INFO_PERM and DATA_PERM to be 600"
+echo "in ../../Clerk/evotedef.h"
+echo ""
+echo "And, don't forget to put #define TESTING 0 in ../mailui/util.c"
+echo ""
+
+echo " " >> dall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> dall.out
+echo "  END   END   END " >> dall.out
+echo " " >> dall.out

@@ -1,0 +1,122 @@
+
+Generating Petitions
+========== =========
+
+To generate a petition:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petitiona@deliberate.com with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote poll [y/n] public visible
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@deliberate.com.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, address, affiliation.
+
+
+Petition Text
+======== ====
+
+To see the petition text and instructions for signing:
+
+1.  Send email to eVote@deliberate.com.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petitiona email list.  The
+same commands are available to you on the petitiona list as are on any
+other eVoted list.  This petitiona list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@deliberate.com address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petitiona list allows the retrieval of the signature file:
+
+1.  Send a message to petitiona@deliberate.com
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list can use the "eVote names" command
+to retrieve the signatures for the petition.  If this is undesirable,
+originate your petition with this command instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petitiona@deliberate.com:
+
+      eVote vacation
+
+To see who is subscribed to the petitiona list, send this message to
+petitiona@deliberate.com:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+This list is part of a beta test for the email version of eVote.
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs" list.  A first report of a particular bug wins the reporter 2
+tickets to eVote's New Millenium's Eve Party on December 31, 1999,
+somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petitiona@deliberate.com.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petitiona@deliberate.com.
+
+If you have technical questions, contact marilyn@deliberate.com.

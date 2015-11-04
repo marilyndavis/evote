@@ -1,0 +1,25 @@
+# $Id: mscratch,v 1.5 2003/04/07 18:31:34 marilyndavis Exp $ 
+#  mscratch - Majordomo's scratch program.
+#  Run this before running each test, to clean out all the old data
+#  from the run before and to set up the lists as expected by the
+#  test programs.
+
+if [ $# -lt 1 ]
+  then
+    LISTDIR="/home/majordomo/lists"
+  else
+    LISTDIR=$1
+fi
+
+./mclean $LISTDIR
+if [ ! -e ./tmp ]
+  then
+  mkdir ./tmp
+fi
+cp ../../../doc/eVote.help lists
+cp ../../../doc/eVote.list-owner-info lists
+cp ../../../doc/eVote.petition lists
+cp ../../../doc/eVote.poll lists
+cp ../../../doc/eVote_sample.info lists
+cp ./lists/* $LISTDIR
+

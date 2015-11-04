@@ -1,0 +1,330 @@
+
+Taking A Poll With eVote
+====== = ==== ==== =====
+
+You can send a message to this list's regular address to set up a new
+poll for the your email list.  The list address is 
+\list@\whereami.
+
+The Subject Line
+=== ======= ====
+
+Choose the subject of your poll carefully.  Keep it short and logical
+so that people can remember it.  To vote, or to communicate with eVote
+about your poll, people must either remember the subject line, or
+reply-to a message with the subject line, or send an "eVote list"
+command to remind themselves of the subject line.
+
+Note that eVote only recognizes the first 36 characters of your subject 
+line and truncates the rest.
+
+The subject of your poll will be the subject line of your message.
+Choose it carefully.  Keep it short and easy to spell.  eVote only
+recognizes the first 36 characters of your subject line.
+
+Polling on a particular subject does not interfere with the regular
+messages sent and distributed to the list on that subject. 
+
+
+POLL TYPES
+==== =====
+
+There are many types of polls available.  Each poll is:
+
+          a single question or a multiple choice
+                           and
+                     yes/no or numeric
+                           and 
+                     public or private or if-voted
+	                   and
+                    visible or hidden
+
+For example, send the following line to take a yes-or-no vote, where
+the participants can see others' votes, and where the vote tally is
+visible to all as the vote develops:
+
+eVote poll [y/n] public visible
+  o    *    \                /
+  o    *      \            /
+  o    *        \        /
+  o    *          \    /
+  o    *            \/_  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
+  o    *                                                            |
+  o    * * * "poll" is the command to set up a new poll.            |
+  o                                                                 |
+  o o  Be sure that "eVote" is the first word in your message!      |
+       Otherwise your command will be sent to the whole list        |
+       and it will be ignored by eVote.                             |
+                                                                    |
+     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+    |
+    |   You concoct other types of votes by choosing other words
+    |   for the last three spots in your "eVote poll" command:
+    |
+    |    [y/n]              public                 visible
+    |      or                 or                     or
+    |    [1,10]             private                hidden
+    |      or                 or                       
+    |    [3,74]             if-voted               Can we see 
+    |                                              the tally as 
+    |    Give the vote      Say "public" if        it develops?
+    |    limits in [ ]      you want a show
+    |    first.  119 is     of hands, that 
+    |    the highest        is, list members can query eVote to
+    |    vote possible;     see other members' votes.  Say "private"
+    |    -119, the lowest.  to take a secret vote; "if-voted", if
+    |    [y/n] means a      participants can see *if* others voted,
+    |    yes or no vote.    but not *how*.
+    |_ _ _ _ _ _ _ _ _ _|
+
+
+Checking
+========
+
+To test your poll command, add the word "check":
+                                         =====
+eVote poll [1,10] private hidden check
+
+In this case, eVote will pretend to process your command.  No poll
+will be generated.  The voting instructions will be sent only to you
+for checking.
+
+If you like the instructions, remove the "check" from your command,
+resend it, and the poll is open for business.
+
+A Message
+= =======
+
+After you give the complete "eVote poll" command, you can follow it
+with some text that explains the poll.  eVote will send voting
+instructions and your message to all the members of the list.
+
+Also your message will appear in the response when a participant
+sends an "eVote info" command.
+
+To include a message, precede your message with the word, "message:".
+
+Example
+-------
+
+Here's an example for a poll attached to the subject, "Rate the Mayor":
+
+-----------  cut here ------------------
+
+eVote poll [1,10] public visible
+message:
+If you think our mayor is doing an outstanding job, vote 10.
+If you think the mayor is doing a poor job, vote 1.
+Or vote somewhere in between.
+
+Note that this is a public poll so we can all see how everyone voted.
+Please support your vote with a message to the list explaining your
+opinion.
+
+--------   end of message ------------
+
+This message will generate instructions for the poll and send them,
+along with your message, to the list.  Again, if you wish, add 
+the word "check" to the "eVote poll" command to be sure there are
+no mistakes.
+
+Fancier Vote Types
+------- ---- -----
+
+If you want the list members to choose one of four options, 
+send this message to \list@\whereami.  The subject line
+might be "Chocolate Choices".
+
+-----------  cut here ------------------
+
+eVote poll group public visible 1
+1.  bittersweet  [y/n]
+2.  bittersweet with almonds  [y/n]
+3.  milk [y/n]
+4.  milk with almonds [y/n]
+Message:
+Which chocolate would you like?
+
+--------   end of message ------------
+
+For a list of choices like this one, there are four words beyond 
+the "eVote poll" part of the command:
+
+     "group"    comes first - indicating that there are a 
+                list of choices.
+
+     "public"   can be "private" or "if-voted" if you prefer.
+
+     "visible"  or "hidden", if you don't want the tally to be
+                accessible until after you close the poll.
+
+     "1"        The number of votes that each voter gets.  If
+                you're asking people to "Vote for 3", 3 goes
+                here.  Note:  This word is optional.  If you
+                don't put a number in this spot, eVote assumes
+                that each voter has any number of votes to
+                apply to the choices.  The maximum and minimum
+                for each choice still apply.
+            
+
+Then comes the list of choices.  Each choice is followed by the 
+vote limits for that choice.
+
+Another example:
+------- -------
+
+-----------  cut here ------------------
+
+eVote poll group public visible 100
+1.  building maintenance [2,4]
+2.  system maintenance  [10,15]
+3.  staff [20,40]
+4.  development [0,50]
+5.  outreach [0,50]
+6.  party [0,50]
+
+Message:
+
+Please help spend our budget.  We'll distribute our funds according
+to the average of all our votes.  
+
+--------   end of example ------------
+
+This poll asks each of us to distribute 100 votes over 6 choices.
+Different choices have different minimum and maximum votes.  Apparently,
+this list has a budget to spend and it spends it democratically by
+dividing up the funds according to the outcome of the vote.
+
+
+A Final Example:
+- ----- --------
+
+eVote poll group public visible
+1.  I support the intent of this resolution [-10,10]
+2.  This resolution is well-written [-10,10]
+
+Message:
+
+Resolved: In recognition of the direct attacks on cyberspace by
+various world governments, cyberspace should declare itself an
+independent state, and make and enforce its own rules and laws.
+
+--------   end of example ------------
+
+This poll is a group of questions but there is no "sum-limit".  There
+are not a specified number of votes for the voters to distributed over
+the two choices.  Each choice is rated independently.  
+
+Warnings About Non-Public Polls
+-------- ----- --- ------ -----
+
+       Warnings: Although eVote will not reveal your vote to the other
+       members of the voting community, the system administrator of the
+       computer that stores your vote can quite easily see the voting
+       records of individuals. Also, there is the possibility that your
+       ballot can be seen by a "snooper", someone who intercepts your 
+       ballot in transit.
+
+       The integrity of the poll, i.e., the accuracy of the count, is
+       susceptible to being tampered with by the system administrator
+       of the computer running the eVote(R)/Clerk software.
+
+       Both the privacy of your vote and the integrity of the poll are
+       susceptible to attack at your own computer. 
+
+Closing Your Poll
+======= ==== ====
+
+Through the regular mechanism, only the person who initiates the poll
+can close it.  To close a poll, send email to
+\list@\whereami.  Use the same subject line to identify the
+poll.  Have your message say:
+
+eVote close
+
+A message is sent to the list that announces the closing of the poll
+and the closing statistics.  
+
+The poll and the data remain in the data for at least 28 days so that
+the voters can check that their vote is still as they intended, and,
+on PUBLIC polls, they can check everyone's votes.
+
+The list's owner can close any poll by using the list's password.
+Also, the owner can close a poll and specify that an announcement
+NOT be sent to the list.
+
+Dropping Your Poll
+======== ==== ====
+
+After the poll has been closed for 28 days, the initiator of the
+poll can remove it from the database by sending the command:
+
+eVote drop
+
+A message is sent to the list announcing that the poll has now been
+dropped from the data.
+
+After the poll has been closed for one year, anyone can drop it
+from the database with the same command.
+
+Also, any member of the list can drop a poll at any time, *if* there
+have been no participants, i.e., no voters.
+
+Again, the owner has overriding power to drop any poll at any time,
+and even to do so silently.
+
+Getting More Information
+======= ==== ===========
+
+Send the following commands to \list@\whereami:
+
+eVote help                  -   Sends general information about eVote.
+                                The subject line is irrelevant
+                                for this command.
+
+eVote list                  -   Sends a list of all the subjects in 
+                                the \list email list with 
+                                polls attached.  The subject line of
+                                your "eVote list" command is 
+                                irrelevant.  
+                  
+                                Note: "eVote list sort=alpha" 
+                                produces a sorted list.
+
+eVote help poll             -   Sends this file.  Again, the subject 
+                                line is irrelevant.
+
+eVote info                  -   Sends information about the specific
+                                poll attached to the subject line 
+                                you specify in your email.  Included
+                                are instructions for participating
+                                in the poll, your vote if you have
+                                voted, and the current tally if it
+                                is available.
+
+eVote stats                 -   Sends your vote if you have voted, 
+                                and the current tally if it is
+                                available.
+
+eVote help who              -   Sends instructions for querying eVote
+                                for all the people who have voted
+                                "Yes" or "<5", etc., on the specific
+                                poll attached to the subject you 
+                                specify for your email message. 
+
+                                This feature is not available for 
+                                all polls.
+
+eVote help how              -   Sends instructions for querying eVote
+                                for how a particular subscriber voted
+                                on the poll attached to the subject
+                                you specify for your email message.
+
+                                This feature is not available for 
+                                all polls.
+
+Signature File?
+========= =====
+
+If you attach a signature to your email messages, please add a line
+that says "end" to your eVote commands.

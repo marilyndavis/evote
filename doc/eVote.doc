@@ -1,0 +1,4871 @@
+===== ==== ======
+eVote 2.52 Manual                Copyright (c) 2003 by Deliberate.Com
+===== ==== ======                                 All rights reserved.
+
+by Marilyn Davis, Ph.D.                                Deliberate.Com
+                                                       (650) 965-7121
+                                               marilyn@deliberate.com
+
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with the
+Invariant Sections being "Dedication", "About eVote's Patent",
+"Preface", "Acknowledgments", "Non-Public Poll Risks", "Warnings About
+Non-Public Polls", "Petition Privacy", and "eVote's Licenses" with no
+Front-Cover Texts and with the no Back-Cover Texts.  A copy of the
+license is included in the section entitled "GNU Free Documentation
+License".
+
+==========
+Dedication
+==========
+                         eVote
+                         a tool 
+                      for tilling 
+                   the common ground 
+            of what we can become together
+                    is dedicated to 
+
+                          you.
+
+===== == ========
+Table of Contents
+===== == ========
+
+Dedication
+Table of Contents
+Bugs
+About eVote's Patent 
+Preface
+Acknowledgments
+
+Chapter I    -Overview-
+
+Chapter II   -eVote for Voters-
+
+  The Email List Voting Facility
+    Querying The Vote Data
+      Non-Public Poll Risks
+    Getting More Information
+    Going On Vacation
+  The Petition Facility
+
+Chapter III  -eVote for User/Administrators-
+
+  The Email List Voting Facility
+    Polling The List
+      Checking
+      A Message
+      Fancier Vote Types
+        Warnings About Non-Public Polls
+    Closing Your Poll
+    Dropping Your Poll	
+
+  The Petition Facility
+    The Petition Lists
+    Generating Simple Petitions
+    Instructions for Signing A Petition
+    Getting Info About A Petition
+    Petition Privacy
+    Confirmation Of Signatures
+    Initializing Petitions With Forms 
+    Multi-Language Petitions
+      Subject Lines
+      Initializing A Multi-Lingual Petition
+      Multi-Language Forms
+    Voting Petitions
+    WWW Support For Your Petition
+    WWW Reports
+    Bad Signatures
+    Alterations on the Fly
+
+Chapter IV   -eVote for List Owners-
+
+  Information for Owners of eVoted Lists
+    Mailer Errors
+    eVote Commands
+    Info File
+  Owners of Petition Lists
+    Bad Signatures
+
+Chapter V    -eVote/Clerk for Site Administrators-
+
+  Architecture/Overview
+    eVote is five executables that work together. (diagram)
+    eVote's Executables
+      The eVote Executable
+      The eVote_Clerk Executable
+      The eVote_insert Executable
+      The eVote_petition Executable
+      The eVote_mail Executable
+    eVote_queries.py for Mailman Only
+    Other eVote Files
+      The Configuration File
+      Information Files
+      The Vote Data
+      The Log File
+    Interprocess Communication 
+
+  Installation 
+    Installing eVote
+      Doing The Install
+    Linking To Mailman
+      Mailman List Requirements
+      Performing the Link with Mailman
+    Linking To Majordomo
+      Majordomo List Requirements
+      Performing the Link with Majordomo
+    Getting Started
+    Verifying the Installation
+    Preparing for Total Automation
+      Automatic Startup
+      Crash Command
+      Preparing for Mailer Errors
+        Deleting Bad Addresses From Your System
+      Automated Backup
+      Synchronicity Checks
+      Stale Messages Awaiting Confirmation
+
+  The Petition Facility
+    Implementing Petition Lists
+    Reports
+    Coordinating With The WWW
+    Bad Signatures
+    Language Support  
+      Multi-Language Petitions
+    Alterations On the Fly
+      Adding A Language
+        Notes
+      Adding Or Changing A Form
+      Toggling The Confirm Feature
+
+  Administration - A Deeper Look
+    Starting The Clerk 
+    Stopping The Clerk 
+    The Clerk's Log
+    Other Possibilities
+    The Vote Data 
+    Help For Subscribers
+    Defaults
+    Other Helpful Tools
+      Utilities
+      Mail Filters
+    Qmail Compliant
+
+  If There's Trouble
+    Trouble Getting Started
+    If The Clerk Stops Unexpectedly 
+    Trouble in Clerk.log 
+    Timing Out In eVote_insert
+    Emergency Messages
+    Interprocess Communication
+      Shared Memory
+      Message Queues
+      Altering STARTING_NICE 
+      Altering System Tunable Parameters
+
+Chapter VI   -eVote/Clerk for Programmers-
+
+  Source Code
+  Serialized Executables
+
+Appendix A - eVote/Clerk Licenses
+
+  eVote(R)/Clerk Software License
+  GNU Free Documentation License
+
+====
+Bugs
+====
+
+If you find a bug, please report it to eVote-users@deliberate.com.
+Open bugs are reported at http://www.deliberate.com/bugs.html
+
+===== ======= ======
+About eVote's Patent 
+===== ======= ======
+
+The patent on eVote's Clerk is a device to encourage standardized
+online vote-keeping so that building a global electro-democratic
+community is a relatively easy task.
+
+All eVote's patented techniques and methods are hereby freely offered
+for anyone to use as long as the following three conditions are met:
+
+  * The techniques and methods are not used to build weapons or
+    tools for weapons and are not used in a military institution 
+    or for any military-related purpose.  
+
+  * The techniques and methods are not used to build applications 
+    that infringe on anyone's privacy.
+
+  * The techniques and methods are not used to build a vote-keeper.
+    Use and improve this one!
+
+You must obtain explicit written permission from Deliberate.Com to use
+the patented techniques and methods for any purpose that can possibly,
+or even remotely, be construed as not satisfying these three
+conditions.
+
+Although the use of eVote/Clerk's patented engineering methods are
+restricted, there are no restrictions on the use of eVote/Clerk
+itself.
+
+     Everyone is welcome to install and use eVote/Clerk.
+
+
+=======
+Preface
+=======
+
+eVote/Clerk is software that provides decision-making support for
+online communities.
+
+I hope you find it fun and easy to use.  It is, after all, software,
+and bound to have inadequacies.  Please advise me of any you find.
+
+Marilyn Davis 
+marilyn@deliberate.com
+
+================
+Acknowledgments
+================
+
+I acknowledge the work of the Whatever in filling my imagination with
+visions of this software and my heart with the desire to make it; and
+in bringing me the opportunity, helpers, and hardware to complete it.
+
+I am grateful for and to my son, Charles Wesley Davis for keeping me
+centered and balanced through this difficult project by giving me
+something more important to do: mothering him.
+
+First thanks go to Clinton Bruce Davis, Charlie's father and my
+colleague and friend, for enthusiastic, insightful, tenacious, and
+reliable hardware and software support.
+
+Most special thanks go to John J. Jacq who has brought eVote to the
+Web and thereby brought it attention.  John has been eVote's right
+hand through many projects.
+
+I am grateful for the interest and advice of Greg J. Black which
+helped me to prepare the source for other programmers.
+
+eVote is indebted to eVote's first two administrators: Laurent Chemla
+who translated the mail interface to French and who has helped with
+many sticky email issues; and Dustin Marquess who has helped with
+scripting issues.
+
+Thank you to Ann Scheuerell, Jim Stockford, Rubye Cervelli, Reid
+Ewing, Charlie Davis, Tony Pratt, Rich Tucker, Grey Fox and John Burke
+for help with documentation and for relentlessly encouraging me.
+
+Additional thanks go to Sylvia Caras and Chuck Stewart for convincing
+me to make an email interface for eVote.
+
+I thank Judi Kadish for help with business matters; Philip Hazel for
+developing exim and for helping to make our system secure, Jay
+Glicksman, Scott Weikart, Jeff Victor and various members of The
+Mostly Balkan Folk Dance Club for help with technical matters; Jean
+Marians Kennedy, my sister, for help with accounting; Harold
+E. McDermid, Nick L. Kennedy III, and David Pressman, for legal
+assistance.
+
+Thanks go to the patrons of the Peninsula Fountain and Grille in Palo
+Alto, CA, for critical financial support.
+
+There are so many other dear friends and acquaintances who have
+encouraged and inspired me and contributed their thoughts.  Among
+among them are Norman Bookstein, Roger Eaton, Mary Engle, Steve
+Eppley, Margaret H. Favour, Lauri Foster, Richard Foy, Ed Gehrman,
+Ralph Gilman, Alia Johnson, Bill Leland, Davis McArthur, Genevieve
+Marcus, Irwin Mann, Richard Maurer, Mike Saari, Tim Stryker, Mike
+York, Your Name, (please remind me if your name belongs on any of
+these lists.), Quakers, Yankuikanahuak, Zapatistas, and the Cuna
+Indians.
+
+And finally, for their unwitting but indispensable assistance, I
+acknowledge the brilliant contributions of Riane Eisler, Walt
+Christiansen, Bob Parnes, Charles Roth, Ken Phillips, Bjarne
+Stroustup, Dennis M. Ritchie, Ken Thompson, Brian W. Kernighan,
+Richard Stallman, Donald Knuth, Leslie Lamport, Grace Hopper, George
+Reinhart, Harry Stevens and many others.
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter I
+
+  -Overview-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+eVote provides online petitions, polling, and voting, via email and
+telnet/ssh.  The Clerk is the specialized database server that
+maintains the vote data.
+
+There are two facilities in eVote's email interface: polling in email
+lists; and petition support.
+
+   * "eVoted email lists" are lists of subscribed email addresses who
+     are in constant discussion with each other.  eVote allows
+     the group to take polls amongst themselves in a convenient,
+     flexible, secure, non-hierarchical manner.
+
+   * "Petitions" allow signatures, or votes, from anyone with an
+     email address.  There is no registration or subscription procedure 
+     associated with petitions.  
+
+The vision of eVote is to decentralize the power in the online
+voting system and to distribute that power to the regular users.  This
+is done at every opportunity.
+
+Each participant has control over her vote; she is able to change it,
+as long as the poll is open; she can remove it.  These are important
+features: for empowerment, for security, and for consensus development
+within the group.  eVote as part of an email list environment, honors
+discussion as the backbone of democracy, and invites the users to
+change their votes when they change their minds in the course of
+discussion.
+
+The next chapter of this document, "eVote for Voters", is instructions
+for those participating in the voting.
+
+The regular users also have the power and responsibility to initialize
+polls for their email list groups.  When the user takes this
+responsibility, she becomes a "user/administrator".
+
+The third chapter is "eVote for User/Administrators" and contains
+instructions for the users who wish to empower themselves further.
+
+Each email list has an "owner", the person responsible for the
+existence of, and smooth running of, the list.  eVote provides some
+tools to help with the owner's job.  These are described in "eVote for
+List Owners", Chapter IV.
+
+The system administrator of a site that runs eVote is responsible for
+installation and maintenance of the software and for maintaining
+backups.  eVote has made this job as easy as possible, passing most
+responsibilities to the users and providing tools to automate the
+rest.  The system administrator's instructions are in Chapter V,
+"eVote/Clerk for Site Administrators".
+
+The final chapter is "eVote/Clerk for Programmers".  It provides an
+overview of the source code for those who want to delve so deeply.
+
+eVote/Clerk licenses are detailed in Appendix A.
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter II
+
+ -eVote for Voters-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+=== ===== ==== ====== ========
+The Email List Voting Facility
+=== ===== ==== ====== ========
+
+Everyone on an eVote email list is sent instructions on how to vote
+whenever a vote is initialized.  There are three important things to
+keep in mind when voting:
+
+1.  The subject line of your vote message must match the subject
+    line of the poll.  The easy and error-free way to do this is 
+    to "Reply-To".
+
+2.  Send your vote message directly to the list address.  Trust eVote
+    to snatch it up and process it.  Your vote message will not go to
+    the entire group.  Again, using Reply-To when you see the 
+    instructions, or when you see any discussion of the poll, is the
+    easy way.
+
+3.  Be sure that the first word in your vote message is "eVote".  If
+    you forget that, then eVote will not snatch it from the mail stream
+    and the message will *definitely* go to the whole list (unless it
+    is a moderated list).
+
+Forgetting to put "eVote" as the first word in the message is a common
+beginner's mistake.  If it is a secret poll, your vote is revealed to
+the group.  It is not counted until you try again.  In any case, this
+mistake brings a moment of embarrassment to you and to eVote, but that
+is all.
+
+The voting instructions for any particular poll are customized
+according to the vote question.  If you make a mistake, the software
+will politely help you and encourage you to try again.  If you decide
+you voted incorrectly, you can send another vote message and your old
+vote will be replaced by the new vote -- as long as the poll is open.
+
+Querying The Vote Data
+======== === ==== ====
+
+Sometimes polls are "public", meaning that you, and everyone on your
+email list, can send the command "eVote who" to the list address and,
+if the subject line represents a poll, you'll receive a list of
+everyone's votes.
+
+Sometimes polls are "private", meaning that you, the list owner, and
+the administrator of the poll can never see the individual votes.
+Even the site administrator would have to be clever and work hard to
+see it.  There is one exception, you can always see your own vote.
+
+Sometimes polls are "if-voted", meaning that you, and everyone on your
+email list, can retrieve a list of who has voted on the subject, but
+no one can see how they voted.  Again, there is the exception that you
+can ask to see your own vote.
+
+Non-Public Poll Risks
+---------- ---- -----
+
+There are security risks when using the non-public poll types: private
+and if-voted polls.
+
+       Warnings: Although eVote will not reveal your vote to the other
+       members of the voting community, the system administrator of the
+       computer that stores your vote can quite easily see the voting
+       records of individuals. Also, there is the possibility that your
+       ballot can be seen by a "snooper", someone who intercepts your 
+       ballot in transit.
+
+       The integrity of the poll, i.e., the accuracy of the count, is
+       susceptible to being tampered with by the system administrator
+       of the computer running the eVote(R)/Clerk software.
+
+       Both the privacy of your vote and the integrity of the poll are
+       susceptible to attack at your own computer. 
+
+Getting More Information
+========================
+
+General instructions for voters can always be summoned by sending the
+command "eVote help" to your list's address.  In fact, all eVote
+commands must be sent to the list address and "eVote" must be the 
+first word of your command.
+
+The file that is sent in response to "eVote help" will instruct you on how
+to get more information about the polling and voting.  The complete
+list of helping commands is:
+
+The subject doesn't matter for these commands:
+
+eVote help                  -   Sends general information about eVote.
+                                The subject line is irrelevant
+                                for this command.
+
+eVote list                  -   Sends a list of all the subjects in 
+                                the email list with 
+                                polls attached.  The subject line of
+                                your "eVote list" command is 
+                                irrelevant.  
+                  
+                                Note: "eVote list sort=alpha" 
+                                produces a sorted list.
+
+eVote help poll             -   Sends instructions for setting up
+                                a poll.  Again, the subject 
+                                line is irrelevant.
+
+For the next commands to work, the subject line must match the subject
+of an active poll:
+
+eVote info                  -   Sends information about the specific
+                                poll attached to the subject line 
+                                you specify in your email.  Included
+                                are instructions for participating
+                                in the poll, your vote if you have
+                                voted, and the current tally if it
+                                is available.
+
+eVote stats                 -   Sends your vote if you have voted, 
+                                and the current tally if it is
+                                available.
+
+eVote help who              -   Sends instructions for querying eVote
+                                for all the people who have voted
+                                "Yes" or "<5", etc., on the specific
+                                poll attached to the subject you 
+                                specify for your email message. 
+
+                                This feature is only available for 
+                                public polls.
+
+eVote help how              -   Sends instructions for querying eVote
+                                for how a particular subscriber voted
+                                on the poll attached to the subject
+                                you specify for your email message.
+
+                                This feature is only available for 
+                                public polls.
+
+
+
+Going On Vacation
+===== == ========
+
+eVote keeps a ballot, an electronic record of all your votes.  When you
+unsubscribe, that ballot is deleted.
+
+If you go on vacation, or have any reason to want to stop the flow of
+messages from the list, but you plan on returning, don't unsubscribe,
+put yourself "on vacation".  Then, your ballot will remain in the vote
+data and will be waiting for your return.
+
+If your listserver is Mailman, to go on vacation, use your personal
+web page to set "nomail" on.
+
+If your listserver is Majordomo:
+
+1.  Write to the list address.
+
+2.  The subject doesn't matter.
+
+3.  The message should say:
+
+    eVote vacation
+
+You will then receive instructions to use when you come back.
+
+
+=== ======== ========
+The Petition Facility
+=== ======== ========
+
+Anyone with an email address can sign a petition; it is not necessary
+to be a member of any list.  There is one signing address for all
+petitions at the eVoted site and commands sent to that address do not
+start with "eVote".
+
+The instructions for signing a petition vary from petition to petition.
+Always, six things are true:
+
+  1.  To sign, you send a message to:
+
+      eVote@eVoted-site.net
+
+  2.  The subject line is the key into the petition.  Your message
+      must have a subject line that matches the petition.
+
+      If eVote does not recognize your subject, it will send you a list
+      of all the active petitions at the site so you can try again.
+
+  3.  If you send the message:
+
+      info
+
+      you'll get full instructions for signing the petition that matches
+      the subject line.
+
+  4.  You can always add a comment to your signature.
+
+  5.  You get a receipt for your signature.
+
+  6.  If you change your mind, you can unsign the petition as long as
+      the petition is still open for signatures.  The receipt gives
+      instructions for removing your signature.
+
+Sometimes petitions require an additional "confirmation" signature for
+security.  eVote will tell you if that is necessary when you sign the
+petition.
+
+Sometimes petitions require certain fields to be named and filled in.
+Maybe:
+
+ name:  Mary Smith
+ country: USA
+
+Sometimes petitions require your vote on some questions:
+
+ 1. Yes
+ 2. No
+
+If your signature message doesn't fill the requirements, a polite
+message is returned, explaining your error, and inviting you to please
+try again.
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter III
+
+   -eVote for User/Administrators-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+Regular users in a eVote system have the power to be administrators
+and authors of polls and petitions.  Anyone with an email address can
+express themselves and help their causes through these facilities.
+
+=== ===== ==== ====== ========
+The Email List Voting Facility
+=== ===== ==== ====== ========
+
+The email list facility supports polling and voting on eVoted email
+lists. 
+
+Polling The List
+======= === ====
+
+Any member of an eVoted list can poll the other members.  Instructions
+for initializing a poll are sent to the user when the user sends
+an "eVote help poll" message to the list address.  These are those
+instructions.
+
+You can send a message to your list's regular address to set up a new
+poll for the your email list.  Our example list address is
+list-name@eVoted-site.net.
+
+The subject of your poll will be the subject line of your message.
+Choose it carefully.  Keep it short and easy to spell.  eVote only
+recognizes the first 36 characters of your subject line.
+
+Polling on a particular subject does not interfere with the regular
+messages sent and distributed to the list on that subject. 
+
+There are many types of polls available.  Each poll is:
+
+          a single question or a multiple choice
+                           and
+                     yes/no or numeric
+                           and 
+                     public or private or if-voted
+	                   and
+                    visible or hidden
+
+For example, send the following line to take a yes-or-no vote, where
+the participants can see others' votes, and where the vote tally is
+visible to all as the vote develops:
+
+eVote poll [y/n] public visible
+  o    *    \                /
+  o    *      \            /
+  o    *        \        /
+  o    *          \    /
+  o    *            \/_  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  
+  o    *                                                            |
+  o    * * * "poll" is the command to set up a new poll.            |
+  o                                                                 |
+  o o  Be sure that "eVote" is the first word in your message!      |
+       Otherwise your command will be sent to the whole list        |
+       and it will be ignored by eVote.                             |
+                                                                    |
+     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _|
+    |
+    |   You concoct other types of votes by choosing other words
+    |   for the last three spots in your "eVote poll" command:
+    |
+    |    [y/n]              public                 visible
+    |      or                 or                     or
+    |    [1,10]             private                hidden
+    |      or                 or                       
+    |    [3,74]             if-voted               Can we see 
+    |                                              the tally as 
+    |    Give the vote      Say "public" if        it develops?
+    |    limits in [ ]      you want a show
+    |    first.  119 is     of hands, that 
+    |    the highest        is, list members can query eVote to
+    |    vote possible;     see other members' votes.  Say "private"
+    |    -119, the lowest.  to take a secret vote; "if-voted", if
+    |    [y/n] means a      participants can see *if* others voted,
+    |    yes or no vote.    but not *how*.
+    |_ _ _ _ _ _ _ _ _ _|
+
+
+Checking
+--------
+
+To test your poll command, add the word "check":
+                                         =====
+eVote poll [1,10] private hidden check
+
+In this case, eVote will pretend to process your command.  No poll
+will be generated.  The voting instructions will be sent only to you
+for checking.
+
+If you like the instructions, remove the "check" from your command,
+resend it, and the poll is open for business.
+
+A Message
+- -------
+
+After you give the complete "eVote poll" command, you can follow it
+with some text that explains the poll.  eVote will send voting
+instructions and your message to all the members of the 
+list.
+
+Also your message will appear in the response when a participant
+sends an "eVote info" command.
+
+To include a message, precede your message with the word, "message:".
+Here's an example for a poll attached to the subject, "Rate the Mayor":
+
+-----------  cut here ------------------
+
+eVote poll [1,10] public visible
+message:
+If you think our mayor is doing an outstanding job, vote 10.
+If you think the mayor is doing a poor job, vote 1.
+Or vote somewhere in between.
+
+Note that this is a public poll so we can all see how everyone voted.
+Please support your vote with a message to the list explaining your
+opinion.
+
+--------   end of message ------------
+
+This message will generate instructions for the poll and send them,
+along with your message, to the list.  Again, if you wish, add 
+the word "check" to the "eVote poll" command to be sure there are
+no mistakes.
+
+Fancier Vote Types
+------- ---- -----
+
+If you want the list members to choose one of four options, 
+send this message to list-name@eVoted-site.net.  The subject line
+might be "Chocolate Choices".
+
+-----------  cut here ------------------
+
+eVote poll group public visible 1
+1.  bittersweet  [y/n]
+2.  bittersweet with almonds  [y/n]
+3.  milk [y/n]
+4.  milk with almonds [y/n]
+Message:
+Which chocolate would you like?
+
+--------   end of message ------------
+
+For a list of choices like this one, there are four words beyond 
+the "eVote poll" part of the command:
+
+     "group"    comes first - indicating that there are a 
+                list of choices.
+
+     "public"   can be "private" or "if-voted" if you prefer.
+
+     "visible"  or "hidden", if you don't want the tally to be
+                accessible until after you close the poll.
+
+     "1"        The number of votes that each voter gets.  If
+                you're asking people to "Vote for 3", 3 goes
+                here.  Note:  This word is optional.  If you
+                don't put a number in this spot, eVote assumes
+                that each voter has any number of votes to
+                apply to the choices.  The maximum and minimum
+                for each choice still apply.
+            
+
+Then comes the list of choices.  Each choice is followed by the 
+vote limits for that choice.
+
+Warnings About Non-Public Polls
+-------- ----- --- ------ -----
+
+       Warnings: Although eVote will not reveal your vote to the other
+       members of the voting community, the system administrator of the
+       computer that stores your vote can quite easily see the voting
+       records of individuals. Also, there is the possibility that your
+       ballot can be seen by a "snooper", someone who intercepts your 
+       ballot in transit.
+
+       The integrity of the poll, i.e., the accuracy of the count, is
+       susceptible to being tampered with by the system administrator
+       of the computer running the eVote(R)/Clerk software.
+
+       Both the privacy of your vote and the integrity of the poll are
+       susceptible to attack at your own computer. 
+
+Another example:
+
+-----------  cut here ------------------
+
+eVote poll group public visible 100
+1.  building maintenance [2,4]
+2.  system maintenance  [10,15]
+3.  staff [20,40]
+4.  development [0,50]
+5.  outreach [0,50]
+6.  party [0,50]
+
+Message:
+
+Please help spend our budget.  We'll distribute our funds according
+to the average of all our votes.  
+
+--------   end of example ------------
+
+This poll asks each of us to distribute 100 votes over 6 choices.
+Different choices have different minimum and maximum votes.  Apparently,
+this list has a budget to spend and it spends it democratically by
+dividing up the funds according to the outcome of the vote.
+
+
+A Final Example:
+
+eVote poll group public visible
+1.  I support the intent of this resolution [-10,10]
+2.  This resolution is well-written [-10,10]
+
+Message:
+
+Resolved: In recognition of the direct attacks on cyberspace by
+various world governments, cyberspace shall declare itself an
+independent state, and make and enforce its own rules and laws.
+
+--------   end of example ------------
+
+This poll is a group of questions but there is no "sum-limit".  There
+are not a specified number of votes for the voters to distributed over
+the two choices.  Each choice is rated independently.  
+
+
+Closing Your Poll
+======= ==== ====
+
+Through the regular mechanism, only the person who initiates the poll
+can close it.  To close a poll, send email to
+list-name@eVoted-site.net.  Use the same subject line to identify the
+poll.  Have your message say:
+
+eVote close
+
+A message is sent to the list that announces the closing of the poll
+and the closing statistics.  
+
+The poll and the data remain in the data for at least 28 days so that
+the voters can check that their vote is still as they intended, and,
+on PUBLIC polls, they can check everyone's votes.
+
+The list's owner can close any poll by using the list's password.
+Also, the owner can close a poll and specify that an announcement
+NOT be sent to the list.
+
+Dropping Your Poll
+======== ==== ====
+
+After the poll has been closed for 28 days, the initiator of the
+poll can remove it from the database by sending the command:
+
+eVote drop
+
+A message is sent to the list announcing that the poll has now been
+dropped from the data.
+
+After the poll has been closed for one year, anyone can drop it
+from the database with the same command.
+
+Also, any member of the list can drop a poll at any time, *if* there
+have been no participants, i.e., no voters.
+
+Again, the owner has overriding power to drop any poll at any time,
+and even to do so silently.
+
+=== ======== ========
+The Petition Facility
+=== ======== ========
+
+The petition facility is managed collaboratively and remotely through
+special email lists. Any user who belongs to a petition list can
+initiate a petition.
+
+Petition lists are those email lists whose addresses start with
+"petition".  There can any number of these at an eVoted site:
+petition@eVoted-site, petitiona@eVoted-site, petitionb@eVoted-site,
+etc.
+
+
+The Petition Lists
+=== ======== =====
+
+The petition lists are used for discussing the issues pertinent to
+your petitions and for setting up the actual petitions.  This enables
+a petition to be administered remotely by a cooperating group.  
+
+All [y/n] polls in the "petition" list are assumed to be petitions,
+not regular polls.  Therefore, to set up a petition, set up a visible
+[y/n] poll in the petition list and the poll text becomes the petition
+text.  Or you can use the special "eVote petition" command.  It is an
+alias for "eVote poll [y/n] visible".  You still need to give either
+"public" or "private" (if-voted has no meaning for petitions), i.e., a
+complete command for a petition is:
+
+eVote petition public
+message:
+We want change.
+
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields to fill in or
+questions to vote on:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@eVoted-site.net with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+Instructions for Signing A Petition
+============ === ======= = ========
+
+1.  Send email to eVote@eVoted-site.net.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+The signers of your petitions do not have to subscribe to your 
+petition list or to any list to sign a petition.
+
+If the message is blank, only the email signature will be recorded.
+If the message contains text (other than "help" or "info"), the
+message text will be included as a comment in the signature file.
+
+If the petition requires the user to provide completed fields, (see
+"Initializing Petitions With Forms" below) the message must contain
+these fields or instructions will be sent and the signature will not
+be counted.
+
+If the petition requires votes on specific questions, the votes must
+be given before the fields for the form.
+
+Getting Info About A Petition
+======= ==== ===== = ========
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petition and gives instructions for
+unsigning; and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@eVoted-site.net.
+
+2.  Make the subject be "Save the World" (really, the subject line of
+your petition).
+
+3.  Have the message say:
+
+   info
+
+Petition Privacy
+======== =======
+
+The email addresses of the signers of petitions are not revealed to
+anyone unless there is a "email:" field in the form for the petition,
+and that field either has an email address specified, or the word
+"Yes" in the signature.  This field should be inserted into the form
+description as described in "Initializing Petitions With Forms" below.
+
+There are two types of petitions:  "private" and "public".
+
+If the petition is private, only the initiator of the petition can
+retrieve the signatures, and the email addresses, and the initiator
+must be trusted to behave responsibly with your information.  Of
+course, the site administrator can also discover the email addresses.
+
+If the petition is public, anyone on the petition list can retrieve
+the signatures, but no one (except the site administrator) can
+retrieve the email addresses.
+
+"If-voted" has no meaning for petitions and is interpreted as
+"private".
+
+The "eVote members" command does not work for petition lists in order
+to keep the email addresses of your signers secret.
+
+       Warnings: Although eVote will not reveal your vote to the other
+       members of the voting community, the system administrator of the
+       computer that stores your vote can quite easily see the voting
+       records of individuals. Also, there is the possibility that your
+       ballot can be seen by a "snooper", someone who intercepts your 
+       ballot in transit.
+
+       The integrity of the poll, i.e., the accuracy of the count, is
+       susceptible to being tampered with by the system administrator
+       of the computer running the eVote(R)/Clerk software.
+
+       Both the privacy of your vote and the integrity of the poll are
+       susceptible to attack at your own computer. 
+
+
+Confirmation Of Signatures
+============ == ==========
+
+For security, you can instruct the software to generate and process a
+"confirmation" message with each signature.  To do so, initialize your
+petition with an additional keyword, "confirm".
+
+eVote petition public confirm
+message:
+Stop globalization.
+end
+
+The keyword "confirm", if present, makes your petition secure.  When
+someone sends in a signature, if the signature and form fields are
+acceptable, a confirmation message goes back to the signer.  The
+signer is instructed to reply-to the confirmation message and when
+s/he does so, only then is the signature accepted into the data.
+
+If you do not initialize your petition with the "confirm" keyword, and
+later your petition comes under attack, the sysadmin can add the
+confirm keyword to your petition while it is operating. 
+
+See "Alterations on the Fly" below.
+
+Initializing Petitions With Forms
+============ ========= ==== =====
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, an error message with polite
+instructions will be returned.
+
+To set up a petition that requires a form, your instruction to a
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+*state: XX
+*zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 5 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order.  X's and 9's can be included in
+non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+If you wish to add fields to a working petition, see "Alterations on
+the Fly" below in the chapter, "eVote for Site Administrators".  You
+need the assistance of the administrator to make changes on the fly.
+
+Multi-Language Petitions
+=====-======== =========
+
+eVote's petition facility will parse the subject line of any message
+coming into eVote_petition from the eVote@eVoted-site.net address and
+determine if the subject exists as a petition title in any language
+for any petition on any petition list at your facility.
+
+At this time, eVote petitions can speak English, Spanish and/or
+French.  There is a tool to help with translating the software to
+other languages.  See EVOTE_HOME_DIR/eVote/src/tools/trans/README.
+
+Translations for subjects and petition texts can be supplied remotely
+by the petition's author at the time of initialization, or they can be
+added later by the site administrator.  See "Alterations On the Fly"
+below.
+
+Subject Lines
+------- -----
+
+If the subject of the petition is "Save the World", a signer or web
+page can use "Save the World -es" to indicate that Spanish is desired.
+Or, if you have provided the translation, they can use "Salve El
+Mundo".
+
+Initializing A Multi-Lingual Petition
+------------ - ----- ------- --------
+
+To facilitate multiple languages, the command to start a petition,
+with the default title, "Governments" and with no forms goes like:
+
+eVote petition public
+message:
+Please stop the governments.
+-es: Gobiernos
+Por favor detengan los gobiernos.
+-fr: Gouvernements
+S'il vous plait, arretez les gouvernements.
+
+---  end of example ---
+
+For each non-default language, add a line with a language flag and the
+translated title.  Follow that with the translation of the petition
+text.
+
+This produces a petition with the default language of English that
+responds to the Spanish and French subjects, or to the language
+flags "-es" or "-fr".
+
+If you wish the default language to be French, the subject line for
+the petition should be "Governements -Fr" and then the message would be:
+
+eVote petition public
+message:
+S'il vous plait, arretez les gouvernements.
+-en: Governments
+Please stop the governments.
+-es: Gobiernos
+Por favor alta los gobiernes.
+---  end of example ---
+
+More translations can be added by the site administrator after the
+petition is already up and running.  See "Alterations on the
+Fly" below.
+
+Multi-Language Forms
+-------------- -----
+
+eVote's petition facility supports multi-language forms.  That is,
+eVote will recognize field names, in the particular language, in the
+signature message.  The format that eVote recognizes is:
+
+eVote petition public
+form:
+*name: -es nombre: -fr nom:
+address: -es direccion: -fr adresse:
+city: -es ciudad: -fr ville:
+country: -es paiz: -fr pays: XX
+comment: -es comento: -fr commentaire:
+message:
+Please stop the governments.
+-es Goviernos
+Por favor alta los gobiernes.
+-fr Gouvernements
+S'il vous plait, arretez les gouvernements.
+---  end of example ---
+
+If you wish to specify a format for one of your fields, do that just
+after all the translations are listed.
+
+Support for a new language can be added after the petition is
+initialized but it must be done by the site administrator.
+
+Required fields and formats work the same as in a single language
+petition, above.
+
+Voting Petitions
+====== =========
+
+Many times you want your signers to vote on a set of issues, not just
+contribute a signature and a form.  eVote provides support for this 
+in a flexible way.
+
+Any regular poll type can be attached to a petition.  Initiate a
+regular poll on your petition list with the title "La Consulta -eVote"
+and it will attach itself to the "La Consulta" petition.  The "-eVote"
+keyword at the end makes it all happen.  Your message may look like:
+
+eVote poll group private visible
+1. one [-1,1]
+2. two [-1,1]
+3. three [-1,1]
+4. four [-1,1]
+5. five [-1,1]
+message:
+This poll accompanies the petition on La Consulta.
+
+In this case, the petition texts, in all languages, should explain
+the 5 yes/no votes that are possible.  The "La Consulta -Es" petition
+initiation might look like:
+
+eVote petition public
+form:
+*pais: -en country: -fr pays:
+*nombre: -en name: -fr nom: 
+email: -en email: -it email:
+message:
+Pregunta 1. - ?Esta's de acuerdo en que los pueblos indi'genas deben
+ser incluidos con toda su fuerza y riqueza en el proyecto nacional y
+tomar parte activa en la construccio'n de un Me'xico nuevo?
+
+Pregunta 2. - ?Esta's de acuerdo en que los derechos indi'genas deben
+ser reconocidos en la constitucio'n Mexicana conforme a los acuerdos
+de San Andre's y la propuesta correspondiente de la comisio'n de
+concordia y pacificacio'n del congreso de la unio'n?
+
+Pregunta 3. - ?Esta's de acuerdo en que debemos alcanzar la paz
+verdadera por la vi'a del dia'logo, desmilitarizando el pai's con el
+regreso de los soldados a sus cuarteles como lo establecen la
+constitucio'n y las leyes?
+
+Pregunta 4. - ?Esta's de acuerdo en que el pueblo debe organizarse y
+exigir al gobierno que "Mande obedeciendo" en todos los aspectos de la
+vida nacional?
+
+Pregunta 5. - ?Esta's de acuerdo en que los mexicanos y mexicanas que
+radican en el extranjero deben ser parte activa en la construccio'n de
+un Me'xico nuevo y tener derecho al voto en las elecciones?
+-Fr La Consultation
+QUESTION 1: -Etes-vous d'accord avec la proposition que les peuples
+indige`nes devraient e^tre inclus, avec tous leurs points forts et
+richesses, dans le projet national et devraient prendre une part
+active dans la construction d'un nouveau Mexique?
+
+QUESTION 2: -Etes-vous d'accord que les droits des indige`nes
+devraient e^tre reconnus par la Constitution Mexicaine comme
+spe'cifie's par les Accords de San Andre's et la proposition
+correspondante pre'sente'e par la Commission d'Accord et de
+Pacification du Congre's de l'Union?
+
+QUESTION 3: -Etes-vous d'accord que nous devrions achever une paix
+ve'ritable par le dialogue, la de'militarisation du pays, et en
+renvoyant les soldats a` leurs casernes, comme la constitution et la
+loi l'e'tablissent?
+
+QUESTION 4: -Etes-vous d'accord que les gens devraient s'organiser eux
+me^mes et demander que le gouvernement "dirige en obe'issant" envers
+chaque aspect de la vie nationale?
+
+QUESTION 5: -Etes-vous d'accord que tous les mexicains vivant a`
+l'e'tranger devraient prendre une part active dans la reconstruction
+d'un nouveau Mexique, et devraient avoir le droit de vote aux
+e'lections?
+-en The Consultation
+QUESTION 1: -Do you agree that indigenous peoples should be included,
+with all of their strength and wealth, in the national project and
+should take an active part in the construction of a new Mexico?
+
+QUESTION 2: -Do you agree that indigenous rights should be recognized
+in the Mexican Constitution in conformance with the San Andres Accords
+and the corresponding proposition put forth by the Commission of
+Concordance and Pacification of the Congress of the Union?
+
+QUESTION 3: -Do you agree that we should reach true peace through the
+path of dialogue, demilitarizing the country and returning soldiers to
+their barracks, as the Constitution and the law establish?
+
+QUESTION 4: -Do you agree that the people should organize themselves
+and demand that the government "command by obeying" in all aspects of
+the national life?
+
+QUESTION 5: -Do you agree that Mexicans who live abroad should be an
+active part in the construction of a new Mexico and have the right to
+vote in the elections?
+
+WWW Support For Your Petition
+=== ======= === ==== ========
+
+If your petition is promoted on a web page, it is possible to use
+Javascript or CGI (or even a mixture Javascript/CGI) to make a button
+that sends email requests to service the signing of petitions, the
+unsigning of petitions, even subscribing and unsubscribing to lists,
+and all email commands.
+
+Check out the petition page for "La Consulta":
+
+http://www.deliberate.com/consulta
+
+and for "Kopilli Ketzalli":
+
+http://www.deliberate.com/aztec
+
+You can copy these pages and then modify them to suit your petition. They
+are samples of Javascript type petitions.
+
+The web pages you make for your petition can be mirrored on any
+number of sites (a security feature) and they will all feed the
+one petition.
+
+Or visit the "Nader ag and food" petition:
+
+http://www.deliberate.com/food
+
+This one is a mixture of Javascript and CGI script.
+
+The Javascript only petition have the advantage that they are simple
+to make and they extract automatically the signer's signature from the
+browser's configuration. They use the "mailto" command as the form
+action. However, they have a big disadvantage, they do not always work
+if the signer's browser is Microsoft Internet Explorer.
+ 
+The forms using CGI or CGI/Javascript invoke a CGI script to format
+the email which will be sent to eVote. It is necessary for the signer
+to enter his email address, this is a disadvantage as it is always
+possible that an error will be made at this stage and the wrong
+address will be entered, but it is also an advantage for those who
+wish to sign from a public library or an Internet Cafe'.  The
+advantage of CGI/Javascript is that Javascript can be used to verify
+that the form has been correctly filled in without any transaction
+taking place between the browser and the server. It's only when
+Javascript is satisfied that the CGI script is invoked.
+
+The web pages you make for your petition can be mirrored on any number
+of sites (a security feature) and they will all feed the one petition.
+
+WWW Reports
+=== =======
+
+Your petition web page, no matter where it is, can report the current
+count of signatures.  eVote will use ftp to send the updates of the
+count to a remote computer every time someone signs a petition or
+removes a signature. This, however, must be coordinated with the
+administrators of both the eVoted site and the web site.
+
+Your job will be to make your web page with the report of the number
+of signers.  Make the number of signatures 0.  You can also have
+a date updated on the web page.  For starting, put the current date
+in your web page with the format:  Wed Sep 20 11:20:51 PDT 2000
+which is the standard unix format.
+
+Send your web pages to the system administrator of the eVoted site and
+she can fix it up for you.  It is a piece of work to make this happen
+so please be patient and understanding with your administrator.
+
+
+Bad Signatures
+=== ==========
+
+If you wish to remove someone's signature from the petition, you can
+do so if you know the password for the list.  The owner of the list
+knows the password and will, perhaps, share it with you.
+
+1.  Send a message to:
+
+    petition@eVoted-site.net
+
+2.  The subject must be the subject of the petition:
+
+    Save The World
+
+3.  The message should be
+
+eVote approve <password> unsign <address> <address> <...>
+
+This will remove the signature(s) from the signature file and the
+email address is removed from eVote's data.  The count is adjusted and
+any reports attached to the petition are updated.
+
+
+Alterations On The Fly
+============ == === ===
+
+Your petition can have certain alterations occur after the petition
+signature collecting is in process.  However, these alterations must
+be made by the site administrator.
+
+The alterations that are supported are:
+
+   Adding additional languages
+   Adding dynamic WWW reports of signature counts
+   Adding WWW support for signature gathering
+   Turning on/off the confirm feature
+   Changing the required fields
+
+If you need these, you must contact the site administrator.
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter IV
+
+ -eVote for List Owners-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+
+The owners of eVoted lists have the same responsibilities and powers
+as do owners of regular lists, plus a few more.
+
+Whether you own a regular eVoted list, or a list for administering
+petitions, the instructions in this section apply to you.  In these
+instructions, it is assumed that your list address is
+list-name@eVoted-site.net.  Use your list's true address instead.
+
+=========== === ====== == ====== =====
+Information for Owners of eVoted Lists
+=========== === ====== == ====== =====
+
+Mailer Errors
+====== ======
+
+If you are running with Mailman, please ignore this section.  Mailman
+handles mailer errors and coordinates with eVote automatically.
+
+When an email address on your Majordomo-run list stops working, you'll
+receive an error message every time a message is posted to your list.
+To remove the failing address, send directly to your list, i.e., to:
+
+list-name@eVoted-site.net
+
+and say
+
+eVote approve <password> bounce <bad_email_address> <another_bad_address> ...
+
+Use the same password as you use for Majordomo commands.
+
+The address will be removed from your list and will be placed on a
+special "bounces" list.  Your administrator should have a cron task
+that runs Majordomo's bounce-remind script every day.  It sends the
+bounces list a message advising the recipients that their address has
+been failing and giving instructions on how to reinstate their
+subscription.
+
+NOTE:  Don't unsubscribe bad addresses and don't use Majordomo's
+bounce command.  Either action will destroy the user's ballot.
+
+If you unsubscribe the address instead, not only will the ballot be
+lost, but also, the user won't know that she's been unsubscribed.
+
+Because this error is so grievous, a confirmation message will be
+requested when eVote receives a message to unsubscribe a user who has
+votes in the system.
+
+eVote Commands
+===== ========
+
+You can use your Mailman admin password, or your Majordomo
+list-owner's password for the following eVote commands.  Send these
+commands directly to your list's address:
+
+list-name@eVoted-site.net
+
+The subject line should refer to an established poll for these
+commands:
+
+    eVote approve <password> close
+
+        closes the established poll.  Notice is sent to all
+        subscribers that you have forced the closing of the poll.
+
+    eVote approve <password> drop
+
+        drops the poll from the database.  Notice is sent to all
+        subscribers.
+
+    eVote approve <password> drop silent
+
+        drops the poll from the database.  No notice is sent to
+        the subscribers.
+
+For the following commands the subject line is irrelevant.  Once
+again, these commands should be sent to the list address.
+
+    eVote approve <password> back <address>
+
+        (for Majordomo only, not for Mailman)
+
+        places the <address> on Majordomo's list and reactivates the
+        ballot.  If the address is on Majordomo's "bounces" list,
+        it is removed.  You can only bring back one address per
+        message.  You can say:
+
+        eVote approve <password> back <address> "something more"
+
+        and "something more" will be in Majordomo's list on the
+        same line with the email address.
+
+    eVote approve <password> bounce <address>
+
+        (for Majordomo only, not for Mailman)
+
+        removes the <address> from Majordomo's list while retaining
+        the ballot.  The address can NOT modify its ballot while
+        in this state.  The bounced address is also added to
+        Majordomo's "bounces" list and will be sent a nightly
+        notice that the address has been failing.  You can bounce
+        many addresses in the same message:
+
+        eVote approve <password> bounce <address1> <address2> ...
+
+    eVote approve <password> move <old-address> <new-address>
+
+        moves the address while it retains the ballot.  This command
+        moves the address for all lists run at this site.  A message
+        is sent to each list's owner.
+
+    eVote approve <password> no-vote <address>
+
+        changes the <address> to a non-voter.  This is useful for
+        archive addresses.
+
+    eVote approve <password> vacation <address>
+       
+        (for Majordomo only; use Mailman's "set nomail" feature.)
+
+        removes the <address> from Majordomo's list while retaining
+        the ballot.  The address can NOT modify its ballot while
+        in this state.
+
+    eVote approve <password> vote <address>
+
+        (for Majordomo only; use Mailman's "set nomail" feature,
+         of the "vote_only" option below.)
+
+        changes the <address> to a voter again.  
+
+    eVote approve <password> vote_only <address>
+
+        removes the <address> from Majordomo's list while retaining
+        the ballot.  The address CAN modify its ballot while in this
+        state.  This is useful for people who read the list mail from
+        a web archive but still want to vote.
+
+        for Mailman, first send a "set nomail" command and then use
+        this eVote command.
+
+Info File
+==== ====
+
+Mailman users can skip this sections.  Information about eVote is sent
+to new subscribers automatically in the welcome message.
+
+For Majordomo lists, the info file for your list, "politics.info", for
+example, should be changed so that it announces to list members that
+the list is eVoted.  The info file might look like:
+
+---     Sample info file  ---
+
+[A description of your list's purpose goes here]
+
+eVote
+=====
+
+Most messages that are sent to the address list-name@eVoted-site.net
+will be forwarded to all the members of the list.  However, if your
+message starts with the word "eVote", instead, it will be processed by
+eVote.
+
+Because this list is eVoted, anyone on this list can generate a poll
+for the list members to vote on.
+
+To see what polls are open for this list, send the message:
+
+     eVote list
+
+to list-name@eVoted-site.net.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to list-name@eVoted-site.net.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages but retain your electronic ballot and your influence on
+the statistics, send this message to list-name@eVoted-site.net:
+
+      eVote vacation
+
+
+Moving
+======
+
+If you move your email address, notify
+owner-list-name@eVoted-site.net.  The owner can move your address
+and preserve your ballot.
+
+If you belong to several eVoted lists at this site, you only need to
+notify one list owner of your move.  eVote will move your address for
+all lists and notify all your lists' owners.
+
+Members
+=======
+
+To see who is subscribed to the list, send this message to
+list-name@eVoted-site.net:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges.
+
+Bugs
+====
+
+If you find a bug, please report it to eVote-users@deliberate.com. 
+
+End
+===
+
+If you have a signature on your message, add a line with "end" when
+you communicate with eVote.
+
+---  end of sample info file ---
+
+====== == ======== =====
+Owners Of Petition Lists
+====== == ======== =====
+
+Owners of petition lists, i.e., lists whose name begins with
+"petition", have one more command they can use.  Here we assume that
+your list's name is "petition@eVoted-site.net".  Petition list names
+can be "petitions@eVoted-site.net", "petitionx@eVoted-site.net", etc.
+Use the real name of your petition list for these instructions.
+
+Bad Signatures
+=== ==========
+
+If you wish to remove someone's signature from the petition, you can
+do so if you know the password for the list:
+
+1.  Send a message to:
+
+    petition@eVoted-site.net
+
+2.  The subject must be the subject of the petition:
+
+    Save The World
+
+3.  The message should be
+
+eVote approve <password> unsign <address> <address> <...>
+
+This will remove the signatures from the signature file as well as the
+email address from eVote's data.  It will alter the count and ship
+updated reports.
+
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter V 
+
+  - eVote for Site Administrators -
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+
+=====================
+Architecture/Overview
+=====================
+ 
+eVote is a user interface and a database server especially crafted to
+stimulate, accept and report on vote data generated by the online
+community.
+
+
+eVote is five executables that work together.
+===== == ==== =========== ==== ==== =========
+
+                       _______________
+                      |               |
+                      |  eVote_Clerk  |
+                      |    -------    |
+                      |      The      |
+                      |     Clerk     |
+                      |_______________|
+                      /|\ /|\  /|\  /|\
+                       |   |    |    |
+                       |   |    |    |
+                   STARTS  |    |   COMMUNICATES WITH
+                   /       |    |                |
+                 /         |    |                |
+               /           |    |               \|/
+ _______________           |    |             _________________
+|               |          |    |            |                 |   Runs
+|     eVote     |          |    |            |  eVote_insert   |----> "post"
+|   ---------   |          |    |            |     -------     |   or "resend"
+|    Command    |          |    |            |  The email list |   or your
+|     Center    |          |    |            |    Interface    |   mailer,
+|_______________|          |    |            |_________________|        as
+                     COMMUNICATES WITH            /|\          appropriate.
+                           |     \                 |              /|\
+                           |       \            "wrapper", part of |    
+                           |         \          your listserver,   |
+                          \|/          \        runs eVote_insert  |
+               _______________________   \      & eVote_petition   |
+              |                       |    \       |               |
+              |       eVote_mail      |      \|   \|/              |
+              |  -------------------  |       _______________________
+              |  Mail Administrator's |      |                       |
+              |  Utility Interface    |      |     eVote_petition    |
+              |_______________________|      |  -------------------  |
+                                             |  Accepts signatures   |
+                                             |  for petitions only.  |
+                                             |  Also an email        |
+                                             |  interface.           |
+                                             |_______________________|
+eVote's Executables
+======= ===========
+
+eVote is five programs that work together: eVote_Clerk, usually called
+"The Clerk"; eVote_insert, the email list user interface; eVote_mail,
+the mail administrator's utility interface; eVote_petition, the
+interface for signers of petitions, and eVote, the command center for
+controlling The Clerk.
+
+eVote_insert and eVote_petition reside in the same directory as the
+listserver's program, "resend" or "post".  This happens automatically
+during installation.  They are owned and run by your listserver's
+login.
+
+When running Majordomo, eVote_mail is in the same directory with
+eVote_insert and eVote_petition.  With Mailman, it is in the bin
+directory with Mailman's utility scripts.
+
+The two executables, eVote_Clerk and eVote, reside, by default, in the
+directory, /usr/local/bin.  A different directory can be specified
+during installation.
+
+After installation, executing ls -l eV* in the directory you specified
+displays the two executables and one text file, "eVote.cf":
+
+-r-x--x--x   1 clerk    users      535081 May 11 15:46 eVote
+-r--r--r--   1 clerk    users         246 May 11 15:46 eVote.cf
+-r-x------   1 clerk    users      246213 May 11 15:46 eVote_Clerk
+
+The third eVote file, eVote.cf, is a text file containing eVote's
+run-time parameters.  It is described in the section titled
+"Defaults".
+
+The eVote Executable
+--- ----- ----------
+
+The eVote executable is the command center for eVote.  It can be
+called with various arguments.  Depending on the argument, eVote will
+start, stop or check The Clerk.
+
+Use the eVote executable to drop lists, to flush The Clerk's log, and
+to produce reports.  See the section on "Administration - A Deeper
+Look" for more details.
+
+
+The eVote_Clerk Executable
+--- ----------- ----------
+
+eVote_Clerk, the vote-keeper, is the heart of eVote.  The word "Clerk"
+was chosen for the vote-keeper program because The Clerk is the title
+given to the elected facilitator of Quaker business meetings.  These
+meetings are consensus-run and eVote was designed to allow online
+emulation of consensus-run meetings, as well as many other styles of
+meetings.
+
+eVote's Clerk runs all the time in the computer's background
+establishing new polls, dropping old items, accepting, tallying,
+storing, and reporting votes and statistics.
+
+To keep efficient, The Clerk, when it's not otherwise busy,
+scrutinizes the vote data, improving the ordering, adjusting space,
+and making backups.
+
+eVote_Clerk has no direct user-interface.  It is started, controlled,
+and stopped by the eVote executable.
+
+For more information about the Clerk, see "Administration - A Deeper
+Look", below.
+
+The eVote_insert Executable
+--- ------------ ----------
+
+eVote_insert generates the email interface for eVote so that it is
+suitable for running in conjunction with list-serving software.  It is
+architected so that, with minor or no modification, it can be used
+with other email-list servers as well.
+
+eVote_insert intercepts the email sent to an email list.  If the first
+word in the message body is not "eVote", eVote_insert passes the
+message along to the list.  If the first word in the message is
+"eVote", eVote_insert processes the message by cooperating via
+interprocess communication with The Clerk.  The result can be an
+informational message returned to the sender, or it can be a message
+posted to the list announcing a new poll, or that an old poll has been
+closed or dropped.
+
+A listserver without eVote:
+
+   wrapper  ---->  resend/post ----> to the list
+
+Without eVote, whenever a message is sent to an email list, the
+listserver's "wrapper" program is called.  In turn, wrapper executes
+the "post" or "resend" program to distribute the message to the email
+list.
+
+With eVote:
+                                       post or
+   wrapper ---->  eVote_insert  ---->  resend  ----> to the list
+                               or
+                               |
+                               |
+                               V
+                     A message from eVote is generated
+                     and returned to the sender.
+
+With eVote, the wrapper program executes eVote_insert and eVote_insert
+executes post/resend -- if it is appropriate.  If the message contains
+a command for eVoting, eVote_insert often calls your system's mailer
+(as copied from eVote's makefile into eVote.cf at install time) and
+sends a generated message back to the sender.
+
+
+The eVote_petition Executable
+--- -------------- ----------
+
+eVote_petition receives mail sent to "eVote@eVoted-site.net" address.
+If the first word in the message body is "help" or "info", or a
+recognized translation of "help" or "info", information about the
+petition named in the subject line will be sent to the sender. If the
+first word is "remove", or a translation, the sender's signature will
+be removed.  Otherwise the message body is assumed to be a comment on
+the petition, the petition is signed and a receipt sent.  This
+facility speaks Spanish and French in addition to English.  Other
+languages can be added fairly easily because of translation facility.
+See EVOTE_HOME_DIR/eVote/src/tools/trans/README.
+
+
+   wrapper ---->  eVote_petition  ---->  A message from eVote is 
+                                         generated and returned to
+                                         the sender.
+
+Signers do not need to join any email list at your site to register
+their signature on a petition.
+
+See "The Petition Facility" below.
+
+The eVote_mail Executable
+--- ---------- ----------
+
+eVote_mail allows the mail administrator to synchronize eVote's list
+of subscribers to the listserver's data.  Also, the administrator can
+use this program to disallow voting from an address; or to drop an
+address from all lists.  Also, for Majordomo installations, this
+program can be instructed to clean Majordomo's "bounces" list.
+
+Similarly, this program will delete stale messages that have been
+awaiting confirmation.  For details, see the section on "Preparing For
+Total Automation" below.
+
+eVote_queries.py for Mailman Only
+=====_=======.== === ======= ====
+
+eVote_queries.py is an extra executable that integrates itself with
+Mailman so that eVote can query and manipulate Mailman's data.  During
+installation, it is placed in mailman/bin where eVote expects it.
+
+
+Other eVote Files
+===== ===== =====
+
+The Configuration File
+--- ------------- ----
+
+The installation process builds a configuration file:
+
+EVOTE_BIN/eVote.cf
+
+It is a modifiable text file containing eVote's run-time parameters.
+It is described in the section titled "Defaults".
+
+This configuration file is built when running "make install" in
+EVOTE_HOME_DIR/eVote/src.
+
+Information Files
+----------- -----
+
+At installation, five text files for eVote are loaded into LISTDIR,
+as given in EVOTE_HOME_DIR/eVote/src/makefile.  They are:
+
+1.  eVote.list-owner-info 
+
+    describes the eVote commands available to list owners of 
+    Majordomo-run lists.
+
+2.  eVote_sample.info 
+
+    describes the eVote commands available to users.  It is good
+    to paste this into the info files of Majordomo-run eVoted lists.
+
+3.  eVote.poll  
+
+    The eVote software uses this file to generate instructions
+    to help the user set up polls.
+
+4.  eVote.help  
+
+    This is used to generate general instructions about eVote.
+
+5.  eVote.petition
+
+    eVote uses this to generate instructions for setting up
+    petitions.
+
+For Mailman installations, four files are placed in the mailman/templates
+directory:
+
+1.  eVote.txt
+
+    This text is added to the welcome message sent to a new member who
+    just joined an eVoted email list.  It explains the eVote commands
+    that are available to list members.
+
+2.  eVotePetition.txt
+
+    If the new list is a petition list, both eVote.txt and this text
+    is added to the Welcome message.  It gives instructions for
+    initiating petitions.
+
+3.  eVoteNewList.txt
+
+    This text explains the eVote commands that the list administrator
+    can use.  It is included in the "owner notification" that is sent
+    when a new list is started.
+
+4.  eVoteNewPetition.txt
+
+    this text is also included in the "owner notification" email if the
+    new list is a petition list.  It explains the command whereby an owner
+    of a petition list can remove signatures from a petition.
+
+
+The Vote Data
+--- ---- ----
+
+All vote data are kept in one directory, EVOTE_HOME_DIR/eVote/data, or
+/usr/local/eVote/data, by default.  The default can be changed during
+installation or later by editing the value of EVOTE_HOME_DIR in the
+EVOTE_BIN/eVote.cf file.  EVOTE_HOME_DIR and data management in
+general are discussed in "Administration - A Deeper Look" below.
+
+
+The Log File
+--- --- ----
+
+Whenever The Clerk has difficulty, or when it notices an interesting
+event, it writes an entry to its log file, Clerk.log.  Clerk.log is
+maintained in the same directory as are the vote data,
+EVOTE_HOME_DIR/eVote/data, /usr/local/eVote/data by default.
+
+
+Interprocess Communication 
+============ =============
+
+The Clerk communicates with the eVote_insert by using two of UNIX's
+interprocess communication facilities: shared memory and message
+queues.
+
+The Clerk has one incoming message queue.  All requests to The Clerk
+go in on that same queue.  Each user interface process has one return
+message queue.  The Clerk sends messages back to the user interface
+process through that process' return queue.  These messages
+acknowledge the completion of instructions and communicate the
+fast-moving personalized statistics that the user sees.
+
+A shared memory segment is established for each currently active
+conference or email list.  The shared memory contains slow-moving data
+regarding the polls for the list.  In particular, the shared memory
+holds details about the characteristics of each poll.  It does not
+contain statistics.
+
+============
+Installation
+============
+
+Installation involves two main steps:
+
+1.  Install eVote.
+
+2.  Link eVote to your already-running listserver, probably Mailman or
+    Majordomo.
+
+This assumes that you already have a listserver running on your
+Linux-run computer.  If not, then installing Mailman or Majordomo is
+your first step.
+
+To install Mailman, collect version 2.0.13 from
+http://sourceforge.net/projects/mailman.
+
+To install Majordomo, collect version 2.94.5 from
+http://www.greatcircle.com/majordomo.
+
+
+Installing eVote
+========== =====
+
+When installing eVote, care must be taken about permissions and
+security.  Some particular login must calculate statistics and own
+eVote's data files, i.e., the ballots for your users.  For vote
+security, choose this login carefully.  A good security trick is to
+make a special login, "clerk", for this purpose.  If you place an '*'
+in the encrypted password field of the password entry for your clerk
+login, then only root can access this login and only by using "su
+clerk".  
+
+The entry in our /etc/passwd file is:
+
+    clerk:*:401:100::/usr/local/eVote/data:/bin/tcsh
+
+The '*' in the password field means that, to be the clerk login, you
+login as root and then issue the "su clerk" command.
+
+The clerk login can have its own group.  It doesn't matter.
+
+Note also that recent Unix systems maintain a /etc/shadow file which
+is only readable by root and which contains the passwords. In this
+case the "*" is to be written in this file while the /etc/passwd file
+should have an 'x' in the field corresponding to the password.
+
+Don't make an "eVote" login, save that name for your petitions.  "The
+Clerk" is the vote-server that maintains eVote's data so "clerk" is a
+good choice for this login.
+
+Doing The Install
+----- --- -------
+
+Do the installation as your listserver login, probably "mailman" or
+"majordom".  Then:
+
+1.  Be in the same directory where the compressed tar file resides:
+
+    eVote-2.5x.tgz
+
+2.  Unload the file:
+
+    tar -zxvf eVote-2.5x.tgz
+
+3.  Move to the src directory:
+
+    cd eVote-2.5x/src
+
+4.  Edit the makefile in the src directory.  The makefile has instructions
+    for this.
+
+5.  Do the installation in the src directory:
+
+    make install
+
+
+Linking To Mailman
+======= == =======
+
+Mailman List Requirements
+------- ---- ------------
+
+Your eVoted Mailman lists requires two option settings:
+
+1.  In "General Options", for the question, "Where are replies to list
+messages directed?", please click "This list".
+
+2.  If, in "Privacy Options", you have restricted posting privileges
+to list members only, you must do an extra fanagle to allow eVote to
+post to your list.  Each eVoted list has a special address associated
+with mail from eVote.  The address for the "sample" list at the
+eVoted-site.net domain is sample-eVote@eVoted-site.net.  Add this
+address to "Addresses of members accepted for posting to this list
+without implicit approval".
+
+
+Performing the Link with Mailman
+---------- --- ---- ---- -------
+
+Linking eVote to Mailman involves altering your exim or sendmail (or
+other MTA) aliases file, usually /etc/aliases.
+
+1.  Add the following aliases:
+
+    eVote-owner:      mailman-owner
+    eVote-notify:     "|/home/mailman/mail/wrapper eVote_insert"
+    
+2.  For each allready-established list that requires eVote, add the
+    following aliases.  In this example, the list name is "sample".
+
+    sample-eVote: sample-admin
+    owner-sample: sample-admin
+
+3.  Also, for each list that requires eVoting, edit the following
+    aliases as indicated:
+
+    sample:         "|/home/mailman/mail/wrapper eVote_insert post sample"
+
+    sample-request: "|/home/mailman/mail/wrapper mailcmd eVote sample"
+
+    Note that the alias for "sample:" has the word "eVote_insert"
+    inserted between " ...  /wrapper" and "post ... ".  Don't change
+    the line in any other way.
+
+    Also note that the alias for "sample-request" has the word "eVote"
+    inserted between " ... mailcmd " and "sample ... ".  Don't change
+    the line in any other way.
+
+    Don't forget to mkaliases, or newaliases, as your system requires.
+
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+  | Note: Don't make an eVoted list whose name starts with "petition" |
+  | unless you are using it for the petition facility; and don't make |
+  | a list whose name is "eVote", you'll want that address for your   |
+  | petition address.                                                 |
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+
+When you create a new email list with Mailman's "newlist" utility, it
+will ask if this list is to be eVoted.  If so, it will supply the
+correct alias entries for the list.
+
+Linking With Mailman/Exim
+------- ---- ------------
+
+If you are running Exim and using Exim's runtime configuration file to
+direct your list traffic, you still need the 2 aliases listed in
+1. above.
+
+2. You have the equivalent of these four routers to direct
+list-related mail.  In the list_owner_router (or your equivalent) you
+want to add " : -eVote " so that listname-eVote mail gets sent to the
+listname-admin address too.  The other three routers stay the same:
+
+list_owner_router:
+   driver = accept
+   require_files = MAILMAN_HOME/lists/$local_part/config.db
+   local_part_suffix = -owner : -eVote : -admin
+   transport = list_admin_transport
+
+owner_list_router:
+   driver = redirect
+   require_files = MAILMAN_HOME/lists/$local_part/config.db
+   local_part_prefix = owner-
+   data = "$local_part-admin@${domain}"
+   user = exim
+
+list_request_router:
+   driver = accept
+   local_part_suffix = -request
+   require_files = MAILMAN_HOME/lists/$local_part/config.db
+   transport = list_request_transport
+
+list_router:
+   driver = accept
+   require_files = MAILMAN_HOME/lists/$local_part/config.db
+   transport = list_transport
+
+3.  For the mailman transports, the following are defined in Exim's
+configuration file's first section:
+
+MAILMAN_HOME=/b/home/mailman
+MAILMAN_WRAP=MAILMAN_HOME/mail/wrapper
+MAILMAN_UID=mailman
+MAILMAN_GID=exim
+
+The list_admin_transport doesn't change for eVote:
+
+list_admin_transport:
+           driver = pipe
+           command = MAILMAN_WRAP mailowner $local_part
+           current_directory = MAILMAN_HOME
+           home_directory = MAILMAN_HOME
+           user = MAILMAN_UID
+           group = MAILMAN_GID
+
+The list_transport needs the word "eVote_insert" before the call to post:
+
+list_transport:
+           driver = pipe
+           command = MAILMAN_WRAP eVote_insert post $local_part
+           current_directory = MAILMAN_HOME
+           home_directory = MAILMAN_HOME/mail/scripts
+           user = MAILMAN_UID
+           group = MAILMAN_GID
+
+The list_request_transport needs "eVote" inserted after "mailcmd":
+
+list_request_transport:
+           driver = pipe
+           command = MAILMAN_WRAP mailcmd eVote $local_part
+           current_directory = MAILMAN_HOME
+           home_directory = MAILMAN_HOME
+           user = MAILMAN_UID
+           group = MAILMAN_GID
+
+
+Linking To Majordomo
+======= == =========
+
+Majordomo List Requirements
+--------- ---- ------------
+
+Your eVoted Majordomo lists require two things in the configuration,
+for example, in the sample.config file:
+
+1.  The reply_to parameter must be the list address:
+
+reply_to  = sample@eVoted-site.net
+
+2.  If your list uses Majordomo's restrict_post feature, you must do
+an extra fanagle to allow eVote to post to your list.  Each eVoted
+list has a special address associated with mail from eVote.  The
+address for the "sample" list at the eVoted-site.net domain is
+eVote-sample@eVoted-site.net.  Make a file in your $lists directory
+called "sample.posters" and put the line in it:
+sample-eVote@eVoted-site.net.  Then, in the Majordomo configuration
+file for the list, include sample.poster in the list of files in the
+restrict_post parameter in the configuration file:
+
+restrict_post = sample.posters and-any-other-files-listed
+
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+  | Note: Don't make an eVoted list whose name starts with "petition" |
+  | unless you are using it for the petition facility; and don't make |
+  | a list whose name is "eVote", you'll want that address for your   |
+  | petition address.                                                 |
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+
+Performing the Link with Majordomo
+---------- --- ---- ---- ---------
+
+Linking eVote to Majordomo involves altering your exim or sendmail (or
+other MTA) aliases file, usually /etc/aliases.
+
+1.  Add the following alias:
+
+    eVote-owner: owner-majordomo
+    
+2.  For each list, add the following alias.  In this example,
+    the list name is "sample".
+
+    sample-eVote: owner-sample
+
+3.  For each list that requires eVoting, edit the following aliases as
+    indicated:
+
+    sample: "|/usr/local/majordomo/wrapper eVote_insert resend -l sample -h your-domain.net sample-outgoing"
+
+    sample-approval: owner-sample, "|/usr/local/majordomo/wrapper eVote_insert"
+
+    Note that the alias for "sample:" has the word "eVote_insert"
+    inserted between " ...  /wrapper" and "resend ... ".  Don't change
+    the line in any other way.
+
+    Also note that the alias for "sample-approval" has
+    `,"|/usr/local/majordomo/wrapper eVote_insert"' added at the end.
+    Use the same path to the "wrapper" program as you use in the
+    sample alias.
+
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+  | Note: Don't make an eVoted list whose name starts with "petition" |
+  | unless you are using it for the petition facility; and don't make |
+  | a list whose name is "eVote", you'll want that address for your   |
+  | petition address.                                                 |
+  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
+
+
+Getting Started
+======= =======
+
+These instructions are for sites running any listserver.
+
+1.  Don't forget to mkaliases, or newaliases, as your system requires.
+
+2.  Start eVote's vote-keeper, "The Clerk", running.  
+
+    a.  Be sure you are logged in as the "clerk" user.
+
+    b.  Give the command:
+
+        eVote
+
+An "eVote_Clerk" process will start and should stay running all the
+time that your computer is up and running.  
+
+If you have trouble at this point, there may be an incapatibility with
+your linux's "ipcs" command which eVote issues and parses.  You can
+configure this in the EVOTE_BIN/eVote.cf file:
+
+IPCS = ipcs -c
+
+is a good one to try.  The ipcs command needs to have the interprocess
+communication id's as the first fields:
+
+------ Shared Memory Segment Creators/Owners --------
+shmid     perms     cuid      cgid      uid       gid       
+
+------ Semaphore Arrays Creators/Owners --------
+semid     perms     cuid      cgid      uid       gid       
+
+------ Message Queues: Creators/Owners --------
+msqid     perms     cuid      cgid      uid       gid       
+1114752   666       clerk     users     clerk     users     
+
+To verify that eVote is installed and running, give the command:
+
+       eVote check
+
+If The Clerk is running, and it should be, you'll see something like:
+
+    The Clerk's in_queue is alive. In-queue id is  0
+    eVote_Clerk is up and running; pid = 121.
+    Last receive at Mon May  2 10:28:52 1994
+    Last send at Mon May  2 10:28:52 1994
+    Currently 0 messages on the in-queue.
+
+Before you stop your computer, issue the command:
+
+       eVote quit
+
+When you start again, be sure to start The Clerk again.  If you fail
+to stop The Clerk before you bring down your system, probably
+everything will be OK anyway.  If not, you'll be able to recover all
+but the most recent transactions.  See "The Vote Data" below.
+
+3.  The first "subscribe" or "unsubscribe" command to the "sample"
+list will start eVote working for the "sample" list.  Or you can use
+
+    eVote_mail sync sample
+
+to immediately initialize eVote for the list.  The "eVote_mail"
+program is in the $config/mailman/bin directory for Mailman
+installations; and for Majordomo installations it is in the same
+directory with "resend".
+
+4.  Alert your list owners that their lists are now eVoted.  If you
+are running Majordomo, your list owners may want to use Majordomo's
+"newinfo" command to modify their list's info file to alert list
+members that eVote is now up and running for the list.  A sample info
+file, "eVote_sample.info", is in the same directory as your mail
+lists.
+
+If you are running Mailman, the welcome message will automatically
+include eVote information when the list is eVoted.
+
+Also, list owners have a new set of commands available to them.  These
+are described in "eVote.list-owner-info" in the same directory as your
+mail lists.  If you are running Mailman, these commands will be
+described in the "newlist" information sent to new list
+administrators.
+
+
+Verifying The Installation
+========= === ============
+
+To verify the installation, perform these tests:
+
+1.  Send a message to an eVoted list that says:
+
+    eVote help
+
+    You should receive a help file and no mail should go to
+    other list members.
+
+2.  Send a message to an eVoted list that says:
+
+    test.
+
+    It should be sent to all list members as usual.
+
+3.  Send a message to an eVoted list that says:
+
+    eVote poll [y/n] public visible
+    message:
+    Is eVote working?
+
+    Instructions for voting should be generated and sent to
+    all members.
+
+4.  Unsubscribe and subscribe to an eVoted list.  If there is
+    trouble, you'll get an error message.
+
+If these things work properly, your installation is correct.
+
+If you experience some trouble it might be helpful to capture any
+error messages to stderr.  You can do this by placing "eVote_script"
+in your alias entry instead of "eVote_insert".  See "Other Helpful
+Tools" below.
+
+Preparing For Total Automation
+========= === ===== ==========
+
+That's enough to get started.  But soon, you'll want to set up a few
+other things to make all your work go away.
+
+You may want to set up cron tasks to regularly:
+
+ In "Preparing for Mailer Errors" below (for Majordomo installations only):
+
+     1. Run Majordomo's "bounce-remind" script.
+
+     2. Clean the "bounces" list of old entries.
+
+ In "Automated backup" below:
+
+     3. Run an automatic backup script nightly.
+
+ In "Synchronicity Checks" below: 
+
+     4. Run Synchronicity checks.
+
+ In "Stale Messages Awaiting Confirmation" below:
+
+     5. Delete old, unanswered, confirm messages.
+
+Also, you may want to add a command to your startup script so that
+eVote_Clerk starts automatically at boot time, and you might want to
+establish a "crash command" so that, if the Clerk falls down,
+something intelligent happens.
+
+Automatic Startup
+--------- -------
+
+At deliberate.com, we start the Clerk automatically when the system
+boots with a command in the start-up script:
+
+su clerk -c /usr/bin/eVote
+
+For more insight into this command, see "Starting The Clerk" below.
+
+Crash Command
+----- -------
+
+If you wish you can instruct The Clerk to run any command just before
+it crashes, if it crashes.  Add this entry to your EVOTE_BIN/eVote.cf
+file:
+
+CRASH_COMMAND = /usr/bin/stop_modem
+
+You may stipulate any command and if The Clerk receives any kind of
+signal or comes down for any reason, except for an "eVote quit", it
+will try to run that command before it dies.
+
+If you change your CRASH_COMMAND, you must restart The Clerk for it to
+see the new command.
+
+In EVOTE_HOME_DIR/eVote/src/tools/utils is a tryagain.c program that
+makes a good CRASH_COMMAND.  It keeps a tiny data file that notes the
+last time The Clerk came down unexpectedly.  If it wasn't within the
+last 20 minutes, The Clerk is started again automatically.  If it was
+within the last 20 minutes, it calls a program to turn off the modem.
+In any case, it sends mail to owner-eVote.
+
+Preparing for Mailer Errors -- Majordomo Installations Only
+--------- --- ------ ------    --------- ------------- ----
+
+When your list owners send in an "eVote approve <password> bounce
+<address>" command, the address is removed from Majordomo's list, it is
+marked as "on vacation" in eVote, and it is added to the "bounces"
+email list.  You need to alter Majordomo's "bounce-remind" script so
+that it asks the users to use eVote's command for reinstating their
+subscription.  At deliberate.com our bounce-remind script ends with
+the following text.  Replace "eVote-site.net" with your domain:
+
+---- cut ----
+print MSG <<EOF;
+
+If the problem has been fixed, please send a message directly
+to the list, not to Majordomo: 
+
+   <list-name>@eVoted-site.net
+
+where you replace <list-name> with the real name of the list.
+
+Have your message say:
+
+   eVote back
+
+You'll need to access the mailing list archives if you want to catch
+up on whatever you missed while your address was on vacation.
+
+If your address has changed, please notify your list's owner by
+writing to:
+
+owner-<list-name>@eVoted-site.net
+
+Replace <list-name> with the real name of the list.  Your list's owner can
+change your address so that your ballot follows you to your new
+address.
+
+If you don't want to keep getting these reminders every day, but
+don't want to resubscribe to the list, please send the "eVote back"
+message and then unsubscribe in the usual way: write to
+majordomo@eVoted-site.net and say:
+
+  unsubscribe <list-name>
+
+where you replace <list-name> with the real name of the list.
+
+EOF
+
+close(MSG);
+exit(0);
+---- cut ----
+
+Deleting Bad Addresses From Your System -- Majordomo Installations Only
+-------- --- --------- ---- ---- ------    --------- ------------- ----
+
+When you want to remove names from the "bounces" list, please
+use the eVote_mail program:
+
+eVote_mail bounce 30
+
+will remove all addresses that are at least 30 days old.  It removes
+them from the eVote data in an intelligent way.  Majordomo can't.
+
+
+Automated Backup
+--------- ------
+
+When keeping vote data, it is especially important to make frequent
+backups, and to check occasionally that the backups can be fed back
+into the working computer system.
+
+Just after our cron-run backup procedure, we remove all the automatic
+backups that eVote_Clerk made with:
+
+rm EVOTE_HOME_DIR/eVote/data/~*
+
+
+Synchronicity Checks
+------------ ------
+
+If you modify your listserver's subscriber data, eVote won't see your
+changes unless you synchronize the list.
+
+To force this synchronization, give the command:
+
+    eVote_mail sync <list_name>
+
+The sync command will initialize eVoting for a list.  You can say
+  
+    eVote_mail sync all
+
+to synchronize all your eVoted lists.
+
+A first subscribe or unsubscribe to a list will automatically
+initialize eVote for the list, as long as the alias file indicates
+that this is an eVoted list.
+
+If the "-r" option is used on the sync command, any new addresses in
+the listserver's data will be added as non-voters/read-only
+subscribers and won't be considered in the statistics:
+
+    eVote_mail -r sync <list_name>
+
+To change an existing member of a list to a non-voter/read-only 
+subscriber, an external archive address, for example, give the command:
+
+    eVote_mail no_vote <list_name> <email_address>
+
+You can change the status of an address in several ways if you know
+the list's password by sending email with the appropriate command
+directly to the list's address.  See Chapter IV "eVote for List
+Owners" above.
+
+eVote keeps a "who.list" data file where each participant in any
+list has a unique id.  To verify the correctness of this list, use
+the command:
+
+    eVote_mail sync_who
+
+At deliberate.com, we have a cron task do:
+
+ eVote_mail sync all
+ eVote_mail sync_who
+
+every night just after we have made backups.
+
+Stale Messages Awaiting Confirmation
+----- -------- -------- ------------
+
+For security, several classes of messages are not processed unless
+the user sends a confirmation reply.  There are two types, certain
+adminstration requests, and signatures for petitions.
+
+  unsubscribe - When eVote gets notice that a user has unsubscribed,
+                if that user has any votes in on open polls, then 
+                the user's ballot is put "on vacation".  A 
+                confirmation request is sent, which, when replied-to,
+                causes the ballot to be deleted.
+
+  eVote back -- The "eVote members" command displays which members
+                are "on vacation".  This is an opportunity to forge
+                an "eVote back" message and then a vote message for 
+                the member on vacation.  These false messages might not 
+                be discovered until after the poll is closed.  For this
+                reason, the "eVote back" command demands confirmation.
+
+  eVote close - This powerful command closes a poll and it cannot be
+                reopened.  Forging this message would wreck havoc with
+                the online community so this command demands 
+                confirmation.
+
+  eVote drop  - This command deletes the poll data and so demands a
+                confirmation.
+
+  (When the "eVote close" or "eVote drop" command is given with the
+   approve keyword and the list's password, no confirmation message
+   is sent.)
+
+Also, if a petition was initiated with the keyword "confirm", then
+a confirmation request is sent to each signer before the signature
+is accepted into the data.
+
+eVote_mail provides commands to delete the stale messages that have
+been awaiting confirmation:
+
+To delete stale messages waiting for confirmation on all lists and
+for all reasons, give the command:
+
+      eVote_mail confirm 5
+
+this will delete messages at least 5 days old.
+
+To delete stale signature confirmations only from one particular
+petition list, use:
+
+      eVote_mail confirm 2 petitiona
+
+This will delete signature messages awaiting confirmation from the
+petitiona list only that are at least 2 days old.
+
+
+=== ======== ========
+The Petition Facility
+=== ======== ========
+
+eVote's petition facility allows a global vote in which the
+participants don't subscribe to an email list. However, there must be
+an eVoted email list whose name starts with "petition" for
+administering the petition.
+
+The petition facility has complete multi-language support so that the
+same petition can be processed in several languages.  Deliberate.com
+has a translation tool that can help to translate the interface to
+other languages as well.  See
+EVOTE_HOME_DIR/eVote/src/tools/trans/README.
+
+The petition facility allows signatures and, optionally, votes to be
+collected under the same subject line.  Also optionally, you can
+specify that certain fields be given.
+
+Administration of petitions is totally handled by the members of your
+petition lists.  However, as site administrator, you can provide a
+facility for the automatic update of a remote url, i.e. the running
+count of signatures can appear on any web page.  Also, there is
+support for collecting signatures from a web page using Javascript, or CGI
+scripting or a mixture of both. If you use Javascript by itself, it will
+be necessary to use "mailto" as the action of the web form, and you will
+need to include the "unhex" filter in your alias file: see
+"Coordinating With The WWW" below.  While Javascript alone is simple,
+be aware that the "mailto" action is not supported correctly by all
+browsers (in particular, MS Internet Explorer).
+
+Implementing Petition Lists
+============ ======== =====
+
+To implement petitions, you must:
+
+   1.  Make an eVote mail alias for collecting signatures.
+
+       For Mailman, the alias should be:
+
+    eVote: "|/home/mailman/mail/wrapper eVote_petition post petition"
+
+       For Majordomo, the alias should be:
+
+    eVote: "|/usr/local/majordomo/wrapper eVote_petition resend -l petition -h your-domain.net petition-outgoing"
+
+   2.  Make a "petition" list.  
+
+You do this the same way you set up any eVoted list.  eVote notices
+that the name of the list is "petition" and gives this list special
+characteristics.  You can make a list name like "petitiona" or any
+name that starts with "petition", but you must have one list whose
+name matches the "petition" name in your eVote alias.
+
+Do not use a subject-prefix feature on petition lists:
+
+  For Mailman, on the "General Options" page, there is a field for
+  "Prefix for subject line of list postings".  Make that a blank
+  field.
+
+  For Majordomo, the "subject-prefix" option should be blank in the
+  list's configuration file.
+
+It may be more space-efficient to create a list for each petition if
+you expect your signers to have only that one interaction with your
+system.
+
+Reports
+=======
+
+eVote will use ftp to send updates of files to remote computers every
+time someone signs a petition or removes a signature.  This process
+can only be set up by the administrator of eVote, remote users cannot
+do it.
+
+To send file updates for a particular poll, perhaps "Fix The Roof",
+assume the listserver login as you:
+
+1.  Make a directory, LISTDIR/polls/petition-list/FixThe/reports,
+where LISTDIR is Majordomo's "listdir", or the LISTDIR you established
+at install time for Mailman installations.  The directory,
+LISTDIR/polls/petition-list/FixThe should already exist.  The petition
+file key, "FixThe", is the concatenation of the words in the title --
+until the words add to 5 characters or more.  The petition file key
+gets truncated at 10 characters.
+
+Place the files you want updated and shipped to remote sites, say
+"update1.html", "update2.html", etc., in this directory.
+
+2.  Make a copy of each, but name them, "update1.html.var",
+"update2.html.var", in the same directory.
+
+3.  Edit the *.var files so that the number to be updated by the
+signature count looks like "{SIGS==0}" where you want it to give the
+count.  It probably says just "0" at that point in the original html
+report file.  The variable name, SIGS in this case, can be any name.
+If the same report file should be updated by several petitions, use a
+different variable name for each petition's count.
+
+The number to the right of the double-equals sign in the {SIGS==0}
+should match the number currently in the report file.
+
+4.  Make a third file for each file to be updated, "update1.html.ftp",
+"update2.html.ftp", etc.  This file should contain the commands that
+ftp needs to perform when it connects to the remote site in order to
+update the report file, for example,
+
+cd public_html/eVote
+put report1.html
+
+5.  In listserver's login's home directory, make a file named
+".netrc".  For each remote site that will receive an updated file,
+there should be three lines in the file:
+
+machine ftp.ozemail.com.au
+login jjjacq
+password whoknows
+
+Be sure that this file is readable by your listserver login.
+
+6.  Make a file, LISTDIR/polls/petition-list/FixThe/report_instructions.
+At the very beginning of the file, insert your version of the
+following:
+
+------  cut here  ------
+Reports: 3
+update1.html SIGS ftp.ozemail.com.au
+update2.html TOTAL nanospace.com
+aztec.html xx best.com
+------  cut here  ------
+
+Don't add anything else!  
+
+Note that the first line contains the string "Reports: " and then
+the number of reports to update when the signature count changes.
+
+For each report there should be one line containing three words: the
+name of the file to update, the variable to update, and the machine
+that receives the update.  The machine name can be "x" and the file
+will be updated but not sent anywhere.  Use this feature if you have
+several files to update that will all be sent to the same site:
+
+------  cut here  ------
+Reports: 3
+update_en.html SIGS x
+update_es.html SIGS x
+update_fr.html SIGS ftp.ozemail.com.au
+------  cut here  ------
+
+Your update_fr.html.ftp file might then say:
+
+------  cut here  ------
+cd public_html/issue/en
+put update_en.html
+cd ../es
+put update_es.html
+cd ../fr
+put update_fr.html
+------  cut here  ------
+
+If your ".var" file says {$DATE} the current date, unix style, will be
+inserted into the updated html file.
+
+That should do it!
+
+
+Coordinating With The WWW
+============ ==== === ===
+
+If the petition is promoted on a web page, it is possible to use
+Javascript or CGI scripting to make a button that sends email requests
+to service the signing of petitions, the unsigning of petitions, even
+subscribing and unsubscribing to lists, and all email commands.
+ 
+If Javascript alone is used, the form submission is by "mailto"
+action.  Then the critical piece of software to make this work is the
+"unhex" program.  Javascript and the html form generate the email
+message using the x-www-form-urlencoded format so that it has hex
+codes for all non-alphanumeric characters. This can be translated to
+clear text for your listserver and for eVote by placing "unhex" in the
+mail alias as shown below.
+
+For the signature address:
+
+    eVote: "|/usr/local/majordomo/wrapper unhex eVote_petition resend \ 
+           -l petition -h your-domain.net petition-outgoing"
+
+The unhex program is described in some detail in "Other Helpful Tools"
+below.
+
+For a sample of a mixture of Javascript and CGI script for a web-enabled
+petition, see:
+
+http://www.deliberate.com/food
+
+These pages are available for you to copy and modify for petitions
+run on your site.  Of course, your users can do this without your
+help or permission, as long as you have the "unhex" program in your
+alias.
+
+The CGI script is also available, the source consist of two files,
+formmail.c and cgi.h, it also requires a small database to be set up
+to use keywords to provide the destination address and/or the
+subject of the email.
+
+If CGI scripting or a mixture of CGI scripting and Javascript is used, then
+obviously the CGI script can take care of formatting the email fully and
+the "unhex" program is not needed.  CGI scripting is preferable whenever
+possible as it always works with most, if not all, browsers.  Javascript
+is simpler to implement, but unfortunately the "mailto" action it uses
+does not work at all with MS Internet Explorer.
+
+Bad Signatures
+=== ==========
+
+If you wish to remove someone's signature from the petition, you can
+do so if you know the password for the list:
+
+1.  Send a message to:
+
+    petition@eVoted-site.net
+
+2.  The subject must be the subject of the petition:
+
+    Save The World
+
+3.  The message should be
+
+eVote approve <password> unsign <address> <address> <...>
+
+This will remove the signature from the signature file as well as the
+email address from eVote's data.
+
+Also, there are two programs "eVote_errors.c" and "eVote_domain.c" in
+the EVOTE_HOME_DIR/src/mail directory that were written in a hurry
+and used to process errors generated because we were under attack at
+deliberate.com.
+
+Language Support  
+======== =======
+
+There is considerable language support in the petition facility.
+It speaks three languages and new languages are fairly easy to add.
+See EVOTE_HOME_DIR/eVote/src/tools/trans/README.
+
+Accents, umlauts, etc., will be ignored in the subject line.
+Quoted-printables are decoded.  These facilities were donated by
+Laurent Chemla.
+
+Multi-Language Petitions
+=====-======== =========
+
+eVote's petition facility will parse the subject line of any message
+coming into eVote_petition from the eVote@eVoted-site.net address and
+determine if the subject exists as a petition title in any language
+for any petition on any petition list at your facility.
+
+Translations for subjects and petition texts can be supplied remotely
+by the petition's author at the time of initialization, or they can be
+added later by you, the site administrator.  
+
+Alterations On the Fly
+======================
+
+Three classes of alterations can be made on the fly.  The users
+and list owners cannot do them, only you, the site administrator
+can.  The three types are:
+
+  1.  Adding a language to a petition.
+
+  2.  Adding or changing a form.
+
+  3.  Toggling the confirm feature.
+
+
+Adding A Language
+------ - --------
+
+Three languages, English, Spanish, and French, are supported in eVote
+2.5x.  If you need another language, deliberate.com can help you
+translate the code.  We have a tool so that the human translator does
+not need to be a computer programmer.  See
+EVOTE_HOME_DIR/eVote/src/tools/trans/README.
+
+If you are running a petition in one or two of the supported languages,
+and wish to add support for the petition in another supported language,
+these are your instructions.
+
+When a user initializes a petition, the information is parsed by eVote
+and the subjects land in two or three different places.  If you wish
+to add a language, you must add it in two places; and in three if
+there is a form for the petition:
+
+  1.  The petition text for each language has its own file:
+
+      The petition's text, in English, is stored in
+      LISTDIR/polls/petitiona/Governments/text/English and the Spanish 
+      is in LISTDIR/polls/petitiona/Governments/text/Espanol.
+      where "petitiona" is the name of the list.  If the list is
+      "petition-fred", use that directory name after "polls".
+      The petition file key, "Governments", is the concatenation of the
+      words in the title -- until the words add to 5 characters or
+      more.  The petition file key gets truncated at 10 characters.
+      Add a new file for the new text and give it the appropriate
+      language name.
+
+  2.  Add the translation of the subject to the "Subject Translation
+      Table."
+
+      There is only one such table for your site:
+
+      LISTDIR/../polls/translation.data
+
+
+      This editable file has the following format:
+
+      LIST: petition 
+        SUBJECT: PUB: NO_CONFIRM: Fix The Roof -En
+          -es Regla El Techo
+          -en Fix The Roof
+        SUBJECT: PRI: DO_CONFIRM: Fire The Boss -En
+          -en Fire The Boss
+      LIST: petitiona
+        SUBJECT: PUB: DO_CONFIRM: Salve El Mundo -Es
+          -es Salve El Mundo
+          -fr Sauvez Le Monde
+          -en Save The World
+
+      The "PRI:" or "PUB:" in the "SUBJECT:" line indicates if it's a
+      private or public petition.  *Don't* change that.  If you do, it
+      won't change the actual privacy type of the petition; it will 
+      only cause eVote to lie about it.
+ 
+      The "NO_CONFIRM:" or "DO_CONFIRM" indicates that a confirmation
+      request should or should not be sent to signers of this petition.
+      See "Toggling the Confirm Feature" below.
+      
+      The "-En" at the end of the "SUBJECT:" line means that the
+      default language for the petition is English.
+
+      The indented lines following the SUBJECT: line are the
+      title translations.
+ 
+      Add the subject translation you need.  Be careful to follow
+      the formatting -- make the right number of spaces.
+
+
+  3.  If the petition has a form to check, the multi-language form
+      phrases and requirements are stored in the form template for the
+      petition:
+
+      LISTDIR/../polls/petitiona/Government/form_template 
+
+      The form_template file for 4 fields in 3 languages looks like:
+
+Fields: 3
+* country: -Fr pays: -Es pais: 
+  name: -Fr nom: -Es nombre: 
+  email: -Fr email: -Es email: 
+  id: -Fr id: -Es id: 99999
+
+      The asterisk indicates that it is a required field.
+
+      If you want to specify a required format for a field, do that
+      after all the translations for that field.
+
+      Again, be sure to follow the format given.  Get the right number
+      of spaces.
+
+Notes
+-----
+
+You can add new translations of an existing petition to the table, and
+matching new petition text in the directory structure, but you cannot
+create a new petition by putting data into these places.  Doing so
+will create havoc.
+
+These files are easy to read and modify.  No reinitializations are
+necessary after these files are changed.
+
+If the subject of the petition is "Save the World", a signer or web
+page can use "Save the World -es" to indicate that Spanish is desired.
+Or, if the translation has been provided, they can use "Salve El
+Mundo".  The language flag takes precedence over the language of
+subject line.
+
+Adding Or Changing A Form
+------ -- -------- - ----
+
+Also, you can change the form template so that fields become required,
+or not, after the petition is initialized.  The changes will take
+effect immediately.  The file to modify is
+LISTDIR/../polls/petitiona/Government/form_template 
+
+This one checks the format of of the zip and state field:
+
+Fields: 4
+* name: 
+  address: 
+  zip: 99999
+  state: XX
+
+The asterisk indicates that it is a required field.
+
+If you want to specify a required format for a field, do that after
+the colon for the field.
+
+Be sure to follow the format given.  Get the right number of spaces.
+
+If you are altering a multi-lingual petition, see "Adding A Language",
+list item 3, above.
+
+
+Toggling The Confirm Feature
+-------- --- ------- -------
+
+The confirm feature is controlled by a keyword in the Subject
+Translation Table.  There is only one such table for all the petitions
+at your site:
+
+LISTDIR/../polls/translation.data
+
+This editable file has the following format:
+
+      LIST: petition 
+        SUBJECT: PUB: NO_CONFIRM: Fix The Roof -En
+          -es Reglen El Techo
+          -en Fix The Roof
+        SUBJECT: PRI: DO_CONFIRM: Fire The Boss -En
+          -en Fire The Boss
+      LIST: petitiona
+        SUBJECT: PUB: DO_CONFIRM: Save The World -Es
+          -es Salven El Mundo
+          -fr Sauvez Le Monde
+          -en Save The World
+
+The "DO_CONFIRM:" or "NO_CONFIRM" indicates that a confirmation
+request should or should not be sent to signers of this petition.
+ 
+Simply change that keyword.  Be careful not to mess up the layout
+of the file.
+
+============== = = ====== ====
+Administration - A Deeper Look
+============== = = ====== ====
+
+Taking care of eVote is a matter of starting and (maybe) stopping The
+Clerk, keeping an eye on EVOTE_HOME_DIR/eVote/data/Clerk.log and,
+*please*, backing up the data files, all these things can be done
+automatically.  See "Preparing For Total Automation" above.
+
+This section provides a deeper look at eVote's facilities.
+
+Starting The Clerk 
+======== === =====
+
+To use eVote, The Clerk must be running in your computer's background.
+To start The Clerk, you must be logged in as clerk, then enter:
+
+   eVote 
+
+or:
+
+   eVote start
+
+eVote puts The Clerk into the background automatically.
+
+You can override the "EVOTE_HOME_DIR" in the eVote.cf file at start-up
+time by saying:
+
+   eVote -h /u1
+
+Also, you can override the message queue key for the Clerk:
+
+   eVote -k 101
+
+
+If the Clerk is already running on your machine, saying "eVote"
+will start the "eVote demo", a telnet interface into your Clerk
+and your vote data.
+
+
+Stopping The Clerk 
+======== === =====
+
+If you are going to bring down your computer, it is a good idea to
+stop The Clerk first.  To do this, enter:
+
+  eVote quit
+
+"eVote stop" works too.
+
+If you bring down your machine without stopping The Clerk first, all
+the vote data will almost certainly be OK anyway.  The Clerk, unless
+it is very busy at the moment, keeps it's data files up-to-date.
+
+
+The Clerk's Log
+=== ======= ===
+
+The Clerk logs interesting events to EVOTE_HOME_DIR/eVote/data/Clerk.log.  
+eVote offers two commands for manipulating this log:
+
+  eVote flush
+
+flushes EVOTE_HOME_DIR/eVote/data/Clerk.log so that you can see the latest
+entries.
+
+  eVote new_log
+
+flushes EVOTE_HOME_DIR/eVote/data/Clerk.log and moves it to
+EVOTE_HOME_DIR/eVote/data/Clerk_log.back. Clerk.log is then empty and
+ready for new entries.
+
+If EVOTE_HOME_DIR/eVote/data/Clerk_log.back already exists, its
+contents are appended to EVOTE_HOME_DIR/eVote/data/Clerk_log.old
+before the current Clerk.log is written into Clerk_log.back.
+Therefore, Clerk_log.back always contains the most recently backed-up
+Clerk log.
+
+
+Other Possibilities
+===== =============
+
+eVote offers a few other commands to the system administrator:
+
+   eVote check 
+
+reports if The Clerk is running now or not.
+
+   eVote check list-name
+
+prods The Clerk to recalculate all statistics for the named list and
+report the results to standard output. If anything ever does not add
+up right, please contact Deliberate.Com.
+
+
+   eVote dropc list-name
+
+removes the named list from the system.  This call makes backup data
+files so the data can be retrieved. "dropc" is for "drop conference".
+
+  eVote ipc 
+
+prints a report to stdout about the currently active message queues
+and shared memory segments.
+
+  eVote new_exe
+
+instructs The Clerk executable to prepare for a new executable
+and quit.  Use this command when you receive a new version of The
+Clerk's executable file, eVote_Clerk, or when you want to change the
+BLOCK_SIZE.  
+
+  eVote priority up
+
+asks The Clerk to raise its process priority with respect to the other
+processes.  That is, "eVote priority up" instructs The Clerk to run
+faster.  The Clerk adjusts its own priority as it perceives a need so
+you'll probably never need this command.  Similarly,
+
+  eVote priority down
+
+instructs The Clerk to slow down.  In order to use these commands,
+The Clerk must be running under root's id, which many sysadmins are
+loathe to do.
+
+  eVote stop_ipc
+
+brings down eVote's message queues and shared memory segments.  Only
+use this command when The Clerk is not running.
+
+
+The Vote Data 
+=== ==== ====
+
+All vote data are kept in one directory, EVOTE_HOME_DIR/eVote/data, or
+/usr/local/eVote/data, by default.  The default can be changed during
+installation, or by editing the value of EVOTE_HOME_DIR in the
+EVOTE_BIN/eVote.cf file, or even by giving an optional argument to the
+"eVote start" command.
+
+If you change the data directory and you already have some eVote data
+in the old data directory, be sure to move the data files to the new
+directory so that The Clerk can find them.
+
+There are three active data files for each currently active eVoted
+list:
+
+   list-name.bnf -- a tiny file that keeps the current values
+                    of various ballot parameters.
+
+   list-name.dat -- contains the ballots for the list.
+
+   list-name.inf -- contains information about the polls in
+                    the list.
+
+There is also one file for the whole system:
+
+   who.list  -- contains the email addresses and keys into the 
+                list-name.dat files.
+
+The Clerk makes a backup of each data file whenever the data files
+undergo a transformation: reordering or growing. 
+
+Backup files appear in the same directory with the active data files.
+However, the names of backup files start with ~00.  If, when a backup
+is being generated, there already is a backup starting with ~00, the
+new backup will start with ~01, then ~02 and so on, up to ~99 when it
+starts with ~00 again.
+
+All data files are backed up using the same scheme:
+
+ ~00list-name.bnf 
+ ~00list-name.inf 
+ ~00list-name.dat 
+ ~00who.list
+
+You may want to remove old redundant backup files periodically.  Set a
+cron task to do this just after you do your regular back up to tape.
+
+If you need to use a set of backup files as the current data, simply
+remove the `~nn' from the file name.  The first few text characters of
+the list-name.inf file contain the list name.  Check to be sure that
+the data file name matches the name in the list-name.inf file.  If
+not, probably the name of the data file was truncated in the backup
+process.  Rename the data files so that the file names match the name
+in the list-name.inf file.  Do not change the information in the
+list-name.inf file.  Altering the data files even slightly is likely
+to render the data useless.
+
+
+Help For Subscribers
+==== === ===========
+
+The files, eVote.petition, eVote.poll and eVote.help, are used by
+eVote to generate documentation that is emailed to users.  These
+reside in LISTDIR.  The eVote.poll file contains directions for
+initiating a new poll; eVote.petition for initiating a new petition.
+The eVote.help file contains general information about eVote.  You can
+ignore these files but please don't move or remove them.
+
+
+Defaults
+========
+
+eVote and The Clerk read various run-time parameters from the
+EVOTE_BIN/eVote.cf file.  This file is automatically constructed
+during installation.
+
+The EVOTE_BIN/eVote.cf file can be edited to change most of the
+parameters.  Altering some of the parameters also involves rebuilding
+the kernel.  This is discussed below in "Interprocess Communication".
+
+
+Other Helpful Tools
+===== ======= =====
+
+A few small programs can be found in EVOTE_HOME_DIR/src/tools.
+
+Utilities
+---------
+
+In EVOTE_HOME_DIR/src/tools/utils are a few utility programs.  They
+can be used as-is with Majordomo's wrapper.  To use them with
+Mailman's wrapper, you would have to add the executable names to the
+list of allowed executables in $prefix/src/mail-wrapper.c and
+recompile the wrapper.  They are:
+
+unhex.c  -  If you want your listserver to respond to email that was
+            sent from a web page mail-to, pipe messages through this
+            program.  Your alias for Majordomo should be:
+
+            majordomo: "|/usr/local/majordomo/wrapper unhex majordomo"
+
+            The unhex executable needs to reside in the same 
+            directory with the Majordomo perl script.
+
+            This program is also useful for accepting petition 
+            signatures and eVote commands from Javascript-generated
+            mailto's.
+
+            sample: "|/usr/local/majordomo/wrapper unhex eVote_insert \
+                     resend -l sample -h eVoted-site.net sample-outgoing"
+
+            The unhex.c program reads the message and if it starts
+            with "hex=", it reads the whole message, translating
+            the hex code into regular ascii and passing the message
+            along to eVote_insert, or whatever program is next in the
+            alias line.
+
+            Hex code in the subject line is always translated to 
+            regular ascii by unhex.
+
+            "hex=" is generated as the first word of a message when
+            the messages is issued from a hidden field in a html form 
+            if the hidden field's name is "hex".
+
+            (John Jacq, eVote's web page engineer, says:  Yep! that's 
+            almost all I did, indeed some of the forms I use don't 
+            have any javascript at all, just a hidden field named "hex" 
+            to which I have assigned a value.
+
+            The forms where lots of fields are involved are in fact 2 
+            consecutive forms on the same page, one has all the fields, 
+            the second has first the hidden field "hex", then an unnamed 
+            "submit" button which has a mailto action and an onClick 
+            event handler. onClick occurs first and passes control to a
+            javascript routine, the routine extracts all the information 
+            from the first form, perhaps adds some of its own, perhaps 
+            checks that certain fields have been filled in, or that a 
+            value is in the correct range, then it concatenates everything 
+            into one big long string and shoves it into the value property 
+            of the "hex" field on the 2nd form, and finally returns true.
+            Then the mailto executes and the email automatically starts 
+            with "hex=....".    jjjacq@axs.com.au)
+
+eVote_script - Use this little script to take control of where the
+            error stream from Majordomo lands.  Make your alias for an
+            eVoted list say "eVote_script" instead of "eVote_insert":
+
+            sample: "|/usr/local/majordomo/wrapper eVote_script resend \
+                     -l sample -h eVoted-site.net sample-outgoing"
+
+            You'll need to edit eVote_script.  Mine looks like:
+
+#!/bin/bash
+/usr/local/majordomo/unhex eVote_insert $* 2>> /tmp/eVote_debug
+
+            because I run unhex and I want my errors in land in
+            /tmp/eVote_debug.
+
+Mail Filters
+------------
+
+The EVOTE_HOME_DIR/eVote/src/tools/filters directory has 3 security
+tools for email: shelter, angel and fence.  These were developed in
+response to attacks on Zapatista's mailing lists and personal
+addresses.
+
+The Zapatistas were attacked by forging their email addresses on
+messages that subscribed them to hundreds of email lists around the
+world.  Suddenly the email addresses became recipients of thousands of
+unwanted messages, rendering them useless.
+
+There is also a "forward" program that will accept mail, fiddle with
+the from_address and the subject line and then mail it onto another
+address.
+
+And there is a "pick" program that will sort the mail by language
+and send each language to a different address.
+
+Finally, there is the "puppet" program that allows a user on this
+local machine to send mail from a trusted external address that will
+be sent out looking like it comes from the local address.  That way,
+it appears that you are working at your desk when you are really at
+your boyfriend's house.
+
+See EVOTE_HOME_DIR/eVote/src/tools/filters/README for details.
+
+The EVOTE_HOME_DIR/eVote/src/tools/utils directory has a few more
+filters:
+
+unhex.c    - Reads stdin and looks for hex code that comes from a mailto.
+             It replaces the hex code with ascii characters and puts the
+             result on stdout and executes its command line.  Useful
+             in the alias file.
+
+unhtml.c   - This feature is courtesy of Zapatistas.  If you make an 
+             alias entry:
+
+unhtml: "|/usr/local/majordomo/wrapper unequal unhtml deaccent sorter\
+    -er return -en return -es return -it return -o return sendmail -t"
+       
+             people can send html files to the address:
+
+             unhtml@your_site.net
+
+             and a copy of the message will be sent back, but with
+             much of the html code removed.
+
+             unequal.c  converts an email with quoted printables to 8
+                        bit text.
+
+             deaccent.c converts email with accented letters to 7 bit.
+
+             sorter.c   sorts mail by language and mails it to the 
+                        address indicated for the language.  It is in
+                        this chain of programs because it sends the
+                        results to the "return" address.
+
+
+Qmail Compliant
+===== =========
+
+Note that eVote is qmail compatible.  When an address starts with an
+'&', the '&' is ignored.  This feature was donated by Dustin Marquess.
+
+Dustin also provided code so that if an address starts with one of the
+following characters, the address is ignored:
+
+      ~ - Pathname (using sh homedir expansion)
+      # - Comment
+      + - List separator (Used in "+list" to mark the start of addresses)
+      . - Pathname (relative to current directory)
+      / - Pathname (absolute)
+      | - Program pipe
+
+
+== ======= =======
+If There's Trouble
+== ======= =======
+
+If you have trouble, and this section does not help, please contact
+Deliberate.Com.  The best form of communication is email:
+eVote-users@deliberate.com.  If you call and reach the answering machine,
+please identify yourself.  Deliberate.Com does not return long
+distance calls from unknown callers.
+
+These symptoms of trouble can occur:
+
+  * Trouble getting started.
+  * The Clerk coming down unexpectedly.
+  * Warning messages in the Clerk.log.
+  * eVote_insert timing out.
+
+Each is discussed here.
+
+Trouble Getting Started
+======= ======= =======
+
+If you have trouble getting The Clerk or eVote_insert to work, check
+these things:
+
+  * Be sure that EVOTE_BIN, /usr/bin by default, the directory
+    containing eVote's executables, is on clerk's path. 
+
+  * Be sure eVote's executables and the eVote.cf file are where 
+    you expect them to be. Giving the command, "ls -l eV*", when you 
+    are in the directory containing eVote's executables should give:
+
+% ls -l eV*
+-r-x--x--x   1 clerk    users      535081 May 11 15:46 eVote
+-r--r--r--   1 clerk    users         246 May 11 15:46 eVote.cf
+-r-x------   1 clerk    users      246213 May 11 15:46 eVote_Clerk
+
+    Similarly, giving the command, "ls -l eV*", when you are in
+    Majordomo's bin directory should produce:
+
+---x------   1 majordom users      533221 May 11 15:46 eVote_insert
+---x------   1 majordom users      536053 May 11 15:46 eVote_mail
+---x------   1 majordom users      533031 May 11 15:46 eVote_petition
+
+  * Be sure that the word "eVote_insert" has been inserted into
+    the alias for the list.  See "Linking to Majordomo", above.
+
+  * Be sure that you are logged in as clerk when you start eVote_Clerk.
+
+
+If these things are as they should be, and you still have trouble,
+please write eVote-users@deliberate.com.  Better yet join the
+"eVote-users" list at Deliberate.com and discuss your problem there.
+
+
+If The Clerk Stops Unexpectedly 
+== === ===== ===== ============
+
+If The Clerk comes down on its own, it has run into some trouble(!).
+Check the last entries in EVOTE_HOME_DIR/eVote/data/Clerk.log.  It
+should tell you what has happened and advise you how to proceed.
+
+Hopefully the next section, "Trouble in Clerk.log" will also help.  If
+not, please contact Deliberate.Com through eVote-users@deliberate.com.
+
+
+Trouble in Clerk.log 
+======= == =========
+
+Most of the messages in the  Clerk.log are for information only,
+they do not indicate trouble.
+
+However, it is possible to see:
+
+      No system resources.  Coming down.
+
+or
+
+      Too many open files? Coming down.
+
+
+In either case, work with your system administrator or system vendor
+to correct these problems.
+
+Other problems can arise that are fixable by altering the values in
+the EVOTE_BIN/eVote.cf file.  Note however, that altering the values
+pertaining to interprocess communication also requires rebuilding the
+UNIX kernel.
+
+Fixing The BLOCK_SIZE
+
+You may get warnings in your  Clerk.log that:
+
+      The current BLOCK_SIZE of 2048 is small for the ED list. 
+      Please increase it.
+
+
+This means that the number of polls for the named list has grown so
+that only 8 ballots can be contained in one block.  If you expect the
+list to grow further, you should increase the BLOCK_SIZE:
+
+  1.   While The Clerk is running, log in as clerk and enter the 
+       command:
+
+            eVote new_exe
+
+  2.  Edit the EVOTE_BIN/eVote.cf file so that the desired
+      BLOCK_SIZE is listed. Doubling the old BLOCK_SIZE is a good 
+      solution.
+
+  3.  Restart The Clerk:
+
+            eVote 
+
+
+Timing Out In eVote_insert
+====== === == ============
+
+If, when eVote_insert is running, you see this message on stderr:
+
+     Timed out after 5 seconds of waiting for a response from The Clerk.
+
+be sure that The Clerk is running in the background.  Use:
+
+      ps -ef | grep eVote
+
+"eVote check" may also time out.
+
+If it is running, and your computer is very busy, 5 seconds may not
+be long enough to wait for a response from The Clerk.  
+
+The solution may be to alter the value of TIME_OUT in the
+EVOTE_BIN/eVote.cf file.  You can do this while The Clerk is
+running and the change will take effect immediately.
+
+Emergency Messages
+========= ========
+
+There is another timeout of 250 seconds over eVote_petition and
+eVote_insert.  If either program takes longer than that, or if either
+gets an unexpected signal that causes it to quit, an emergency message
+is sent to EVOTE_MAIL_TO and eVote-owner@eVoted-site.net detailing the
+problem and showing a copy of the email message that surfaced the
+problem.  EVOTE_MAIL_TO can be specified in your EVOTE_BIN/eVote.cf
+file.  The default value is eVote-owner@eVoted-site.net.
+
+
+Interprocess Communication
+============ =============
+
+eVote relies heavily on two of UNIX's interprocess communication
+facilities: message queues and shared memory.  On a very busy system,
+the message queues and shared memory segments could get worked to
+their limits.  If so, some action may be necessary on your part.
+
+To learn the current limits on your machine, you can compile and
+run EVOTE_HOME_DIR/eVote/src/tools/utils/ipctest.c
+
+If eVote/The Clerk is not the only application using the message
+queue facility, or if you are running two Clerks, you need to have
+a different "EVOTE_MSG_KEY" in the EVOTE_BIN/eVote.cf file.
+Simply change the value and restart The Clerk.
+
+
+Shared Memory
+------ ------
+
+eVote is sensitive to various parameters that are hard-coded in the
+kernel.  The first of these relates to the shared memory facility:
+SHMMNI.  This is the number of shared memory segments allowed by the
+system.
+
+eVote requires one shared memory segment, and occasionally two, for
+each active eVoted list.  If The Clerk detects that the number of
+available memory segments is dwindling dangerously, it adjourns all
+lists that don't currently have users online.  In this case, a message
+will appear in your Clerk.log:
+
+      The number of available shared memory segments is only 2.
+  
+If such messages are rare, you may be able to ignore them without
+repercussions.  However, if The Clerk does run out of memory segments
+and is unable to adjourn any lists, it stores everything and exits!
+In this case, near the end of the Clerk.log file, you'll see:
+
+      The system tunable parameter SHMMNI needs to be higher.
+
+
+Increasing the SHMMNI parameter is the remedy.  See "Altering
+System Tunable Parameters" below.
+
+
+Message Queues
+------- ------
+
+eVote is dependent on three system parameters that pertain to message
+queues: MSGMNI, MSGTQL and MSGMAX.  Another parameter, STARTING_NICE,
+doesn't directly pertain to message queues but if STARTING_NICE isn't
+right, the symptoms will show up in the message queues.
+
+MSGMAX is the maximum size, in bytes, that a message can be.  eVote
+adjusts to this value, as long as it isn't something silly.  Be sure
+it's more than than 512 bytes.  Other than that, it needs no
+attention.
+
+MAXMNI is the maximum number of message queues allowed in the system.
+eVote needs one message queue for each user that is currently
+participating in an eVoted list -- plus one queue for The Clerk.
+
+If the number of available queues gets dangerously low, the Clerk.log
+will contain the message:
+
+         The number of available message queues is only 3.
+
+If this happens, The Clerk will look for any queues to dead processes
+and drop those queues.  If this message is rare, it may be OK to
+ignore it.
+
+However, if The Clerk can't find any queues to drop, and there is no
+room for a new queue, it exits!  In this case, near the bottom of the
+Clerk.log file will be the entry:
+
+      The system tunable parameter MSGMNI needs to be higher.
+
+Increasing the  MSGMNI parameter is the remedy.  
+
+MSGTQL is the maximum number of messages that can be waiting to be
+received at one time.  This is a system-wide parameter.  If the number
+of messages waiting in all the queues exceeds MSGTQL, the results are
+disastrous.
+
+Before sending a message to The Clerk, the number of waiting messages
+is checked.  This is quite expensive (resource-wise) but necessary.
+If the callers to The Clerk fill up all the message slots, The Clerk
+will be unable to send a return message and will get stuck.
+
+You will have warnings before this happens.  However, because the
+check against MSGTQL is performed on the user interface side, no
+messages concerning MSGTQL appear in Clerk.log.  When the MSGTQL limit
+is approached the user will experience a slow-down in response time.
+If, after 5 seconds of waiting, the user still can't get a message to
+The Clerk, an error message will be printed to the user's standard
+error:
+
+eVote: Too many messages on the queue.
+
+If this happens, there are three things to try.  But, to try 1 or 2,
+eVote_Clerk must be running under root.
+
+  1.  You can send a "priority up" command to eVote:
+
+      eVote priority up
+
+  2.  You can lower STARTING_NICE value in the EVOTE_BIN/eVote.cf file.
+
+  3.  You can increase  MSGTQL.
+
+
+Altering STARTING_NICE 
+-------- -------------
+
+If you wish to change the starting priority of The Clerk, bring The
+Clerk down and add an entry to the EVOTE_BIN/eVote.cf file:
+
+
+     STARTING_NICE = 20
+
+
+The default nice value for UNIX is 20.  A smaller number makes The
+Clerk run faster relative to the other processes in the system.
+
+
+Altering System Tunable Parameters
+-------- ------ ------- ----------
+
+To alter system tunable parameters you must rebuild the UNIX kernel!
+The system tunable parameters that The Clerk depends on are SHMMNI,
+MSGMNI, MSGTQL, and MSGMAX.
+
+These parameters are sometimes #defined in the system headers, msg.h
+and shm.h.  This is not dealt with consistently across the various
+flavors of Unix.  In any case, changing these these values requires a
+rebuild of the kernel.
+
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter VI
+
+ -eVote for Programmers-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+====== ====
+Source Code
+====== ====
+
+Source code for all software associated with eVote(R)/Clerk 2.52 is
+available online at http://www.sourceforge.net.
+
+Source code for the French version 2.2 of the mail interface is also
+provided in the file: eVote2fr.tar.gz, available from
+www.deliberate.com.  At the time of this release some of the
+documentation has not been translated to French although all of the
+code in the mail interface has.  The files that remain in English only
+are:
+
+ver2.2/eVote/doc/eVote.list-owner-info
+ver2.2/eVote/doc/eVote_sample.info
+ver2.2/eVote/doc/petition.info
+ver2.2/eVote/doc/eVote.doc  (this document)
+
+====='= ========= =========
+eVote's Directory Structure
+====='= ========= =========
+
+The directory structure for the sources to eVote(R)/Clerk is shown
+below.  The directories with '*' contain source code that is compiled
+into eVote's mail interface.
+
+
+            EVOTE_HOME_DIR/
+                  |
+                eVote/
+                  |
+   --------------------------------
+   |              |               |
+ data/           doc/            src/ --> makefile for "make install"
+                                  |
+   --------------------------------------------------------------
+   |              |              |              |               |
+ Clerk/        Clerklib/        demo/          mail/*         tools/
+                                 |              |               |
+                             eVoteui/           |               |
+                                                |               |
+        -----------------------------------------        ---------------------
+       |            |            |          |           |        |    |   |   |
+    mailman/*   majordomo/* mailui/*     message/*   filters/* utils/ |   |   |
+       |            |                                                 |   |   |
+        \          /                                          chiapas95/  |   |
+      * only one is compiled                                         errors/  |
+        into the mail interface                                          trans/
+
+===== ====
+Soure Code
+===== ====
+
+The source code files in this distribution are:
+
+*** EVOTE_HOME_DIR/eVote/src:
+
+makefile -- makefile for the entire eVote/Clerk application.  Used
+            at installation time.
+
+*** EVOTE_HOME_DIR/eVote/src/mail:
+     This is where you make the executables for the mail interface.
+
+eVote_insert.c --  has main(..) for eVote_insert
+eVote_insert.h --  has a the declarations needed in this directory.  
+eVote_mail.c --  has main(..) for eVote_mail  
+eVote_petition.c --  has main(..) for eVote_petition
+makefile --  makefile for the mail interface.
+
+*** EVOTE_HOME_DIR/eVote/src/mail/mailman:
+
+list.c --  functions that relate to the Mailman list server.
+
+*** EVOTE_HOME_DIR/eVote/src/mail/majordomo:
+
+list.c --  functions that relate to the Majordomo list server.
+
+NOTE: Only one list.c is compiled into the mail interface.
+
+***  EVOTE_HOME_DIR/eVote/src/mail/mailui
+  The voting parts of the email interface are in here. 
+
+confirm.c --  functions relating to the confirmation of critical messages.
+do_eVote.c --  drives processing for eVote requests.  Also some initialization.
+form.c --  controls a petition's form.  Functions that needs translation
+  are in pet_out_xx.c files.
+help.c --  runs the help facility for eVote/Majordomo
+listm.c --  has functions that relate to the whole mail list.
+lock.c --  has hand-written locking mechanism.  The Linux one didn't work 
+  when this was written.
+maildef.h --  has a few #defines that are used throughout the code.
+mailui.h --  has declarations for the functions in all the *.c's in this
+  directory except for signatures.c and table.cc.  Also has 
+  declarations for EVOTE_HOME_DIR/eVote/src/mail/list.c And it
+  has language typedefs.
+makefile -- makefile for this directory
+new_poll.c --  provides a new poll.
+pet_out.c --   has functions for processing petitions requests from the user.
+pet_out_fr.c --  These are translations of the same code. 
+pet_out_es.c --
+petition.c -- has petition functions that don't have strings to the user and
+  don't need translation.
+poll.c -- provides functions that deal with an established poll.
+poll_list.c -- just lists the polls.
+queriesm.c -- provide who-voted and how-voted functions.
+report.c -- handles reports on petitions that are shipped to remote www pages
+  via ftp.
+signal.c -- just sets and receives signals.
+signatures.c -- handles the signatures files for petitions.
+spread.c -- makes spreadsheet-style displays of voting results.
+subject.c -- massages the subject line.
+table.cc -- is the only c++ module, to practice templates and operator-
+ overloading. For petitions, it handles the "translation table", and decides 
+ if the subject is a translation of a petition title on any petition list.
+table.h --  This little header is #included into table.cc only.
+text.c -- handles the storage and displaying of a poll's text.
+util.c -- has some date functions and other miscellaneous things.  
+voterm.c -- has the functions that relate to the individual voter.
+
+*** EVOTE_HOME_DIR/eVote/src/mail/message
+ has modules that relate to reading and writing the messages.
+ It has the tokenizer that parses the mail messages.  It depends
+ heavily on the filter facility: EVOTE_HOME_DIR/eVote/src/tools/filters
+
+in_message.c -- provides a few functions that read the incoming message.
+  Other functions involved in reading the incoming message are in: 
+  EVOTE_HOME_DIR/eVote/src/tools/filters
+makefile -- make for this directory
+message.h -- has declarations for the message library.
+out_message.c -- generates headers and errors and finishing output for
+  the outgoing messages.
+send.c -- has functions that fork and exec a new process.
+token.c -- tokenizes the input buffer, buffered up in filter.c.
+
+*** EVOTE_HOME_DIR/eVote/src/tools/filters
+  has sources for various mail filters.  eVote's mail interface
+  is also a mail filter and uses this code.
+
+README --  describes the six executables in the filters directory.
+angel.c --  driver for the program that watches over a protected email 
+  address.  It sends unsubscribes to unwanted lists.
+fence.c --  drives the program that filters mail, fencing out unwanted stuff.
+filter.c --  library functions for all the filters.
+filter.h --  has declarations for the filter library. 
+forward.c --  forwards mail that comes into an alias adjusting the from address
+  and the subject line.
+makefile -- makefile for the filters in this directory.
+pick.c --  drives the program that picks out a language(s) from a mail stream.
+pick.h --  header for the pick filter.
+puppet.c -- allows you to send mail from your home machine remotely.
+shelter.c --  hides an email address and provides an alias for fencing.
+
+*** EVOTE_HOME_DIR/eVote/src/demo
+  has source for the first eVote interface.  It has "eVote", the program
+  that controls The Clerk, and eVote_demo, the telnet interface.
+
+eVote.c --  has the main for the "eVote" program that controls The Clerk.
+eVote.h --  contains #defines that belong in the conference application.
+eVote_demo.c --  has the main driver for the demo.  This is where you start 
+  if you are making a new user interface.
+eVote_io.c --  has input/output routines for the telnet interface.
+makefile -- makefile for eVote_demo and eVote executables.
+
+*** EVOTE_HOME_DIR/eVote/src/demo/eVoteui
+  has the telnet user interface library.
+
+blurbs.c --  contains text data for the demo.
+command.c --  real driver for "eVote", The Clerk's interface.
+conf.c --  user-interface calls that relate to whole conferences.
+eVoteui.h --  has the declarations for the library.
+explain.c --  drives the teacher text for the demo
+explain.txt --  contains teacher text data.
+input.c --  asks questions and checks answers about new polls.
+item.c -- provides poll item related functions.
+makefile -- makefile for this directory.
+menu.c -- has the interface for the menu.
+misc.c -- has a few utility functions.
+poetry.c -- fake demo text.
+queries.c -- menu and processing for how-voted and who-voted commands.
+ui.c -- has startup functions for the demo that are not used by the
+  eVote command executable.
+voter.c -- has functions that deal with the individual voter.
+
+EVOTE_HOME_DIR/eVote/src/Clerklib
+
+The functions in Clerklib speak to The Clerk via InterProcess
+Communication, using both the message facility and shared memory.  The
+object files that are compiled from the sources in Clerklib are
+archived into a library, Clerklib.a, for linking into the user
+interface, either the demo or the mail interface, or something new.
+
+Clerk.h  -- declarations for the interface to The Clerk, by file.
+Clerkdef.h -- structure definitions and #defines
+confl.c -- functions related to conferences, or email lists.
+eVote_defaults.h -- hard coded system defaults, over-ridden by eVote.config
+ipc_msg.c -- IPC message calls to the Clerk.
+ipc_msg.h -- header for message queue functions, sent_inst and get_msg,
+  which are only called by functions in Clerklib and not available to 
+  user-interfaces.
+ipc_shm.c -- Maintains item_info array in shared memory.
+iteml.c   -- Functions to make and drop items and change the status.
+makefile -- for make
+maint.c   -- Functions to maintain The Clerk itself.
+msgdef.h  -- #defines of IPC message strings, ITYPE definition.
+mtype.c   -- two functions to make strings of ITYPE and RTYPE -- for debugging.
+queriesl.c -- functions to query the data about who voted and how.
+start.c -- startup functions needed by eVote and any user interface.
+stats.c -- maintains the voter's statistics
+voterl.c -- functions relating to the voter: voting, entering, leaving, ...
+
+EVOTE_HOME_DIR/eVote/src/Clerk
+
+evotedef.h  -- #defines for The Clerk -- globals variables.
+  ../Clerklib/msgdef.h -- #defines for message formats.
+  ../Clerklib/Clerkdef.h -- typedefs for both sides of IPC.
+
+main.cc -- main function and other startup and maintenance things.
+msgbuf.h  has only the definition of struct msgbuf
+
+qlist.cc -- Maintains the list of outgoing message queues, one to each
+qlist.h     user -- Has qlist::send to send messages a the queue
+  outq.cc -- Maintains the outgoing message queue
+  outq.h
+
+inq.cc -- Maintains the single incoming message queue which receives
+inq.h     instructions -- and it instantiates the instruction class:
+
+  Classes are listed under the files where they are defined and 
+    look like: <Joining>
+
+instruct.cc  Implements base classes for the instruction hierarchy:
+             <Instruction>, <NeedsQ>, <HasQ>, <MaybeQ>, and <RespondOnce>.
+instruct.h
+  needsq.cc  Instructions that need to establish a queue and keep it up.
+    <EnterAdmin> - Entering the conference for administrative tasks
+    <Entering> - A voter is entering the conference.
+    <Joining> - A voter is entering the conference for the first time.
+    <Leaving> - A voter is leaving the conference for now -- drop the queue.
+    <LeaveAdmin> - The administrator is leaving the conference -- drops queue.
+  respond1.cc - Instructions that need a queue for one reply only
+    <CheckConf> - Checks the stats on the conference
+    <CreateConf> - Creates a conference
+    <DropConf> - Drops a conference from the system
+    <DropVoter> - Drops a voter either from a particular conference or
+                  all conferences.
+    <Exist> - Does the conference exist?
+    <Hello> - Checks that The Clerk is up and running.
+    <SyncConf> - Forces the itemlist to match one that is sent in.
+    <WhosIn> - Sends a list of who is in a conference.
+  hasq.cc    Instructions from users that already have queues established
+    <CreateItems> - Creates new voting items.
+    <DropItems> - Drops items from the conference.
+    <AboutItem> -  Not instantiated.
+        <ChangeVStatus> - Changes the status of the vote item.
+        <HowVoted> - Queries for how someone voted.
+        <IRead> - Marks in the ballot that the item has been accessed.
+        <IVote> - Marks the ballot with the vote -- returns old vote.
+        <PullTime> - Retrieves time and offset for petition signature.
+        <PushTime> - Stores time and offset for petition signature.
+        <SendStamp> - Sends the time of the signature.
+        <SendStats> - Sends statistics about items.
+        <WhoSigned> - Sends a list of the signers of a petition.
+        <WhoVoted> - Answers a query about who voted > 5 etc.
+    <ChangeAction> - Changes status of the voter.
+    <MidDropped> - Voter has changed to the a shared memory segment and
+                   is no longer attached to the old memory id (mid).
+    <Move> - Change the email address of the voter.
+    <UidExist> - Checks for the existence of a user id in a conference.
+  maybeq.cc  Instructions where the user may or not have a queue
+    <WhoIs> - Send back an address for a voter-id.
+    <WhoNum> - Sends back a voter-id number for the email address.
+  noq.cc     Instructions that don't need a queue
+    <DoDebug> - turns on debugging
+    <DropOldQs> - Looks for useless queues to drop
+    <DownPriority> - Diminishes the priority on the Clerk's process
+    <Flush> - flushes the log
+    <GrowConf> - Makes more space in the ballots.
+    <NewExe> - Prepare to change executables.
+    <NewLog> - Moves the log to a backup and opens a fresh log file.
+    <Quit> - Bring down The Clerk.
+    <ReorderConf> - Puts the ballots in order and deletes dead ballots.
+    <UpPriority> - Increases the priority on The Clerk's process.
+    <WhoDrop> - Drops an address/voter-id from the WhoList.
+    <WhoSync> - Counts all the voters in conferences and corrects the
+                WhoList.
+
+conflist.cc   Keeps the list of Conferences or email lists
+conflist.h
+
+  conf.cc  Maintains a Conference - Contains a VoterList, BallotBox,
+  conf.h   and ItemList.
+
+    voterlis.cc  Maintains the list of voters in the conference
+    voterlis.h
+      voter.cc   Does things on the voter's behalf
+      voter.h
+
+    ballotbo.cc  Maintains the ballots for voters in the conference
+    ballotbo.h
+      hash.cc    Maintains a hash table for the ballots
+      ballot.cc  Maintains a ballot.
+      ballot.h
+
+    itemlist.cc  Maintains the list of items in the conference
+    itemlist.h
+      dropord.cc  Mainstains the list of items, with temporary numbering for
+                  humans.
+      applist.cc  Maintains the list of items in shared memory
+      applist.h   for the user interfaces
+        memseg.cc  Maintains a shared memory segment
+        memseg.h
+memlist.cc  Maintains the list of all shared memory segments in the system
+memlist.h
+       item.cc  Base class for the item hierarchy -- no voting
+       item.h
+         itemid.cc  Item id functions
+         itemid.h
+       titem.cc  Tallied Item -- voting
+       sitem.cc  Stamped Item -- petitions
+       gitem.cc  Grouped Item -- vote on 1 of 3 etc.
+         itemgrou.cc  For maintaining a group of gitems
+         itemgrou.h
+    grouplis.cc -- Maintains a list of all the item groups in the conference.
+
+debug.cc -- debugging tools
+debug.h
+
+util.cc -- file handling and string utilities.
+wholist.cc  -- Maintains a list of voter-id <-> email address
+wholist.h
+
+*** EVOTE_HOME_DIR/eVote/src/tools/utils
+  contains some helpful tools for administrators.
+
+deaccent.c -- filter to convert accented letters to 7 bit text
+eVote_script --  You can use this script to take control of stderr from 
+  Majordomo.
+embed --  Utility to help get started with embedding eVote into a different
+  user-interface.
+ipctest.c --  Run this test to find the parameters of your ipc.
+sorter.c  -- Sorts incoming mail by language and sends it on.
+tryagain.c --  Crash_command for The Clerk.  When this is called from a dying
+  Clerk, it behaves intelligently.
+unequal.c -- Converts quoted printables to 8 bit text.
+unhex.c --  A mail filter to replace hex code with ascii characters.
+
+*** EVOTE_HOME_DIR/eVote/src/tools/chiapas95
+  has a tar file with all the sources for the chiapas95 democratic
+  news list project.
+
+*** EVOTE_HOME_DIR/eVote/src/tools/errors
+  has the source code developed when we were under attack for hosting
+  the Zapatistas Consulta.  
+
+*** EVOTE_HOME_DIR/eVote/src/tools/trans
+  has the source code for translating strings from one human language
+  to another.  Also, it has the current translations tables for eVote's
+  petition interface for Italian, Spanish and French.  The French 
+  translation tables have string translations for all of eVote 2.0.
+
+README -- instructions for using the translator tool.
+en_es.right -- translation table from English to Espanol.
+en_fr.right -- translation table from English to French.
+en_it.right -- partial translation table from English to Italian.
+trans.c -- source code for the translator tool.
+trans.h -- header file for the translator tool.
+trans.skips -- included in compilation -- has a list of phrases that should
+  not be translated.
+
+
+========== ===========
+Serialized Executables
+========== ===========
+
+Also available at http://www.sourceforge.net is a "release" directory
+structure for staging and building serialized executables that run on
+Majordomo only, for distribution without source.  These executables
+expire automatically.
+
+In the release directory:
+
+README        -- instructions for making a new serialized release.
+eVote.README  -- instructions for installing a serialized version.
+eVote_install -- directory for making the serialized versions.
+
+Also in this directory will appear the serialized gzipped tar files,
+with expiring executables that look like:
+
+   eVote-2.52.tar.gz.0   -- having no serial number and no expiration date.
+   eVote-2.52.tar.gz.1   -- having serial number 1 and an expiration date.
+   eVote-2.52.tar.gz.2   -- having serial number 2 and an expiration date.
+   etc.
+
+Installations will require one of the serialized gzipped tar files and
+the eVote.README.
+
+The release/eVote_install directory contains:
+
+  2.52/         -- staging area for version 2.52
+  install_eVote -- script for installation of serialized versions
+  make_install  -- script to stage code for making serialized versions
+  make_serial   -- script to make each serialized version
+
+In the staging area release/eVote_install/2.52/, for example, the
+make_install script will make:
+
+bin/   -- directory for staging executables
+eVote/ -- directory for the sources for the current release
+eVote.README.latest  -- copy of the current ../../eVote.README
+eVote_files  -- list of files that go into the serialized release
+install_eVote.latest  -- copy of the current ../../install_eVote
+make_install.latest -- copy of the current ../make_install
+make_serial.latest -- copy of the current ../make_serial
+
+To make a new version, change the version number:
+
+*  in release/eVote_install/make_install
+
+*  in release/eVote_install/make_serial  - Also change the expiration date in
+   this script.
+
+*  in release/eVote_install/install_eVote
+
+*  in EVOTE_HOME_DIR/eVote/src/makefile
+
+*  in EVOTE_HOME_DIR/eVote/src/makefile
+
+*  in EVOTE_HOME_DIR/eVote/src/makefile
+
+*  throughout EVOTE_HOME_DIR/eVote/doc/eVote.doc
+
+Then, cd to eVote_install and type make_install.
+
+The first time you'll get the message:
+
+You need to copy eVote_files from the previous release into:
+/release/eVote_install/x.xx
+and then make_install again
+
+eVote_files is a list of files that are in the release.
+
+Do this and run it again.
+
+Then you are ready to run make_serial.  To make an executable with
+serial number 37, type this command:
+
+make_serial 37
+
+The eVote-2.52.tar.gz.37 file will appear in the /release directory.
+
+Good luck!
+
+
+\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|\\_._//|
+
+Chapter VII
+
+ -eVote's Licenses-
+
+//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|//-'-\\|
+
+========/===== =======
+eVote(R)/Clerk License
+========/===== =======
+
+Version 1 
+
+Copyright (C) 2002 Deliberate.com
+2555 W. Middlefield Rd. #150, Mountain View, CA 94043 USA
+
+			    Preamble
+
+This eVote(R)/Clerk License is designed to allow you to distribute copies
+of this software, and charge for this service if you wish, to ensure
+that you receive source code for this software, or can get it if you
+wish, and that you can change the software if you wish, as long as the
+derivative software is also released under this License.
+
+If you distribute copies of a program derived from this software,
+whether gratis or for a fee, you must give the recipients all the
+rights that you have.  You must make sure that they, too, receive or
+can get the source code and you must distribute the derived program
+under this same eVote(R)/Clerk License.  And you must show them these
+terms.
+
+This License provides that the original author for this software is
+not considered responsible for modifications made by others.
+
+There is no warranty for this software.  If the software is modified
+by someone else and passed on, the recipients must be aware that what
+they have is not the original, so that any problems introduced by
+others will not reflect on the original author's reputation.
+
+The precise terms and conditions for copying, distribution and
+modification follow.
+
+
+
+eVote(R)/Clerk License
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this eVote(R)/Clerk License.  The "Program", below,
+refers to any such program or work, and a "work based on the Program"
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term "modification".)  Each Licensee is addressed as "you".
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted.
+
+  1. You may copy and distribute verbatim copies of the Program's
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be Licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program supports non-public voting, i.e.
+    voting in which the participants cannot see the votes of the other
+    participants, when run, you must cause the program, to announce
+    the following whenever it gives instructions for non-public voting,
+    and whenever it generates receipts and reports pertaining to the
+    non-public vote:
+
+       Warnings: Although eVote will not reveal your vote to the other
+       members of the voting community, the system administrator of the
+       computer that stores your vote can quite easily see the voting
+       records of individuals. Also, there is the possibility that your
+       ballot can be seen by a "snooper", someone who intercepts your 
+       ballot in transit.
+
+       The integrity of the poll, i.e., the accuracy of the count, is
+       susceptible to being tampered with by the system administrator
+       of the computer running the eVote(R)/Clerk software.
+
+       Both the privacy of your vote and the integrity of the poll are
+       susceptible to attack at your own computer. 
+
+Certain specific enhancements to the software can remove restriction
+2.c:  
+
+Derivatives of the software that contain a suitable encryption scheme,
+such suitability to be judged by Marilyn Davis, the original author
+of eVote(R)/Clerk, do not need to include the first paragraph: "Although
+eVote will not reveal your vote ..."
+
+Derivatives of the software that contain an implementation of the
+Secure Network Layer specified at
+http://www.deliberate.com/eVote/spec.html do not need to include the
+second paragraph: "The integrity of the poll, i.e., ..."
+
+Derivatives of the software that contain a suitable implementation of
+a scheme for external verification of the user interface, such as the
+"missing numbers" scheme described by David Chaum at WOTE'01,
+http://www.vote.caltech.edu/wote01 do not need to include the third
+paragraph: "Both the privacy of your vote ..."  Again, suitability is
+to be determined by Marilyn Davis.
+
+To remove restriction 2.c, or any part of it, for your derivative
+work, you must have the explicit written permission of Marilyn Davis.
+Contact office@deliberate.com.
+
+
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other Licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote
+it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, subLicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, subLicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their Licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a License from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+License would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public License practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a Licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+
+  8. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  
+
+			    NO WARRANTY
+
+  9. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+PROGRAM IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME
+qTHE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  10. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+PROGRAM (INCLUDING BUT NOT LIMITED TO LOSSES RELATED TO DECISIONS MADE
+WITH THE HELP OF THE PROGRAM OR LOSS OF DATA OR DATA BEING RENDERED
+INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF
+THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER
+OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+		     END OF TERMS AND CONDITIONS
+
+	    How to Apply These Terms to Your Derivative Programs
+
+  If you develop a derivative program, you must distribute it under
+this eVote(R)/Clerk License.
+
+  To do so, attach the following notices to the start of each source
+file. Each file should have at least the "copyright" line and a
+pointer to where the full notice is found.
+
+
+    eVote(R) Mail Interface -- for online democracy.
+    Copyright (C) 2002 Deliberate.com
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the eVote(R)/Clerk License as published by
+    Deliberate.Com.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    eVote(R)/Clerk License for more details.
+
+    You should have received a copy of the eVote(R)/Clerk License
+    along with this program; if not, write to Deliberate.Com
+    2555 W. Middlefield Rd. #150, Mountain View, CA 94043 USA or
+    office@deliberate.com.
+
+=== ==== ============= =======
+GNU Free Documentation License
+=== ==== ============= =======
+
+		GNU Free Documentation License
+		   Version 1.1, March 2000
+
+ Copyright (C) 2000  Free Software Foundation, Inc.
+     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+0. PREAMBLE
+
+The purpose of this License is to make a manual, textbook, or other
+written document "free" in the sense of freedom: to assure everyone
+the effective freedom to copy and redistribute it, with or without
+modifying it, either commercially or noncommercially.  Secondarily,
+this License preserves for the author and publisher a way to get
+credit for their work, while not being considered responsible for
+modifications made by others.
+
+This License is a kind of "copyleft", which means that derivative
+works of the document must themselves be free in the same sense.  It
+complements the GNU General Public License, which is a copyleft
+license designed for free software.
+
+We have designed this License in order to use it for manuals for free
+software, because free software needs free documentation: a free
+program should come with manuals providing the same freedoms that the
+software does.  But this License is not limited to software manuals;
+it can be used for any textual work, regardless of subject matter or
+whether it is published as a printed book.  We recommend this License
+principally for works whose purpose is instruction or reference.
+
+
+1. APPLICABILITY AND DEFINITIONS
+
+This License applies to any manual or other work that contains a
+notice placed by the copyright holder saying it can be distributed
+under the terms of this License.  The "Document", below, refers to any
+such manual or work.  Any member of the public is a licensee, and is
+addressed as "you".
+
+A "Modified Version" of the Document means any work containing the
+Document or a portion of it, either copied verbatim, or with
+modifications and/or translated into another language.
+
+A "Secondary Section" is a named appendix or a front-matter section of
+the Document that deals exclusively with the relationship of the
+publishers or authors of the Document to the Document's overall subject
+(or to related matters) and contains nothing that could fall directly
+within that overall subject.  (For example, if the Document is in part a
+textbook of mathematics, a Secondary Section may not explain any
+mathematics.)  The relationship could be a matter of historical
+connection with the subject or with related matters, or of legal,
+commercial, philosophical, ethical or political position regarding
+them.
+
+The "Invariant Sections" are certain Secondary Sections whose titles
+are designated, as being those of Invariant Sections, in the notice
+that says that the Document is released under this License.
+
+The "Cover Texts" are certain short passages of text that are listed,
+as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+the Document is released under this License.
+
+A "Transparent" copy of the Document means a machine-readable copy,
+represented in a format whose specification is available to the
+general public, whose contents can be viewed and edited directly and
+straightforwardly with generic text editors or (for images composed of
+pixels) generic paint programs or (for drawings) some widely available
+drawing editor, and that is suitable for input to text formatters or
+for automatic translation to a variety of formats suitable for input
+to text formatters.  A copy made in an otherwise Transparent file
+format whose markup has been designed to thwart or discourage
+subsequent modification by readers is not Transparent.  A copy that is
+not "Transparent" is called "Opaque".
+
+Examples of suitable formats for Transparent copies include plain
+ASCII without markup, Texinfo input format, LaTeX input format, SGML
+or XML using a publicly available DTD, and standard-conforming simple
+HTML designed for human modification.  Opaque formats include
+PostScript, PDF, proprietary formats that can be read and edited only
+by proprietary word processors, SGML or XML for which the DTD and/or
+processing tools are not generally available, and the
+machine-generated HTML produced by some word processors for output
+purposes only.
+
+The "Title Page" means, for a printed book, the title page itself,
+plus such following pages as are needed to hold, legibly, the material
+this License requires to appear in the title page.  For works in
+formats which do not have any title page as such, "Title Page" means
+the text near the most prominent appearance of the work's title,
+preceding the beginning of the body of the text.
+
+
+2. VERBATIM COPYING
+
+You may copy and distribute the Document in any medium, either
+commercially or noncommercially, provided that this License, the
+copyright notices, and the license notice saying this License applies
+to the Document are reproduced in all copies, and that you add no other
+conditions whatsoever to those of this License.  You may not use
+technical measures to obstruct or control the reading or further
+copying of the copies you make or distribute.  However, you may accept
+compensation in exchange for copies.  If you distribute a large enough
+number of copies you must also follow the conditions in section 3.
+
+You may also lend copies, under the same conditions stated above, and
+you may publicly display copies.
+
+
+3. COPYING IN QUANTITY
+
+If you publish printed copies of the Document numbering more than 100,
+and the Document's license notice requires Cover Texts, you must enclose
+the copies in covers that carry, clearly and legibly, all these Cover
+Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+the back cover.  Both covers must also clearly and legibly identify
+you as the publisher of these copies.  The front cover must present
+the full title with all words of the title equally prominent and
+visible.  You may add other material on the covers in addition.
+Copying with changes limited to the covers, as long as they preserve
+the title of the Document and satisfy these conditions, can be treated
+as verbatim copying in other respects.
+
+If the required texts for either cover are too voluminous to fit
+legibly, you should put the first ones listed (as many as fit
+reasonably) on the actual cover, and continue the rest onto adjacent
+pages.
+
+If you publish or distribute Opaque copies of the Document numbering
+more than 100, you must either include a machine-readable Transparent
+copy along with each Opaque copy, or state in or with each Opaque copy
+a publicly-accessible computer-network location containing a complete
+Transparent copy of the Document, free of added material, which the
+general network-using public has access to download anonymously at no
+charge using public-standard network protocols.  If you use the latter
+option, you must take reasonably prudent steps, when you begin
+distribution of Opaque copies in quantity, to ensure that this
+Transparent copy will remain thus accessible at the stated location
+until at least one year after the last time you distribute an Opaque
+copy (directly or through your agents or retailers) of that edition to
+the public.
+
+It is requested, but not required, that you contact the authors of the
+Document well before redistributing any large number of copies, to give
+them a chance to provide you with an updated version of the Document.
+
+
+4. MODIFICATIONS
+
+You may copy and distribute a Modified Version of the Document under
+the conditions of sections 2 and 3 above, provided that you release
+the Modified Version under precisely this License, with the Modified
+Version filling the role of the Document, thus licensing distribution
+and modification of the Modified Version to whoever possesses a copy
+of it.  In addition, you must do these things in the Modified Version:
+
+A. Use in the Title Page (and on the covers, if any) a title distinct
+   from that of the Document, and from those of previous versions
+   (which should, if there were any, be listed in the History section
+   of the Document).  You may use the same title as a previous version
+   if the original publisher of that version gives permission.
+B. List on the Title Page, as authors, one or more persons or entities
+   responsible for authorship of the modifications in the Modified
+   Version, together with at least five of the principal authors of the
+   Document (all of its principal authors, if it has less than five).
+C. State on the Title page the name of the publisher of the
+   Modified Version, as the publisher.
+D. Preserve all the copyright notices of the Document.
+E. Add an appropriate copyright notice for your modifications
+   adjacent to the other copyright notices.
+F. Include, immediately after the copyright notices, a license notice
+   giving the public permission to use the Modified Version under the
+   terms of this License, in the form shown in the Addendum below.
+G. Preserve in that license notice the full lists of Invariant Sections
+   and required Cover Texts given in the Document's license notice.
+H. Include an unaltered copy of this License.
+I. Preserve the section entitled "History", and its title, and add to
+   it an item stating at least the title, year, new authors, and
+   publisher of the Modified Version as given on the Title Page.  If
+   there is no section entitled "History" in the Document, create one
+   stating the title, year, authors, and publisher of the Document as
+   given on its Title Page, then add an item describing the Modified
+   Version as stated in the previous sentence.
+J. Preserve the network location, if any, given in the Document for
+   public access to a Transparent copy of the Document, and likewise
+   the network locations given in the Document for previous versions
+   it was based on.  These may be placed in the "History" section.
+   You may omit a network location for a work that was published at
+   least four years before the Document itself, or if the original
+   publisher of the version it refers to gives permission.
+K. In any section entitled "Acknowledgements" or "Dedications",
+   preserve the section's title, and preserve in the section all the
+   substance and tone of each of the contributor acknowledgements
+   and/or dedications given therein.
+L. Preserve all the Invariant Sections of the Document,
+   unaltered in their text and in their titles.  Section numbers
+   or the equivalent are not considered part of the section titles.
+M. Delete any section entitled "Endorsements".  Such a section
+   may not be included in the Modified Version.
+N. Do not retitle any existing section as "Endorsements"
+   or to conflict in title with any Invariant Section.
+
+If the Modified Version includes new front-matter sections or
+appendices that qualify as Secondary Sections and contain no material
+copied from the Document, you may at your option designate some or all
+of these sections as invariant.  To do this, add their titles to the
+list of Invariant Sections in the Modified Version's license notice.
+These titles must be distinct from any other section titles.
+
+You may add a section entitled "Endorsements", provided it contains
+nothing but endorsements of your Modified Version by various
+parties--for example, statements of peer review or that the text has
+been approved by an organization as the authoritative definition of a
+standard.
+
+You may add a passage of up to five words as a Front-Cover Text, and a
+passage of up to 25 words as a Back-Cover Text, to the end of the list
+of Cover Texts in the Modified Version.  Only one passage of
+Front-Cover Text and one of Back-Cover Text may be added by (or
+through arrangements made by) any one entity.  If the Document already
+includes a cover text for the same cover, previously added by you or
+by arrangement made by the same entity you are acting on behalf of,
+you may not add another; but you may replace the old one, on explicit
+permission from the previous publisher that added the old one.
+
+The author(s) and publisher(s) of the Document do not by this License
+give permission to use their names for publicity for or to assert or
+imply endorsement of any Modified Version.
+
+
+5. COMBINING DOCUMENTS
+
+You may combine the Document with other documents released under this
+License, under the terms defined in section 4 above for modified
+versions, provided that you include in the combination all of the
+Invariant Sections of all of the original documents, unmodified, and
+list them all as Invariant Sections of your combined work in its
+license notice.
+
+The combined work need only contain one copy of this License, and
+multiple identical Invariant Sections may be replaced with a single
+copy.  If there are multiple Invariant Sections with the same name but
+different contents, make the title of each such section unique by
+adding at the end of it, in parentheses, the name of the original
+author or publisher of that section if known, or else a unique number.
+Make the same adjustment to the section titles in the list of
+Invariant Sections in the license notice of the combined work.
+
+In the combination, you must combine any sections entitled "History"
+in the various original documents, forming one section entitled
+"History"; likewise combine any sections entitled "Acknowledgements",
+and any sections entitled "Dedications".  You must delete all sections
+entitled "Endorsements."
+
+
+6. COLLECTIONS OF DOCUMENTS
+
+You may make a collection consisting of the Document and other documents
+released under this License, and replace the individual copies of this
+License in the various documents with a single copy that is included in
+the collection, provided that you follow the rules of this License for
+verbatim copying of each of the documents in all other respects.
+
+You may extract a single document from such a collection, and distribute
+it individually under this License, provided you insert a copy of this
+License into the extracted document, and follow this License in all
+other respects regarding verbatim copying of that document.
+
+
+7. AGGREGATION WITH INDEPENDENT WORKS
+
+A compilation of the Document or its derivatives with other separate
+and independent documents or works, in or on a volume of a storage or
+distribution medium, does not as a whole count as a Modified Version
+of the Document, provided no compilation copyright is claimed for the
+compilation.  Such a compilation is called an "aggregate", and this
+License does not apply to the other self-contained works thus compiled
+with the Document, on account of their being thus compiled, if they
+are not themselves derivative works of the Document.
+
+If the Cover Text requirement of section 3 is applicable to these
+copies of the Document, then if the Document is less than one quarter
+of the entire aggregate, the Document's Cover Texts may be placed on
+covers that surround only the Document within the aggregate.
+Otherwise they must appear on covers around the whole aggregate.
+
+
+8. TRANSLATION
+
+Translation is considered a kind of modification, so you may
+distribute translations of the Document under the terms of section 4.
+Replacing Invariant Sections with translations requires special
+permission from their copyright holders, but you may include
+translations of some or all Invariant Sections in addition to the
+original versions of these Invariant Sections.  You may include a
+translation of this License provided that you also include the
+original English version of this License.  In case of a disagreement
+between the translation and the original English version of this
+License, the original English version will prevail.
+
+
+9. TERMINATION
+
+You may not copy, modify, sublicense, or distribute the Document except
+as expressly provided for under this License.  Any other attempt to
+copy, modify, sublicense or distribute the Document is void, and will
+automatically terminate your rights under this License.  However,
+parties who have received copies, or rights, from you under this
+License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+
+10. FUTURE REVISIONS OF THIS LICENSE
+
+The Free Software Foundation may publish new, revised versions
+of the GNU Free Documentation License from time to time.  Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.  See
+http://www.gnu.org/copyleft/.
+
+Each version of the License is given a distinguishing version number.
+If the Document specifies that a particular numbered version of this
+License "or any later version" applies to it, you have the option of
+following the terms and conditions either of that specified version or
+of any later version that has been published (not as a draft) by the
+Free Software Foundation.  If the Document does not specify a version
+number of this License, you may choose any version ever published (not
+as a draft) by the Free Software Foundation.
+
+
+ADDENDUM: How to use this License for your documents
+
+To use this License in a document you have written, include a copy of
+the License in the document and put the following copyright and
+license notices just after the title page:
+
+      Copyright (c)  YEAR  YOUR NAME.
+      Permission is granted to copy, distribute and/or modify this document
+      under the terms of the GNU Free Documentation License, Version 1.1
+      or any later version published by the Free Software Foundation;
+      with the Invariant Sections being LIST THEIR TITLES, with the
+      Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+      A copy of the license is included in the section entitled "GNU
+      Free Documentation License".
+
+If you have no Invariant Sections, write "with no Invariant Sections"
+instead of saying which ones are invariant.  If you have no
+Front-Cover Texts, write "no Front-Cover Texts" instead of
+"Front-Cover Texts being LIST"; likewise for Back-Cover Texts.
+
+If your document contains nontrivial examples of program code, we
+recommend releasing these examples in parallel under your choice of
+free software license, such as the GNU General Public License,
+to permit their use in free software.

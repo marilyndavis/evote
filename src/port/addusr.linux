@@ -1,0 +1,10 @@
+# $Id: addusr.linux,v 1.2 2003/01/15 18:54:12 marilyndavis Exp $ 
+:
+ i=1
+ while [ "$i" -lt 101 ]
+ do
+ echo "dum${i}::`expr $i + 2000`:500::/usr:/bin/sh" >> pp
+ #adduser -a -c dum${i} -u `expr $i + 2000` -g 500 dum${i}
+ #  passwd -d dum${i}
+    i=`expr $i + 1`
+ done

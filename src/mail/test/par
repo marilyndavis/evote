@@ -1,0 +1,305 @@
+# $Id: par,v 1.3 2003/01/15 18:54:12 marilyndavis Exp $ 
+#   par -- tests sync/read-only/no_participants
+#   par UI_BIN LISTDIR
+#   UI_BIN = /usr/local/majordomo by default -- where is eVote_insert?
+#   LISTDIR = /usr/local/majordomo/lists by default - lists?
+#
+./mscratch
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/usr/local/majordomo"
+    LISTDIR="/usr/local/majordomo/lists"
+  else
+    UI_BIN=$1
+    if [ $# -gt 1 ]
+    then
+      LISTDIR=$2
+    fi
+fi
+./mscratch
+touch par.out
+mv par.out par.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> par.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> par.out
+ echo " " >> par.out
+ echo "***** Calling eVote_insert $ARGS - Incoming message: *****" >> par.out
+ echo " " >> par.out
+ cat  tmp$$ >> par.out
+ cat  tmp$$ > x
+ echo " " >> par.out
+ echo "***** To stderr comes: *****" >> par.out
+ echo " " >> par.out
+
+  $UI_BIN/eVote_insert $ARGS < tmp$$ 2>> par.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> par.out
+     echo "***** r.out sent to LIST, says *****" >> par.out
+     echo " " >> par.out
+     cat ./tmp/r.out >> par.out
+     echo " " >> par.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> par.out
+      echo "***** t.out, sent to MAILER, says *****" >> par.out
+      echo " " >> par.out
+      cat ./tmp/t.out >> par.out
+      echo " " >> par.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it par " >> par.out
+
+fi
+
+#############  START  ####################
+echo " " > par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "    START PARTICIPANTS " >> par.out
+echo " " >> par.out
+echo << EOF >> par.out
+David Bilides <kavaldjija@aol.com>,
+George Long <geolong@aol.com>,
+Sophia Bilides <SophiaB@aol.com>,
+David Eisen <EisenSLC@aol.com>,
+Jennifer Cook <Bokreta@aol.com>,
+Holly Plotner <BillO45644@aol.com>,
+ErickBarb@aol.com,
+Barbara Seaver <Karikazo18@AOL.COM>,
+Jzurn1@aol.com,
+EOF
+echo " " >> par.out
+
+cat << EOF > $LISTDIR/participants
+David Bilides <kavaldjija@aol.com>,
+George Long <geolong@aol.com>,
+Sophia Bilides <SophiaB@aol.com>,
+David Eisen <EisenSLC@aol.com>,
+Jennifer Cook <Bokreta@aol.com>,
+Holly Plotner <BillO45644@aol.com>,
+ErickBarb@aol.com,
+Barbara Seaver <Karikazo18@AOL.COM>,
+Jzurn1@aol.com,
+EOF
+
+cat $LISTDIR/participants >> par.out
+
+$UI_BIN/eVote_mail sync participants >> par.out
+
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     LOOK   LOOK   LOOK " >> par.out
+echo " " >> par.out
+
+EXTRA="Received:  something"
+ARGS="resend_test -l participants"
+TO="participants@xoko"
+FROM="EisenSLC@aol.com"
+SUBJECT="A"
+cat << EOF > MESS
+eVote poll [y/n] public visible 
+message:
+bla
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote stats
+end
+some extra stuff
+EOF
+try_that 
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     ADD SOME   ADD SOME   ADD SOME " >> par.out
+cat << EOF >> par.out
+Ann Mosconi <AnnaLaLoca@aol.com>,
+JennB72973@aol.com,
+Ann Moorhead <Amoo7@aol.com>,
+Pwmaine@aol.com (Patricia Williams),
+Denis Murphy <DMurphy139@aol.com>,
+Sanna Longden <SannaMars@aol.com>,
+Beth Cohen <BCyayli@aol.com>,
+THORPENESS@aol.com (Susan Kirschner),
+pajaro@pacbell.net,
+EOF
+echo " " >> par.out
+
+cat << EOF >> $LISTDIR/participants
+Ann Mosconi <AnnaLaLoca@aol.com>,
+JennB72973@aol.com,
+Ann Moorhead <Amoo7@aol.com>,
+Pwmaine@aol.com (Patricia Williams),
+Denis Murphy <DMurphy139@aol.com>,
+Sanna Longden <SannaMars@aol.com>,
+Beth Cohen <BCyayli@aol.com>,
+THORPENESS@aol.com (Susan Kirschner),
+pajaro@pacbell.net,
+EOF
+
+cat $LISTDIR/participants >> par.out
+
+$UI_BIN/eVote_mail sync participants >> par.out
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     LOOK   LOOK   LOOK " >> par.out
+echo " " >> par.out
+
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote stats
+end
+some extra stuff
+EOF
+try_that 
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     NO_VOTE   NO_VOTE   NO_VOTE " >> par.out
+echo " " >> par.out
+echo "     kavaldjija@aol.com " >> par.out
+echo "     Bill045644@aol.com " >> par.out
+echo " " >> par.out
+
+$UI_BIN/eVote_mail no_vote participants kavaldjija@aol.com >> par.out
+$UI_BIN/eVote_mail no_vote participants BillO45644@aol.com >> par.out
+
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote stats
+end
+some extra stuff
+EOF
+try_that 
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     NO_VOTE_LATERS  NO_VOTE_LATERS  NO_VOTE_LATERS" >> par.out
+echo " " >> par.out
+echo "     Pwmaine@aol.com" >> par.out
+echo "     pajaro@pacbell.net " >> par.out
+echo "     AnnaLaLoca@aol.com " >> par.out
+echo " " >> par.out
+
+
+$UI_BIN/eVote_mail no_vote participants Pwmaine@aol.com >> par.out
+$UI_BIN/eVote_mail no_vote participants pajaro@pacbell.net >> par.out
+$UI_BIN/eVote_mail no_vote participants AnnaLaLoca@aol.com >> par.out
+
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote stats
+end
+some extra stuff
+EOF
+try_that 
+
+echo " " >> par.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> par.out
+echo "     ADD_MORE -r ADD_MORE -r ADD_MORE -r" >> par.out
+echo " " >> par.out
+
+cat << EOF >> par.out
+Michelle Benoit <BenWaMa@aol.com>,
+Scott & Susan Haas <sdbph@aol.com>,
+EOF
+echo " " >> par.out
+cat << EOF >> $LISTDIR/participants
+Michelle Benoit <BenWaMa@aol.com>,
+Scott & Susan Haas <sdbph@aol.com>,
+EOF
+
+cat $LISTDIR/participants >> par.out
+
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+$UI_BIN/eVote_mail sync -r participants >> par.out
+cat << EOF > MESS
+eVote members
+end
+some extra stuff
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote stats
+end
+some extra stuff
+EOF
+try_that 
+

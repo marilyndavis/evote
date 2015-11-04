@@ -1,0 +1,280 @@
+# $Id: kop2,v 1.3 2003/01/15 18:54:12 marilyndavis Exp $ 
+
+# Functions are defined beyond here
+#   kop2 -- Special Test for Rosa and the Kopilli Ketzalli and
+#   chiapas peace petitions.
+#   kop2 UI_BIN 
+#   UI_BIN = /usr/local/majordomo by default -- where is eVote_insert?
+#
+
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/usr/local/majordomo"
+  else
+    UI_BIN=$1
+fi
+
+touch kop2.out
+mv kop2.out kop2.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> kall2.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> kall2.out
+ echo " " >> kall2.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> kall2.out
+ echo " " >> kall2.out
+ cat  tmp$$ >> kall2.out
+ cat  tmp$$ > x
+ echo " " >> kall2.out
+ echo "***** To stderr comes: *****" >> kall2.out
+ echo " " >> kall2.out
+
+ $CALL < tmp$$ 2>> kall2.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> kall2.out
+     echo "***** r.out sent to LIST, says *****" >> kall2.out
+     echo " " >> kall2.out
+     cat ./tmp/r.out >> kall2.out
+     echo " " >> kall2.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> kall2.out
+      echo "***** t.out, sent to MAILER, says *****" >> kall2.out
+      echo " " >> kall2.out
+      cat ./tmp/t.out >> kall2.out
+      echo " " >> kall2.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it kall " >> kall2.out
+
+fi
+
+#############  START  ####################
+
+echo " " > kall2.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall2.out
+echo "    STARTING  STARTING  STARTING " >> kall2.out
+echo " " >> kall2.out
+
+TO="petitiona-approval@xoko"
+FROM="bpollstera@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+bpollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+
+try_that
+
+TO="petitionj-approval@xoko"
+FROM="bpollsterj@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitionj"
+cat << EOF > MESS
+
+--
+
+bpollsterj@somewhere.com has been added to petitionj.
+No action is required on your part.
+EOF
+
+try_that
+
+echo " " >> kall2.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> kall2.out
+echo "    SIGNATURES  SIGNATURES  SIGNATURES " >> kall2.out
+echo " " >> kall2.out
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="Kopilli Ketzalli"
+
+cat << EOF > MESS
+info
+EOF
+try_that
+
+SUBJECT="Kopilli Ketzalli -fr"
+
+cat << EOF > MESS
+aide
+end
+EOF
+try_that
+
+SUBJECT="Kopilli Ketzalli -de"
+cat << EOF > MESS
+help
+end
+EOF
+try_that
+SUBJECT="Kopilli Ketzalli -es"
+cat << EOF > MESS
+ayuda
+end
+EOF
+
+try_that
+SUBJECT="Kopilli Ketzalli -en"
+cat << EOF > MESS
+help
+end
+EOF
+
+try_that
+SUBJECT="Kopilli Ketzalli -fr"
+cat << EOF > MESS
+aide
+end
+EOF
+
+try_that
+SUBJECT="Not THere -fr"
+try_that
+SUBJECT="Not THere"
+try_that
+
+SUBJECT="Kopilli Ketzalli -fr"
+
+FROM="bmaria1@somewhere.com"
+cat << EOF > MESS
+Here is my address 
+pollster1
+EOF
+try_that 
+
+SUBJECT="Kopilli Ketzalli -de"
+try_that
+SUBJECT="Kopilli Ketzalli -es"
+try_that
+
+SUBJECT="Kopilli Ketzalli -en"
+try_that
+
+SUBJECT="Kopilli Ketzalli -fr"
+try_that
+
+SUBJECT="Kopilli Ketzalli -fr"
+
+cat << EOF > MESS
+Nombre: Marilyn
+Pays: France
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli -fr"
+
+try_that
+SUBJECT="Kopilli Ketzalli -fr"
+try_that
+
+FROM="bgermany@somewhere.com"
+SUBJECT="Kopilli Ketzalli -de"
+cat << EOF > MESS
+Name: Marilyn
+Heimat: Germany
+EOF
+try_that
+SUBJECT="Confirm: 111111 Kopilli Ketzalli -de"
+try_that
+try_that
+SUBJECT="Kopilli Ketzalli -de"
+try_that
+
+FROM="bmexico@somewhere.com"
+SUBJECT="Kopilli Ketzalli -es"
+cat << EOF > MESS
+Nombre: Marilyn
+Pais: Mexico
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 Kopilli Ketzalli -es"
+
+try_that
+try_that
+
+SUBJECT="Kopilli Ketzalli -es"
+
+try_that
+
+
+
+SUBJECT="Re: eVote Recibo: Chiapas Peace -es"
+cat << EOF > MESS
+borrar
+EOF
+try_that
+SUBJECT="Confirm: 111111 Re: eVote Recibo: Chiapas Peace -es"
+
+try_that
+
+FROM="bpollstera@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+SUBJECT="Kopilli Ketzalli -es"
+
+cat << EOF > MESS
+eVote names
+EOF
+try_that 
+
+FROM="bpollsterj@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitionj"
+TO="petitionj@xoko"
+SUBJECT="Chiapas Peace"
+
+cat << EOF > MESS
+eVote names
+EOF
+try_that 
+
+

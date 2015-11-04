@@ -1,0 +1,513 @@
+Index: Mailman/Deliverer.py
+===================================================================
+RCS file: /cvsroot/mailman/mailman/Mailman/Deliverer.py,v
+retrieving revision 1.68
+diff -u -r1.68 Deliverer.py
+--- Mailman/Deliverer.py	19 Sep 2000 05:58:51 -0000	1.68
++++ Mailman/Deliverer.py	26 Dec 2002 05:32:24 -0000
+@@ -29,7 +29,7 @@
+ 
+ 
+ class Deliverer:
+-    def SendSubscribeAck(self, name, password, digest):
++    def SendSubscribeAck(self, name, password, digest, eVote=None):
+         if not self.send_welcome_msg:
+ 	    return
+ 	if self.welcome_msg:
+@@ -56,6 +56,19 @@
+              'optionsurl'  : self.GetOptionsURL(name, absolute=1),
+              'password'    : password,
+              })
++        if eVote:
++            text = text + Utils.maketext(
++                'eVote.txt',
++                {'real_name'   : self.real_name,
++                 'host_name'   : self.host_name,
++                 }, 1)
++        if eVote and string.lower(self.real_name[:8]) == 'petition':
++            text = text + Utils.maketext(
++                'eVotePetition.txt',
++                {'real_name'   : self.real_name,
++                 'host_name'   : self.host_name,
++                 }, 1)
++
+ 	if digest:
+ 	    digmode = ' (Digest mode)'
+ 	else:
+Index: Mailman/MailCommandHandler.py
+===================================================================
+RCS file: /cvsroot/mailman/mailman/Mailman/Attic/MailCommandHandler.py,v
+retrieving revision 1.70.2.2
+diff -u -r1.70.2.2 MailCommandHandler.py
+--- Mailman/MailCommandHandler.py	11 Jul 2002 21:19:34 -0000	1.70.2.2
++++ Mailman/MailCommandHandler.py	26 Dec 2002 05:32:26 -0000
+@@ -109,7 +109,8 @@
+         self.__errors = self.__errors + 1
+         self.AddToResponse(text, trunc=trunc, prefix=prefix)
+ 	
+-    def ParseMailCommands(self, msg):
++    def ParseMailCommands(self, msg, msgdata=None): # eVote needs msgdata
++          # if msgdata.get('eVote_notif', 0), then we need to notify eVote
+         # Break any mail loops, as defined by the presence of a
+         #
+         # 1. Precedence: header with values "bulk", "list", or "junk"
+@@ -232,7 +233,11 @@
+                         # unexpected (e.g. uncaught) exceptions here.  Such an 
+                         # exception stops parsing of email commands
+                         # immediately
+-                        self.__dispatch[cmd](args, line, msg)
++                        # for eVote, only confirm needs special processing
++                        if msgdata.get('eVote_notif',0) and (cmd == 'confirm'):
++                            self.__dispatch[cmd](args, line, msg, eVote_notif=1)
++                        else:
++                            self.__dispatch[cmd](args, line, msg)
+                     except:
+                         admin = self.GetAdminEmail()
+                         sfp = StringIO()
+@@ -532,6 +537,7 @@
+ 	except (Errors.MMNoSuchUserError, Errors.MMNotAMemberError):
+ 	    self.AddError("%s is not subscribed to this list." % addr,
+                           trunc=0)
++            self.NotifyEVoteDelete(addr) # just in case it's in eVote
+ 	except Errors.MMBadPasswordError:
+ 	    self.AddError("You gave the wrong password.")
+         except Errors.MMBadUserError:
+@@ -619,7 +625,7 @@
+ 
+ 
+ 
+-    def ProcessConfirmCmd(self, args, cmd, mail):
++    def ProcessConfirmCmd(self, args, cmd, mail, eVote_notif=None):
+         """Validate confirmation and carry out the subscription."""
+         if len(args) != 1:
+             self.AddError("Usage: confirm <confirmation number>\n")
+@@ -630,7 +636,7 @@
+             self.AddError("Usage: confirm <confirmation number>\n")
+             return
+         try:
+-            self.ProcessConfirmation(cookie)
++            self.ProcessConfirmation(cookie,eVote_notif=eVote_notif)
+         except Errors.MMBadConfirmation:
+             from math import floor
+             # Express in days, rounded to three places:
+Index: Mailman/MailList.py
+===================================================================
+RCS file: /cvsroot/mailman/mailman/Mailman/MailList.py,v
+retrieving revision 1.189.2.2
+diff -u -r1.189.2.2 MailList.py
+--- Mailman/MailList.py	29 May 2001 14:45:27 -0000	1.189.2.2
++++ Mailman/MailList.py	26 Dec 2002 05:32:31 -0000
+@@ -214,6 +214,16 @@
+ 	    del self.user_options[user]
+ 	if save_list:
+             self.Save()
++        # notify eVote if the nomail status changes
++        if option == mm_cfg.DisableDelivery:
++            admin = self.GetAdminEmail()
++            eVoteAddress = 'eVote-notify@%s' % self.host_name
++            text = "%s %d" % (user, value)
++            subject = "%s %s" % ("VACATION", self.internal_name())
++            msg = Message.UserNotification(eVoteAddress, admin,
++                                           subject, text)
++            HandlerAPI.DeliverToUser(self, msg);
++
+ 
+     # Here are the rules for the three dictionaries self.members,
+     # self.digest_members, and self.passwords:
+@@ -1019,7 +1029,7 @@
+                   'subscriptions to %s require administrator approval' % \
+                   self.real_name
+ 
+-    def ProcessConfirmation(self, cookie):
++    def ProcessConfirmation(self, cookie, eVote_notif=None):
+         from Pending import Pending
+         got = Pending().confirmed(cookie)
+         if not got:
+@@ -1032,14 +1042,15 @@
+                 raise Errors.MMNeedApproval, \
+                       'subscriptions to %s require administrator approval' % \
+                       self.real_name
+-            self.ApprovedAddMember(email_addr, password, digest)
++            self.ApprovedAddMember(email_addr, password, digest,eVote_notif=eVote_notif)
+         finally:
+             self.Save()
+ 
+     def ApprovedAddMember(self, name, password, digest,
+-                          ack=None, admin_notif=None):
++                          ack=None, admin_notif=None, eVote_notif=None):
+         res = self.ApprovedAddMembers([name], [password],
+-                                      digest, ack, admin_notif)
++                                      digest, ack, admin_notif, eVote_notif=eVote_notif)
++        
+         # There should be exactly one (key, value) pair in the returned dict,
+         # extract the possible exception value
+         res = res.values()[0]
+@@ -1052,7 +1063,7 @@
+             raise e, v
+ 
+     def ApprovedAddMembers(self, names, passwords, digest,
+-                          ack=None, admin_notif=None):
++                          ack=None, admin_notif=None, eVote_notif=None):
+         """Subscribe members in list `names'.
+ 
+         Passwords can be supplied in the passwords list.  If an empty
+@@ -1075,6 +1086,9 @@
+                 admin_notif = 1
+             else:
+                 admin_notif = 0
++        if eVote_notif == 0: # coming from an eVote move command
++            admin_notif = 0  # eVote sends a notification of the move
++            
+         if type(passwords) is not ListType:
+             # Type error -- ignore whatever value(s) we were given
+             passwords = [None] * len(names)
+@@ -1134,7 +1148,7 @@
+                         self.SendSubscribeAck(
+                             name,
+                             self.passwords[string.lower(name)],
+-                            digest)
++                            digest,eVote=eVote_notif)
+                     if admin_notif:
+                         adminaddr = self.GetAdminEmail()
+                         subject = ('%s subscription notification' %
+@@ -1147,9 +1161,20 @@
+                         msg = Message.UserNotification(
+                             self.owner, mm_cfg.MAILMAN_OWNER, subject, text)
+                         HandlerAPI.DeliverToUser(self, msg)
++                    if eVote_notif:
++                        eVoteAddress = ('eVote-notify@%s' % self.host_name)
++                        txt = ('%s has been added to %s.' %
++                               (name, self.internal_name()))
++                        msg = Message.OutgoingMessage(txt)
++                        msg['Subject'] = 'SUBSCRIBE %s' % self.internal_name()
++                        msg['From'] = 'mailman-owner@%s' % self.host_name
++                        msg['To'] = eVoteAddress
++                        msg.recips = [eVoteAddress]
++                        HandlerAPI.DeliverToUser(self, msg)
+         return result
+ 
+-    def DeleteMember(self, name, whence=None, admin_notif=None, userack=1):
++    def DeleteMember(self, name, whence=None, admin_notif=None,
++                     userack=1, eVote_notif=None):
+ 	self.IsListInitialized()
+         # FindMatchingAddresses *should* never return more than 1 address.
+         # However, should log this, just to make sure.
+@@ -1187,6 +1212,8 @@
+                 admin_notif = 1
+             else:
+                 admin_notif = 0
++        if eVote_notif == 0: # coming from an eVote move command
++            admin_notif = 0  # eVote sends notification
+ 	if admin_notif:
+             subject = '%s unsubscribe notification' % self.real_name
+             text = Utils.maketext(
+@@ -1204,6 +1231,19 @@
+             whence = ""
+         syslog('subscribe', '%s: deleted %s%s' %
+                (self.internal_name(), name, whence))
++        if eVote_notif == 1 or eVote_notif is None:
++            self.NotifyEVoteDelete(name)
++
++    def NotifyEVoteDelete(self,name):
++        '''Can be called from ProcessUnsubscribeCmd if the name is already
++not on the list.  It could still be in eVote.'''
++        subject = 'UNSUBSCRIBE %s' % self.internal_name()
++        text = '%s has unsubscribed from %s.' % (name,
++                                                 self.internal_name())
++        eVoteAddress = 'eVote-notify@%s' % self.host_name
++        sender = 'mailman-owner@%s' %  self.host_name
++        msg = Message.UserNotification(eVoteAddress, sender, subject, text)
++        HandlerAPI.DeliverToUser(self, msg)
+ 
+     def IsMember(self, address):
+ 	return len(Utils.FindMatchingAddresses(address, self.members,
+Index: bin/add_members
+===================================================================
+RCS file: /cvsroot/mailman/mailman/bin/add_members,v
+retrieving revision 1.12
+diff -u -r1.12 add_members
+--- bin/add_members	11 Sep 2000 03:58:57 -0000	1.12
++++ bin/add_members	26 Dec 2002 05:32:32 -0000
+@@ -213,6 +213,8 @@
+                         if name == '': name = '( blank line )'
+                         print "Not a valid email address:", name
+ 
++        print "If this is an eVoted list, please syncronize eVote by giving this command:"
++        print "\n  ../scripts/eVote_mail sync listname\n"
+         if send_changes_msg:
+             SendExplanation(ml, nmembers + dmembers)
+     finally:
+Index: bin/clone_member
+===================================================================
+RCS file: /cvsroot/mailman/mailman/bin/clone_member,v
+retrieving revision 1.11
+diff -u -r1.11 clone_member
+--- bin/clone_member	11 Sep 2000 03:58:57 -0000	1.11
++++ bin/clone_member	26 Dec 2002 05:32:33 -0000
+@@ -232,4 +232,13 @@
+ 
+ 
+ if __name__ == '__main__':
++    print "Please use eVote's move command instead of clone_member."
++    print '''The "eVote move" command can be given by any list's owner:'''
++    print '\n1. Write to:'
++    print '\n      list-name@yoursite.net'
++    print "\n2. The subject doesn't matter."
++    print '\n3. The message should be:'
++    print '\n      eVote approve <password> move old_address new_address'
++    print '\nThe <password> is the same as the admin password in mailman.'
++    sys.exit(0)    
+     main()
+Index: bin/newlist
+===================================================================
+RCS file: /cvsroot/mailman/mailman/bin/newlist,v
+retrieving revision 1.36.2.1
+diff -u -r1.36.2.1 newlist
+--- bin/newlist	3 Mar 2001 05:58:19 -0000	1.36.2.1
++++ bin/newlist	26 Dec 2002 05:32:33 -0000
+@@ -63,16 +63,16 @@
+ SENDMAIL_ALIAS_TEMPLATE = '''
+ ## %(listname)s mailing list
+ ## created: %(date)s %(user)s
+-%(list)s "|%(wrapper)s post %(listname)s"
++%(list)s "|%(wrapper)s %(post)s %(listname)s"
+ %(admin)s "|%(wrapper)s mailowner %(listname)s"
+-%(request)s "|%(wrapper)s mailcmd %(listname)s"
++%(request)s "|%(wrapper)s %(mailcmd)s %(listname)s"
+ %(owner2)s %(listname)s-admin
+ '''
+ 
+ QMAIL_ALIAS_TEMPLATE = """
+-   echo '|preline %(wrapper)s post %(listname)s' >~alias/.qmail-%(listname)s
++   echo '|preline %(wrapper)s %(post)s %(listname)s' >~alias/.qmail-%(listname)s
+    echo '|preline %(wrapper)s mailowner %(listname)s' >~alias/.qmail-%(listname)s-admin
+-   echo '|preline %(wrapper)s mailcmd %(listname)s' >~alias/.qmail-%(listname)s-request
++   echo '|preline %(wrapper)s %(mailcmd)s %(listname)s' >~alias/.qmail-%(listname)s-request
+    echo '&%(listname)s-admin' >~alias/.qmail-owner-%(listname)s
+    echo '&%(listname)s-admin' >~alias/.qmail-%(listname)s-owner
+    chmod 644 ~alias/.qmail-%(listname)s ~alias/.qmail-%(listname)s-admin
+@@ -147,6 +147,12 @@
+     else:
+ 	owner_mail = raw_input(
+ 	    "Enter the email of the person running the list: ")
++        is_eVoted = string.lower(raw_input(
++            "Will this be an eVoted list? (yes/no): "))
++        if(is_eVoted[0] == 'y'):
++            is_eVoted = 1
++        else:
++            is_eVoted = 0
+ 
+     if len(args) > 2:
+ 	list_pw = args[2]
+@@ -174,7 +180,9 @@
+         except Errors.MMListAlreadyExistsError:
+             usage(1, 'List already exists: ' + listname)
+ 
+-        output = ALIASTEMPLATE % {
++        templater = {
++            'post'    : "post",
++            'mailcmd' : "mailcmd",
+             'listname': listname,
+             'list'    : "%-24s" % (listname + ":"),
+             'wrapper' : '%s/wrapper' % mm_cfg.WRAPPER_DIR,
+@@ -184,6 +192,16 @@
+             'date'    : time.strftime('%d-%b-%Y', time.localtime(time.time())),
+             'user'    : getusername(),
+             }
++        if is_eVoted:
++            templater['post'] = "eVote_insert post"
++            templater['mailcmd'] = "mailcmd eVote"
++            
++        output = ALIASTEMPLATE % templater
++        if is_eVoted:
++            owner = "owner-%s:" % listname
++            output = output + "%-24s %s-admin\n"  % (owner, listname)
++            output = output + "%-24s %s-admin\n" % ("%s-evote:" % listname, listname)
++
+         print STDOUTMSG
+         print output
+         if appendfile:
+Index: bin/remove_members
+===================================================================
+RCS file: /cvsroot/mailman/mailman/bin/remove_members,v
+retrieving revision 1.7
+diff -u -r1.7 remove_members
+--- bin/remove_members	15 Sep 2000 21:20:19 -0000	1.7
++++ bin/remove_members	26 Dec 2002 05:32:33 -0000
+@@ -117,7 +117,6 @@
+                 mlist.DeleteMember(addr)
+             except Errors.MMNoSuchUserError:
+                 print "User `%s' not found." % addr
+-    finally:
+         # Hmm, should it be all or nothing?
+         mlist.Save()
+         mlist.Unlock()
+Index: cron/qrunner
+===================================================================
+RCS file: /cvsroot/mailman/mailman/cron/Attic/qrunner,v
+retrieving revision 1.18.2.5
+diff -u -r1.18.2.5 qrunner
+--- cron/qrunner	9 Apr 2002 20:54:18 -0000	1.18.2.5
++++ cron/qrunner	26 Dec 2002 05:32:34 -0000
+@@ -154,7 +154,7 @@
+                         })
+         return HandlerAPI.DeliverToUser(mlist, msg, msgdata)
+     elif msgdata.get('torequest', 0):
+-        mlist.ParseMailCommands(msg)
++        mlist.ParseMailCommands(msg, msgdata)  # msgdata added for eVote 
+         return 0
+     else:
+         # Pre 2.0beta3 qfiles have no schema version number
+Index: scripts/mailcmd
+===================================================================
+RCS file: /cvsroot/mailman/mailman/scripts/Attic/mailcmd,v
+retrieving revision 1.18
+diff -u -r1.18 mailcmd
+--- scripts/mailcmd	14 Jun 2000 05:19:13 -0000	1.18
++++ scripts/mailcmd	26 Dec 2002 05:32:35 -0000
+@@ -38,8 +38,13 @@
+ 
+ 
+ def main():
++    eVote = 0
+     try:
+-        listname = sys.argv[1]
++        if sys.argv[1] == 'eVote':
++            eVote = 1
++            listname = sys.argv[2]
++        else:
++            listname = sys.argv[1]
+     except IndexError:
+         sys.stderr.write('Mailman error: mailcmd got no listname.\n')
+         sys.exit(1)
+@@ -61,7 +66,7 @@
+     #
+     # The `torequest' flag is a message to qrunner that an alternative route
+     # should be taken for this message.
+-    msg.Enqueue(mlist, torequest=1)
++    msg.Enqueue(mlist, torequest=1, eVote_notif=eVote)
+ 
+ 
+ 
+Index: src/common.c
+===================================================================
+RCS file: /cvsroot/mailman/mailman/src/common.c,v
+retrieving revision 1.26.2.2
+diff -u -r1.26.2.2 common.c
+--- src/common.c	2 Jul 2002 17:24:29 -0000	1.26.2.2
++++ src/common.c	26 Dec 2002 05:32:35 -0000
+@@ -19,6 +19,9 @@
+ 
+ #include "common.h"
+ 
++#include<sys/types.h>
++#include<sys/stat.h>
++
+ /* passed in by configure */
+ #define SCRIPTDIR PREFIX "/scripts/"	     /* trailing slash */
+ #define MODULEDIR PREFIX		     /* no trailing slash */
+@@ -39,7 +42,6 @@
+ 
+ extern char *sys_errlist[];      
+ extern int sys_nerr;                      
+-        
+ char* strerror(int errno)                
+ {                                                   
+ 	if(errno < 0 || errno >= sys_nerr) { 
+@@ -155,6 +157,7 @@
+ int
+ run_script(const char* script, int argc, char** argv, char** env)
+ {
++	int eVote_notify = 0;
+ 	const char envstr[] = "PYTHONPATH=";
+ 	const int envlen = strlen(envstr);
+ 
+@@ -230,14 +233,35 @@
+ 	 */
+ 	newargv = (char**)malloc(sizeof(char*) * (argc + 3));
+ 	j = 0;
+-	newargv[j++] = python;
+-	newargv[j++] = "-S";
+-	newargv[j] = (char*)malloc(sizeof(char) * (
+-		strlen(scriptdir) +
+-		strlen(script) +
+-		1));
+-	strcpy(newargv[j], scriptdir);
+-	strcat(newargv[j], script);
++	i = 2;
++	if (strncmp(script,"eVote", 5) == 0)
++	{
++		newargv[j] = (char*)malloc(sizeof(char) * (
++						   strlen(scriptdir) +
++						   strlen(script) +
++						   1));
++		strcpy(newargv[j], scriptdir);
++		strcat(newargv[j++], script);
++		if (argv[2])
++		{
++			script = argv[2];
++			i = 3;
++		}
++		else
++			eVote_notify = 1;
++	}
++	if (!eVote_notify)
++	{
++		newargv[j++] = python;
++		newargv[j++] = "-S";
++
++		newargv[j] = (char*)malloc(sizeof(char) * (
++						   strlen(scriptdir) +
++						   strlen(script) +
++						   1));
++		strcpy(newargv[j], scriptdir);
++		strcat(newargv[j], script);
++	}
+ 
+ 	/* now tack on all the rest of the arguments.  we can skip argv's
+ 	 * first two arguments because, for cgi-wrapper there is only argv[0].
+@@ -249,13 +273,21 @@
+ 	 *
+ 	 * TBD: have to make sure this works with alias-wrapper.
+ 	 */
+-	for (i=2, j++; i < argc; i++)
++
++	for (j++; i < argc; i++)
+ 		newargv[j++] = argv[i];
+ 
+ 	newargv[j] = NULL;
+ 
++	if (strncmp(&newargv[0][strlen(scriptdir)],"eVote",5) == 0)
++	{
++		(void)execve(newargv[0], &newargv[0], &newenv[0]);
++	}
++	else
++	{
++		(void)execve(python, &newargv[0], &newenv[0]);
++	}
+ 	/* return always means failure */
+-	(void)execve(python, &newargv[0], &newenv[0]);
+ 	return EXECVE_FAILURE;
+ }
+ 
+Index: src/mail-wrapper.c
+===================================================================
+RCS file: /cvsroot/mailman/mailman/src/mail-wrapper.c,v
+retrieving revision 1.16
+diff -u -r1.16 mail-wrapper.c
+--- src/mail-wrapper.c	2 Aug 2000 03:23:25 -0000	1.16
++++ src/mail-wrapper.c	26 Dec 2002 05:32:36 -0000
+@@ -1,3 +1,4 @@
++
+ /* mail-wrapper.c --- Generic wrapper that will take info from a environment
+  * variable, and pass it to two commands.
+  *
+@@ -36,6 +37,8 @@
+ 	"post", 
+ 	"mailcmd",
+ 	"mailowner",
++	"eVote_insert",
++	"eVote_petition",
+ 	NULL				     /* Sentinel, don't remove */
+ };
+ 

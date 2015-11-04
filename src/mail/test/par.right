@@ -1,0 +1,1442 @@
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    START PARTICIPANTS 
+ 
+
+ 
+David Bilides <kavaldjija@aol.com>,
+George Long <geolong@aol.com>,
+Sophia Bilides <SophiaB@aol.com>,
+David Eisen <EisenSLC@aol.com>,
+Jennifer Cook <Bokreta@aol.com>,
+Holly Plotner <BillO45644@aol.com>,
+ErickBarb@aol.com,
+Barbara Seaver <Karikazo18@AOL.COM>,
+Jzurn1@aol.com,
+
+Starting a new list for eVote: participants
+
+participants is synchronized and ready to go.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     LOOK   LOOK   LOOK 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+bla
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l participants
+
+Stdin says: 
+From: participants-eVote@xoko
+Subject: Poll: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+To: participants@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090642.eVote.1.42455@xoko>
+
+--
+
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+The 9 participants of the participants list are asked
+to vote yes or no.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	participants@xoko
+
+with the subject, "A", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the participants list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to participants@xoko.
+ |
+ | 2.  Your subject must be "A".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire participants list and it won't
+       be counted!
+
+       To vote YES, your message should say:
+
+         eVote yes
+
+       To vote NO, your message should say:
+
+         eVote no
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your vote while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your vote on "A", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "A", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "A":
+
+1.  Send a message to:
+
+	participants@xoko
+
+2.  Your subject must be:
+
+	A
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090646.eVote.1.38127@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:06:45 2003
+
+eVote's list for participants:
+
+                  kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+                  BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090659.eVote.1.15892@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:06:49 2003
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 9 participants of the participants list are asked
+to vote yes or no.
+
+0 subscribers to the participants list have voted so far. 
+
+You have not yet voted.
+
+         0 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     ADD SOME   ADD SOME   ADD SOME 
+Ann Mosconi <AnnaLaLoca@aol.com>,
+JennB72973@aol.com,
+Ann Moorhead <Amoo7@aol.com>,
+Pwmaine@aol.com (Patricia Williams),
+Denis Murphy <DMurphy139@aol.com>,
+Sanna Longden <SannaMars@aol.com>,
+Beth Cohen <BCyayli@aol.com>,
+THORPENESS@aol.com (Susan Kirschner),
+pajaro@pacbell.net,
+ 
+David Bilides <kavaldjija@aol.com>,
+George Long <geolong@aol.com>,
+Sophia Bilides <SophiaB@aol.com>,
+David Eisen <EisenSLC@aol.com>,
+Jennifer Cook <Bokreta@aol.com>,
+Holly Plotner <BillO45644@aol.com>,
+ErickBarb@aol.com,
+Barbara Seaver <Karikazo18@AOL.COM>,
+Jzurn1@aol.com,
+Ann Mosconi <AnnaLaLoca@aol.com>,
+JennB72973@aol.com,
+Ann Moorhead <Amoo7@aol.com>,
+Pwmaine@aol.com (Patricia Williams),
+Denis Murphy <DMurphy139@aol.com>,
+Sanna Longden <SannaMars@aol.com>,
+Beth Cohen <BCyayli@aol.com>,
+THORPENESS@aol.com (Susan Kirschner),
+pajaro@pacbell.net,
+
+eVote's list for participants starts with:
+
+                  kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+                  BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+
+Added AnnaLaLoca@aol.com as a regular voter/reader.
+
+Added JennB72973@aol.com as a regular voter/reader.
+
+Added Amoo7@aol.com as a regular voter/reader.
+
+Added Pwmaine@aol.com as a regular voter/reader.
+
+Added DMurphy139@aol.com as a regular voter/reader.
+
+Added SannaMars@aol.com as a regular voter/reader.
+
+Added BCyayli@aol.com as a regular voter/reader.
+
+Added THORPENESS@aol.com as a regular voter/reader.
+
+Added pajaro@pacbell.net as a regular voter/reader.
+
+eVote ends with:
+
+                  kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+                  BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+                  AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+                  Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+                  pajaro@pacbell.net
+
+participants is synchronized and ready to go.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     LOOK   LOOK   LOOK 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090752.eVote.1.48175@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:07:02 2003
+
+eVote's list for participants:
+
+                  kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+                  BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+                  AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+                  Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+                  pajaro@pacbell.net
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090814.eVote.1.07613@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:07:55 2003
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 18 participants of the participants list are asked
+to vote yes or no.
+
+0 subscribers to the participants list have voted so far. 
+
+You have not yet voted.
+
+         0 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     NO_VOTE   NO_VOTE   NO_VOTE 
+ 
+     kavaldjija@aol.com 
+     Bill045644@aol.com 
+ 
+
+As directed by kavaldjija@aol.com, 
+kavaldjija@aol.com in participants 
+was a regular voter/reader and is now a non-voter.
+
+Successful.
+
+As directed by BillO45644@aol.com, 
+BillO45644@aol.com in participants 
+was a regular voter/reader and is now a non-voter.
+
+Successful.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090825.eVote.1.36811@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:08:17 2003
+
+eVote's list for participants:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+                  AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+                  Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+                  pajaro@pacbell.net
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090847.eVote.1.61665@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:08:28 2003
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 16 participants of the participants list are asked
+to vote yes or no.
+
+0 subscribers to the participants list have voted so far. 
+
+You have not yet voted.
+
+         0 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     NO_VOTE_LATERS  NO_VOTE_LATERS  NO_VOTE_LATERS
+ 
+     Pwmaine@aol.com
+     pajaro@pacbell.net 
+     AnnaLaLoca@aol.com 
+ 
+
+As directed by Pwmaine@aol.com, 
+Pwmaine@aol.com in participants 
+was a regular voter/reader and is now a non-voter.
+
+Successful.
+
+As directed by pajaro@pacbell.net, 
+pajaro@pacbell.net in participants 
+was a regular voter/reader and is now a non-voter.
+
+Successful.
+
+As directed by AnnaLaLoca@aol.com, 
+AnnaLaLoca@aol.com in participants 
+was a regular voter/reader and is now a non-voter.
+
+Successful.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090900.eVote.1.06596@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:08:50 2003
+
+eVote's list for participants:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+Read only      -> AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+Read only      -> Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+Read only      -> pajaro@pacbell.net
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090922.eVote.1.64789@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:09:03 2003
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 13 participants of the participants list are asked
+to vote yes or no.
+
+0 subscribers to the participants list have voted so far. 
+
+You have not yet voted.
+
+         0 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     ADD_MORE -r ADD_MORE -r ADD_MORE -r
+ 
+Michelle Benoit <BenWaMa@aol.com>,
+Scott & Susan Haas <sdbph@aol.com>,
+ 
+David Bilides <kavaldjija@aol.com>,
+George Long <geolong@aol.com>,
+Sophia Bilides <SophiaB@aol.com>,
+David Eisen <EisenSLC@aol.com>,
+Jennifer Cook <Bokreta@aol.com>,
+Holly Plotner <BillO45644@aol.com>,
+ErickBarb@aol.com,
+Barbara Seaver <Karikazo18@AOL.COM>,
+Jzurn1@aol.com,
+Ann Mosconi <AnnaLaLoca@aol.com>,
+JennB72973@aol.com,
+Ann Moorhead <Amoo7@aol.com>,
+Pwmaine@aol.com (Patricia Williams),
+Denis Murphy <DMurphy139@aol.com>,
+Sanna Longden <SannaMars@aol.com>,
+Beth Cohen <BCyayli@aol.com>,
+THORPENESS@aol.com (Susan Kirschner),
+pajaro@pacbell.net,
+Michelle Benoit <BenWaMa@aol.com>,
+Scott & Susan Haas <sdbph@aol.com>,
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607090926.eVote.1.60571@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:09:25 2003
+
+eVote's list for participants:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+Read only      -> AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+Read only      -> Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+Read only      -> pajaro@pacbell.net
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+eVote's list for participants starts with:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+Read only      -> AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+Read only      -> Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+Read only      -> pajaro@pacbell.net
+
+Added BenWaMa@aol.com as a non-voter.
+
+Added sdbph@aol.com as a non-voter.
+
+eVote ends with:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+Read only      -> AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+Read only      -> Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+Read only      -> pajaro@pacbell.net
+Read only      -> BenWaMa@aol.com
+Read only      -> sdbph@aol.com
+
+participants is synchronized and ready to go.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607091054.eVote.1.53569@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:09:29 2003
+
+eVote's list for participants:
+
+Read only      -> kavaldjija@aol.com
+                  geolong@aol.com
+                  SophiaB@aol.com
+                  EisenSLC@aol.com
+                  Bokreta@aol.com
+Read only      -> BillO45644@aol.com
+                  ErickBarb@aol.com
+                  Karikazo18@AOL.COM
+                  Jzurn1@aol.com
+Read only      -> AnnaLaLoca@aol.com
+                  JennB72973@aol.com
+                  Amoo7@aol.com
+Read only      -> Pwmaine@aol.com
+                  DMurphy139@aol.com
+                  SannaMars@aol.com
+                  BCyayli@aol.com
+                  THORPENESS@aol.com
+Read only      -> pajaro@pacbell.net
+Read only      -> BenWaMa@aol.com
+Read only      -> sdbph@aol.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote members
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l participants - Incoming message: *****
+ 
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fparticipants-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: participants-eVote@xoko
+To: EisenSLC@aol.com
+Subject: Re: A
+Sender: participants-eVote@xoko
+Reply-To: participants@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607091120.eVote.1.18006@xoko>
+
+--
+
+EisenSLC@aol.com's last eVote participation: 
+	Fri Jun  7 09:10:58 2003
+
+
+On Fri,  7 Jun 2003 09:06:45 -0700
+EisenSLC@aol.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 13 participants of the participants list are asked
+to vote yes or no.
+
+0 subscribers to the participants list have voted so far. 
+
+You have not yet voted.
+
+         0 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  EisenSLC@aol.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  EisenSLC@aol.com
+Received: something
+To: participants@xoko
+Subject: A
+Status: RO
+
+eVote stats
+end
+some extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 

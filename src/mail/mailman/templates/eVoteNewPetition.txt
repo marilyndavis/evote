@@ -1,0 +1,14 @@
+
+This is a "petition" list.  Your list members can collaborate in the
+administration of petitions that anyone can sign.
+
+You can remove a signature from a petition.  The subject line for your
+message to %(listname)s@%(hostname)s should refere to an established
+petition.
+
+    eVote approve %(password)s unsign <address> <address> <...>
+
+        This will remove the signatures from the signature file as
+        well as the email address from eVote's data.  It will alter
+        the count and ship updated reports.
+

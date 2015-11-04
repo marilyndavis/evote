@@ -1,0 +1,22 @@
+# $Id: cscratch,v 1.5 2003/04/07 18:31:31 marilyndavis Exp $ 
+# This file should be placed where the clerk login can execute it.
+# clerk needs to run this before each test to clean out all the
+# data left from previous tests and start The Clerk.
+#
+# By default, it thinks that "home" is EVOTE_HOME_DIR.  Give
+# the path as an argument if that's not right for you.
+#
+if [ $# -lt 1 ]
+  then
+    EVOTE_HOME_DIR="/home"
+  else
+    EVOTE_HOME_DIR=$1
+fi
+
+eVote quit
+echo "Scratching in $EVOTE_HOME_DIR"
+touch $EVOTE_HOME_DIR/eVote/data/x
+rm $EVOTE_HOME_DIR/eVote/data/*
+eVote stop_ipc
+eVote
+

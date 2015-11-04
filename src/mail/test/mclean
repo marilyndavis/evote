@@ -1,0 +1,37 @@
+# $Id: mclean,v 1.6 2003/04/07 18:31:32 marilyndavis Exp $
+#  mclean  -- cleans out the test lists made by mscratch.
+if [ $# -lt 1 ]
+  then
+    LISTDIR="/home/majordomo/lists"
+  else
+    LISTDIR=$1
+fi
+touch ./tmp/r.out
+rm ./tmp/r.out
+touch ./tmp/t.out
+rm ./tmp/t.out
+if [ -e $LISTDIR/../polls ]
+  then
+  touch $LISTDIR/../polls/x	
+  chmod -R u+w $LISTDIR/../polls/*
+  rm -r $LISTDIR/../polls/*
+fi
+touch $LISTDIR/abc.config
+rm $LISTDIR/abc*
+touch $LISTDIR/bounces
+rm $LISTDIR/bounces*
+touch $LISTDIR/droppings.config
+rm $LISTDIR/droppings*
+touch $LISTDIR/eVote.help
+touch $LISTDIR/iag
+rm $LISTDIR/iag*
+touch $LISTDIR/ls.out
+rm $LISTDIR/ls.out
+touch $LISTDIR/participants.config
+rm $LISTDIR/participants*
+touch $LISTDIR/petition.info
+rm $LISTDIR/petition*
+touch $LISTDIR/xxxx.config
+rm $LISTDIR/xxxx*
+touch $LISTDIR/yyy.config
+rm $LISTDIR/yyy*

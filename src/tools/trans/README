@@ -1,0 +1,47 @@
+# $Id: README,v 1.3 2003/01/15 18:54:13 marilyndavis Exp $ 
+
+trans.c is a program to aid in translating the human language strings
+in computer code.  It finds all the phrases that the program outputs
+and places them in a translation table.  For example, for the call
+
+trans en fr code.c
+
+2 files will be produced:
+
+1.  code-fr.c             attempted translation
+2.  en-fr.new             translation table entries that need 
+                          translation to French
+
+After translating the en-fr.new entries, the table should be renamed
+"en-fr".  Then, a subsequent call to:
+
+trans en fr code.c
+
+will produce a better code-fr.c and, if all the strings have been 
+translated, an empty en-fr.new.
+
+It rewrites en-fr to be in alphabetic order and to have no duplicates.
+
+Code Preparation Hints:
+
+In writing C code, use multiple printfs to produce short translation
+strings to avoid repetition in the table.
+
+If you want a single character translated, put a comment on the same
+line:
+
+   case 'a':      /* add */
+
+This comment will appear in the translation table so that the human
+translator can translate to the appropriate letter.
+
+Be sure to put only one 'c' -type character on each line in your code.
+
+If the 'c' -type character has no associated comment, it will not
+appear in the translation table and will not be translated.
+
+Human Translator Tips:
+
+Be careful to copy the blanks, new lines and tabs from one language to
+the other.
+

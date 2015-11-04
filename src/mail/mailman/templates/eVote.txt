@@ -1,0 +1,48 @@
+%(real_name)s@%(host_name)s has the "eVote" feature to enable voting
+by email for this list.
+
+Most messages that are sent to the address %(real_name)s@%(host_name)s
+will be forwarded to all the members of the list.  However, if your
+message starts with the word "eVote", instead, it will be processed by
+eVote.
+
+Because this list is eVoted, anyone on this list can generate a poll
+for the list members to vote on.
+
+To see what polls are open for this list, send the message:
+
+     eVote list
+
+to %(real_name)s@%(host_name)s.
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to %(real_name)s@%(host_name)s.
+
+
+If you move your email address, notify %(real_name)s-admin@%(host_name)s.  
+The administrator can move your address and preserve your ballot.
+
+If you belong to several eVoted lists at this site, you only need to
+notify one list administrator of your move.  eVote will move your
+address for all lists and notify all your lists' administrators.
+
+
+To see who is subscribed to the eVote_sample list, according to eVote,
+send this message to %(real_name)s@%(host_name)s.
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges.
+
+
+If you have a signature on your message, add a line with "end" when
+you communicate with eVote.
+
+
+If you find a bug in eVote, please report it to bugs@deliberate.com. 
+

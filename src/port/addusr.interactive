@@ -1,0 +1,9 @@
+# $Id: addusr.interactive,v 1.2 2003/01/15 18:54:12 marilyndavis Exp $ 
+:
+ i=1
+ while [ "$i" -lt 101 ]
+ do
+#   passmgmt -a -c edp${i} -u `expr $i + 2000` -g 500 dum${i}
+   passwd -d dum${i}
+    i=`expr $i + 1`
+ done

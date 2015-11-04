@@ -1,0 +1,50 @@
+
+Your list is eVoted!  List members can poll each other and make
+decisions.
+
+eVote Commands
+===== ========
+
+You can use your same password, %(password)s, for the following eVote
+commands.  Send these commands directly to your list address:
+%(listname)s@%(hostname)s
+
+The subject line should refer to an established poll for these
+commands:
+
+    eVote approve %(password)s close
+
+        closes the established poll.  Notice is sent to all
+        subscribers that you have forced the closing of the poll.
+        Usually the member who initiates the poll closes it.
+
+    eVote approve %(password)s drop
+
+        drops the poll from the database.  Notice is sent to all
+        subscribers.
+
+    eVote approve %(password)s drop silent
+
+        drops the poll from the database.  No notice is sent to
+        the subscribers.
+
+For the following commands the subject line is irrelevant.  Once
+again, these commands should be sent to the %(listname)s@%(hostname)s.
+
+    eVote approve %(password)s move <old-address> <new-address>
+
+        moves the address while it retains the ballot.  This command
+        moves the address for all lists run at this site.
+
+    eVote approve %(password)s no-vote <address>
+
+        changes the <address> to a non-voter.  This is useful for
+        archive addresses.
+
+
+    eVote approve %(password)s vote_only <address>
+
+        Use this command *after* the address already has "nomail = ON"
+        to allow the address to vote, even though it is not receiving
+        mail.
+

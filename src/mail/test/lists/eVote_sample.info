@@ -1,0 +1,69 @@
+
+[A description of your list's purpose goes here]
+
+Most messages that are sent to the address list-name@eVoted-site.net
+will be forwarded to all the members of the list.  However, if your
+message starts with the word "eVote", instead, it will be processed by
+eVote.
+
+Because this list is eVoted, anyone on this list can generate a poll
+for the list members to vote on.
+
+To see what polls are open for this list, send the message:
+
+     eVote list
+
+to list-name@eVoted-site.net.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to list-name@eVoted-site.net.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages but retain your electronic ballot and your influence on
+the statistics, send this message to list-name@eVoted-site.net:
+
+      eVote vacation
+
+
+Moving
+======
+
+If you move your email address, notify
+owner-list-name@eVoted-site.net.  The owner can move your address
+and preserve your ballot.
+
+If you belong to several eVoted lists at this site, you only need to
+notify one list owner of your move.  eVote will move your address for
+all lists and notify all your lists' owners.
+
+Members
+=======
+
+To see who is subscribed to the eVote_sample list, send this message
+to list-name@eVoted-site.net:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges.
+
+End
+===
+
+If you have a signature on your message, add a line with "end" when
+you communicate with eVote.
+
+Bugs
+====
+
+If you  find a bug, please report it to eVote-users@deliberate.com. 
+

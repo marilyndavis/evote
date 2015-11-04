@@ -1,0 +1,7265 @@
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: SUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044314.eVote.1.09211@xoko>
+
+--
+
+
+In response to your message which starts:
+louise@somewhere.com has been added to droppings.
+
+----
+
+louise@somewhere.com's new subscription to droppings is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+"John Smith" has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+
+Can't figure 'person'.
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Re: SUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044319.eVote.0.32349@xoko>
+
+--
+
+eVote can't find a valid address here:
+
+"John Smith" has been added to droppings.
+No action is required on your part.
+
+
+You should unsubscribe it from the list.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+"John Smith" has been added to droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+"John Smith" has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+
+Can't figure 'person'.
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Re: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044320.eVote.0.23124@xoko>
+
+--
+
+This is eVote acknowledging the deletion of the bad address in this:
+
+"John Smith" has been removed from droppings.
+No action is required on your part
+
+Thanks.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+"John Smith" has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE abc
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to abc.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: SUBSCRIBE abc
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044331.eVote.1.38651@xoko>
+
+--
+
+
+In response to your message which starts:
+louise@somewhere.com has been added to abc.
+
+----
+
+louise@somewhere.com's new subscription to droppings is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE abc
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to abc.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE abc
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to abc.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: SUBSCRIBE abc
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044337.eVote.1.24730@xoko>
+
+--
+
+
+In response to your message which starts:
+louise@somewhere.com has been added to abc.
+
+----
+
+louise@somewhere.com's new subscription to droppings is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE abc
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to abc.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise4@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise5@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise6@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise7@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise10@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     POLLS   POLLS   POLLS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote poll [y/n] public visible 
+message:
+bla
+end
+some extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044447.eVote.1.39849@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:44:50 -0700
+louise@somewhere.com attached a poll to this subject:
+
+	A
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+The 10 participants of the droppings list are asked
+to vote yes or no.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "A", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "A".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote YES, your message should say:
+
+         eVote yes
+
+       To vote NO, your message should say:
+
+         eVote no
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your vote while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your vote on "A", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "A", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "A":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	A
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote poll [1,10] public visible 
+message:
+bla
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044451.eVote.1.35603@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:44:54 -0700
+louise2@somewhere.com attached a poll to this subject:
+
+	B
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+The 10 participants of the droppings list are asked
+to vote from 1 to 10.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "B", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "B".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote 5, your message should say:
+
+          eVote 5
+
+       Your vote can be any number from 1 to 10.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your vote while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your vote on "B", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "B", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "B":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	B
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: BBB
+Status: RO
+
+eVote poll [1,10] public visible 
+message:
+bla
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: BBB
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044455.eVote.1.63903@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:44:58 -0700
+louise2@somewhere.com attached a poll to this subject:
+
+	BBB
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+The 10 participants of the droppings list are asked
+to vote from 1 to 10.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "BBB", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "BBB".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote 5, your message should say:
+
+          eVote 5
+
+       Your vote can be any number from 1 to 10.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your vote while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your vote on "BBB", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "BBB", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "BBB":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	BBB
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: BBBBB
+Status: RO
+
+eVote poll [1,10] public visible 
+message:
+bla
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: BBBBB
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044459.eVote.1.26514@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:45:02 -0700
+louise2@somewhere.com attached a poll to this subject:
+
+	BBBBB
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+The 10 participants of the droppings list are asked
+to vote from 1 to 10.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "BBBBB", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "BBBBB".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote 5, your message should say:
+
+          eVote 5
+
+       Your vote can be any number from 1 to 10.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your vote while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your vote on "BBBBB", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "BBBBB", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "BBBBB":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	BBBBB
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote poll grouped public visible 3
+1. something [0,3]
+2. else [1,3]
+3. what [0,2]
+message:
+bla
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044503.eVote.1.22557@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:45:06 -0700
+louise3@somewhere.com attached a poll to this subject:
+
+	C
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+10 participants are asked to distribute 3 votes over 
+the following choices:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    0     3     -      -      1. something 
+    1     3     -      -      2. else 
+    0     2     -      -      3. what 
+
+You have used 0 of the 3 votes you are allotted 
+for these choices.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "C", 
+and with a message that says: 
+
+         eVote who
+
+to receive a spreadsheet showing everyone's votes.
+
+         eVote who w=140
+
+will produce a spreadsheet 140 columns wide.  The default is 80.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "C".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote 2 on choice 2 and 1 on choice 3, your message should say:
+
+          eVote 
+          2. 2
+          3. 1
+
+       You can make your list of votes as long as necessary.
+       Each choice that you don't vote on will automatically receive 
+       the minimum vote for that choice.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your votes while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your votes on "C", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "C", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "C":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	C
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote poll grouped private visible 2
+1. what [y/n]
+2. xxx [y/n]
+3. yyy [y/n]
+message:
+bla
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Poll: D
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044507.eVote.1.41389@xoko>
+
+--
+
+
+
+On Fri, 24 May 2003 04:45:14 -0700
+louise4@somewhere.com attached a poll to this subject:
+
+	D
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+==== ============
+POLL INSTRUCTIONS
+==== ============
+
+10 participants are asked to vote YES on 2 of the following choices:
+
+  Your  Yes    No     On      
+  Vote  Votes  Votes  Choice  
+
+    -    0      0     1. what 
+    -    0      0     2. xxx 
+    -    0      0     3. yyy 
+
+You have used 0 of your 2 YES votes.
+
+
+======= ====
+PRIVATE POLL
+======= ====
+
+This is a "private" poll; ballots are secret.
+
+Warnings: Although eVote will not reveal your vote to the other
+members of the voting community, the system administrator of the
+computer that stores your vote can quite easily see the voting
+records of individuals. Also, there is the possibility that your
+ballot can be seen by a "snooper", someone who intercepts your 
+ballot in transit.
+
+The integrity of the poll, i.e., the accuracy of the count, is
+susceptible to being tampered with by the system administrator
+of the computer running the eVote(R)/Clerk software.
+
+Both the privacy of your vote and the integrity of the poll are
+susceptible to attack at your own computer.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "D".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote yes on choices 1 and 2, your message should say:
+
+          eVote 
+          1. y
+          2. y
+
+       You may make your list of votes as long as you wish.
+
+       Every choice you don't vote "yes" on will receive an automatic
+        "no" vote.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your votes while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your votes on "D", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "D", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "D":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	D
+
+3.  To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote list
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise4@somewhere.com
+Subject: Re: D
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044512.eVote.1.04431@xoko>
+
+--
+
+louise4@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:11 2003
+
+In response to your command:
+
+eVote list
+
+The droppings list has 10 participants.  It has 6 subjects
+with polls attached. 
+
+These are listed below.
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to droppings@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+==== =====
+OPEN POLLS
+==== =====
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   0                                      A  Public   [Y/N]        [0/0] =   - 
+   0                                      B  Public   [1,10]         AVE =  0.0
+   0                                    BBB  Public   [1,10]         AVE =  0.0
+   0                                  BBBBB  Public   [1,10]         AVE =  0.0
+   0                                      C  Public   [#-#]   3 choices Visible
+   0                                      D  Private  [Y/N]   3 choices Visible
+
+There are no closed polls for the droppings list.
+
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: something
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote list
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SOME DROPS  SOME DROPS  SOME DROPS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise7@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: abc@xoko
+Subject: UNSUBSCRIBE abc
+Status: RO
+
+
+--
+
+louise@somewhere.com has been removed from abc.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Subject: eVote Rcpt: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044528.eVote.1.52384@xoko>
+
+--
+
+louise2@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:02 2003
+
+Thank you for your "Yes" on "A".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 8 participants of the droppings list are asked
+to vote yes or no.
+
+1 subscriber to the droppings list has voted so far. 
+
+You have voted YES.
+
+         1 --> = YES Votes
+
+         0 --> = NO Votes
+
+
+        -  --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 3
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Subject: eVote Rcpt: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044532.eVote.1.15432@xoko>
+
+--
+
+louise2@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:31 2003
+
+Thank you for your "3" on "B".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 8 participants of the droppings list are asked
+to vote from 1 to 10.
+
+1 subscriber to the droppings list has voted so far. 
+
+You have voted 3.
+
+Average vote = 3.0.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 3
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote n
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise9@somewhere.com
+Subject: eVote Rcpt: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044536.eVote.1.11067@xoko>
+
+--
+
+louise9@somewhere.com's last eVote participation: 
+	Fri May 24 04:44:40 2003
+
+Thank you for your "No" on "A".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 8 participants of the droppings list are asked
+to vote yes or no.
+
+2 subscribers to the droppings list have voted so far. 
+
+You have voted NO.
+
+         1 --> = YES Votes
+
+         1 --> = NO Votes
+
+
+      1.00 --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote n
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise8@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise8@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote n
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise8@somewhere.com
+Subject: eVote Rcpt: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044540.eVote.1.06635@xoko>
+
+--
+
+louise8@somewhere.com's last eVote participation: 
+	Fri May 24 04:44:34 2003
+
+Thank you for your "No" on "A".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 8 participants of the droppings list are asked
+to vote yes or no.
+
+3 subscribers to the droppings list have voted so far. 
+
+You have voted NO.
+
+         1 --> = YES Votes
+
+         2 --> = NO Votes
+
+
+      0.50 --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise8@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise8@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote n
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote 
+1. 1
+2. 2
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise3@somewhere.com
+Subject: eVote Rcpt: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044544.eVote.1.58419@xoko>
+
+--
+
+louise3@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:06 2003
+
+Thank you for your "1" on choice #1. "something".
+
+Thank you for your "2" on choice #2. "else".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Of the 8 people currently subscribed to the droppings 
+list, one has voted so far.
+
+Participants are asked to distribute 3 votes over 
+the following choices:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    0     3     1   1.00      1. something 
+    1     3     2   2.00      2. else 
+    0     2     0   0.00      3. what 
+
+You have used all of the 3 votes you are allotted 
+for these choices. 
+ 
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote 
+1. 1
+2. 2
+end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote 
+1. 2
+3. 1
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise5@somewhere.com
+Subject: Error: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044549.eVote.1.44982@xoko>
+
+--
+
+louise5@somewhere.com's last eVote participation: 
+	Fri May 24 04:44:15 2003
+
+Your command to eVote generated some confusion at this point:
+
+eVote 
+1. 2
+3. 1
+
+Your vote of "1" on  choice #3. "what"
+violates the sum-limit for "C".  
+It is not accepted.
+
+Note that you are forced to vote the minimum on all the choices.
+
+Your command was partially completed:
+
+Thank you for your "2" on choice #1. "something".
+
+Perhaps the instructions for "C" 
+will help with the error.
+
+
+On Fri, 24 May 2003 04:45:06 -0700
+louise3@somewhere.com attached a poll to this subject:
+
+	C
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Of the 8 people currently subscribed to the droppings 
+list, 2 have voted so far.
+
+Participants are asked to distribute 3 votes over 
+the following choices:
+
+  Min   Max   Your  Average   On      
+  Vote  Vote  Vote  Vote      Choice  
+
+    0     3     2   1.50      1. something 
+    1     3     1   1.50      2. else 
+    0     2     0   0.00      3. what 
+
+You have used all of the 3 votes you are allotted 
+for these choices. 
+ 
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "C", 
+and with a message that says: 
+
+         eVote who
+
+to receive a spreadsheet showing everyone's votes.
+
+         eVote who w=140
+
+will produce a spreadsheet 140 columns wide.  The default is 80.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+== ====
+TO VOTE
+== ====
+
+ | 1.  Send a message to droppings@xoko.
+ |
+ | 2.  Your subject must be "C".
+ |     (Don't worry about extra words in the subject line that
+ |      reply-to produces.)
+ |
+ |      * * * * * * * * * * * * * * * * * * * * * * * *
+  ----> *  NOTE:  These two steps are easy.  Just use *
+        *         your reply-to key on this message!  *
+        * * * * * * * * * * * * * * * * * * * * * * * *
+
+   3.  Your message *must* start with the word, "eVote", or your
+       vote will be sent to the entire droppings list and it won't
+       be counted!
+
+       To vote 2 on choice 2 and 1 on choice 3, your message should say:
+
+          eVote 
+          2. 2
+          3. 1
+
+       You can make your list of votes as long as necessary.
+       Each choice that you don't vote on will automatically receive 
+       the minimum vote for that choice.
+
+   4.  If your message has a signature, or any other text
+       below your vote, make a line that says, "end" just
+       after your vote.
+
+======== ==== ====
+CHANGING YOUR VOTE
+======== ==== ====
+
+You can change your votes while the poll is open by voting again.
+
+
+======== ==== ====
+REMOVING YOUR VOTE
+======== ==== ====
+
+To remove your votes on "C", 
+send the message:
+
+	eVote remove
+
+
+====== === ======= == === ====
+SEEING THE RESULTS OF THE POLL
+====== === ======= == === ====
+
+To see the current vote tally on "C", 
+send the message:
+
+	eVote info
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "C":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	C
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the current vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+
+Your entire message follows:
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote 
+1. 2
+3. 1
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise7@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise7@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 5
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise7@somewhere.com
+Subject: Error: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044554.eVote.1.64180@xoko>
+
+--
+
+
+In response to your message which starts:
+
+eVote 5
+
+----
+
+You can't participate in the droppings list until you 
+have subscribed to it.
+
+To subscribe, send email to majordomo@xoko.  No 
+subject is necessary; the message should say 
+
+   subscribe droppings
+
+ 
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise7@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise7@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 5
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MORE SUBS  MORE SUBS  MORE SUBS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise11@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise12@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise13@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise14@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: B
+Status: RO
+
+eVote 3 end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise11@somewhere.com
+Subject: eVote Rcpt: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044623.eVote.1.57042@xoko>
+
+--
+
+louise11@somewhere.com's last eVote participation: 
+	Fri May 24 04:46:04 2003
+
+Thank you for your "3" on "B".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 12 participants of the droppings list are asked
+to vote from 1 to 10.
+
+2 subscribers to the droppings list have voted so far. 
+
+You have voted 3.
+
+Average vote = 3.0.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: B
+Status: RO
+
+eVote 3 end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise12@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise12@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: A
+Status: RO
+
+eVote n
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise12@somewhere.com
+Subject: eVote Rcpt: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044628.eVote.1.52890@xoko>
+
+--
+
+louise12@somewhere.com's last eVote participation: 
+	Fri May 24 04:46:10 2003
+
+Thank you for your "No" on "A".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 12 participants of the droppings list are asked
+to vote yes or no.
+
+4 subscribers to the droppings list have voted so far. 
+
+You have voted NO.
+
+         1 --> = YES Votes
+
+         3 --> = NO Votes
+
+
+      0.33 --> = Ratio of YES/NO Votes
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise12@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise12@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: A
+Status: RO
+
+eVote n
+end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise13@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise13@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: B
+Status: RO
+
+eVote 3 end
+eVote 5
+end
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise13@somewhere.com
+Subject: eVote Rcpt: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044632.eVote.1.38958@xoko>
+
+--
+
+louise13@somewhere.com's last eVote participation: 
+	Fri May 24 04:46:16 2003
+
+Thank you for your "3" on "B".
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+The 12 participants of the droppings list are asked
+to vote from 1 to 10.
+
+3 subscribers to the droppings list have voted so far. 
+
+You have voted 3.
+
+Average vote = 3.0.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise13@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise13@somewhere.com
+Received: by whatever
+To: dropping@xoko
+Subject: B
+Status: RO
+
+eVote 3 end
+eVote 5
+end
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise11@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise11@somewhere.com
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044637.eVote.1.02050@xoko>
+
+--
+
+Thank you for your unsubscribe message on the droppings list.
+
+Unsubscribing from the list deletes your ballot and subtracts your
+your influence from the statistics.
+
+Is this really what you want to do?
+
+At this time, the flow of messages has been stopped and your ballot
+has been put on "vacation" which means that you can send an
+"eVote back" message to the list to resume the flow of mail and your
+ballot will be as you left it.
+
+If you really want to leave forever, you need to verify that the
+"unsubscribe" message really came from you.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To".  You don't need to type anything
+new in your confirmation message.  eVote will read your subject line
+and your address; everything else will be ignored.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise11@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise11@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise11@somewhere.com
+Cc: owner-droppings
+Subject: Re: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044641.eVote.1.63387@xoko>
+
+--
+
+
+Thanks for being with us louise11@somewhere.com.
+
+Your ballot has been removed.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise11@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise8@somewhere.com
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044645.eVote.1.12090@xoko>
+
+--
+
+Thank you for your unsubscribe message on the droppings list.
+
+Unsubscribing from the list deletes your ballot and subtracts your
+your influence from the statistics.
+
+Is this really what you want to do?
+
+At this time, the flow of messages has been stopped and your ballot
+has been put on "vacation" which means that you can send an
+"eVote back" message to the list to resume the flow of mail and your
+ballot will be as you left it.
+
+If you really want to leave forever, you need to verify that the
+"unsubscribe" message really came from you.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To".  You don't need to type anything
+new in your confirmation message.  eVote will read your subject line
+and your address; everything else will be ignored.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise8@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise8@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise8@somewhere.com
+Cc: owner-droppings
+Subject: Re: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044647.eVote.1.40471@xoko>
+
+--
+
+
+Thanks for being with us louise8@somewhere.com.
+
+Your ballot has been removed.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise11@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise11@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CLOSE A  CLOSE A  CLOSE A 
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: members
+Status: RO
+
+eVote members
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise9@somewhere.com
+Subject: Re: members
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044651.eVote.1.26577@xoko>
+
+--
+
+louise9@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:39 2003
+
+eVote's list for droppings:
+
+                  louise2@somewhere.com
+                  louise3@somewhere.com
+                  louise4@somewhere.com
+                  louise5@somewhere.com
+                  louise6@somewhere.com
+                  louise9@somewhere.com
+                  louise10@somewhere.com
+                  louise12@somewhere.com
+                  louise13@somewhere.com
+                  louise14@somewhere.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: members
+Status: RO
+
+eVote members
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: list
+Status: RO
+
+eVote list
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise9@somewhere.com
+Subject: Re: list
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044706.eVote.1.60502@xoko>
+
+--
+
+louise9@somewhere.com's last eVote participation: 
+	Fri May 24 04:46:55 2003
+
+In response to your command:
+
+eVote list
+
+The droppings list has 10 participants.  It has 6 subjects
+with polls attached. 
+
+These are listed below.
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to droppings@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+==== =====
+OPEN POLLS
+==== =====
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   3                                      A  Public   [Y/N]        [1/2] = 0.50
+   2                                      B  Public   [1,10]         AVE =  3.0
+   0                                    BBB  Public   [1,10]         AVE =  0.0
+   0                                  BBBBB  Public   [1,10]         AVE =  0.0
+   2                                      C  Public   [#-#]   3 choices Visible
+   0                                      D  Private  [Y/N]   3 choices Visible
+
+There are no closed polls for the droppings list.
+
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: list
+Status: RO
+
+eVote list
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote approve XXXX close
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Closed: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044710.eVote.1.56130@xoko>
+
+--
+
+
+louise9@somewhere.com has forced the closing of the poll on
+
+	A
+
+This poll was initiated by louise@somewhere.com 
+on Fri, 24 May 2003 04:44:50 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+=======
+RESULTS
+=======
+
+When this poll closed, there were 10 participants.
+The participants of the droppings list were asked
+to vote yes or no.
+
+3 subscribers to the droppings list voted. 
+
+         1 --> = YES Votes
+
+         2 --> = NO Votes
+
+
+      0.50 --> = Ratio of YES/NO Votes
+
+
+You can see your own vote, and this information again by 
+sending email to droppings@xoko with the subject 
+"A".
+
+Your message should say:
+
+     eVote stats
+
+You can still use the "eVote how" and "eVote who" commands.
+Send a message saying:
+
+     eVote help who
+
+          -or-  
+
+     eVote help how
+
+to learn how to use these commands.
+
+The "eVote stats", "eVote info", "eVote who", and
+"eVote how" commands are available until this poll is
+dropped from the database.
+
+======== === ====
+DELETING THE DATA
+======== === ====
+
+The originator of this poll, louise@somewhere.com, can
+drop this poll from the database after it has been
+closed for 28 days by sending the command:
+
+     eVote drop
+
+Anyone can drop this poll after it has been closed for 180 days.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote approve #### close
+end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise15@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise15@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise15@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise15@somewhere.com
+Subject: Error: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044721.eVote.1.52362@xoko>
+
+--
+
+louise15@somewhere.com's last eVote participation: 
+	Fri May 24 04:47:20 2003
+
+Your command to eVote generated some confusion at this point:
+
+eVote y
+
+Voting is closed on "A".
+
+Perhaps the instructions for "A" 
+will help.
+
+
+On Fri, 24 May 2003 04:44:50 -0700
+louise@somewhere.com attached a poll to this subject:
+
+	A
+
+This poll was opened for voting on Fri, 24 May 2003 04:44:50 -0700
+but has been closed since Fri, 24 May 2003 04:47:13 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+=======
+RESULTS
+=======
+
+When this poll closed, there were 10 participants.
+The participants of the droppings list were asked
+to vote yes or no.
+
+3 subscribers to the droppings list voted. 
+
+You joined too late to vote in this poll.
+
+         1 --> = YES Votes
+
+         2 --> = NO Votes
+
+
+      0.50 --> = Ratio of YES/NO Votes
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "A", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "A":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	A
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the final vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+
+Your entire message follows:
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise15@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise15@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise15@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise15@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise15@somewhere.com
+Subject: Re: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044725.eVote.1.47911@xoko>
+
+--
+
+louise15@somewhere.com's last eVote participation: 
+	Fri May 24 04:47:24 2003
+
+
+On Fri, 24 May 2003 04:44:50 -0700
+louise@somewhere.com attached a poll to this subject:
+
+	A
+
+This poll was opened for voting on Fri, 24 May 2003 04:44:50 -0700
+but has been closed since Fri, 24 May 2003 04:47:13 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+10 participants  3 voters 
+
+         1 --> Total YES
+      0.50 --> Ratio YES/NO
+
+YOUR COMMAND: eVote who 
+
+       YES --> louise2@somewhere.com
+ not voted --> louise3@somewhere.com
+ not voted --> louise4@somewhere.com
+ not voted --> louise5@somewhere.com
+ not voted --> louise6@somewhere.com
+        NO --> louise9@somewhere.com
+ not voted --> louise10@somewhere.com
+        NO --> louise12@somewhere.com
+ not voted --> louise13@somewhere.com
+ not voted --> louise14@somewhere.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise15@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise15@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044729.eVote.1.34586@xoko>
+
+--
+
+Thank you for your unsubscribe message on the droppings list.
+
+Unsubscribing from the list deletes your ballot and subtracts your
+your influence from the statistics.
+
+Is this really what you want to do?
+
+At this time, the flow of messages has been stopped and your ballot
+has been put on "vacation" which means that you can send an
+"eVote back" message to the list to resume the flow of mail and your
+ballot will be as you left it.
+
+If you really want to leave forever, you need to verify that the
+"unsubscribe" message really came from you.
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To".  You don't need to type anything
+new in your confirmation message.  eVote will read your subject line
+and your address; everything else will be ignored.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Cc: owner-droppings
+Subject: Re: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044734.eVote.1.62893@xoko>
+
+--
+
+
+Thanks for being with us louise2@somewhere.com.
+
+Your ballot has been removed.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+
+eVote members
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Subject: Error: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044738.eVote.1.25444@xoko>
+
+--
+
+
+In response to your message which starts:
+
+eVote members
+
+----
+
+You can't participate in the droppings list until you 
+have subscribed to it.
+
+To subscribe, send email to majordomo@xoko.  No 
+subject is necessary; the message should say 
+
+   subscribe droppings
+
+ 
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+
+eVote members
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+
+eVote members
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise2@somewhere.com
+Subject: Error: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044742.eVote.1.54338@xoko>
+
+--
+
+
+In response to your message which starts:
+
+eVote members
+
+----
+
+You can't participate in the droppings list until you 
+have subscribed to it.
+
+To subscribe, send email to majordomo@xoko.  No 
+subject is necessary; the message should say 
+
+   subscribe droppings
+
+ 
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise2@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+
+eVote members
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044746.eVote.1.49785@xoko>
+
+--
+
+
+In response to your message which starts:
+louise2@somewhere.com has been removed from droppings.
+
+----
+
+Could not drop voter louise2@somewhere.com from droppings: nonexistant voter.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise2@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044750.eVote.1.35931@xoko>
+
+--
+
+
+In response to your message which starts:
+louise8@somewhere.com has been removed from droppings.
+
+----
+
+Could not drop voter louise8@somewhere.com from droppings: nonexistant voter.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise8@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise9@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044759.eVote.0.22489@xoko>
+
+--
+
+
+In response to your message which starts:
+louise9@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise9@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise9@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise8@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise8@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise8@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044800.eVote.0.45791@xoko>
+
+--
+
+
+In response to your message which starts:
+louise9@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise8@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise8@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise9@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    GREP  GREP  GREP 
+ 
+<louise10@somewhere.com>00110<louise12@somewhere.com>00111<louise13@somewhere.com>00112<louise14@somewhere.com>00113<louise15@somewhere.com>0017<louise2@somewhere.com>0012<louise3@somewhere.com>0013<louise4@somewhere.com>0014<louise5@somewhere.com>0015<louise6@somewhere.com>0016<louise8@somewhere.com>0008<louise9@somewhere.com>0019<louise@somewhere.com>0011
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise5@somewhere.com
+Subject: Re: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044801.eVote.1.32441@xoko>
+
+--
+
+louise5@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:53 2003
+
+
+On Fri, 24 May 2003 04:44:50 -0700
+louise@somewhere.com attached a poll to this subject:
+
+	A
+
+This poll was opened for voting on Fri, 24 May 2003 04:44:50 -0700
+but has been closed since Fri, 24 May 2003 04:47:13 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+10 participants  3 voters 
+
+         1 --> Total YES
+      0.50 --> Ratio YES/NO
+
+YOUR COMMAND: eVote who 
+
+       YES --> louise2@somewhere.com
+ not voted --> louise3@somewhere.com
+ not voted --> louise4@somewhere.com
+ not voted --> louise5@somewhere.com
+ not voted --> louise6@somewhere.com
+        NO --> louise9@somewhere.com
+ not voted --> louise10@somewhere.com
+        NO --> louise12@somewhere.com
+ not voted --> louise13@somewhere.com
+ not voted --> louise14@somewhere.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+Conf droppings is OK.
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote approve XXXX drop quiet
+end
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise5@somewhere.com
+Cc: owner-droppings
+Subject: Re: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044806.eVote.1.51648@xoko>
+
+--
+
+louise5@somewhere.com's last eVote participation: 
+	Fri May 24 04:48:05 2003
+
+louise5@somewhere.com has forced the deletion of the poll on
+
+	A
+
+This poll was initiated by louise@somewhere.com.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote approve #### drop quiet
+end
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+new cat 0:
+<louise10@somewhere.com>00110<louise12@somewhere.com>00111<louise13@somewhere.com>00112<louise14@somewhere.com>00113<louise15@somewhere.com>0017<louise2@somewhere.com>0012<louise3@somewhere.com>0013<louise4@somewhere.com>0014<louise5@somewhere.com>0015<louise6@somewhere.com>0016 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote approve XXXX close
+end 
+extra stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Closed: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044811.eVote.1.42093@xoko>
+
+--
+
+
+louise5@somewhere.com has forced the closing of the poll on
+
+	B
+
+This poll was initiated by louise2@somewhere.com 
+on Fri, 24 May 2003 04:44:54 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+=======
+RESULTS
+=======
+
+When this poll closed, there were 9 participants.
+The participants of the droppings list were asked
+to vote from 1 to 10.
+
+1 subscriber to the droppings list voted. 
+
+Average vote = 3.0.
+
+
+You can see your own vote, and this information again by 
+sending email to droppings@xoko with the subject 
+"B".
+
+Your message should say:
+
+     eVote stats
+
+You can still use the "eVote how" and "eVote who" commands.
+Send a message saying:
+
+     eVote help who
+
+          -or-  
+
+     eVote help how
+
+to learn how to use these commands.
+
+The "eVote stats", "eVote info", "eVote who", and
+"eVote how" commands are available until this poll is
+dropped from the database.
+
+======== === ====
+DELETING THE DATA
+======== === ====
+
+The originator of this poll, louise2@somewhere.com, can
+drop this poll from the database after it has been
+closed for 28 days by sending the command:
+
+     eVote drop
+
+Anyone can drop this poll after it has been closed for 180 days.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote approve #### close
+end 
+extra stuff
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote close
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise3@somewhere.com
+Subject: Confirm: 111111 C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044812.eVote.1.04975@xoko>
+
+--
+
+Thank you for your "close" message on 
+
+	C
+
+To verify that your message really came from you, please confirm
+this message by using "Reply-To".  You don't need to type anything
+new in your confirmation message.  eVote will read your subject line
+and your address; everything else will be ignored.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote close
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: Confirm: 111111 C
+Status: RO
+
+eVote close
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l droppings
+
+Stdin says: 
+From: droppings-eVote@xoko
+Subject: Closed: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+To: droppings@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044817.eVote.1.56764@xoko>
+
+--
+
+
+louise3@somewhere.com has closed the poll on 
+
+	C.
+
+This poll was initiated on Fri, 24 May 2003 04:45:06 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+=======
+RESULTS
+=======
+
+Of the 9 people subscribed to the droppings list 
+when this subject was closed, 2 of them voted.
+
+Participants were asked to distribute 3 votes over 
+the following choices:
+
+
+    ,---------------- 1 something
+    |      ,--------- 2 else
+    |      |      ,-- 3 what
+    1      2      3  
+ ------ ------ ------
+|    1 |    2 |    0 | louise3@somewhere.com
+|      |      |      | louise4@somewhere.com
+|    2 |    1 |    0 | louise5@somewhere.com
+|      |      |      | louise6@somewhere.com
+|      |      |      | louise15@somewhere.com
+|      |      |      | louise10@somewhere.com
+|      |      |      | louise12@somewhere.com
+|      |      |      | louise13@somewhere.com
+|      |      |      | louise14@somewhere.com
+ ------ ------ ------
+|    0 |    1 |    0 |    MINIMUM VOTE
+ ------ ------ ------
+|    3 |    3 |    2 |    MAXIMUM VOTE
+ ------ ------ ------
+| 1.50 | 1.50 | 0.00 |    AVERAGE
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise3@somewhere.com
+Subject: ERROR: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044821.eVote.1.52513@xoko>
+
+--
+
+
+Your "eVote who" command cannot be processed because there is no
+poll attached to the subject, "A".
+
+Please check the spelling on the subject line of your message.
+
+
+To learn more about eVote, please send an "eVote help" command.
+
+The droppings list has 9 participants.  It has 5 subjects
+with polls attached. 
+
+These are listed below.
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to droppings@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+==== =====
+OPEN POLLS
+==== =====
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   0                                    BBB  Public   [1,10]         AVE =  0.0
+   0                                  BBBBB  Public   [1,10]         AVE =  0.0
+   0                                      D  Private  [Y/N]   3 choices Visible
+
+====== =====
+CLOSED POLLS
+====== =====
+
+ Number of Voters                   Subject  Poll Type     Final Result Summary
+
+   1                                      B  Public   [1,10]         AVE =  3.0
+   2                                      C  Public   [#-#]   3 choices  Closed
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+new cat 1:
+<louise10@somewhere.com>00110<louise12@somewhere.com>00111<louise13@somewhere.com>00112<louise14@somewhere.com>00113<louise15@somewhere.com>0017<louise2@somewhere.com>0012<louise3@somewhere.com>0013<louise4@somewhere.com>0014<louise5@somewhere.com>0015<louise6@somewhere.com>0016
+Conf droppings is OK.
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    DROPS  DROPS  DROPS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise12@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise10@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise7@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: owner-droppings
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044834.eVote.1.63064@xoko>
+
+--
+
+
+In response to your message which starts:
+louise7@somewhere.com has been removed from droppings.
+
+----
+
+Could not drop voter louise7@somewhere.com from droppings: nonexistant voter.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise7@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise6@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise5@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise12@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise12@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise12@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044850.eVote.0.40977@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise12@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise12@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise10@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise10@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise10@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044851.eVote.0.31514@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise10@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise10@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise7@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise7@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise7@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044852.eVote.0.54993@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise7@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise7@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise6@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise6@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise6@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044854.eVote.0.03637@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise6@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise6@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise5@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044855.eVote.0.59722@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise5@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise5@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise3@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044856.eVote.0.50451@xoko>
+
+--
+
+
+In response to your message which starts:
+louise3@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise3@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise3@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise3@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+new cat 2:
+<louise10@somewhere.com>00110<louise12@somewhere.com>00111<louise13@somewhere.com>00112<louise14@somewhere.com>00113<louise15@somewhere.com>0017<louise2@somewhere.com>0012<louise3@somewhere.com>0013<louise4@somewhere.com>0014<louise5@somewhere.com>0015<louise6@somewhere.com>0016<louise7@somewhere.com>0001 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    LATE SUB  LATE SUB  LATE SUB 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: SUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise16@somewhere.com has been added to droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: ERROR: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044903.eVote.1.23055@xoko>
+
+--
+
+
+Your "eVote y" command cannot be processed because there is no
+poll attached to the subject, "A".
+
+Please check the spelling on the subject line of your message.
+
+
+To learn more about eVote, please send an "eVote help" command.
+
+The droppings list has 5 participants.  It has 5 subjects
+with polls attached. 
+
+These are listed below.
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to droppings@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+==== =====
+OPEN POLLS
+==== =====
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   0                                    BBB  Public   [1,10]         AVE =  0.0
+   0                                  BBBBB  Public   [1,10]         AVE =  0.0
+   0                                      D  Private  [Y/N]   3 choices Visible
+
+====== =====
+CLOSED POLLS
+====== =====
+
+ Number of Voters                   Subject  Poll Type     Final Result Summary
+
+   1                                      B  Public   [1,10]         AVE =  3.0
+   2                                      C  Public   [#-#]   3 choices  Closed
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote y
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 3
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: Error: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044907.eVote.1.18909@xoko>
+
+--
+
+louise14@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:06 2003
+
+Your command to eVote generated some confusion at this point:
+
+eVote 3
+
+Voting is closed on "B".
+
+Perhaps the instructions for "B" 
+will help.
+
+
+On Fri, 24 May 2003 04:44:54 -0700
+louise2@somewhere.com attached a poll to this subject:
+
+	B
+
+This poll was opened for voting on Fri, 24 May 2003 04:44:54 -0700
+but has been closed since Fri, 24 May 2003 04:48:11 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+=======
+RESULTS
+=======
+
+When this poll closed, there were 9 participants.
+The participants of the droppings list were asked
+to vote from 1 to 10.
+
+1 subscriber to the droppings list voted. 
+
+You did not vote.
+
+Average vote = 3.0.
+
+
+====== ====
+PUBLIC POLL
+====== ====
+
+This is a "public" poll.  This means you can send email to 
+
+	droppings@xoko
+
+with the subject, "B", 
+and with a message that says: 
+
+         eVote who
+
+to receive a list of everyone's votes.
+
+Of course, everyone else on the droppings list
+can monitor your votes too.
+
+
+==== ===========
+MORE INFORMATION
+==== ===========
+
+To receive more information about "B":
+
+1.  Send a message to:
+
+	droppings@xoko
+
+2.  Your subject must be:
+
+	B
+
+3.  Your message should say:
+
+	eVote help who
+
+to learn details about the WHO command.
+
+If your message says:
+
+	eVote how Charlie@somewhere.com
+
+you will receive a message reporting Charlie's vote.
+To see your own vote, the final vote tally, and this
+information again, send the command:
+
+	eVote info
+
+For a general explanation of eVote/Majordomo, use any 
+subject line, and send the message:
+
+	eVote help
+
+
+
+Your entire message follows:
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote 3
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: ERROR: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044911.eVote.1.47267@xoko>
+
+--
+
+
+Your "eVote who" command cannot be processed because there is no
+poll attached to the subject, "A".
+
+Please check the spelling on the subject line of your message.
+
+
+To learn more about eVote, please send an "eVote help" command.
+
+The droppings list has 5 participants.  It has 5 subjects
+with polls attached. 
+
+These are listed below.
+
+To learn the specifics of a particular poll:
+
+     1.   Send email to droppings@xoko.
+
+     2.   Make your subject line match the subject listed here.
+
+     3.   Have your message say:
+
+             eVote info
+
+==== =====
+OPEN POLLS
+==== =====
+
+ Number of Voters                   Subject  Poll Type    Result Summary So Far
+
+   0                                    BBB  Public   [1,10]         AVE =  0.0
+   0                                  BBBBB  Public   [1,10]         AVE =  0.0
+   0                                      D  Private  [Y/N]   3 choices Visible
+
+====== =====
+CLOSED POLLS
+====== =====
+
+ Number of Voters                   Subject  Poll Type     Final Result Summary
+
+   1                                      B  Public   [1,10]         AVE =  3.0
+   2                                      C  Public   [#-#]   3 choices  Closed
+
+====
+KEY:
+====
+
+	For Yes/No polls:
+
+		[12/10] =  [number of yes votes/number of no votes]
+
+		1.2     =  Ratio of yes/no votes
+
+	For numeric polls:
+
+		[12/10] =  [number of people who voted a positive number
+		          / number of people who voted a negative number]
+
+		2.3:1   =  {sum of positive votes/sum of negative votes}
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: Re: B
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044915.eVote.1.43138@xoko>
+
+--
+
+louise14@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:14 2003
+
+
+On Fri, 24 May 2003 04:44:54 -0700
+louise2@somewhere.com attached a poll to this subject:
+
+	B
+
+This poll was opened for voting on Fri, 24 May 2003 04:44:54 -0700
+but has been closed since Fri, 24 May 2003 04:48:11 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+9 participants  1 voter 
+
+Possible votes are from 1 to 10.
+
+       3.0 --> Average of All Votes
+
+
+YOUR COMMAND: eVote who 
+
+ not voted --> louise3@somewhere.com
+ not voted --> louise4@somewhere.com
+ not voted --> louise5@somewhere.com
+ not voted --> louise6@somewhere.com
+ not voted --> louise15@somewhere.com
+ not voted --> louise10@somewhere.com
+ not voted --> louise12@somewhere.com
+         3 --> louise13@somewhere.com
+ not voted --> louise14@somewhere.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: B
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: Re: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044919.eVote.1.06089@xoko>
+
+--
+
+louise14@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:18 2003
+
+
+On Fri, 24 May 2003 04:45:06 -0700
+louise3@somewhere.com attached a poll to this subject:
+
+	C
+
+This poll was opened for voting on Fri, 24 May 2003 04:45:06 -0700
+but has been closed since Fri, 24 May 2003 04:48:20 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+9 participants  2 voters 
+
+    ,---------------- 1 something
+    |      ,--------- 2 else
+    |      |      ,-- 3 what
+    1      2      3  
+ ------ ------ ------
+|    1 |    2 |    0 | louise3@somewhere.com
+|      |      |      | louise4@somewhere.com
+|    2 |    1 |    0 | louise5@somewhere.com
+|      |      |      | louise6@somewhere.com
+|      |      |      | louise15@somewhere.com
+|      |      |      | louise10@somewhere.com
+|      |      |      | louise12@somewhere.com
+|      |      |      | louise13@somewhere.com
+|      |      |      | louise14@somewhere.com
+ ------ ------ ------
+|    0 |    1 |    0 |    MINIMUM VOTE
+ ------ ------ ------
+|    3 |    3 |    2 |    MAXIMUM VOTE
+ ------ ------ ------
+| 1.50 | 1.50 | 0.00 |    AVERAGE
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: Re: D
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044923.eVote.1.24708@xoko>
+
+--
+
+louise14@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:22 2003
+
+In response to your command which starts:
+
+eVote who
+
+The "eVote who" command cannot be applied to this subject, 
+"D".  The poll is a "private"
+poll so the votes are secret.
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Of the 5 people currently subscribed to the droppings 
+list, none have voted on this poll yet.
+
+Participants are asked to vote YES on 2 of the following choices:
+
+  Your  Yes    No     On      
+  Vote  Votes  Votes  Choice  
+
+    -    0      0     1. what 
+    -    0      0     2. xxx 
+    -    0      0     3. yyy 
+
+You have used 0 of your 2 YES votes.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  joe@blow.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  joe@blow.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise14@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise14@somewhere.com has been removed from droppings.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise14@somewhere.com
+Subject: Error: UNSUBSCRIBE droppings
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044932.eVote.0.11491@xoko>
+
+--
+
+
+In response to your message which starts:
+louise14@somewhere.com has been removed from droppings.
+
+----
+
+Your message about:
+
+	UNSUBSCRIBE droppings
+
+looks like a confirmation reply for the droppings list 
+with the confirmation key "111111".  However, 
+we have no record of this confirmation key for you for
+droppings.
+
+If you wish to communicate with eVote about this subject, please
+try again but don't put "Confirm: 111111" in your subject line.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise14@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise14@somewhere.com
+Received: by whatever
+To: droppings-approval@xoko
+Subject: Confirm: 111111 UNSUBSCRIBE droppings
+Status: RO
+
+
+--
+
+louise14@somewhere.com has been removed from droppings.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote members
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise4@somewhere.com
+Subject: Re: A
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044933.eVote.1.39731@xoko>
+
+--
+
+louise4@somewhere.com's last eVote participation: 
+	Fri May 24 04:45:15 2003
+
+eVote's list for droppings:
+
+                  louise4@somewhere.com
+                  louise15@somewhere.com
+                  louise13@somewhere.com
+                  louise16@somewhere.com
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: A
+Status: RO
+
+eVote members
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise4@somewhere.com
+Subject: Re: C
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044941.eVote.1.64011@xoko>
+
+--
+
+louise4@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:36 2003
+
+
+On Fri, 24 May 2003 04:45:06 -0700
+louise3@somewhere.com attached a poll to this subject:
+
+	C
+
+This poll was opened for voting on Fri, 24 May 2003 04:45:06 -0700
+but has been closed since Fri, 24 May 2003 04:48:20 -0700
+
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ==== ===== === =======
+RESULTS OF YOUR EVOTE WHO COMMAND
+======= == ==== ===== === =======
+
+9 participants  2 voters 
+
+    ,---------------- 1 something
+    |      ,--------- 2 else
+    |      |      ,-- 3 what
+    1      2      3  
+ ------ ------ ------
+|    1 |    2 |    0 | louise3@somewhere.com
+|      |      |      | louise4@somewhere.com
+|    2 |    1 |    0 | louise5@somewhere.com
+|      |      |      | louise6@somewhere.com
+|      |      |      | louise15@somewhere.com
+|      |      |      | louise10@somewhere.com
+|      |      |      | louise12@somewhere.com
+|      |      |      | louise13@somewhere.com
+|      |      |      | louise14@somewhere.com
+ ------ ------ ------
+|    0 |    1 |    0 |    MINIMUM VOTE
+ ------ ------ ------
+|    3 |    3 |    2 |    MAXIMUM VOTE
+ ------ ------ ------
+| 1.50 | 1.50 | 0.00 |    AVERAGE
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: C
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** Calling eVote_insert resend_test -l droppings - Incoming message: *****
+ 
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote who
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -t
+
+Stdin says: 
+
+From: droppings-eVote@xoko
+To: louise4@somewhere.com
+Subject: Re: D
+Sender: droppings-eVote@xoko
+Reply-To: droppings@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030524044945.eVote.1.59526@xoko>
+
+--
+
+louise4@somewhere.com's last eVote participation: 
+	Fri May 24 04:49:44 2003
+
+In response to your command which starts:
+
+eVote who
+
+The "eVote who" command cannot be applied to this subject, 
+"D".  The poll is a "private"
+poll so the votes are secret.
+
+==== ====
+POLL TEXT
+==== ====
+
+bla
+
+
+======= == ===
+RESULTS SO FAR
+======= == ===
+
+Of the 4 people currently subscribed to the droppings 
+list, none have voted on this poll yet.
+
+Participants are asked to vote YES on 2 of the following choices:
+
+  Your  Yes    No     On      
+  Vote  Votes  Votes  Choice  
+
+    -    0      0     1. what 
+    -    0      0     2. xxx 
+    -    0      0     3. yyy 
+
+You have used 0 of your 2 YES votes.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  louise4@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  louise4@somewhere.com
+Received: by whatever
+To: droppings@xoko
+Subject: D
+Status: RO
+
+eVote who
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+
+Conf droppings is OK.
+<louise10@somewhere.com>00110<louise12@somewhere.com>00111<louise13@somewhere.com>00112<louise14@somewhere.com>00113<louise15@somewhere.com>0017<louise16@somewhere.com>0018<louise2@somewhere.com>0012<louise3@somewhere.com>0013<louise4@somewhere.com>0014<louise5@somewhere.com>0015<louise6@somewhere.com>0016<louise7@somewhere.com>0001 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  END   END   END 
+ 

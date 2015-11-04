@@ -1,0 +1,496 @@
+
+This list is for collaborative administration of petitions.  eVote's
+petition facility allows a global vote in which the participants don't
+subscribe to an email list.
+
+We can talk to each other by sending messages to the petition list
+address, just like a regular email list.  Also, we can take regular
+polls between ourselves, *except* for [y/n] polls, as they will be
+interpreted as a new petition and have a totally different behavior.
+
+To receive instructions for taking a regular poll, send the command
+"eVote help poll" to \list@\whereami.
+
+
+TABLE OF CONTENTS OF THIS DOCUMENT
+
+    Generating Simple Petitions
+    Instructions for Signing A Petition
+    Getting Info About A Petition
+    Privacy
+    Confirmation Of Signatures
+    Initializing Petitions With Forms 
+    Multi-Language Petitions
+      Subject Lines
+      Initializing A Multi-Lingual Petition
+      Multi-Language Forms
+    Voting Petitions
+    WWW Support For Your Petition
+    WWW Reports
+    Bad Signatures
+    Alterations on the Fly
+
+All [y/n] polls in the "petition" list are assumed to be petitions,
+not regular polls.  Therefore, to set up a petition, set up a visible
+[y/n] poll in the petition list and the poll text becomes the petition
+text.  Or you can use the special "eVote petition" command.  It is an
+alias for "eVote poll [y/n] visible".  You still need to give either
+"public" or "private" (if-voted has no meaning for petitions), i.e., a
+complete command for a petition is:
+
+eVote petition public
+message:
+We want change.
+
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to \list@\whereami with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+Instructions for Signing A Petition
+============ === ======= = ========
+
+1.  Send email to eVote@\whereami.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+The signers of your petitions do not have to subscribe to your 
+petition list or to any list to sign a petition.
+
+If the message is blank, only the email signature will be recorded.
+If the message contains text (other than "help" or "info"), the
+message text will be included as a comment in the signature file.
+
+If the petition requires the user to provide completed fields, (see
+"Initializing Petitions With Forms" below) the message must contain
+these fields or a instructions will be sent and the signature will not
+be counted.
+
+Getting Info About A Petition
+======= ==== ===== = ========
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petition and gives instructions for
+unsigning and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@\whereami.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your petition).
+
+3.  Have the message say:
+
+   info
+
+Privacy
+=======
+
+The email addresses of the signers of petitions are not revealed to
+anyone unless there is a "email:" field in the signature itself, and
+that field either has an email address specified, or the word "Yes".
+This field should be inserted into the form description as described
+"Initializing Petitions With Forms" below.
+
+There are two types of petitions:  "private" and "public".
+
+If the petition is private, only the initiator of the petition can
+retrieve the signatures, and the email addresses, and the initiator
+must be trusted to behave responsibly with your information.  Of
+course, the site administrator can also discover the email addresses.
+
+If the petition is public, anyone on the petition list can retrieve
+the signatures, but no one (except the site administrator) can
+retrieve the email addresses.
+
+"If-voted" has no meaning for petitions and is interpreted as
+"private".
+
+The "eVote members" command does not work for petition lists so that
+the email addresses of your signers are secret.
+
+Confirmation Of Signatures
+============ == ==========
+
+For security, you can instruct the software to generate and process a
+"confirmation" message with each signature.  To do so, initialize your
+petition with an additional keyword, "confirm".
+
+eVote petition public confirm
+message:
+Stop globalization.
+end
+
+The keyword "confirm", if present, makes your petition secure.  When
+someone sends in a signature, if the signature and form fields are
+acceptable, a confirmation message goes back to the signer.  The
+signer is instructed to reply-to the confirmation message and when
+s/he does so, only then is the signature accepted into the data.
+
+If you do not initialize your petition with the "confirm" keyword, and
+later your petition comes under attack, the sysadmin can add the
+confirm keyword to your petition while it is operating. 
+
+See "Alterations on the Fly" below.
+
+Initializing Petitions With Forms
+============ ========= ==== =====
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, an error message with polite
+instructions will be returned.
+
+To set up a petition that requires a form, your instruction to a
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order.  X's and 9's can be included in
+non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+If you wish to add fields to a working petition, see "Alterations on
+the Fly" below in the chapter, "eVote for Site Administrators".  You
+need the assistance of the administrator to make changes on the fly.
+
+Multi-Language Petitions
+=====-======== =========
+
+eVote's petition facility will parse the subject line of any message
+coming into eVote_petition from the eVote@\whereami address and
+determine if the subject exists as a petition title in any language
+for any petition on any petition list at your facility.
+
+Translations for subjects and petition texts can be supplied remotely
+by the petition's author at the time of initialization, or they can be
+added later by the site administrator.  See "Alterations On the Fly"
+below.
+
+Subject Lines
+------- -----
+
+If the subject of the petition is "Save the World", a signer or web
+page can use "Save the World -es" to indicate that Spanish is desired.
+Or, if you have provided the translation, they can use "Salve El
+Mundo".
+
+Initializing A Multi-Lingual Petition
+------------ - ----- ------- --------
+
+To facilitate multiple languages, the command to start a petition,
+with the default title, "Governments" and with no forms goes like:
+
+eVote petition public
+message:
+Please stop the governments.
+-es: Gobiernos
+Por favor alta los gobiernes.
+-fr: Governieses
+Si vu ple, altaze le governe.
+---  end of example ---
+
+For each non-default language, add a line with a language flag and the
+translated title.  Follow that with the translation of the petition
+text.
+
+This produces a petition with the default language of English that
+responds to the Spanish and French subjects, or to the language
+flags "-es" or "-fr".
+
+If you wish the default language to be French, the subject line for
+the petition should be "Governieses -Fr" and then the message would be:
+
+eVote petition public
+message:
+Si vu ple, altaze le governe.
+-en: Governments
+Please stop the governments.
+-es: Gobiernos
+Por favor alta los gobiernes.
+---  end of example ---
+
+More translations can be added by the site administrator after the
+petition is already up and running.  See "Alterations on the
+Fly" below.
+
+Multi-Language Forms
+-------------- -----
+
+eVote's petition facility supports multi-language forms.  That is,
+eVote will recognize field names, in the particular language, in the
+signature message.  The format that eVote recognizes is:
+
+eVote petition public
+form:
+*name: -es nombre: -fr namee:
+address: -es direccion: -fr zeeaddress:
+city: -es ciudad: -fr zeecity:
+country: -es paiz: -fr countree: XX
+comment: -es comento: -fr comente:
+message:
+Please stop the governments.
+-es Goviernos
+Por favor alta los gobiernes.
+-fr Governieses
+Si vu ple, altaze le governe.
+---  end of example ---
+
+If you wish to specify a format for one of your fields, do that just
+after all the translations are listed.
+
+Support for a new language can be added after the petition is
+initialized but it must be done by the site administrator.
+
+Required fields and formats work the same as in a single language
+petition, above.
+
+Voting Petitions
+====== =========
+
+Many times you want your signers to vote on a set of issues, not just
+contribute a signature and a form.  eVote provides support for this 
+in a flexible way.
+
+Any regular poll type can be attached to a petition.  Initiate a
+regular poll on your petition list with the title "La Consulta -eVote"
+and it will attach itself to the "La Consulta" petition.  The "-eVote"
+keyword at the end makes it all happen.  Your message may look like:
+
+eVote poll group private visible
+1. one [-1,1]
+2. two [-1,1]
+3. three [-1,1]
+4. four [-1,1]
+5. five [-1,1]
+message:
+This poll accompanies the petition on La Consulta.
+
+In this case, the petition texts, in all languages, should explain
+the 5 yes/no votes that are possible.  The "La Consulta -Es" petition
+initiation might look like:
+
+eVote petition public
+form:
+*pais: -en country: -fr pays:
+*nombre: -en name: -fr nom: 
+email: -en email: -it email:
+message:
+Pregunta 1. - ?Esta's de acuerdo en que los pueblos indi'genas deben
+ser incluidos con toda su fuerza y riqueza en el proyecto nacional y
+tomar parte activa en la construccio'n de un Me'xico nuevo?
+
+Pregunta 2. - ?Esta's de acuerdo en que los derechos indi'genas deben
+ser reconocidos en la constitucio'n Mexicana conforme a los acuerdos
+de San Andre's y la propuesta correspondiente de la comisio'n de
+concordia y pacificacio'n del congreso de la unio'n?
+
+Pregunta 3. - ?Esta's de acuerdo en que debemos alcanzar la paz
+verdadera por la vi'a del dia'logo, desmilitarizando el pai's con el
+regreso de los soldados a sus cuarteles como lo establecen la
+constitucio'n y las leyes?
+
+Pregunta 4. - ?Esta's de acuerdo en que el pueblo debe organizarse y
+exigir al gobierno que "Mande obedeciendo" en todos los aspectos de la
+vida nacional?
+
+Pregunta 5. - ?Esta's de acuerdo en que los mexicanos y mexicanas que
+radican en el extranjero deben ser parte activa en la construccio'n de
+un Me'xico nuevo y tener derecho al voto en las elecciones?
+-Fr La Consultation
+QUESTION 1: -Etes-vous d'accord avec la proposition que les peuples
+indige`nes devraient e^tre inclus, avec tous leurs points forts et
+richesses, dans le projet national et devraient prendre une part
+active dans la construction d'un nouveau Mexique?
+
+QUESTION 2: -Etes-vous d'accord que les droits des indige`nes
+devraient e^tre reconnus par la Constitution Mexicaine comme
+spe'cifie's par les Accords de San Andre's et la proposition
+correspondante pre'sente'e par la Commission d'Accord et de
+Pacification du Congre's de l'Union?
+
+QUESTION 3: -Etes-vous d'accord que nous devrions achever une paix
+ve'ritable par le dialogue, la de'militarisation du pays, et en
+renvoyant les soldats a` leurs casernes, comme la constitution et la
+loi l'e'tablissent?
+
+QUESTION 4: -Etes-vous d'accord que les gens devraient s'organiser eux
+me^mes et demander que le gouvernement "dirige en obe'issant" envers
+chaque aspect de la vie nationale?
+
+QUESTION 5: -Etes-vous d'accord que tous les mexicains vivant a`
+l'e'tranger devraient prendre une part active dans la reconstruction
+d'un nouveau Mexique, et devraient avoir le droit de vote aux
+e'lections?
+-en The Consultation
+QUESTION 1: -Do you agree that indigenous peoples should be included,
+with all of their strength and wealth, in the national project and
+should take an active part in the construction of a new Mexico?
+
+QUESTION 2: -Do you agree that indigenous rights should be recognized
+in the Mexican Constitution in conformance with the San Andres Accords
+and the corresponding proposition put forth by the Commission of
+Concordance and Pacification of the Congress of the Union?
+
+QUESTION 3: -Do you agree that we should reach true peace through the
+path of dialogue, demilitarizing the country and returning soldiers to
+their barracks, as the Constitution and the law establish?
+
+QUESTION 4: -Do you agree that the people should organize themselves
+and demand that the government "command by obeying" in all aspects of
+the national life?
+
+QUESTION 5: -Do you agree that Mexicans who live abroad should be an
+active part in the construction of a new Mexico and have the right to
+vote in the elections?
+
+WWW Support For Your Petition
+=== ======= === ==== ========
+
+If your petition is promoted on a web page, it is possible to use
+Javascript to make a button that sends email requests to service the
+signing of petitions, the unsigning of petitions, even subscribing and
+unsubscribing to lists, and all email commands.
+
+Check out the petition page for "La Consulta":
+
+http://www.deliberate.com/consulta
+
+and for "Kopilli Ketzalli":
+
+http://www.deliberate.com/aztec
+
+You can copy these pages and then modify them to suit your petition.
+
+The web pages you make for your petition can be mirrored on any
+number of sites (a security feature) and they will all feed the
+one petition.
+
+WWW Reports
+=== =======
+
+Your petition web page, no matter where it is, can report the current
+count of signatures.  eVote will use ftp to send the updates of the
+count to a remote computer every time someone signs a petition or
+removes a signature. This, however, must be coordinated with the
+administrator of the eVoted site.
+
+Your job will be to make your web page with the report of the number
+of signers.  Make the number of signatures 0.  You can also have
+a date updated on the web page.  For starting, put the current date
+in your web page with the format:  Wed Sep 20 11:20:51 PDT 2000
+which is the standard unix format.
+
+Send your web pages to the system administrator of the eVoted site and
+she can fix it up for you.  It is a piece of work to make this happen
+so please be patient and understanding with your administrator.
+
+
+Bad Signatures
+=== ==========
+
+If you wish to remove someone's signature from the petition, you can
+do so if you know the password for the list.  The owner of the list
+knows the password and will, perhaps, share it with you.
+
+1.  Send a message to:
+
+    \list@\whereami
+
+2.  The subject must be the subject of the petition:
+
+    Save The World
+
+3.  The message should be
+
+eVote approve <password> unsign <address> <address> <...>
+
+This will remove the signature(s) from the signature file and and the
+email address is removed from eVote's data.  The count is adjusted and
+any reports attached to the petition are updated.
+
+
+Alternations On The Fly
+============ == === ===
+
+Your petition can have certain alterations occur after the petition
+signature collecting is in process.  However, these alterations must
+be made by the site administrator.
+
+The alterations that are supported are:
+
+   Adding additional languages
+   Adding dynamic WWW reports of signature counts
+   Adding WWW support for signature gathering
+   Turning on/off the confirm feature
+   Changing the required fields
+
+If you need these, you must contact the site administrator.
+
+

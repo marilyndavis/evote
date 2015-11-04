@@ -1,0 +1,1387 @@
+# $Id: pet,v 1.4 2003/04/07 18:31:40 marilyndavis Exp $ 
+# pet tests the petition facility.
+#   pet UI_BIN LISTDIR EVOTE_HOME_DIR
+#   UI_BIN = /home/majordomo by default -- where is eVote_insert?
+#   LISTDIR = /home/majordomo/lists by default - lists?
+#   EVOTE_HOME_DIR=/home - where is eVote/data?
+#
+#  To run this one, change the Clerk's DATA_PERM and INFO_PERM in
+#  ../../Clerk/evotedef.h to be 0644 and change the permission on
+#  $EVOTE_HOME_DIR/eVote/data to be world writable.
+#
+#  Be sure you have changed the #define TESTING in ../mailui/util.c
+#  to be #define TESTING 1 so that the confirm keys are all 111111
+#
+#  Put it all back when you're done.
+#
+./mscratch
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/home/majordomo"
+    LISTDIR="/home/majordomo/lists"
+    EVOTE_HOME_DIR="/home"
+  else
+    UI_BIN=$1
+    if [ $# -gt 1 ]
+    then
+      LISTDIR=$2
+    fi
+    if [ $# -gt 2 ]
+    then 
+      EVOTE_HOME_DIR=$3
+    fi
+fi
+
+echo " catting who.list:" > pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+if [ $? != 0 ]
+then
+  echo "You need to open the permissions on $EVOTE_HOME_DIR/eVote/data"
+  echo "so that I can read $EVOTE_HOME_DIR/eVote/data/who.list."
+  exit
+fi
+touch pall.out
+mv pall.out pall.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+echo "squash" > $LISTDIR/petitiona.passwd
+echo "" > $LISTDIR/petitiona
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> pall.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> pall.out
+ echo " " >> pall.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> pall.out
+ echo " " >> pall.out
+ cat  tmp$$ >> pall.out
+ cat  tmp$$ > x
+ echo " " >> pall.out
+ echo "***** To stderr comes: *****" >> pall.out
+ echo " " >> pall.out
+
+ $CALL < tmp$$ 2>> pall.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> pall.out
+     echo "***** r.out sent to LIST, says *****" >> pall.out
+     echo " " >> pall.out
+     cat ./tmp/r.out >> pall.out
+     echo " " >> pall.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> pall.out
+      echo "***** t.out, sent to MAILER, says *****" >> pall.out
+      echo " " >> pall.out
+      cat ./tmp/t.out >> pall.out
+      echo " " >> pall.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it confirm " >> pall.out
+
+fi
+
+#############  START  ####################
+
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> pall.out
+echo " " >> pall.out
+
+
+TO="xxxx-approval@xoko"
+FROM="mary5@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE xxxx"
+cat << EOF > MESS
+
+--
+
+mary5@somewhere.com has been added to xxxx.
+No action is required on your part.
+EOF
+try_that 
+try_that
+
+TO="petitiona-approval@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+pollster1@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+try_that
+
+cat << EOF > MESS
+
+--
+
+pollster2@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+pollster3@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="numeric poll"
+cat << EOF > MESS
+eVote poll [1,10] public visible 
+message:
+nothing to say
+EOF
+try_that 
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    THREE PETITIONS  THREE PETITIONS  THREE PETITIONS " >> pall.out
+echo " " >> pall.out
+
+
+EXTRA="Received:  something"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="1poll1"
+cat << EOF > MESS
+eVote poll [y/n] public visible check
+message:
+bla
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote poll [y/n] public visible confirm
+message:
+bla
+EOF
+try_that 
+
+EXTRA="Received:  something"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster2@somewhere.com"
+SUBJECT="2poll2"
+cat << EOF > MESS
+eVote poll [y/n] if-voted hidden 
+message:
+Here is the message
+that goes on
+for a few lines
+EOF
+try_that 
+
+
+SUBJECT="2poll2 another"
+try_that
+SUBJECT="2poll2 an"
+try_that
+
+SUBJECT="3poll3"
+cat << EOF > MESS
+eVote poll [y/n] private visible
+message:
+bla
+EOF
+try_that 
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    REGULAR POLLS  REGULAR POLLS  REGULAR POLLS " >> pall.out
+echo " " >> pall.out
+
+SUBJECT="numeric"
+cat << EOF > MESS
+eVote poll [-10,10] public visible
+message:
+Keep on going
+EOF
+try_that 
+
+SUBJECT="group"
+cat << EOF > MESS
+eVote poll group public visible
+1. This [1,10]
+2. Or this [1,10]
+3. Or this one [1,10]
+
+message:
+Try a group.
+EOF
+try_that 
+
+
+cat << EOF > MESS
+eVote members
+EOF
+try_that
+
+eVote flush
+echo "catting who.list" >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    VOTE THRU INSERT  VOTE THRU INSERT  VOTE THRU INSERT " >> pall.out
+echo " " >> pall.out
+
+
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="1poll1"
+cat << EOF > MESS
+
+eVote yes
+
+EOF
+try_that 
+
+SUBJECT="numeric"
+cat << EOF > MESS
+
+eVote 1
+
+EOF
+try_that
+
+SUBJECT="group"
+cat << EOF > MESS
+
+eVote 
+1. 1
+2. 2
+3. 3
+
+EOF
+
+try_that 
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    HELP THRU PETITION  HELP THRU PETITION  HELP THRU PETITION " >> pall.out
+echo " " >> pall.out
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary1@somewhere.com"
+cat << EOF > MESS
+
+help
+
+EOF
+try_that 
+
+SUBJECT="1poll1"
+try_that
+cat << EOF > MESS
+
+info
+
+EOF
+try_that
+
+SUBJECT="2poll2"
+try_that
+ 
+cat << EOF > MESS
+
+"help"
+
+EOF
+try_that 
+SUBJECT="3poll3"
+try_that
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary1@somewhere.com"
+SUBJECT="1poll1"
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> confirm.ou
+echo "    SIGNATURES  SIGNATURES  SIGNATURES " >> pall.out
+echo " " >> pall.out
+
+
+cat << EOF > MESS
+
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+Here is my address again
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+
+EOF
+try_that 
+
+SUBJECT="Confirm: 211111 1poll1"
+try_that
+
+
+SUBJECT="Confirm: 211111 2poll2"
+try_that
+SUBJECT="Confirm: 111111 2poll2"
+try_that
+
+SUBJECT="Confirm: 111111 1poll1"
+cat << EOF > MESS
+borrar
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+
+EOF
+try_that
+echo "catting 1poll1/signatures/*" >> pall.out
+cat $LISTDIR/../polls/petitiona/1poll1/signatures/* >> pall.out
+
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="1poll1"
+cat << EOF > MESS
+
+eVote names
+
+EOF
+try_that 
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary1@somewhere.com"
+SUBJECT="1poll1"
+EXTRA="Received:  by whatever"
+
+cat << EOF > MESS
+remove
+EOF
+try_that
+
+
+
+try_that
+
+SUBJECT="Confirm: 211111 1poll1"
+try_that
+
+SUBJECT="Confirm: 111111 2poll2"
+try_that
+
+
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+echo "catting 1poll1/signatures/*" >> pall.out
+cat $LISTDIR/../polls/petitiona/1poll1/signatures/* >> pall.out
+
+SUBJECT="3poll3"
+try_that
+
+
+SUBJECT="Confirm: 111111 1poll1"
+cat << EOF > MESS
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+EOF
+try_that
+
+SUBJECT="1poll1"
+cat << EOF > MESS
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 1poll1"
+cat << EOF > MESS
+mary1
+EOF
+try_that
+
+FROM="mary@somewhere.com"
+
+SUBJECT="1poll1"
+cat << EOF > MESS
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary
+EOF
+try_that
+SUBJECT="Confirm: 111111 1poll1"
+cat << EOF > MESS
+mary
+EOF
+try_that
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    VOTE THRU PETITION  VOTE THRU PETITION  VOTE THRU PETITION " >> pall.out
+echo " " >> pall.out
+
+SUBJECT="numeric"
+cat << EOF > MESS
+eVote 5
+
+EOF
+try_that 
+
+SUBJECT="group"
+cat << EOF > MESS
+Here is my signature
+
+EOF
+try_that 
+
+cat << EOF > MESS
+help
+
+EOF
+try_that 
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    JOE SIGNS  JOE SIGNS  JOE SIGNS " >> pall.out
+echo " " >> pall.out
+
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="1poll1"
+
+FROM="joe1@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+and it is very long
+so long that I'll insert something
+2
+Here is my address 
+and it is very long
+so long that I'll insert something
+3
+Here is my address 
+and it is very long
+so long that I'll insert something
+4
+Here is my address 
+and it is very long
+so long that I'll insert something
+5
+Here is my address 
+and it is very long
+so long that I'll insert something
+6
+Here is my address 
+and it is very long
+so long that I'll insert something
+7
+Here is my address 
+and it is very long
+so long that I'll insert something
+8
+Here is my address 
+and it is very long
+so long that I'll insert something
+9
+Here is my address 
+and it is very long
+so long that I'll insert something
+10
+Here is my address 
+and it is very long
+so long that I'll insert something
+11
+Here is my address 
+and it is very long
+so long that I'll insert something
+12
+Here is my address 
+and it is very long
+so long that I'll insert something
+13
+Here is my address 
+and it is very long
+so long that I'll insert something
+14
+Here is my address 
+and it is very long
+so long that I'll insert something
+15
+Here is my address 
+and it is very long
+so long that I'll insert something
+16
+
+joe1
+
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+FROM="joe2@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+
+  - - -  fix this
+
+  - - - - - - - - - - - - - - - - - 
+
+- - - 
+
+joe2
+
+EOF
+try_that 
+
+SUBJECT="2poll2"
+try_that
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    BAD REMOVES  BAD REMOVES  BAD REMOVES " >> pall.out
+echo " " >> pall.out
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="numeric"
+FROM="pollster1@somewhere.com"
+cat << EOF > MESS
+
+eVote remove
+
+EOF
+try_that 
+
+SUBJECT="group"
+try_that
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    REMOVES THRU INSERT  REMOVES THRU INSERT  REMOVES THRU INSERT " >> pall.out
+echo " " >> pall.out
+
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="numeric"
+cat << EOF > MESS
+
+eVote remove
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote 3
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+
+try_that 
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+
+try_that 
+
+cat << EOF > MESS
+
+eVote who
+
+EOF
+
+try_that
+
+cat << EOF > MESS
+
+eVote remove
+
+EOF
+try_that 
+
+SUBJECT="group"
+try_that
+
+SUBJECT="1poll1"
+try_that
+
+FROM="joe1@somewhere.com"
+SUBJECT="1poll1"
+try_that
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that
+
+
+cat << EOF > MESS
+
+eVote approve squash unsign mary@somewhere.com mary1@somewhere.com
+
+EOF
+
+
+try_that
+
+cat << EOF > MESS
+
+eVote approve squash unsign mary1@somewhere.com
+
+EOF
+try_that
+
+try_that
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary1@somewhere.com"
+SUBJECT="1poll1"
+
+cat << EOF > MESS
+
+Here is my address 
+
+  - - - - - - -
+
+  - - - 
+  
+mary1
+
+
+EOF
+try_that 
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+SUBJECT="1poll1"
+FROM="joe2@somewhere.com"
+try_that
+
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+SUBJECT="1poll1"
+cat << EOF > MESS
+
+remove
+
+EOF
+try_that 
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+SUBJECT="1poll1"
+
+
+try_that
+
+SUBJECT="2poll2"
+try_that
+
+FROM="mary1@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+SUBJECT="1poll1"
+cat << EOF > MESS
+
+eVote approve squash unsign joe2@somewhere.com
+
+EOF
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="1poll1"
+cat << EOF > MESS
+
+eVote names
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote how mary1@somewhere.com mary2@somewhere.com mary3@somewhere.com 
+joe1@somewhere.com
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+FROM="pollster2@somewhere.com"
+cat << EOF > MESS
+
+eVote names
+
+EOF
+
+try_that 
+
+eVote flush
+echo "catting who.list " >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that
+
+
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+SUBJECT="2poll2"
+cat << EOF > MESS
+
+eVote names
+EOF
+
+eVote flush
+echo "catting who.list:" >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+try_that 
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that 
+
+
+FROM="pollster1@somewhere.com"
+
+cat << EOF > MESS
+
+eVote names
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+SUBJECT="3poll3"
+FROM="pollster2@somewhere.com"
+cat << EOF > MESS
+
+eVote names
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that 
+
+
+FROM="pollster1@somewhere.com"
+
+cat << EOF > MESS
+
+eVote names
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+eVote info
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote stats
+
+EOF
+try_that
+cat << EOF > MESS
+
+eVote who
+
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    MARY SIGNS  MARY SIGNS  MARY SIGNS " >> pall.out
+echo " " >> pall.out
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="1poll1"
+
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary2
+
+EOF
+try_that 
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+
+SUBJECT="1poll1"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary2@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary2
+
+EOF
+try_that
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+SUBJECT="3poll3"
+try_that
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+SUBJECT="1poll1"
+
+FROM="mary3@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary3
+
+EOF
+try_that 
+
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+SUBJECT="3poll3"
+try_that
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+SUBJECT="2poll2"
+FROM="mary4@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary4
+
+EOF
+try_that 
+SUBJECT="3poll3"
+try_that
+
+SUBJECT="2poll2"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary5@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary5
+
+EOF
+try_that 
+SUBJECT="3poll3"
+try_that
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+SUBJECT="2poll2"
+
+FROM="mary6@somewhere.com"
+cat << EOF > MESS
+
+Here is my address 
+mary6
+
+EOF
+try_that 
+
+SUBJECT="3poll3"
+try_that
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> pall.out
+echo " " >> pall.out
+
+
+CALL="$UI_BIN/eVote_insert "
+TO="petitiona-approval@xoko"
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+mary6@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+FROM="mary6@somewhere.com"
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+eVote flush
+echo "catting who.list:" >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    WRONG TITLE  WRONG TITLE  WRONG TITLE " >> pall.out
+echo " " >> pall.out
+
+cat << EOF > MESS
+
+Here is an
+address.
+
+EOF
+SUBJECT="wrong title"
+try_that
+
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    MEMBERS  MEMBERS  MEMBERS " >> pall.out
+echo " " >> pall.out
+
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollster1@somewhere.com"
+SUBJECT="xxxx"
+cat << EOF > MESS
+
+eVote members
+
+EOF
+try_that 
+
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+
+FROM="mary6@somewhere.com"
+
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that
+eVote flush
+echo "catting who.list:" >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "    CLOSE  CLOSE  CLOSE " >> pall.out
+echo " " >> pall.out
+
+SUBJECT="1poll1"
+FROM="pollster1@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+cat << EOF > MESS
+
+eVote close
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 1poll1"
+try_that
+
+SUBJECT="1poll1"
+
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote who
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote list
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote names
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote approve squash drop
+EOF
+try_that
+
+EXTRA="Received:  by whatever"
+TO="petitiona@xoko"
+SUBJECT="1poll1"
+FROM="pollster1@somewhere.com"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that
+
+SUBJECT="3poll3"
+FROM="pollster2@somewhere.com"
+
+cat << EOF > MESS
+
+eVote close
+EOF
+try_that
+
+SUBJECT="Confirm: 111111 3poll3"
+try_that
+SUBJECT="3poll3"
+
+cat << EOF > MESS
+
+eVote names
+EOF
+try_that
+
+FROM="pollster3@somewhere.com"
+try_that
+
+cat << EOF > MESS
+
+eVote who
+EOF
+try_that
+
+
+SUBJECT="3poll3"
+FROM="pollster3@somewhere.com"
+EXTRA="Received:  by whatever"
+TO="petitiona@xoko"
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+
+cat << EOF > MESS
+
+eVote approve squash drop
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that
+
+eVote flush
+echo "catting who.list:" >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+echo ""
+echo "ls -l on $LISTDIR/../polls/petition" >> pall.out
+ls -l $LISTDIR/../polls/petitiona >> pall.out
+
+echo "catting $LISTDIR/../polls/petitiona/*/*/*" >> pall.out
+cat $LISTDIR/../polls/petitiona/*/*/* >> pall.out
+
+echo "ls -l $LISTDIR/../polls/petitiona/2poll2/signatures " >> pall.out
+ls -l $LISTDIR/../polls/petitiona/2poll2/signatures >> pall.out
+
+echo "cat $LISTDIR/../polls/petitiona/2poll2/signatures/*" >> pall.out
+cat $LISTDIR/../polls/petitiona/2poll2/signatures/* >> pall.out
+
+SUBJECT="2poll2"
+FROM="pollster2@somewhere.com"
+
+cat << EOF > MESS
+
+eVote who
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote names
+EOF
+try_that
+
+cat << EOF > MESS
+
+eVote members
+EOF
+try_that
+
+echo "cat $EVOTE_HOME_DIR/eVote/data/who.list " >> pall.out
+cat $EVOTE_HOME_DIR/eVote/data/who.list >> pall.out
+
+try_that 
+echo ""
+
+echo "pet is finished.  Don't forget to put #define TESTING 0"
+echo "in ../mailui/util.c"
+echo ""
+echo "Please replace the permissions on $EVOTE_HOME_DIR/eVote/data"
+echo "and replace the Clerk's DATA_PERM and INFO_PERM in "
+echo "../../Clerk/evotedef.h to be 0600"
+echo ""
+
+echo " " >> pall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall.out
+echo "  END   END   END " >> pall.out
+echo " " >> pall.out
+

@@ -1,0 +1,25 @@
+# $Id: mres,v 1.4 2003/04/07 18:31:34 marilyndavis Exp $ 
+# mres -- Majordomo's reset program
+# To use this, you should have already run msetup when the environment
+# was right ready to produce a bug.  This program will set things up
+# to produce that bug again.
+#
+# This should be run under the majordom login.
+#
+#  Also run cres as the clerk login.
+#
+# By default, it thinks that "home/majordomo" is LISTDIR.  Give
+# the path as an argument if that's not right for you.
+#
+
+if [ $# -lt 1 ]
+  then
+    LISTDIR="/home/majordomo/lists"
+  else
+    LISTDIR=$1
+fi
+
+./mclean $LISTDIR
+chmod -R u+w $LISTDIR/..
+cp -r ./bugdata/* $LISTDIR/..
+

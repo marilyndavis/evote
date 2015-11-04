@@ -1,0 +1,37 @@
+# $Id: port.doc,v 1.2 2003/01/15 18:54:12 marilyndavis Exp $ 
+
+This directory contains some tests.
+
+First check that one user can run the demo interface.  Do a "make
+clean" in this directory, and then a make so that the #defines are
+good for testing.
+
+Start The Clerk by typing "eVote" and then try 
+"./eVote_test > test.out &".
+
+
+First, as root, run addusr.linux make 100 dummy users: dum1 through
+dum100.  This script makes a file, pp, in this directory.  You can
+paste this file onto /usr/passwd to put these users in the password
+file with no password and /usr for the home directory.  You might want
+to delete them when you are finished testing.
+
+Check that the flags in the makefile match those in eVoteui, for
+example.  Run the makefile.  This makes a bunch of executables:
+porttest and longtest are the main ones.  These call "dummy", a script
+in this directory which changes the uid and runs the other
+executables.
+
+Using these programs, lots of users are on line simultaneously and
+then dropped.  This exercises the IPC stuff and the voter listings
+and droppings.  Look for trouble in the Clerk.log and enter ed0,
+ed1, .. yourself and see that the data look right and that you
+can do a who voted, a how voted, and vote yourself.
+
+If you get some system errors when you run this, be sure that your
+dummy users have permission to run fastvoter ...
+
+Good luck.
+
+
+

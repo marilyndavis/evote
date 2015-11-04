@@ -1,0 +1,10 @@
+# $Id: dummy,v 1.2 2003/01/15 18:54:12 marilyndavis Exp $ 
+#!/bin/bash
+ i=$1
+ num=$2
+ shift;shift
+ while [ "$i" -le $num ]
+ do
+   su dum${i} -c "/usr/local/eVote/src/port/$*" &
+   i=`expr $i + 1`
+ done

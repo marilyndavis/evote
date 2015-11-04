@@ -1,0 +1,59 @@
+# $Id: embed,v 1.2 2003/01/15 18:54:13 marilyndavis Exp $ 
+
+#
+# Copyright 1994 Deliberate.com
+# 
+# Deliberate.Com
+# marilyn@deliberate.com
+#
+#  embed   -- utility to help get started with the embedding
+#  process.
+#
+# Accepts two arguments, the EVOTE_HOME_DIR and the name of an 
+# existing directory where the embedding operation will happen, 
+# we'll call it "YOUR_SRC".
+#
+#   Your directory structure will be:
+#
+#                                  ../YOUR_SRC
+#                                   |
+#                _______________________________________
+#                |                  |                  |
+#             YOUR_SRC           Clerk/              Clerklib/
+#                |
+#        ________________
+#        |              |
+#      Your stuff      eVoteui/
+#
+
+
+if [ $# -ne 2 ]
+   then
+      echo  "Usage embed  <EVOTE_HOME_DIR> <YOUR_SRC> \n"
+      exit 1
+fi
+
+if [ ! -d $1 ]
+   then
+       echo  $1 does not exist....script terminating\n
+       exit 1
+fi
+
+if [ ! -d $2 ]
+   then
+       echo $2 does not exist...script terminating\n
+       exit 1
+fi
+
+mkdir $2/../Clerk
+mkdir $2/eVoteui
+mkdir $2/../Clerklib
+
+cp $1/eVote/src/demo/*.[hc] $2
+cp $1/eVote/src/demo/makefile $2/eVote_makefile
+cp $1/eVote/src/demo/.gdbinit $2/eVote_gdbinit
+cp $1/eVote/src/Clerk/* $2/../Clerk
+cp $1/eVote/src/demo/eVoteui/* $2/eVoteui
+cp $1/eVote/src/Clerklib/* $2/../Clerklib
+
+

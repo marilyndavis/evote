@@ -1,0 +1,565 @@
+# $Id: vacation,v 1.4 2003/04/07 18:31:40 marilyndavis Exp $ 
+#   vacation UI_BIN LISTDIR
+#   UI_BIN = /home/majordomo by default
+#   LISTDIR = /home/majordomo/lists by default
+#   Tests the various functions that deal with vacations, moving
+#   and changing the voter's status.
+#
+#   Be sure you have changed the #define TESTING in ../mailui/util.c
+#   to be #define TESTING 1 so that the confirm keys are all 111111
+#
+#   It expects the iag list for majordomo to start like:
+#
+# andyo@ora.com
+# madavis
+# btherl@mundil.cs.mu.OZ.AU
+# aried@xs4all.nl
+# Neal.Weidenhofer@mri.com
+# harry@tigger.jvnc.net
+# nutt@kcnet.com
+# andyo@ora.com
+# baby-x@zoom.com
+# bass@tenet.edu
+# droplonder@odb.rhein-main.de
+# papadop@peak.org
+# (what) sap@tank.rgs.uky.edu
+#
+# Note that andyo@ora.com is on there twice.  That's to test the
+# response to that mistake.
+#
+#   It expects the majordomo password for the list to be "Cthulhu",
+#   no quotes.
+# 
+# # Functions are defined beyond here
+# 
+./mscratch
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/home/majordomo"
+    LISTDIR="/home/majordomo/lists"
+  else
+    UI_BIN=$1
+    if [ $# -gt 1 ]
+    then
+      LISTDIR=$2
+    fi
+fi
+touch vall.out
+mv vall.out vall.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> vall.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> vall.out
+ echo " " >> vall.out
+ echo "***** Calling eVote_insert $ARGS - Incoming message: *****" >> vall.out
+ echo " " >> vall.out
+ cat  tmp$$ >> vall.out
+ cat  tmp$$ > x
+ echo " " >> vall.out
+ echo "***** To stderr comes: *****" >> vall.out
+ echo " " >> vall.out
+
+  $UI_BIN/eVote_insert $ARGS < tmp$$ 2>> vall.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> vall.out
+     echo "***** r.out sent to LIST, says *****" >> vall.out
+     echo " " >> vall.out
+     cat ./tmp/r.out >> vall.out
+     echo " " >> vall.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> vall.out
+      echo "***** t.out, sent to MAILER, says *****" >> vall.out
+      echo " " >> vall.out
+      cat ./tmp/t.out >> vall.out
+      echo " " >> vall.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it vall " >> vall.out
+
+fi
+
+#############  START  ####################
+
+cat $LISTDIR/iag >> vall.out
+
+$UI_BIN/eVote_mail sync iag >> vall.out
+
+echo " " >> vall.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> vall.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> vall.out
+echo " " >> vall.out
+
+FROM="papadop@peak.org"
+TO="iag@xoko"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l iag"
+SUBJECT="xxx"
+
+cat << EOF > MESS
+
+--
+
+eVote members
+end
+some junk
+
+EOF
+
+try_that 
+
+FROM="papadop@peak.org"
+TO="iag@xoko"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l iag"
+SUBJECT="xxx"
+
+cat << EOF > MESS
+
+--
+
+eVote approve Freedom bounce aried@xs4all.nl
+end
+some junk
+EOF
+
+try_that 
+echo "iag" >> vall.out
+cat $LISTDIR/iag >> vall.out
+echo "bounces:" >> vall.out
+cat $LISTDIR/bounces >> vall.out
+
+try_that
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu bounce sap@tank.rgs.uky.edu
+ droplonder@odb.rhein-main.de bass@tenet.edu
+end
+some junk
+
+EOF
+
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+
+try_that 
+
+echo "bounces list has:" >> vall.out
+cat $LISTDIR/bounces >> vall.out
+
+FROM="aried@xs4all.nl (coming back)"
+cat << EOF > MESS
+
+--
+
+eVote back
+end
+some junk
+
+EOF
+try_that
+
+SUBJECT="Confirm: 111111"
+try_that
+
+SUBJECT="xx"
+try_that 
+
+cat $LISTDIR/iag >> vall.out
+cat $LISTDIR/bounces >> vall.out
+
+FROM="(here again ) bass@tenet.edu"
+try_that
+
+SUBJECT="Confirm: 111111"
+try_that
+SUBJECT="xx"
+FROM="\"Sapper\" sap@tank.rgs.uky.edu (more)"
+try_that
+SUBJECT="Confirm: 111111"
+try_that
+
+SUBJECT="xx"
+FROM="droplonder@odb.rhein-main.de \"deutch\""
+try_that
+SUBJECT="Confirm: 111111"
+try_that
+SUBJECT="xx"
+
+echo "bounces list has:" >> vall.out
+cat $LISTDIR/bounces >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+
+try_that
+
+FROM="papadop@peak.org"
+TO="iag@xoko"
+EXTRA="Received:  by whatever"
+ARGS="resend_test -l iag"
+SUBJECT="xxx"
+cat << EOF > MESS
+
+--
+
+eVote approve Freedom move maDavis@xoko madavis@newplace.com
+end
+some junk
+
+EOF
+
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote vacation
+end
+some junk
+
+EOF
+try_that 
+
+
+try_that
+
+
+FROM="sap@tank.rgs.uky.edu"
+
+try_that
+
+cat $LISTDIR/iag >> vall.out
+
+echo "Good to here" >> vall.out
+
+FROM="papadop@peak.org"
+cat << EOF > MESS
+
+--
+
+eVote back
+
+EOF
+try_that 
+SUBJECT="Confirm: 111111"
+try_that
+
+echo "papdop@peak.org comes back:"  >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+SUBJECT="xxx"
+try_that
+
+echo "papdop@peak.org comes back again:" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+
+FROM="droplonder@odb.rhein-main.de"
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu back sap@tank.rgs.uky.edu "The Sapster"
+
+EOF
+try_that 
+
+echo "sap@tank.rgs comes back:" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote approve XYZag. vacation bass@tenet.edu
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation 
+
+EOF
+try_that 
+
+echo "droplonder on vacation" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation xxbass@tenet.edu
+end
+some junk
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation bass@tenet.edu
+
+EOF
+try_that 
+
+echo "bass@tenet.edu on vacation" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu back
+end
+some junk
+
+EOF
+try_that 
+echo "droplander back" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation bass@tenet.edu
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu move Bass@tenet.edu bass@newplace.com
+
+EOF
+try_that 
+
+echo "Bass@tenet.edu moved to bass@newplace.com" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu move papadop@Peak.org papadop@valley.org
+
+EOF
+try_that 
+
+echo "papadop moved to valley.org:" >> vall.out
+cat $LISTDIR/iag >> vall.out
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vote harry@tigger.jvnc.net
+end
+some junk
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation harry@tigger.jvnc.net
+
+EOF
+try_that 
+
+cat $LISTDIR/iag >> vall.out
+
+
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu novote harry@tigger.jvnc.net
+end
+some junk
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu back harry@tigger.jvnc.net
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vote harry@tigger.jvnc.net
+
+EOF
+try_that 
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu no_vote harry@tigger.jvnc.net
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+try_that 
+cat << EOF > MESS
+
+--
+
+eVote list
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vacation harry@tigger.jvnc.net
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu vote harry@tigger.jvnc.net
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+--
+
+eVote approve Cthulhu back harry@tigger.jvnc.net
+
+EOF
+try_that 
+cat << EOF > MESS
+
+--
+
+eVote members
+
+EOF
+try_that 
+echo ""
+echo "Vacation is finished.  Don't forget to put #define TESTING 0"
+echo "in ../mailui/util.c"
+echo ""
+
+cat $LISTDIR/iag >> vall.out

@@ -1,0 +1,22 @@
+# $Id: msetup,v 1.4 2003/04/07 18:31:34 marilyndavis Exp $ 
+# msetup - majordomo's setup for a bug
+#
+# run this when you have the environment all set to produce a bug.
+# This will copy the data to the ./bugdata directory so that when
+# you run mres (majordomo's reset) you will be able to produce the
+# bug again.
+
+if [ $# -lt 1 ]
+  then
+    LISTDIR="/home/majordomo/lists"
+  else
+    LISTDIR=$1
+fi
+chmod -R u+w bugdata
+rm -r bugdata
+mkdir bugdata
+mkdir bugdata/lists
+mkdir bugdata/polls
+cp $LISTDIR/* bugdata/lists
+cp -r $LISTDIR/../polls bugdata
+

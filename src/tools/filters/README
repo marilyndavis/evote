@@ -1,0 +1,289 @@
+# $Id: README,v 1.2 2003/01/15 18:54:13 marilyndavis Exp $ 
+
+Copyright 2003 by Deliberate.com
+
+This package has 3 security tools for email: shelter, angel and fence.
+These were developed in response to attacks on Zapatista's mailing
+lists and personal addresses.
+
+The Zapatistas were attacked by forging their email addresses on
+messages that subscribed them to hundreds of email lists around the
+world.  Suddenly Zapatistas' email addresses became recipients of
+thousands of unwanted messages, rendering them useless.
+
+There is also a "forward" program that will accept mail, fiddle with
+the from_address and the subject line and then mail it onto another
+address.
+
+And there is a "pick" program that will sort the mail by language
+and send each language to a different address.
+
+Finally, there is the "puppet" program that allows a user on this
+local machine to send mail from a trusted external address that will
+be sent out looking like it comes from the local address.  That way,
+it appears that you are working at your desk when you are really at
+your boyfriend's house.
+
+Fence
+=====
+
+Fence can be named in your alias file to protect your email addresses.
+
+owner-fence: you@your.domain
+sample: "|/usr/local/majordomo/wrapper fence -a sample \
+ resend -l sample -f ...
+
+"-a" must be followed by the alias address.
+
+Fence filters out unwanted mail, i.e., mail such that none of the To:
+and Cc: addresses match the list address being protected.  Such
+messages are from lists.  By default, when fence finds such a message,
+it generates and sends an unsubscribe command to the sending
+majordomo.  It logs the event and sends a small report and the message
+to an "alert address".  The alert message will come from owner-fence.
+
+Fence reads a "goodlists" file that you provide and allows mail from
+those particular lists to go through.  It is crucial that you provide
+the goodlists file, even if it is empty.  Without it, fence will send
+all messages that are not identified as "bad_guys" straight through
+and will send an alert message that the goodlists file is missing.
+
+Fence depends on three data files that you maintain: "goodlists",
+"badguys", and "forgets".  If fence finds a message with any string in
+the headers that matches an entry in "badguys", it will send a report
+and the message to the alert address instead of passing it onto the
+list.  
+
+Zapatistas have been added to email lists that are unresponsive to
+unsubscribe messages (lists at Onelist, for example).  You can name
+those email lists in the "forgets" file and messages from those lists
+will be silently dropped.
+
+If you do not have a "forgets" or a "badguys" file, fence assumes that
+you have no badguys or forget addresses and processes accordingly.
+
+If fence finds no problems with the message, it executes the rest of
+the command line, maybe "resend ..." and pipes the message into the
+next program on the command line.
+
+Building Your Fence
+-------- ---- -----
+
+If you are not currently under attack, the fence program will compile
+your list of goodlists for you.  You can add an argument to the
+command line:
+
+sample: "|/usr/local/majordomo/wrapper fence -a sample -b resend ...
+
+"-b" must come directly after the "-a sample", the alias address .  It
+stands for "build" and instead of unsubscribing your address from
+email lists, it will add the email list to your list of goodlists.
+
+Angel
+=====
+
+Angel watches over the shoulder of any email address.  It recognizes
+unwanted list subscriptions and sends unsubscribe commands.  It
+follows the same rules as fence, reading the same three data files.
+
+Any user anywhere who has been attacked can make a file called
+".forward" in their home directory.  The file should contain only one
+line:
+
+\login_name, angel@your_site.com
+
+This will cause a copy of their mail to be send to the angel address
+at your site.  Your alias should contain:
+
+owner-angel: you@yoursite.com
+angel: "|/usr/local/majordomo/wrapper angel"
+
+People who send their mail to your angel will find that their unwanted
+subscriptions will disappear.  After a few days or weeks, they can
+remove their .forward file and regain their privacy.
+
+Like fence, angel will respond to "-b" in the command line:
+
+angel: "|/usr/local/majordomo/wrapper angel -b"
+
+"-b" must follow "angel".  It stands for "build" and instead of
+unsubscribing the address from email lists, it will add the email list
+to your list of goodlists.
+
+Any problems that angel finds will be reported to the alert address
+and the message will come from owner-angel.
+
+Shelter
+=======
+
+Shelter hides an email address.  It does no filtering or unsubscribing.
+If in the alias file, you have
+
+owner-shelter: you@yoursite.com
+charlie: "|/usr/local/majordomo/wrapper shelter -h charlie@fishgills.net"
+
+Charlie can use the address charlie@your_domain.org for incoming and
+outgoing mail and no one else will know that the charlie@fishgills.net
+address exists.
+
+   1.  For outgoing mail, Charlie sends all his outgoing mail to 
+       charlie@your_domain.org from his hidden address, 
+       charlie@fishgills.net, and makes the first line in the message 
+       be the destination address.  Shelter will resend the message
+       to the destination address from charlie@your_domain.org
+
+   2.  Incoming mail will be sent on to the hidden address.
+
+If Charlie wants his mail filtered and unsubscription commands sent
+to unwanted mail lists, add the fence to his alias:
+
+charlie: "|/usr/local/majordomo/wrapper fence shelter -h \
+         charlie@fishgills.net"
+
+Any problems that shelter finds will be reported to the shelter address
+and the message will come from owner-shelter.
+
+Forward
+=======
+
+Used like this:
+
+ owner-forward: you@yoursite.com
+ in_address: "|/usr/local/wrapper forward -f from_address -t to_address"
+
+it changes the From: address and send the mail along to the out_address.
+You can add a triplet like:
+
+  -s "En;" "NEWS"  
+
+to the arguments in the alias and all instances of the string "En;" 
+in the subject line will change to "NEWS".  If the triplet is written:
+
+  -s "*En;" "NEWS"  
+
+the string will only happen if the "En;" is at the beginning of the
+subject line.
+
+You can have up to MAX= 10 triplets of the form:
+
+  -s "this" "that"
+
+Any problems that forward finds will be reported to the forward address
+and the message will come from owner-forward.
+
+
+Pick
+====
+
+Pick can be called by wrapper from the sendmail aliases file:
+
+pick -l en english_address -l es spanish_address -do don't_know_address \
+-f from_address
+
+It will pick out the english language messages and send to
+english_address, etc..  The messages in languages it doesn't recognize
+will be sent to don't_know_address.  Any Italian, German, etc. that it
+does recognize but for which there is no address will be dropped.  All
+the messages that it sends will come from from_address.
+
+It has the facility to ignore certain strings in the messages when 
+it considers the language.  See pick.h to designate strings to skip.
+
+Puppet
+======
+
+Puppet is called by wrapper from the sendmail aliases file:
+
+mpuppet: "|/usr/local/majordomo/wrapper puppet \
+ -p puppet_address@deliberate.com \
+ -h hidden_address@somewhere.com"
+
+   1.  Mail from the hidden address can be sent to mpuppet.  The first
+       line of the message should be the real destination address for
+       the mail message.  Puppet will resend the message to the 
+       destination address from the puppet_address.
+
+   2.  Incoming mail from other (not the hidden) address will be sent 
+       to the puppet address.  This shouldn't happen.
+
+
+Compiling
+=========
+
+To compile, edit the makefile and type:
+
+make
+
+Copy the executables, shelter, fence, angel, puppet, pick and forward
+into the same directory with your majordomo resend script.
+
+Please report problems to:
+
+bugs@deliberate.com
+
+Programmer's Notes
+============ =====
+
+Partial call list:
+
+angel.c
+  look_for_trouble(argc, argv, env);
+    read_message(argc, argv, env);
+      set_up(argc, argv, env);
+         buff_up();
+         alert();
+           mail_it();
+             execve(sendmail_path, sendarg, env_copy);
+      parse_message(NO);
+         capture_header();
+         still_a_header();
+    unsub_other_lists();
+      unsub();
+        mail_it();
+        alert();
+    alert();
+
+fence.c
+  look_for_trouble(argc,argv,env);
+
+  go_on(argc, argv, env);  -> local, forks and execs path
+
+forward.c
+  read_message(argc, argv, env)  
+  read_command_line -> local
+  mail_it
+
+pick.c
+  read_command_line -> local
+  read_message(argc, argv, env)  
+  langtest
+  mail_it
+
+puppet.c
+  read_message(argc, ..
+  find_hidden_addresses(argc, argv) -> local
+  send_out -> local
+   mail_it
+  mail_it
+
+shelter.c
+  read_message(argc, ..
+  find_hidden_address(argc,argv); -> local
+  send_out  -> local
+    mail_it
+  mail_it
+
+eVote_insert
+  sets argv_copy, argc_copy & env_copy
+  parse_cf()
+  parse_headers(argc, argv) -> local
+    buff_up()
+      parse_message(NO, not for filter)
+  bounce_error(whom)
+    gen_header(whom, ..
+      send(whom) needs argv_copy and env_copy
+  do_eVote()
+    instruct()
+      gen_header(whom, 
+    bounce_error()
+  send(LIST);

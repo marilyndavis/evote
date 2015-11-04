@@ -1,0 +1,173 @@
+# $Id: README,v 1.6 2003/04/07 18:31:21 marilyndavis Exp $ 
+
+This directory has a series of tests for the mail interface.
+
+To use these tests, place
+
+MAILER = /home/eVote/src/mail/test/smail_test  -t
+PROGS = /home/eVote/src/mail
+
+in your eVote.cf file.
+
+These all have "eVote@xoko", "majordomo@xoko", etc in them.  You need
+to make the "xoko" be your domain, I think.  You'll want to edit all
+the *.right files to have your domain or the diffs will be difficult
+to read.
+
+For vacation, you must change the #define TESTING in ../mailui/util.c
+so that #define TESTING 1, and compile.  Be sure to put it back and
+recompile when you're finished or all the confirm keys will be 111111,
+not very secure!
+
+A make in this directory makes the smail_test and the resend_test
+programs which capture the output all to the various *.out files.
+
+It has the output from the last mail transaction in ./tmp/r.out or
+./tmp/s.out, which it then appends to the *.out in this directory.
+
+--------------------------------------------------------------------
+| Your majordomo's list directory gets manipulated in this process.|
+| In particular, the "bounces" list gets erased.  Check the mclean |
+| script to see what files get created and removed.                |
+--------------------------------------------------------------------
+
+These tests expect some files in majordomo's list directory. All these
+are in ./lists.  The mscratch script sets it up for you -- and wipes out
+your majordomo/lists directory!
+
+big: abc.config yyy.config 
+drops: droppings.config 
+     droppings.passwd = XXXX 
+pet: xxxx.config petitiona.config petitiona.passwd = squash 
+pet2: petition.info 
+pet3: petitionbutalonglonglongname.passwd = pass 
+par: participants.config 
+vacation: iag.passwd = Cthulhu and the iag list itself: 
+madavis "democracy rules", 
+btherl@mundil.cs.mu.OZ.AU (whynot), 
+(hows this) aried@xs4all.nl "more", 
+"more" Neal.Weidenhofer@mri.com (how), 
+"harry" harry@tigger.jvnc.net, 
+(nutt) nutt@kcnet.com, 
+andyo@ora.com (andy), 
+baby-x@zoom.com "baby",
+bass@tenet.edu (what) "xxx", 
+"xxx" droplonder@odb.rhein-main.de,
+papadop@peak.org, 
+(what) sap@tank.rgs.uky.edu,
+
+All these are in ./lists and are automatically copied and deleted
+by the scripts.
+
+To run each test, call the "cscratch" script as clerk first and
+"mscratch" as majordom: 
+
+As majordom (actually, you can skip this step because the tests
+             call mscratch, but you must do the cscratch as clerk)
+
+mscratch LISTDIR    (default LISTDIR is /home/majordomo)
+
+As clerk:
+
+eVote_cscratch EVOTE_HOME_DIR     (default is /home)
+
+Note that cscratch should already be copied into your
+$(EVOTE_BIN) directory as eVote_cscratch and it should have good
+permissions -- from doing the make install in
+$(EVOTE_HOME_DIR)/eVote/src
+
+For example, to run the big test:
+
+NOTE: If you did a "make install" at ../.. then cscratch, cres and
+csetup are in $(EVOTE_BIN) as eVote_cscratch, eVote_cres, and
+eVote_csetup and owned and runnable by clerk.
+
+big UI_BIN &   (default UI_BIN is /home/majordomo)
+
+big's output is all.out.  Do:
+
+compare.pl  all.out all.right 
+
+and check the differences in compare.out.
+
+To find bugs:
+
+*  Make a copy of the offending message, save it as ./x.
+
+*  Take a note of command line as reported just above the offending
+   message.
+
+*  Put "exit" in the test script just before the offending message.
+
+*  Run cscratch as clerk and mscratch as majordom.
+
+*  Rerun the test script so that exits just before the offending message.
+
+*  Run "csetup" as clerk and "msetup" as majordom -- so that you can 
+   duplicate the setup.
+
+*  Edit the ../.gdbinit to get the right command line.  Note that when
+   you first install or make from ../../src, you don't get symbol info
+   in your executables but if you make clean in .. (mail) and make
+   again, you'll be ready for the debugger.  Also, note that, just
+   before the offending message in the test's output, you can find
+   the call and arguments that produced the error.
+
+*  Debug.
+
+*  To repeat a debug session, run "cres" as clerk, "mres" as majordomo, 
+   and go again.
+
+To do drops and pet, first recompile the Clerk with #define INFO_PERM
+and DATA_PERM 644 in EVOTE_HOME_DIR/eVote/src/Clerk/evotedef.h
+(usually it's 600) and open the permissions on
+EVOTE_HOME_DIR/eVote/data so that majordom can read the who.list.
+
+Also, for pet, you need to change the permission on eVote_Clerk so
+that everyone can execute it.  Usually the permission is
+---x------ -- only clerk can execute it.
+
+Probably only deliberate.com wants to run kop and kop2.  For these
+tests, ../mailui needs to be compiled with -DROSA.  For kop2, you need
+the existing data from deliberate.com's production machine, Rosa.
+Kop2 tries to ftp to a live web site so for this one, you want to
+jimmy the data so that it doesn't generate reports.  To do this,
+in $LISTDIR/../polls/petitiona/Kopilli/report_instructions, change
+the number of reports to be 0.
+
+Put the permission back when you're done!
+
+So, the tests and their arguments and output files to check against are:
+
+(default UI_BIN = /home/majordomo
+ default LISTDIR = /home/majordomo/lists
+ default EVOTE_HOME_DIR = /home)
+
+big UI_BIN                        ---> all.right  Tests polling and voting
+drops UI_BIN EVOTE_HOME_DIR     ---> dall.right Tests dropping people and polls
+vacation UI_BIN LISTDIR           ---> vall.right Tests the vacation feature
+pet UI_BIN LISTDIR EVOTE_HOME_DIR ---> pall.right Tests petitions
+pet2 UI_BIN LISTDIR EVOTE_HOME_DIR ---> pall2.right Tests forms in petitions
+pet3 UI_BIN LISTDIR EVOTE_HOME_DIR ---> pall3.right Tests end keyword
+pet4 UI_BIN LISTDIR                ---> pall4.right Multi-lingual tests
+con UI_BIN LISTDIR                 ---> con.right Tests multi-lingual petitions
+                                        in 4 langauages with votes.
+par UI_BIN LISTDIR                 ---> par.right Tests
+                                        sync/read-only/no_of_participants
+Note, kop and kop2 only work if #define ROSA in the ../mailui.  You probably
+don't want to use these.  See above to see how special they are.
+kop          --->    kall.right       Special test for Kopilli Ketzalli
+kop2         --->    kall2.right      Special test for KK and Chiapas Peace
+
+Putting things back:
+
+Don't forget to put #define TESTING 0 in ../mailui/util.c
+
+Please replace the permissions on /home/eVote/data
+and replace the Clerk's DATA_PERM and INFO_PERM in 
+../../Clerk/evotedef.h to be 0600
+
+Good luck!
+
+Again, good luck!
+

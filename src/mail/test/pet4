@@ -1,0 +1,692 @@
+# $Id: pet4,v 1.4 2003/04/07 18:31:40 marilyndavis Exp $ 
+# pet4 -- tests the multilingual facility.
+#
+#   pet4 UI_BIN LISTDIR 
+#   UI_BIN = /pet4/majordomo by default -- where is eVote_insert?
+#   LISTDIR = /pet4/majordomo/lists by default - lists?
+#
+
+./mscratch
+if [ $# -lt 1 ]
+  then
+    UI_BIN="/pet4/majordomo"
+    LISTDIR="/pet4/majordomo/lists"
+  else
+    UI_BIN=$1
+    if [ $# -gt 1 ]
+    then
+      LISTDIR=$2
+    fi
+fi
+
+touch pall4.out
+mv pall4.out pall4.out.old
+touch tmp/t.out
+touch tmp/r.out
+rm tmp/t.out
+rm tmp/r.out
+
+try_that ()  {
+ echo "From jim@bow" > tmp$$
+ echo "From:  $FROM" >> tmp$$ 
+ echo "Message-Id: <Mime>" >> tmp$$
+ echo "Date: Mon, 18 Oct 94 00:00:00 T5E" >> tmp$$
+ echo "Return-Path:  $FROM" >> tmp$$
+ echo $EXTRA >> tmp$$
+ echo "To: $TO" >> tmp$$
+ echo  "Subject: $SUBJECT" >> tmp$$ 
+ echo  "Status: RO" >> tmp$$
+ echo  "" >> tmp$$
+
+ cat MESS >> tmp$$
+
+ echo " " >> pall4.out
+ echo " = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =" >> pall4.out
+ echo " " >> pall4.out
+ echo "***** CALLing $CALL - Incoming message: *****" >> pall4.out
+ echo " " >> pall4.out
+ cat  tmp$$ >> pall4.out
+ cat  tmp$$ > x
+ echo " " >> pall4.out
+ echo "***** To stderr comes: *****" >> pall4.out
+ echo " " >> pall4.out
+
+ $CALL < tmp$$ 2>> pall4.out
+
+ if [ $? -lt 0 ]
+    then
+    echo " I SHOULD NOT PRINT THIS"
+fi 
+# have to delay for above command to complete
+  
+  sleep 1
+ 
+			 
+if [  -f ./tmp/r.out ]   
+   then
+     echo "                    LIST " >> pall4.out
+     echo "***** r.out sent to LIST, says *****" >> pall4.out
+     echo " " >> pall4.out
+     cat ./tmp/r.out >> pall4.out
+     echo " " >> pall4.out
+     rm ./tmp/r.out
+ fi
+                    
+ if [  -f ./tmp/t.out ]
+    then
+      echo "                     MAILER" >> pall4.out
+      echo "***** t.out, sent to MAILER, says *****" >> pall4.out
+      echo " " >> pall4.out
+      cat ./tmp/t.out >> pall4.out
+      echo " " >> pall4.out
+      rm ./tmp/t.out
+ fi 
+  rm tmp$$
+  return
+
+}
+# End of Functions 
+X=1
+if [ $X = 0 ]
+then
+
+echo "  doing it pall4 " >> pall4.out
+
+fi
+#############  START  ####################
+
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE " >> pall4.out
+echo " " >> pall4.out
+
+TO="petitiona-approval@xoko"
+FROM="pollstera@somewhere.com"
+SUBJECT="chocolate"
+EXTRA="Received:  by whatever"
+CALL="$UI_BIN/eVote_insert "
+SUBJECT="SUBSCRIBE petitiona"
+cat << EOF > MESS
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+EOF
+try_that 
+
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollstera@somewhere.com"
+SUBJECT="Governments"
+cat << EOF > MESS
+eVote petition public check
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+phone: -fr phonee: XXX-XXXX
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+EOF
+
+try_that 
+
+echo "3. cat $LISTDIR/../polls/translation.data >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/translation.data >> pall4.out
+
+cat << EOF > MESS
+eVote list
+EOF
+try_that 
+
+cat << EOF > MESS
+eVote petition public 
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+EOF
+
+try_that 
+
+echo " " >> pall4.out
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    CATS  CATS  CATS " >> pall4.out
+echo " " >> pall4.out
+
+echo "4. ls  $LISTDIR/../polls/* >> pall4.out" >> pall4.out
+ls  $LISTDIR/../polls/* >> pall4.out
+echo "5. ls  $LISTDIR/../polls/petitiona/* >> pall4.out" >> pall4.out
+ls  $LISTDIR/../polls/petitiona/* >> pall4.out
+echo "6. cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out
+echo "7. cat $LISTDIR/../polls/translation.data >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/translation.data >> pall4.out
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="Governments"
+FROM="mary1@somewhere.com"
+cat << EOF > MESS
+
+help
+
+EOF
+try_that 
+
+CALL="$UI_BIN/eVote_insert "
+FROM="pollsterb@somewhere.com"
+SUBJECT="SUBSCRIBE petitionb"
+TO="petitionb-approval@xoko"
+
+cat << EOF > MESS
+
+--
+
+pollsterb@somewhere.com has been added to petitionb.
+No action is required on your part.
+EOF
+try_that 
+try_that
+
+FROM="pollsterc@somewhere.com"
+SUBJECT="SUBSCRIBE petitionc"
+TO="petitionc-approval@xoko"
+
+
+cat << EOF > MESS
+
+--
+
+pollsterc@somewhere.com has been added to petitionc.
+No action is required on your part.
+EOF
+try_that 
+try_that
+
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    CATS2  CATS2  CATS2 " >> pall4.out
+echo " " >> pall4.out
+
+echo "8. ls -l $LISTDIR/../polls/petitiona/* >> pall4.out" >> pall4.out
+ls -l $LISTDIR/../polls/petitiona/* >> pall4.out
+echo "9. cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out
+echo "10. cat $LISTDIR/../polls/translation.data >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/translation.data >> pall4.out
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    FOUR PETITIONaS  FOUR PETITIONaS  FOUR PETITIONaS " >> pall4.out
+echo " " >> pall4.out
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitiona"
+TO="petitiona@xoko"
+FROM="pollstera@somewhere.com"
+SUBJECT="2Governments"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre:
+address: -fr zeeaddress: -es el mucho direccion:
+city: -fr zeecity: -es cuidad:
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 2Governieses
+Si vu ple, altaze le governe.
+-es 2Goviernes
+Por favor, alto los goviernes.
+EOF
+
+try_that 
+
+SUBJECT="3Governments"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy: Bogus language
+Fried food.
+EOF
+try_that
+
+SUBJECT="3Governments"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -en name:
+address: -fr zeeaddress: -es direccion:  -en address:
+city: -fr zeecity: -es cuidad: -en city:
+comment: -fr comente: -es commento: -en comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en: Bogus language
+Fried food.
+EOF
+try_that
+
+SUBJECT="3Governments"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en Bogus language
+Fried food.
+EOF
+try_that
+
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-fr Bogus language
+Fried food.
+EOF
+try_that
+
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy Bogus language
+Fried food.
+EOF
+try_that
+
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    THREE PETITIONbS  THREE PETITIONbS  THREE PETITIONbS " >> pall4.out
+echo " " >> pall4.out
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitionb"
+TO="petitionb@xoko"
+FROM="pollsterb@somewhere.com"
+SUBJECT="Anything"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee:
+address: 
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+EOF
+
+try_that 
+
+
+
+echo "SHOULD FAIL FOR DUPLICATE NAME " >> pall4.out
+echo " " >> pall4.out
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitionb"
+TO="petitionb@xoko"
+FROM="pollsterb@somewhere.com"
+SUBJECT="Something"
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+EOF
+
+try_that 
+
+echo "SHOULD FAIL FOR DUPLICATE NAME " >> pall4.out
+
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governments
+Si vu ple, altaze le governe.
+EOF
+
+try_that 
+
+
+echo "SHOULD FAIL  " >> pall4.out
+
+cat << EOF > MESS
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr Super
+Si vu ple, altaze le governe.
+-es Duper
+Por favor, alto los goviernes.
+-xy: 3Goviernes
+Fried food.
+EOF
+try_that
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    THREE PETITIONbS  THREE PETITIONbS  THREE PETITIONbS " >> pall4.out
+echo " " >> pall4.out
+echo "SHOULD WORK " >> pall4.out
+echo " " >> pall4.out
+
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitionb"
+TO="petitionb@xoko"
+FROM="pollsterb@somewhere.com"
+SUBJECT="Anything"
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Something
+Si vu ple, altaze le governe.
+-es Otra Cosa
+Otra Cosa
+EOF
+
+try_that
+
+CALL="$UI_BIN/eVote_insert resend_test -l petitionb"
+TO="petitionb@xoko"
+FROM="pollsterb@somewhere.com"
+SUBJECT="Missing message on spanish"
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+EOF
+
+try_that 
+
+SUBJECT="Same"
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+Stop stop stop
+-en Same
+Stop stop stop
+EOF
+
+try_that
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+stopee stopee
+-es Same
+Pared pared
+EOF
+
+try_that
+
+SUBJECT="Should work"
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+Que pasa aqui'?
+EOF
+
+try_that 
+CALL="$UI_BIN/eVote_insert resend_test -l petitionc"
+TO="petitionc@xoko"
+FROM="pollsterc@somewhere.com"
+SUBJECT="One for C"
+cat << EOF > MESS
+eVote petition public
+message:
+Please stop the governments.
+-fr Au juex
+Si vu ple, altaze le governe.
+-es Uno para C
+Agui esta
+EOF
+try_that
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    CATS  CATS  CATS " >> pall4.out
+echo " " >> pall4.out
+
+echo "11. ls -l $LISTDIR/../polls/petitiona/* >> pall4.out" >> pall4.out
+ls -l $LISTDIR/../polls/petitiona/* >> pall4.out
+echo "12. cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/petitiona/*/*/* >> pall4.out
+echo "13. ls -l $LISTDIR/../polls/petitionb/* >> pall4.out" >> pall4.out
+ls -l $LISTDIR/../polls/petitionb/* >> pall4.out
+echo "14. cat $LISTDIR/../polls/petitionb/*/*/* >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/petitionb/*/*/* >> pall4.out
+echo "15. ls -l $LISTDIR/../polls/petitionc/* >> pall4.out" >> pall4.out
+ls -l $LISTDIR/../polls/petitionc/* >> pall4.out
+echo "16. cat $LISTDIR/../polls/petitionc/*/*/* >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/petitionc/*/*/* >> pall4.out
+echo "17. cat $LISTDIR/../polls/translation.data >> pall4.out" >> pall4.out
+cat $LISTDIR/../polls/translation.data >> pall4.out
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "    HELP  HELP  HELP " >> pall4.out
+echo " " >> pall4.out
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petitiona"
+SUBJECT="Governments"
+FROM="mary1@somewhere.com"
+cat << EOF > MESS
+
+help
+
+EOF
+try_that 
+
+SUBJECT="Governments -fr"
+try_that
+
+SUBJECT="Governments -es"
+try_that
+
+cat << EOF > MESS
+
+info
+
+EOF
+try_that 
+
+SUBJECT="Governments -xy"
+try_that
+
+SUBJECT="Governieses"
+try_that
+
+SUBJECT="Not here"
+try_that
+
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "  SIGN   SIGN   SIGN " >> pall4.out
+echo " " >> pall4.out
+
+
+TO="eVote@xoko"
+CALL="$UI_BIN/eVote_petition resend_test -l petition"
+SUBJECT="Governments"
+FROM="mary1@somewhere.com"
+cat << EOF > MESS
+
+Here is my signature.
+
+EOF
+try_that 
+
+
+cat << EOF > MESS
+
+namee: Me
+zeeaddress: here
+phoneee: 87
+city: there
+end
+
+EOF
+try_that 
+
+cat << EOF > MESS
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+end
+
+EOF
+try_that 
+SUBJECT="Governieses"
+FROM="mary1@somewhere.com"
+
+try_that 
+
+FROM="mary2@somewhere.com"
+SUBJECT="Governieses -es"
+
+cat << EOF > MESS
+name: Me
+address: here
+city: there
+end
+
+EOF
+try_that
+
+SUBJECT="Anything -fr"
+cat << EOF > MESS
+No form
+address: here
+city: there
+end
+some stuff
+EOF
+try_that
+
+SUBJECT="Anything -es"
+cat << EOF > MESS
+quitar
+end
+some stuff
+EOF
+try_that
+
+try_that
+
+SUBJECT="Same -fr"
+cat << EOF > MESS
+No form
+end
+some stuff
+EOF
+try_that
+
+SUBJECT="Que pasa"
+cat << EOF > MESS
+No form
+end
+some stuff
+EOF
+try_that
+SUBJECT="Au juex"
+cat << EOF > MESS
+No form
+end
+some stuff
+EOF
+try_that
+
+echo " " >> pall4.out
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" >> pall4.out
+echo "  END   END   END " >> pall4.out
+echo " " >> pall4.out
+
+
+

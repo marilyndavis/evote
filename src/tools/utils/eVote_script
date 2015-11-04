@@ -1,0 +1,3 @@
+# $Id: eVote_script,v 1.2 2003/01/15 18:54:13 marilyndavis Exp $ 
+#!/bin/bash
+/usr/local/majordomo/unhex eVote_insert $* 2>> /tmp/eVote_debug

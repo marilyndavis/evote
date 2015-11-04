@@ -1,0 +1,191 @@
+
+This list is for administrators of petitions.  We can talk to each
+other by sending messages to the petition list address, just like a
+regular email list.  Also, we can take regular polls between ourselves
+*except* for [y/n] polls, they will be interpreted as a new petition
+and have a totally different behavior, as explained below.
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@your-domain.org with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote poll [y/n] public visible
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, address, affiliation.
+
+
+Petition Text
+======== ====
+
+To see the petition text and instructions for signing:
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+Forms
+=====
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, polite instructions will be
+sent to the failed signer.
+
+To set up a petition that requires a form, your instruction to the
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order. If the non-required fields are
+in the signature message, then in the resulting signature file, the
+fields will appear in the correct order.  X's and 9's can be included
+in non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petition email list.  The
+same commands are available to you on the petition list as are on any
+other eVoted list.  This petition list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@your-domain.org address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petition list allows the retrieval of the signature file:
+
+1.  Send a message to petition@your-domain.org
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list, and any of your signers, can use the
+"eVote names" command to retrieve the signatures for the petition.  If
+this is undesirable, originate your petition with this command
+instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petition@your-domain.org:
+
+      eVote vacation
+
+To see who is subscribed to the petition list, send this message to
+petition@your-domain.org:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs@deliberate.com" list.  A first report of a particular bug wins
+the reporter 2 tickets to eVote's New Millenium's Eve Party on
+December 31, 1999, somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petition@your-domain.org.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petition@your-domain.org.
+
+If you have a signature on your mail, add a line with "end" to your
+eVote commands.
+
+If you have technical questions, contact owner-petition@your-domain.org.

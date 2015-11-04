@@ -1,0 +1,105 @@
+
+eVote Information
+===== ===========
+
+The list-serving facility at \whereami has "eVote" attached.  This
+means that members of the \list list can poll each other.  Many
+different types of polls are possible.
+
+All messages that pertain to voting/polling *must* start with the
+word, "eVote".  If you forget this, your message will be sent to the
+entire \list list and it will not be processed by eVote.  So 
+please be careful.
+
+To learn how to set up a poll, or simply to understand eVote better,
+send email to \list@\whereami.  The subject line doesn't 
+matter.  The message should say:
+
+     eVote help poll
+
+To receive a list of all the subjects for the \list list  
+with polls attached, your message to \list@\whereami 
+should say:
+
+    eVote list
+
+You can use "eVote list open" to see which subjects have polls that
+are open for voting.  "eVote list closed" will list the closed polls.
+
+More information is available on a poll by poll basis.  To get 
+information about the poll attached to the subject, "Favorite Movie",
+send email to \list@\whereami with "Favorite Movie" as the 
+subject.  Your message can say:
+
+eVote info        To learn how to participate in the poll, to see
+                  your vote on this poll, and to see the current
+                  tally, if it is available.
+
+eVote stats       To see your vote on this poll and the current
+                  tally, if it is available.
+
+eVote who help    To learn how to query eVote with who-voted questions:
+	          "Who voted yes?", "Who voted 10?", ...  whatever
+                  makes sense for the particular poll.  This feature
+                  is not available for all polls.
+               
+eVote how help    To learn how to query eVote for how a particular
+                  subscriber voted, if this information is available.
+
+Be aware that polls are identified by the first 36 characters of the
+subject line of the message and case doesn't matter.  For example, if
+someone on the \list list initiates a poll by sending an 
+"eVote poll" command to \list@\whereami with the subject, 
+"Favorite Movie", all subsequent messages with the subject, "Favorite
+Movie", or even "Re: FAVORITE MOVIE" and "Re:RE:favorite movie", and
+with "eVote" as the first word of the message will be processed by
+eVote as belonging to the established poll.  If "eVote" is not the
+first word. The message is assumed to be part of the discussion about
+"Favorite Movie" and it is distributed to all the members of the 
+\list list.
+
+Vacation
+========
+
+If you go on vacation, send the following message to \list@\whereami:
+
+eVote vacation
+
+eVote will stop the flow of messages but will keep your ballot for
+you.  If you unsubscribe your ballot will be dropped as well as your
+influence on the statistics.
+
+
+Moving
+======
+
+If you move your email address, notify your list's owner.  Your owner
+can move your address and preserve your ballot.
+
+If you belong to several eVoted lists at \whereami, you only need to
+notify one list owner of your move.  eVote will move your address for
+all lists and notify all your lists' owners.
+
+
+Members
+=======
+
+To receive a list of eVote's notion of the members of the \list list,
+send the following message to \list@\whereami:
+
+eVote members
+
+The list you receive will tell you who is on vacation and which 
+members are really archive addresses without eVoting privileges.
+
+End
+===
+
+If you attach a signature to your email messages, end your eVote
+commands with a line that says "end".
+
+Bugs
+====
+
+If you find a bug, please report it to eVote-users@deliberate.com.
+This is an email list which you are welcome to join.

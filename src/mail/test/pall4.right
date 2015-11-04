@@ -1,0 +1,7707 @@
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SUBSCRIBE  SUBSCRIBE  SUBSCRIBE 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: owner-petitiona
+Subject: Error: SUBSCRIBE petitiona
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030123.eVote.1.11506@xoko>
+
+--
+
+
+In response to your message which starts:
+pollstera@somewhere.com has been added to petitiona.
+
+----
+
+pollstera@somewhere.com's subscription to petitiona is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona-approval@xoko
+Subject: SUBSCRIBE petitiona
+Status: RO
+
+
+--
+
+pollstera@somewhere.com has been added to petitiona.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Governments
+Status: RO
+
+eVote petition public check
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+phone: -fr phonee: XXX-XXXX
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030128.eVote.1.40403@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:01:27 2003
+
+Dear pollstera@somewhere.com, 
+
+Thank you for initializing a poll/petition.  And thank you for
+checking the results of your command before sending to the 
+petitiona list.  Here's what the petitiona community would have
+received if you didn't say "check".
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+On Fri,  7 Jun 2003 03:01:28 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+phone: XXX-XXXX
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", "phone:", and 
+         "comment:".
+
+      *  Please replace the X's with the correct letters.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:01:28 -0700
+ un scrutin a été initié sur:
+
+	 "Governieses"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+phonee: XXX-XXXX
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", 
+         "phonee:", et "comente:".
+
+      *  Veuillez remplacer les X par les lettres correctes.
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Governments
+Status: RO
+
+eVote petition public check
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+phone: -fr phonee: XXX-XXXX
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+3. cat /home/majordomo/lists/../polls/translation.data >> pall4.out
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Governments
+Status: RO
+
+eVote list
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Re: Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030132.eVote.1.02953@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:01:31 2003
+
+In response to your command:
+
+eVote list
+
+The petitiona list has 1 participants.  It has 0 subjects
+with polls attached. 
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Governments
+Status: RO
+
+eVote petition public 
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030136.eVote.1.31515@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:01:39 -0700
+ un scrutin a été initié sur:
+
+	 "Governieses"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", et 
+         "comente:".
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: Governments
+Status: RO
+
+eVote petition public 
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CATS  CATS  CATS 
+ 
+4. ls  /home/majordomo/lists/../polls/* >> pall4.out
+/home/majordomo/lists/../polls/translation.data
+
+/home/majordomo/lists/../polls/petitiona:
+Government
+5. ls  /home/majordomo/lists/../polls/petitiona/* >> pall4.out
+form_template
+signatures
+text
+6. cat /home/majordomo/lists/../polls/petitiona/*/*/* >> pall4.out
+
+Please stop the governments.
+
+Si vu ple, altaze le governe.
+7. cat /home/majordomo/lists/../polls/translation.data >> pall4.out
+LIST: petitiona
+  SUBJECT: PUB: NO_CONFIRM: Governments -En
+    -Fr Governieses
+    -En Governments
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+help
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030140.eVote.1.55599@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+help
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb-approval@xoko
+Subject: SUBSCRIBE petitionb
+Status: RO
+
+
+--
+
+pollsterb@somewhere.com has been added to petitionb.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb-approval@xoko
+Subject: SUBSCRIBE petitionb
+Status: RO
+
+
+--
+
+pollsterb@somewhere.com has been added to petitionb.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: owner-petitionb
+Subject: Error: SUBSCRIBE petitionb
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030155.eVote.1.09480@xoko>
+
+--
+
+
+In response to your message which starts:
+pollsterb@somewhere.com has been added to petitionb.
+
+----
+
+pollsterb@somewhere.com's subscription to petitionb is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb-approval@xoko
+Subject: SUBSCRIBE petitionb
+Status: RO
+
+
+--
+
+pollsterb@somewhere.com has been added to petitionb.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterc@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterc@somewhere.com
+Received: by whatever
+To: petitionc-approval@xoko
+Subject: SUBSCRIBE petitionc
+Status: RO
+
+
+--
+
+pollsterc@somewhere.com has been added to petitionc.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert  - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterc@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterc@somewhere.com
+Received: by whatever
+To: petitionc-approval@xoko
+Subject: SUBSCRIBE petitionc
+Status: RO
+
+
+--
+
+pollsterc@somewhere.com has been added to petitionc.
+No action is required on your part.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionc-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionc-eVote@xoko
+To: owner-petitionc
+Subject: Error: SUBSCRIBE petitionc
+Sender: petitionc-eVote@xoko
+Reply-To: petitionc@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030207.eVote.1.62079@xoko>
+
+--
+
+
+In response to your message which starts:
+pollsterc@somewhere.com has been added to petitionc.
+
+----
+
+pollsterc@somewhere.com's subscription to petitionc is redundant.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterc@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterc@somewhere.com
+Received: by whatever
+To: petitionc-approval@xoko
+Subject: SUBSCRIBE petitionc
+Status: RO
+
+
+--
+
+pollsterc@somewhere.com has been added to petitionc.
+No action is required on your part.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CATS2  CATS2  CATS2 
+ 
+8. ls -l /home/majordomo/lists/../polls/petitiona/* >> pall4.out
+total 12
+-rw-r--r--    1 majordom majordom      105 Jun  7 03:01 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:01 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:01 text
+9. cat /home/majordomo/lists/../polls/petitiona/*/*/* >> pall4.out
+
+Please stop the governments.
+
+Si vu ple, altaze le governe.
+10. cat /home/majordomo/lists/../polls/translation.data >> pall4.out
+LIST: petitiona
+  SUBJECT: PUB: NO_CONFIRM: Governments -En
+    -Fr Governieses
+    -En Governments
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FOUR PETITIONaS  FOUR PETITIONaS  FOUR PETITIONaS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 2Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre:
+address: -fr zeeaddress: -es el mucho direccion:
+city: -fr zeecity: -es cuidad:
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 2Governieses
+Si vu ple, altaze le governe.
+-es 2Goviernes
+Por favor, alto los goviernes.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: 2Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030212.eVote.1.24817@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:02:15 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "2Governments"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	2Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	2Governments
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:02:15 -0700
+ un scrutin a été initié sur:
+
+	 "2Governieses"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	2Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", et 
+         "comente:".
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	2Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:02:15 -0700
+pollstera@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "2Goviernes"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Por favor, alto los goviernes.
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	2Goviernes
+
+3.  Favor de arreglar su mensaje para que se parezca asi: 
+
+---  corta aqui --- 
+
+nombre: 
+el mucho direccion: 
+cuidad: 
+commento: 
+Usted puede a~adir un comentario aqui'.
+
+---  corta aqui --- 
+
+      NOTAS:
+
+      *  Ud. tiene que dar una respuesta para "nombre:".
+
+      *  Respuestas son opcionales para "el mucho direccion:", "cuidad:", 
+          y 
+         "commento:".
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitiona@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	2Goviernes
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	2Governments
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 2Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre:
+address: -fr zeeaddress: -es el mucho direccion:
+city: -fr zeecity: -es cuidad:
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 2Governieses
+Si vu ple, altaze le governe.
+-es 2Goviernes
+Por favor, alto los goviernes.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy: Bogus language
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: 3Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030216.eVote.1.06221@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:15 2003
+
+In response to your message:
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy
+
+----
+-xy is not a supported language.
+
+Perhaps eVote's instructions will help:
+
+
+This list is for administrators of petitions.  We can talk to each
+other by sending messages to the petition list address, just like a
+regular email list.  Also, we can take regular polls between ourselves
+*except* for [y/n] polls, they will be interpreted as a new petition
+and have a totally different behavior, as explained below.
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@your-domain.org with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petitition and gives instructions for
+unsigning and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+
+Initializing Petitions With Required Fields
+============ ========= ==== ======== ======
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, polite instructions will be
+sent to the failed signer.
+
+To set up a petition that requires a form, your instruction to the
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order. If the non-required fields are
+in the signature message, then in the resulting signature file, the
+fields will appear in the correct order.  X's and 9's can be included
+in non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petition email list.  The
+same commands are available to you on the petition list as are on any
+other eVoted list.  This petition list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@your-domain.org address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petition list allows the retrieval of the signature file:
+
+1.  Send a message to petition@your-domain.org
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list, and any of your signers, can use the
+"eVote names" command to retrieve the signatures for the petition.  If
+this is undesirable, originate your petition with this command
+instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petition@your-domain.org:
+
+      eVote vacation
+
+To see who is subscribed to the petition list, send this message to
+petition@your-domain.org:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs@deliberate.com" list.  A first report of a particular bug wins
+the reporter 2 tickets to eVote's New Millenium's Eve Party on
+December 31, 1999, somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petition@your-domain.org.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petition@your-domain.org.
+
+If you have a signature on your mail, add a line with "end" to your
+eVote commands.
+
+If you have technical questions, contact owner-petition@your-domain.org.
+
+Your unprocessed message follows:
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy: Bogus language
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -en name:
+address: -fr zeeaddress: -es direccion:  -en address:
+city: -fr zeecity: -es cuidad: -en city:
+comment: -fr comente: -es commento: -en comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en: Bogus language
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: 3Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030218.eVote.1.01818@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:17 2003
+
+In response to your message:
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -en
+
+----
+There is already a field name for English, "name".
+
+Perhaps eVote's instructions will help:
+
+
+This list is for administrators of petitions.  We can talk to each
+other by sending messages to the petition list address, just like a
+regular email list.  Also, we can take regular polls between ourselves
+*except* for [y/n] polls, they will be interpreted as a new petition
+and have a totally different behavior, as explained below.
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@your-domain.org with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petitition and gives instructions for
+unsigning and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+
+Initializing Petitions With Required Fields
+============ ========= ==== ======== ======
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, polite instructions will be
+sent to the failed signer.
+
+To set up a petition that requires a form, your instruction to the
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order. If the non-required fields are
+in the signature message, then in the resulting signature file, the
+fields will appear in the correct order.  X's and 9's can be included
+in non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petition email list.  The
+same commands are available to you on the petition list as are on any
+other eVoted list.  This petition list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@your-domain.org address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petition list allows the retrieval of the signature file:
+
+1.  Send a message to petition@your-domain.org
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list, and any of your signers, can use the
+"eVote names" command to retrieve the signatures for the petition.  If
+this is undesirable, originate your petition with this command
+instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petition@your-domain.org:
+
+      eVote vacation
+
+To see who is subscribed to the petition list, send this message to
+petition@your-domain.org:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs@deliberate.com" list.  A first report of a particular bug wins
+the reporter 2 tickets to eVote's New Millenium's Eve Party on
+December 31, 1999, somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petition@your-domain.org.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petition@your-domain.org.
+
+If you have a signature on your mail, add a line with "end" to your
+eVote commands.
+
+If you have technical questions, contact owner-petition@your-domain.org.
+
+Your unprocessed message follows:
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -en name:
+address: -fr zeeaddress: -es direccion:  -en address:
+city: -fr zeecity: -es cuidad: -en city:
+comment: -fr comente: -es commento: -en comment:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en: Bogus language
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en Bogus language
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: 3Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030222.eVote.1.21285@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:21 2003
+
+In response to your message which starts:
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en
+
+----
+
+You already have a English translation, "3Governments".
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-en Bogus language
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-fr Bogus language
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitiona-eVote@xoko
+To: pollstera@somewhere.com
+Subject: Error: 3Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030227.eVote.1.16738@xoko>
+
+--
+
+pollstera@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:26 2003
+
+In response to your message which starts:
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-fr
+
+----
+
+You already have a Francais translation, "3Governieses".
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-fr Bogus language
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy Bogus language
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitiona
+
+Stdin says: 
+From: petitiona-eVote@xoko
+Subject: Re: 3Governments
+Sender: petitiona-eVote@xoko
+Reply-To: petitiona@xoko
+To: petitiona@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030231.eVote.1.12433@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:02:34 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "3Governments"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	3Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	3Governments
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:02:34 -0700
+ un scrutin a été initié sur:
+
+	 "3Governieses"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	3Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", et 
+         "comente:".
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	3Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:02:34 -0700
+pollstera@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "3Goviernes"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Por favor, alto los goviernes.
+-xy Bogus language
+Fried food.
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	3Goviernes
+
+3.  Favor de arreglar su mensaje para que se parezca asi: 
+
+---  corta aqui --- 
+
+nombre: 
+direccion: 
+cuidad: 
+commento: 
+Usted puede a~adir un comentario aqui'.
+
+---  corta aqui --- 
+
+      NOTAS:
+
+      *  Ud. tiene que dar una respuesta para "nombre:".
+
+      *  Respuestas son opcionales para "direccion:", "cuidad:", y 
+         "commento:".
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitiona@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	3Goviernes
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitiona@xoko
+
+2.  Your subject must be:
+
+	3Governments
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollstera@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollstera@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollstera@somewhere.com
+Received: by whatever
+To: petitiona@xoko
+Subject: 3Governments
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: 
+address: -fr zeeaddress: -es direccion:  
+city: -fr zeecity: -es cuidad: 
+comment: -fr comente: -es commento:
+message:
+Please stop the governments.
+-fr 3Governieses
+Si vu ple, altaze le governe.
+-es 3Goviernes
+Por favor, alto los goviernes.
+-xy Bogus language
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    THREE PETITIONbS  THREE PETITIONbS  THREE PETITIONbS 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Anything
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: 
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Anything
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030235.eVote.1.07950@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:01:59 2003
+
+In response to your message:
+
+eVote petition public
+form:
+*name: -fr namee:
+address: 
+city: -fr zeecity:
+comment: -fr comente:
+message:
+
+----
+You don't have a Francais translation for "address" but you do for "name".
+
+Perhaps eVote's instructions will help:
+
+
+This list is for administrators of petitions.  We can talk to each
+other by sending messages to the petition list address, just like a
+regular email list.  Also, we can take regular polls between ourselves
+*except* for [y/n] polls, they will be interpreted as a new petition
+and have a totally different behavior, as explained below.
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@your-domain.org with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petitition and gives instructions for
+unsigning and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+
+Initializing Petitions With Required Fields
+============ ========= ==== ======== ======
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, polite instructions will be
+sent to the failed signer.
+
+To set up a petition that requires a form, your instruction to the
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order. If the non-required fields are
+in the signature message, then in the resulting signature file, the
+fields will appear in the correct order.  X's and 9's can be included
+in non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petition email list.  The
+same commands are available to you on the petition list as are on any
+other eVoted list.  This petition list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@your-domain.org address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petition list allows the retrieval of the signature file:
+
+1.  Send a message to petition@your-domain.org
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list, and any of your signers, can use the
+"eVote names" command to retrieve the signatures for the petition.  If
+this is undesirable, originate your petition with this command
+instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petition@your-domain.org:
+
+      eVote vacation
+
+To see who is subscribed to the petition list, send this message to
+petition@your-domain.org:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs@deliberate.com" list.  A first report of a particular bug wins
+the reporter 2 tickets to eVote's New Millenium's Eve Party on
+December 31, 1999, somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petition@your-domain.org.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petition@your-domain.org.
+
+If you have a signature on your mail, add a line with "end" to your
+eVote commands.
+
+If you have technical questions, contact owner-petition@your-domain.org.
+
+Your unprocessed message follows:
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Anything
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: 
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+SHOULD FAIL FOR DUPLICATE NAME 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Something
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030239.eVote.1.03423@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:38 2003
+
+In response to your message which starts:
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+
+----
+
+"Governieses" already exists as a petition title 
+for "Governments" in Francais on the petitiona list.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governieses
+Si vu ple, altaze le governe.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+SHOULD FAIL FOR DUPLICATE NAME 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governments
+Si vu ple, altaze le governe.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Something
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030243.eVote.1.31715@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:42 2003
+
+In response to your message which starts:
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governments
+
+----
+
+"Governments" already exists as a petition title 
+for "Governments" in English on the petitiona list.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee:
+address: -fr zeeaddress:
+city: -fr zeecity:
+comment: -fr comente:
+message:
+Please stop the governments.
+-fr Governments
+Si vu ple, altaze le governe.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+SHOULD FAIL  
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr Super
+Si vu ple, altaze le governe.
+-es Duper
+Por favor, alto los goviernes.
+-xy: 3Goviernes
+Fried food.
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Something
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030247.eVote.1.51160@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:46 2003
+
+In response to your message:
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy
+
+----
+-xy is not a supported language.
+
+Perhaps eVote's instructions will help:
+
+
+This list is for administrators of petitions.  We can talk to each
+other by sending messages to the petition list address, just like a
+regular email list.  Also, we can take regular polls between ourselves
+*except* for [y/n] polls, they will be interpreted as a new petition
+and have a totally different behavior, as explained below.
+
+Generating Simple Petitions
+========== ====== =========
+
+To generate a simple petition, i.e., one without fields:
+
+1.  Choose your subject line carefully, say "Save the World".
+
+2.  Send a message to petition@your-domain.org with your subject.
+
+3.  Make the message say:
+
+---  cut  ---
+eVote petition public
+message:
+Type in the text of your petition.
+---  cut  ---
+
+4.  Advertise the following instructions:
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+To Sign The Petition
+== ==== === ========
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+    your poll).
+
+3.  Have the message be your name, affiliation, comments, whatever.
+
+= * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * = * 
+
+When anyone signs your petition, they will be sent a receipt which
+tells them the text of the petitition and gives instructions for
+unsigning and for seeing the signatures, if it's a PUBLIC petition.
+
+Your audience can see the petition text without signing if they:
+
+1.  Send email to eVote@your-domain.org.
+
+2.  Make your subject be "Save the World" (really, the subject line of
+your poll).
+
+3.  Have the message say:
+
+   info
+
+
+Initializing Petitions With Required Fields
+============ ========= ==== ======== ======
+
+eVote's petition facility supports forms.  That is, eVote will
+recognize field names in the signature message, demand that certain
+fields be filled in, and demand that a certain format be followed in
+the field for the signature to be accepted.
+
+If the attempt to sign is rejected, polite instructions will be
+sent to the failed signer.
+
+To set up a petition that requires a form, your instruction to the
+petition list might look like:
+
+eVote petition public
+form:
+*name:
+address:
+city:
+* state: XX
+* zip: 99999
+phone:
+comment:
+message:
+Please fix the roof.
+--- end of example ---
+
+In this case signatures will be rejected if they don't include the
+three fields, name, state, and zip.  That's the meaning of the '*' in
+the first column.  
+
+In the example, the required "name:" field must have something on it,
+but only the existence of some text on the line is verified.  The
+state field must be filled in with two letters.  The zip field must
+contain 6 numbers, no more, no less.  You may mix X's and 9's in one
+field's format.
+
+The other, non-required, fields may or may not be in the signature and
+if they are, they may be in any order. If the non-required fields are
+in the signature message, then in the resulting signature file, the
+fields will appear in the correct order.  X's and 9's can be included
+in non-required fields but they will only be aids to the signers, they
+are not checked.
+
+The "comment:" field is special.  If it is in the list of fields, it
+must be the last field.  The comment field allows the response to be
+of any length, any number of lines.
+
+Also, if there is no comment field, there is still a hidden comment
+field.  Comments are always allowed in a petition with fields and any
+text recognized as a comment from the signer is included in this
+field.
+
+The comment field can be a required field, just like any other field.
+
+You can use any words or phrases for the names of your fields.  The
+size limit is 40 characters.  You may not have two fields with exactly
+the same name.
+
+The "message:" line signals the end of the fields and all text after
+that will be part of the petition text itself.
+
+
+For The Petition Initiator
+=== === ======== =========
+
+You interact with your petition through the petition email list.  The
+same commands are available to you on the petition list as are on any
+other eVoted list.  This petition list has the extra facility that
+"votes" can be cast (really, signatures are collected) when mail is
+received by the eVote@your-domain.org address.  Any mail received
+through that address will cause the message body to be appended to the
+signature file for the particular petition.
+
+Also, the petition list allows the retrieval of the signature file:
+
+1.  Send a message to petition@your-domain.org
+
+2.  Make the subject match the title of your petition
+
+3.  In the message, say:
+
+eVote names
+
+If your original command was "eVote poll [y/n] public visible", as
+above, anyone on this list, and any of your signers, can use the
+"eVote names" command to retrieve the signatures for the petition.  If
+this is undesirable, originate your petition with this command
+instead:
+
+eVote poll [y/n] private visible
+
+Then, only you can retrieve the signatures.
+
+
+Vacation
+========
+
+eVote has a "vacation" feature.  If you want to stop the flow of
+messages from this list (probably none anyway) but retain your
+electronic ballot and your influence on the statistics, send this
+message to petition@your-domain.org:
+
+      eVote vacation
+
+To see who is subscribed to the petition list, send this message to
+petition@your-domain.org:
+
+      eVote members
+
+The list you receive will tell you which members are on vacation and
+which email addresses on the list are archives, meaning they have no
+eVoting privileges, which are simply signers to the petition.
+
+eVote
+=====
+
+If you find a bug, no matter how trivial, please report the bug to the
+"bugs@deliberate.com" list.  A first report of a particular bug wins
+the reporter 2 tickets to eVote's New Millenium's Eve Party on
+December 31, 1999, somewhere in the San Francisco Bay Area.
+
+To see what petitions are open for this list, send the message:
+
+     eVote list
+
+to petition@your-domain.org.
+
+
+To learn more about eVote, send the message:
+
+     eVote help
+
+to petition@your-domain.org.
+
+If you have a signature on your mail, add a line with "end" to your
+eVote commands.
+
+If you have technical questions, contact owner-petition@your-domain.org.
+
+Your unprocessed message follows:
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Something
+Status: RO
+
+eVote petition public
+form:
+*name: -fr namee: -es nombre: -xy name:
+address: -fr zeeaddress: -es direccion:  -xy address:
+city: -fr zeecity: -es cuidad: -xy city:
+comment: -fr comente: -es commento: -xy comment:
+message:
+Please stop the governments.
+-fr Super
+Si vu ple, altaze le governe.
+-es Duper
+Por favor, alto los goviernes.
+-xy: 3Goviernes
+Fried food.
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    THREE PETITIONbS  THREE PETITIONbS  THREE PETITIONbS 
+ 
+SHOULD WORK 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Anything
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Something
+Si vu ple, altaze le governe.
+-es Otra Cosa
+Otra Cosa
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitionb
+
+Stdin says: 
+From: petitionb-eVote@xoko
+Subject: Re: Anything
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+To: petitionb@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030252.eVote.1.46784@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:02:55 -0700
+pollsterb@somewhere.com attached a petition to this subject:
+
+	 "Anything"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Anything
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitionb@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Anything
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:02:55 -0700
+ un scrutin a été initié sur:
+
+	 "Something"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Something
+
+3.  Si votre message est vide, seule votre adresse e-mail sera enregistrée.
+
+    Sinon
+
+    Entrez vos nom, affiliation et pays.
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionb@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Something
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:02:55 -0700
+pollsterb@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Otra Cosa"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Otra Cosa
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitionb@xoko
+
+2.  Your subject must be:
+
+	Anything
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollsterb@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Anything
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Something
+Si vu ple, altaze le governe.
+-es Otra Cosa
+Otra Cosa
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Missing message on spanish
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Missing message on spanish
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030256.eVote.1.09532@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:55 2003
+
+In response to your message which starts:
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+
+----
+
+You didn't give a translation for the poll text in "Espanol".
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Missing message on spanish
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Same
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+Stop stop stop
+-en Same
+Stop stop stop
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: petitionb-eVote@xoko
+To: pollsterb@somewhere.com
+Subject: Error: Same
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030300.eVote.1.05516@xoko>
+
+--
+
+pollsterb@somewhere.com's last eVote participation: 
+	Fri Jun  7 03:02:59 2003
+
+In response to your message which starts:
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+Stop stop stop
+-en
+
+----
+
+You already have a English translation, "Same".
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Same
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+Stop stop stop
+-en Same
+Stop stop stop
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Same
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+stopee stopee
+-es Same
+Pared pared
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitionb
+
+Stdin says: 
+From: petitionb-eVote@xoko
+Subject: Re: Same
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+To: petitionb@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030304.eVote.1.33495@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:03:07 -0700
+pollsterb@somewhere.com attached a petition to this subject:
+
+	 "Same"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Same
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitionb@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Same
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:03:07 -0700
+ un scrutin a été initié sur:
+
+	 "Same"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+stopee stopee
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Same
+
+3.  Si votre message est vide, seule votre adresse e-mail sera enregistrée.
+
+    Sinon
+
+    Entrez vos nom, affiliation et pays.
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionb@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Same
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:03:07 -0700
+pollsterb@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Same"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Pared pared
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Same
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Same
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitionb@xoko
+
+2.  Your subject must be:
+
+	Same
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollsterb@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Same
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Same
+stopee stopee
+-es Same
+Pared pared
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionb - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Should work
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+Que pasa aqui'?
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitionb
+
+Stdin says: 
+From: petitionb-eVote@xoko
+Subject: Re: Should work
+Sender: petitionb-eVote@xoko
+Reply-To: petitionb@xoko
+To: petitionb@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030308.eVote.1.29416@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:03:11 -0700
+pollsterb@somewhere.com attached a petition to this subject:
+
+	 "Should work"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Should work
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitionb@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Should work
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:03:11 -0700
+ un scrutin a été initié sur:
+
+	 "Crepes"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Crepes
+
+3.  Si votre message est vide, seule votre adresse e-mail sera enregistrée.
+
+    Sinon
+
+    Entrez vos nom, affiliation et pays.
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionb@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Crepes
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:03:11 -0700
+pollsterb@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Que pasa"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Que pasa aqui'?
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Que pasa
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Que pasa
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitionb@xoko
+
+2.  Your subject must be:
+
+	Should work
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollsterb@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterb@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterb@somewhere.com
+Received: by whatever
+To: petitionb@xoko
+Subject: Should work
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Crepes
+Si vu ple, altaze le governe.
+-es Que pasa
+Que pasa aqui'?
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_insert resend_test -l petitionc - Incoming message: *****
+ 
+From jim@bow
+From:  pollsterc@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterc@somewhere.com
+Received: by whatever
+To: petitionc@xoko
+Subject: One for C
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Au juex
+Si vu ple, altaze le governe.
+-es Uno para C
+Agui esta
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ ----------- 
+ resend called as:  resend_test -l petitionc
+
+Stdin says: 
+From: petitionc-eVote@xoko
+Subject: Re: One for C
+Sender: petitionc-eVote@xoko
+Reply-To: petitionc@xoko
+To: petitionc@xoko
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030312.eVote.1.57846@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:03:15 -0700
+pollsterc@somewhere.com attached a petition to this subject:
+
+	 "One for C"
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	One for C
+
+3.  If your message is blank, only your email address will be recorded.
+
+    or
+
+    Type your name, affiliation and location.
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitionc@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	One for C
+
+3.  Your message should say:
+
+	remove
+
+
+============ ==== ========
+INSTRUCTIONS POUR FRANCAIS
+============ ==== ========
+
+Le Fri,  7 Jun 2003 03:03:15 -0700
+ un scrutin a été initié sur:
+
+	 "Au juex"
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Au juex
+
+3.  Si votre message est vide, seule votre adresse e-mail sera enregistrée.
+
+    Sinon
+
+    Entrez vos nom, affiliation et pays.
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionc@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Au juex
+
+3.  Vous message doit être:
+
+	retirer
+
+
+============= ==== =======
+INSTRUCCIONES PARA ESPANOL
+============= ==== =======
+
+El Fri,  7 Jun 2003 03:03:15 -0700
+pollsterc@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Uno para C"
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Agui esta
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Uno para C
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionc@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Uno para C
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+========== === ==========
+RETRIEVING THE SIGNATURES
+========== === ==========
+
+You can retrieve the signatures for this petition:
+
+1.  Send a message to:
+
+	petitionc@xoko
+
+2.  Your subject must be:
+
+	One for C
+
+3.  Your message should say:
+
+	eVote names
+
+
+== =======================
+TO pollsterc@somewhere.com
+== =======================
+
+Because you are the author of this petition, you, and only you, 
+can send the message:
+
+	eVote close
+
+Sending this message will close the petition to new signatures.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  pollsterc@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  pollsterc@somewhere.com
+Received: by whatever
+To: petitionc@xoko
+Subject: One for C
+Status: RO
+
+eVote petition public
+message:
+Please stop the governments.
+-fr Au juex
+Si vu ple, altaze le governe.
+-es Uno para C
+Agui esta
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CATS  CATS  CATS 
+ 
+11. ls -l /home/majordomo/lists/../polls/petitiona/* >> pall4.out
+/home/majordomo/lists/../polls/petitiona/2Governmen:
+total 12
+-rw-r--r--    1 majordom majordom      167 Jun  7 03:02 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:02 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:02 text
+
+/home/majordomo/lists/../polls/petitiona/3Governmen:
+total 12
+-rw-r--r--    1 majordom majordom      158 Jun  7 03:02 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:02 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:02 text
+
+/home/majordomo/lists/../polls/petitiona/Government:
+total 12
+-rw-r--r--    1 majordom majordom      105 Jun  7 03:01 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:01 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:01 text
+12. cat /home/majordomo/lists/../polls/petitiona/*/*/* >> pall4.out
+
+Please stop the governments.
+
+Por favor, alto los goviernes.
+
+Si vu ple, altaze le governe.
+
+Please stop the governments.
+
+Por favor, alto los goviernes.
+-xy Bogus language
+Fried food.
+
+Si vu ple, altaze le governe.
+
+Please stop the governments.
+
+Si vu ple, altaze le governe.
+13. ls -l /home/majordomo/lists/../polls/petitionb/* >> pall4.out
+/home/majordomo/lists/../polls/petitionb/Anything:
+total 12
+-rw-r--r--    1 majordom majordom       10 Jun  7 03:02 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:02 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:02 text
+
+/home/majordomo/lists/../polls/petitionb/Same:
+total 12
+-rw-r--r--    1 majordom majordom       10 Jun  7 03:03 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:03 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:03 text
+
+/home/majordomo/lists/../polls/petitionb/Should:
+total 12
+-rw-r--r--    1 majordom majordom       10 Jun  7 03:03 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:03 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:03 text
+14. cat /home/majordomo/lists/../polls/petitionb/*/*/* >> pall4.out
+
+Please stop the governments.
+
+Otra Cosa
+
+Si vu ple, altaze le governe.
+
+Please stop the governments.
+
+Pared pared
+
+stopee stopee
+
+Please stop the governments.
+
+Que pasa aqui'?
+
+Si vu ple, altaze le governe.
+15. ls -l /home/majordomo/lists/../polls/petitionc/* >> pall4.out
+total 12
+-rw-r--r--    1 majordom majordom       10 Jun  7 03:03 form_template
+drwxrw----    2 majordom majordom     4096 Jun  7 03:03 signatures
+drwx------    2 majordom majordom     4096 Jun  7 03:03 text
+16. cat /home/majordomo/lists/../polls/petitionc/*/*/* >> pall4.out
+
+Please stop the governments.
+
+Agui esta
+
+Si vu ple, altaze le governe.
+17. cat /home/majordomo/lists/../polls/translation.data >> pall4.out
+LIST: petitionc
+  SUBJECT: PUB: NO_CONFIRM: One for C -En
+    -Es Uno para C
+    -Fr Au juex
+    -En One for C
+LIST: petitiona
+  SUBJECT: PUB: NO_CONFIRM: 3Governments -En
+    -Es 3Goviernes
+    -Fr 3Governieses
+    -En 3Governments
+  SUBJECT: PUB: NO_CONFIRM: Governments -En
+    -Fr Governieses
+    -En Governments
+  SUBJECT: PUB: NO_CONFIRM: 2Governments -En
+    -En 2Governments
+    -Fr 2Governieses
+    -Es 2Goviernes
+LIST: petitionb
+  SUBJECT: PUB: NO_CONFIRM: Same -En
+    -Es Same
+    -Fr Same
+    -En Same
+  SUBJECT: PUB: NO_CONFIRM: Anything -En
+    -En Anything
+    -Fr Something
+    -Es Otra Cosa
+  SUBJECT: PUB: NO_CONFIRM: Should work -En
+    -En Should work
+    -Fr Crepes
+    -Es Que pasa
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    HELP  HELP  HELP 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+help
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030317.eVote.1.48951@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+help
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -fr
+Status: RO
+
+
+help
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030324.eVote.1.49673@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -fr
+Status: RO
+
+
+help
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -es
+Status: RO
+
+
+help
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030331.eVote.1.50668@xoko>
+
+--
+
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -es
+Status: RO
+
+
+help
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -es
+Status: RO
+
+
+info
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030338.eVote.1.17859@xoko>
+
+--
+
+
+El Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Governments"
+
+0 firmas han sido recopilados.
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Please stop the governments.
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Governments
+
+3.  Favor de arreglar su mensaje para que se parezca asi: 
+
+---  corta aqui --- 
+
+name: 
+address: 
+city: 
+comment: 
+Ud. puede dar su nombre aqui'.
+
+---  corta aqui --- 
+
+      NOTAS:
+
+      *  Ud. tiene que dar una respuesta para "name:".
+
+      *  Respuestas son opcionales para "address:", "city:", y 
+         "comment:".
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitiona@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Governments
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+  ===============    INICIO DEL MENSAJE RECIBIDO ==================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -es
+Status: RO
+
+
+info
+
+
+
+  ===================     FIN DEL MENSAJE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -xy
+Status: RO
+
+
+info
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: ERROR: Governments -xy
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030345.eVote.1.51462@xoko>
+
+--
+
+
+There is no petition attached to the subject, "Governments -xy".
+
+Please check the spelling on the subject line of your message.
+
+The petitions currently available at xoko are listed below.
+
+For information about a particular petition:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject line should match the petition title.
+
+3.  Your message should say: 
+
+	info
+
+    to receive the text of the petition and instructions for signing.
+
+Privacy
+=======
+
+In the list below:
+
+PUBLIC  petitions allow anyone on the petitiona@xoko
+        list to retrieve the signatures, but not the email addresses,  
+        attached to the petition.  Also, anyone who signs the petition
+        can retrieve the signatures.  There are no controls on the use
+        of your signature.  Your email address is used to ensure that there
+        is only one signature per address and for no other purpose.
+
+PRIVATE petitions allow only the petition's initiator and the system
+        administrator at xoko to retrieve the signatures.
+        The email addresses are available to both people as well.
+
+PUBLIC petitions:
+
+Anything
+Same
+2Governments
+Governments
+3Governments
+One for C
+Should work
+
+There are no PRIVATE petitions.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments -xy
+Status: RO
+
+
+info
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses
+Status: RO
+
+
+info
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Re: Governieses
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030352.eVote.1.09788@xoko>
+
+--
+
+
+Le Fri,  7 Jun 2003 03:01:39 -0700
+ un scrutin a été initié sur:
+
+	 "Governieses"
+
+0 signatures ont été recueillies jusqu'ici.
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", et 
+         "comente:".
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+  ================     DEBUT DU MESSAGE RECU    ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses
+Status: RO
+
+
+info
+
+
+
+  =====================    FIN DU MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petitiona - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Not here
+Status: RO
+
+
+info
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: ERROR: Not here
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030400.eVote.1.10582@xoko>
+
+--
+
+
+There is no petition attached to the subject, "Not here".
+
+Please check the spelling on the subject line of your message.
+
+The petitions currently available at xoko are listed below.
+
+For information about a particular petition:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject line should match the petition title.
+
+3.  Your message should say: 
+
+	info
+
+    to receive the text of the petition and instructions for signing.
+
+Privacy
+=======
+
+In the list below:
+
+PUBLIC  petitions allow anyone on the petitiona@xoko
+        list to retrieve the signatures, but not the email addresses,  
+        attached to the petition.  Also, anyone who signs the petition
+        can retrieve the signatures.  There are no controls on the use
+        of your signature.  Your email address is used to ensure that there
+        is only one signature per address and for no other purpose.
+
+PRIVATE petitions allow only the petition's initiator and the system
+        administrator at xoko to retrieve the signatures.
+        The email addresses are available to both people as well.
+
+PUBLIC petitions:
+
+Anything
+Same
+2Governments
+Governments
+3Governments
+One for C
+Should work
+
+There are no PRIVATE petitions.
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Not here
+Status: RO
+
+
+info
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  SIGN   SIGN   SIGN 
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+Here is my signature.
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Error: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030407.eVote.1.43808@xoko>
+
+--
+
+
+In response to your message which starts:
+
+Here
+
+You must give your "name:"
+before you can give a comment when signing the petition for
+
+	"Governments"
+
+Perhaps the instructions for "Governments" will help.
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+0 signatures have been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+Here is my signature.
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phoneee: 87
+city: there
+end
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: eVote Rcpt: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030414.eVote.1.11572@xoko>
+
+--
+
+
+Thank you for your signature on
+
+	Governments
+
+To date, 1 person has signed this petition.
+
+==== =========
+YOUR SIGNATURE
+==== =========
+
+Your signature is recorded as:
+
+- - - Fri,  7 Jun 2003 03:04:20 -0700 - - - 
+
+name: Me
+address: here
+city: 
+phoneee: 87
+city: there
+
+ - - - - end of signature - - - - 
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phoneee: 87
+city: there
+end
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+end
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Error: Governments
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030421.eVote.1.07163@xoko>
+
+--
+
+
+In response to your message which starts:
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+
+Thank you.  You already signed the petition on 
+
+	Governments
+
+You can't sign twice.
+
+Perhaps the instructions for "Governments" will help.
+
+On Fri,  7 Jun 2003 03:01:39 -0700
+pollstera@somewhere.com attached a petition to this subject:
+
+	 "Governments"
+
+1 signature has been collected so far.
+
+======== ====
+PETITION TEXT
+======== ====
+
+Please stop the governments.
+
+
+== ==== ==== ========
+TO SIGN THIS PETITION
+== ==== ==== ========
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Please make your message look like: 
+
+---  cut here --- 
+
+name: 
+address: 
+city: 
+comment: 
+
+---  cut here --- 
+
+      NOTES:
+
+      *  You must give an answer for "name:".
+
+      *  Answers are optional for "address:", "city:", and 
+         "comment:".
+
+4.  If your message has a signature file, or any other text that you
+    don't want included, make a line that just says "end".
+
+
+====== ========
+PUBLIC PETITION
+====== ========
+
+This is a *public* petition.  The information you contribute
+can be retrieved by anyone who signs the petition and by anyone
+on the petitiona@xoko email list.
+
+This means that the information is quite public and that there
+are no controls on its use.
+
+Your email address, however, can only be seen by the site
+administrator at xoko.
+
+Your email address is used to ensure that there is only one
+signature for each email address and for no other purpose.
+
+======== ==== =========
+REMOVING YOUR SIGNATURE
+======== ==== =========
+
+If you feel that you signed in error, please remove your signature:
+
+1.  Send a message to:
+
+	eVote@xoko
+
+2.  Your subject must be:
+
+	Governments
+
+3.  Your message should say:
+
+	remove
+
+
+  ================    START OF MESSAGE RECEIVED ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governments
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+end
+
+
+
+  =====================    END OF MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+end
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary1@somewhere.com
+Subject: Erreur: Governieses
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030425.eVote.1.02766@xoko>
+
+--
+
+
+En réponse à votre message qui commençait par:
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+
+Merci. Vous aviez déjà signé la pétition sur
+
+	Governieses
+
+Vous ne pouvez pas signé la pétition deux fois.
+
+Les instructions pour "Governieses" pourront peut-être vous aider.
+
+Le Fri,  7 Jun 2003 03:01:39 -0700
+ un scrutin a été initié sur:
+
+	 "Governieses"
+
+1 signature a été recueillie jusqu'ici.
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+
+==== ====== ===== ========
+POUR SIGNER CETTE PÉTITION
+==== ====== ===== ========
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Ecrivez votre message comme ceci s'il vous plait: 
+
+--- couper ici --- 
+
+namee: 
+zeeaddress: 
+zeecity: 
+comente: 
+Vous pouvez ajouter votre nom et/ou un commentaire ici.
+
+--- couper ici --- 
+
+      REMARQUES:
+
+      *  Vous devez donner une réponse pour "namee:".
+
+      *  Des réponses sont facultatives pour "zeeaddress:", "zeecity:", et 
+         "comente:".
+
+4  Si votre message comporte un fichier de signature ou un autre 
+   texte que vous voulez exclure, vous avez juste à écrire sur une 
+   ligne la commande "fin".
+
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitiona@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Governieses
+
+3.  Vous message doit être:
+
+	retirer
+
+
+  ================     DEBUT DU MESSAGE RECU    ===================
+
+From jim@bow
+From:  mary1@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary1@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses
+Status: RO
+
+
+namee: Me
+zeeaddress: here
+phone: 123-4567
+city: there
+end
+
+
+
+  =====================    FIN DU MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses -es
+Status: RO
+
+name: Me
+address: here
+city: there
+end
+
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitiona-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: eVote Recibo: Governieses
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030429.eVote.1.03571@xoko>
+
+--
+
+
+Gracias por su firma on
+
+	Governieses
+
+Hasta la fecha, 2 personas han firmado esta peticio'n.
+
+== =====
+SU FIRMA
+== =====
+
+Su firma queda grabado como:
+
+- - - Fri,  7 Jun 2003 03:04:35 -0700 - - - 
+
+name: Me
+address: here
+city: there
+comment: 
+
+ - - - - fin de la firma - - - - 
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitiona@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Governments
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Please stop the governments.
+
+  ===============    INICIO DEL MENSAJE RECIBIDO ==================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Governieses -es
+Status: RO
+
+name: Me
+address: here
+city: there
+end
+
+
+
+  ===================     FIN DEL MENSAJE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -fr
+Status: RO
+
+No form
+address: here
+city: there
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: eVote Rcpt: Anything
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030437.eVote.1.13321@xoko>
+
+--
+
+
+Merci de  votre signature sur
+
+	Anything
+
+A ce jour, 1 personne a signé cette pétition.
+
+===== =========
+VOTRE SIGNATURE
+===== =========
+
+votre signature est enregistrée comme:
+
+- - - Fri,  7 Jun 2003 03:04:41 -0700 - - - 
+
+No form
+address: here
+city: there
+
+ - - - - fin de signature - - - - 
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionb@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Something
+
+3.  Vous message doit être:
+
+	retirer
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+  ================     DEBUT DU MESSAGE RECU    ===================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -fr
+Status: RO
+
+No form
+address: here
+city: there
+end
+some stuff
+
+
+  =====================    FIN DU MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -es
+Status: RO
+
+quitar
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: Error: Anything
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030442.eVote.1.41528@xoko>
+
+--
+
+
+En respuesta a su mensjae que empieza:
+
+quitar
+
+Gracias.  Ud. ya firmo' la peticio'n sobre
+
+	Anything
+
+No se puede firmo' la peticio'n dos veces.
+
+Quizás las instrucciones para "Anything" ayudara'n.
+
+El Fri,  7 Jun 2003 03:02:55 -0700
+pollsterb@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Otra Cosa"
+
+1 firma ha sido recopilado.
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Otra Cosa
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+  ===============    INICIO DEL MENSAJE RECIBIDO ==================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -es
+Status: RO
+
+quitar
+end
+some stuff
+
+
+  ===================     FIN DEL MENSAJE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -es
+Status: RO
+
+quitar
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: Error: Anything
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030446.eVote.1.04743@xoko>
+
+--
+
+
+En respuesta a su mensjae que empieza:
+
+quitar
+
+Gracias.  Ud. ya firmo' la peticio'n sobre
+
+	Anything
+
+No se puede firmo' la peticio'n dos veces.
+
+Quizás las instrucciones para "Anything" ayudara'n.
+
+El Fri,  7 Jun 2003 03:02:55 -0700
+pollsterb@somewhere.com adjunto una peticio'n a este "Subject":
+
+          "Otra Cosa"
+
+1 firma ha sido recopilado.
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Otra Cosa
+
+
+==== ====== ==== =========
+PARA FIRMAR ESTA PETICIO'N
+==== ====== ==== =========
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Si esta' en blanco su mensaje, solamente se grabara' su direccio'n
+    de correo electro'nico
+
+    o
+
+    Escriba su nombre, afiliacio'n y ubicacio'n.
+
+4.  Si su mensaje tiene firma automatizada, o cualquier texto que
+    no quiera incluir, escriba "fin".
+
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Otra Cosa
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+
+  ===============    INICIO DEL MENSAJE RECIBIDO ==================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Anything -es
+Status: RO
+
+quitar
+end
+some stuff
+
+
+  ===================     FIN DEL MENSAJE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Same -fr
+Status: RO
+
+No form
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: eVote Rcpt: Same
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030450.eVote.1.32975@xoko>
+
+--
+
+
+Merci de  votre signature sur
+
+	Same
+
+A ce jour, 1 personne a signé cette pétition.
+
+===== =========
+VOTRE SIGNATURE
+===== =========
+
+votre signature est enregistrée comme:
+
+- - - Fri,  7 Jun 2003 03:04:53 -0700 - - - 
+
+No form
+
+ - - - - fin de signature - - - - 
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionb@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Same
+
+3.  Vous message doit être:
+
+	retirer
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+stopee stopee
+
+  ================     DEBUT DU MESSAGE RECU    ===================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Same -fr
+Status: RO
+
+No form
+end
+some stuff
+
+
+  =====================    FIN DU MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Que pasa
+Status: RO
+
+No form
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionb-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: eVote Recibo: Que pasa
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030454.eVote.1.28453@xoko>
+
+--
+
+
+Gracias por su firma on
+
+	Que pasa
+
+Hasta la fecha, 1 persona ha firmado esta peticio'n.
+
+== =====
+SU FIRMA
+== =====
+
+Su firma queda grabado como:
+
+- - - Fri,  7 Jun 2003 03:04:57 -0700 - - - 
+
+No form
+
+ - - - - fin de la firma - - - - 
+
+========= =======
+PETICIO'N PUBLICA
+========= =======
+
+Esta es una peticio'n *pu'blica*.  La informacio'n que Ud. contribuye
+puede ser recuperada por cualquier persona que firme la peticio'n y por
+cualquier persona subscrita en la lista petitionb@xoko de
+correo electro'nico.
+
+Esto quiere decir que la informacio'n es bastante pu'blica y que 
+no hay controles sobre su uso.
+
+Sin embargo, solamente el adminstrador del sistema en 
+xoko puede ver su direccio'n correo electro'nico.
+
+Utilizamos su direccio'n de correo electro'nico para asegurar 
+que so'lo haya una firma por cada direccio'n, y para ningun 
+otro propo'sito.
+
+======== == =====
+QUITANDO SU FIRMA
+======== == =====
+
+Si Ud. piensa que ha firmado equivocadamente favor de borrar su firmado:
+
+1.  Envie un mensaje a:
+
+	eVote@xoko
+
+2.  En "Subject" tiene que escribir:
+
+	Que pasa
+
+3.  Su mensaje debe decir:
+
+	borrar
+
+===== == == =========
+TEXTO DE LA PETICIO'N
+===== == == =========
+
+Que pasa aqui'?
+
+  ===============    INICIO DEL MENSAJE RECIBIDO ==================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Que pasa
+Status: RO
+
+No form
+end
+some stuff
+
+
+  ===================     FIN DEL MENSAJE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+ = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+ 
+***** CALLing /home/majordomo/eVote_petition resend_test -l petition - Incoming message: *****
+ 
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Au juex
+Status: RO
+
+No form
+end
+some stuff
+ 
+***** To stderr comes: *****
+ 
+                    LIST 
+***** r.out sent to LIST, says *****
+ 
+
+ -------- 
+smail_test called as:  smail_test -fpetitionc-eVote@xoko \$sender -t
+
+Stdin says: 
+
+From: eVote@xoko
+To: mary2@somewhere.com
+Subject: eVote Rcpt: Au juex
+Sender: eVote@xoko
+Reply-To: eVote@xoko
+In-Reply-To: Your message on  Mon, 18 Oct 94 00:00:00 T5E
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+Message-ID: <20030607030458.eVote.1.47723@xoko>
+
+--
+
+
+Merci de  votre signature sur
+
+	Au juex
+
+A ce jour, 1 personne a signé cette pétition.
+
+===== =========
+VOTRE SIGNATURE
+===== =========
+
+votre signature est enregistrée comme:
+
+- - - Fri,  7 Jun 2003 03:05:02 -0700 - - - 
+
+No form
+
+ - - - - fin de signature - - - - 
+
+======== ========
+PÉTITION PUBLIQUE
+======== ========
+
+Ceci est une pétition *publique*. Les informations que vous donnez peuvent
+être lues par toute personne qui signera la pétition et par tous les
+lecteurs de la liste de discussion petitionc@xoko.
+
+Ce qui signifie que ces informations sont quasiment du domaine 
+public et qu'il ne peut y avoir aucun contrôle sur leur usage.
+
+Votre adresse email peut cependant être vue par l'administrateur
+sytème de xoko.
+
+Votre adresse email ne sert qu'à vérifier qu'il n'y a qu'une
+signature par adresse email et ne sera utilisée pour rien d'autre.
+
+==== ======= ===== =========
+POUR RETIRER VOTRE SIGNATURE
+==== ======= ===== =========
+
+Si vous pensez avoir signé par erreur, vous
+pouvez retirer votre signé:
+
+1.  Envoyez un message à:
+
+	eVote@xoko
+
+2.  Votre sujet doit être:
+
+	Au juex
+
+3.  Vous message doit être:
+
+	retirer
+
+===== ========
+TEXTE PÉTITION
+===== ========
+
+Si vu ple, altaze le governe.
+
+  ================     DEBUT DU MESSAGE RECU    ===================
+
+From jim@bow
+From:  mary2@somewhere.com
+Message-Id: <Mime>
+Date: Mon, 18 Oct 94 00:00:00 T5E
+Return-Path:  mary2@somewhere.com
+Received: by whatever
+To: eVote@xoko
+Subject: Au juex
+Status: RO
+
+No form
+end
+some stuff
+
+
+  =====================    FIN DU MESSAGE   =======================
+
+Clerk 2.502 Ser.No. 1
+
+ 
+ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  END   END   END 
+ 
